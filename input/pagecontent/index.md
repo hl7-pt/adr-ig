@@ -46,9 +46,9 @@ so and so...
 <tbody>
 <tr class="odd">
 <td>Author</td>
-<td>zzz</td>
-<td>xxxx</td>
-<td>yyyy</td>
+<td>Tiago Costa</td>
+<td>VirtualCare</td>
+<td></td>
 </tr><tr class="even">
 <td>Author</td>
 <td>xxx</td>
