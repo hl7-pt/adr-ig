@@ -6,9 +6,8 @@ This is an empty IG
 ### Publication
 This ImplementationGuide is published in the following locations:
 
-Continuous Build: __http://build.fhir.org/ig/<handle>/<repo>/branches/main/index.html__  
-Canonical / permanent URL: 
-<br> </br>
+[http://build.fhir.org/ig/hl7-pt/adr-ig/](http://build.fhir.org/ig/hl7-pt/adr-ig/)
+
 
 ### Issues
 Issues and change requests are managed here:  
