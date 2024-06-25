@@ -8,7 +8,7 @@ This ImplementationGuide is published in the following locations:
 
 [http://build.fhir.org/ig/hl7-pt/adr-ig/](http://build.fhir.org/ig/hl7-pt/adr-ig/)
 
-
+ 
 ### Issues
 Issues and change requests are managed here:  
 
