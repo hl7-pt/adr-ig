@@ -21,7 +21,7 @@ version: 1.0.0
 # Although fhirVersions is 0..* in the ImplementationGuide resource
 # it can be a single item OR and array here (but so far SUSHI only
 # supports 4.0.1 anyway).
-fhirVersion: 4.0.1
+fhirVersion: 5.0.0
 parameters:
   # show-inherited-invariants: false
   produce-jekyll-data: true
