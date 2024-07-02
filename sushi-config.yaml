@@ -166,20 +166,21 @@ pages:
   index.md:
     title: Home Page   
   background.md:
-    title: Background
-  spec.md:
-    title: Specification
+    title: "Funcional"
   downloads.html:
     title: Downloads
   changes.html:
     title: IG Change History
-		
+  mapping.md:
+    title: Mapeamentos
+
+
 menu:
-  IG Home: index.html
-  Background: background.html
-  Specification: spec.html
-  Table of Contents: toc.html
-  Artifact Index: artifacts.html			
+  Índice: toc.html
+  Introdução:
+    Funcional: background.html
+    Workflows: workflows.html
+  Artefactos: artifacts.html			
   Downloads: downloads.html
 # The parameters property represents IG.definition.parameter. Rather
 # than a list of code/value pairs (as in the ImplementationGuide

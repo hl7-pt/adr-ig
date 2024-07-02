@@ -4,33 +4,15 @@
   </blockquote>
 
 
-### Scope
+### Ãmbito
 
 This publication contains the full set of specifications...
 
 There is also an overview of the projects and motivation for the specifications.
 
-### Introduction
+### Introdução
 
 so and so...
-
-### Dependencies
-
-{% include dependency-table.xhtml %}
-
-
-### Cross Version Analysis
-
-{% include cross-version-analysis.xhtml %}
-
-### Global Profiles
-
-{% include globals-table.xhtml %}
-
-### IP statements
-
-{% include ip-statements.xhtml %}
-
 
 ### Authors and Contributors
 
@@ -51,18 +33,8 @@ so and so...
 <td></td>
 </tr><tr class="even">
 <td>Author</td>
-<td>xxx</td>
-<td></td>
-<td>dssd</td>
-</tr><tr class="odd">
-<td>Author</td>
-<td>asdasd</td>
-<td>asdasd</td>
-<td>asdas</td>
-</tr><tr class="even">
-<td>Author</td>
-<td>asdasd</td>
-<td></td>
-<td>dasda</td>
-</tr></tbody>
+<td>João Almeida</td>
+<td>HL7 Portugal</td>
+<td>joaofilipe90 [at] gmail.com</td>
+</tbody>
 </table>
