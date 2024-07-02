@@ -171,8 +171,8 @@ pages:
     title: Downloads
   changes.html:
     title: IG Change History
-  mapping.md:
-    title: Mapeamentos
+  workflows.md:
+    title: Workflows
 
 
 menu:
