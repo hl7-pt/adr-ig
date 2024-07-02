@@ -15,7 +15,8 @@
 7. **Segurança e Privacidade**: Durante todo o processo, é fundamental garantir a segurança e a privacidade das informações do paciente. Isso envolve a implementação de medidas de segurança, como controle de acesso, criptografia e conformidade com regulamentos de privacidade de dados, para garantir que as informações do paciente sejam protegidas contra acesso não autorizado.
 
 ### Caso de Uso:
- #### Registo de Reações Adversas e Alergias
+
+#### Registo de Reações Adversas e Alergias
 - **Descrição**: Profissionais de saúde precisam registar informações detalhadas sobre as reações adversas a medicamentos e alergias dos pacientes.
 - **Fluxo de Trabalho**:
   1. O profissional de saúde acede ao sistema de saúde e seleciona o paciente relevante.
