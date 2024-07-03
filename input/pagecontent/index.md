@@ -30,8 +30,9 @@ so and so...
 <td>Author</td>
 <td>Tiago Costa</td>
 <td>VirtualCare</td>
-<td></td>
-</tr><tr class="even">
+<td>tcosta _at_ virtualcare.pt</td>
+</tr>
+<tr class="even">
 <td>Author</td>
 <td>João Almeida</td>
 <td>HL7 Portugal</td>
@@ -45,5 +46,6 @@ Aviso 2022-C05i0101-02 Agendas/Alianças mobilizadoras para a reindustrializaç�
 
 This work was financed by the project Health from Portugal (“Aviso 2022-C05i0101-02 Agendas/Alianças mobilizadoras para a reindustrialização,  Projeto nº C630926586-00465198”). 
 
+<br>
 <img src="funding.png" alt="An overview of access to resources"/>
 <br clear="all"/>
