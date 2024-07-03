@@ -38,3 +38,9 @@ so and so...
 <td>joaofilipe90 [at] gmail.com</td>
 </tbody>
 </table>
+
+### Acknowledgements & Agradecimentos
+
+Aviso 2022-C05i0101-02 Agendas/Alianças mobilizadoras para a reindustrialização,  Projeto nº C630926586-00465198. 
+
+This work was financed by the project Health from Portugal (“Aviso 2022-C05i0101-02 Agendas/Alianças mobilizadoras para a reindustrialização,  Projeto nº C630926586-00465198”). 
