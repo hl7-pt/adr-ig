@@ -1,0 +1,13 @@
+{
+    "package-id" : " hl7.fhir.pt.adr",
+    "title" : "HL7 Portugal FHIR Implementation Guide para alergias e reacções adversas ao medicamento", 
+    "canonical" : "https://hl7.pt/fhir/ADR", 
+    "introduction" : "HL7 Portugal IG for exchanging allergy and adverse drug reaction information",
+    "list" : [{
+     "version" : "current",
+     "desc" : "Continuous Integration Build (latest in version control)",
+     "path" : "https://build.fhir.org/ig/hl7-pt/adr-ig",
+     "status" : "ci-build",
+     "current" : true
+    }]
+   }
