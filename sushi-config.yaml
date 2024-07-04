@@ -184,6 +184,7 @@ pages:
 
 
 menu:
+  Home: index.html
   Índice: toc.html
   Introdução:
     Funcional: background.html

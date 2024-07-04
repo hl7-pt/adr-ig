@@ -5,4 +5,7 @@ Os FHIR Implementation Guides são igualmente úteis na validação de documento
 Exemplo de validação de recursos FHIR em função deste IG:
 1. ir a [https://github.com/hapifhir/org.hl7.fhir.core/releases/latest/download/validator_cli.jar](https://github.com/hapifhir/org.hl7.fhir.core/releases/latest/download/validator_cli.jar) e fazer download do validator.
 2. ter os recursos ou pastas com recursos a validar num sistema local (exemplo para um recurso patient.xml)
-3. correr o seguinte comando ``` java -jar validator_cli.jar c:\temp\patient.xml -version 5.0 -ig https://build.fhir.org/ig/hl7-pt/adr-ig/```
+3. correr o seguinte comando ``` java -jar validator_cli.jar c:\temp\patient.xml -version 5.0 -ig -ig hl7.fhir.pt.adr#current -html-output report.html -output-style compact```
+   1. este comando irá validar um recurso face a este IG e devolve uma página HTML com o resultado da validação.
+   
+Mais informações e opções do validador, ver [aqui](https://confluence.hl7.org/display/FHIR/Using+the+FHIR+Validator)
