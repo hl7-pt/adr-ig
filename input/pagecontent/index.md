@@ -4,41 +4,24 @@
   </blockquote>
 
 
-### Ãmbito
+### Âmbito
 
-This publication contains the full set of specifications...
+Este FHIR Implementation Guide tem como objectivo especificar a troca de informação relativamente a alergias e a RAMs (Reacções adversas ao medicamento).
 
-There is also an overview of the projects and motivation for the specifications.
+
 
 ### Introdução
 
-so and so...
+Sendo que a suspeita de RAMs e Alergias é transversal à prática clinica, surge muitas vezes a necessidade de as registar. Esta informação, quanto mais partilhada, mais segurança pode trazer aos doentes e mais evidencia e informação consegue promover nos prestadores de saúde. Assim, vamos detalhar possiveis workflows, formatos de informação e recursos a serem utilizados no *standard* HL7 FHIR.
 
-### Authors and Contributors
 
-<table>
-<thead>
-<tr class="header">
-<th>Roles</th>
-<th>Name</th>
-<th>Organization</th>
-<th>Contact</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Author</td>
-<td>Tiago Costa</td>
-<td>VirtualCare</td>
-<td>tcosta _at_ virtualcare.pt</td>
-</tr>
-<tr class="even">
-<td>Author</td>
-<td>João Almeida</td>
-<td>HL7 Portugal</td>
-<td>joaofilipe90 [at] gmail.com</td>
-</tbody>
-</table>
+### Autores e contribuidores
+
+| Papel  | Nome | Organização | Contacto |
+| --- | --- | --- | --- |
+| **Autor** | Tiago Costa | Virtual Care | tcosta __at__ virtualcare.pt |
+| **Autor** | João Almeida |  HL7 Portugal | joaofilipe90 __at__ gmail.com |
+
 
 ### Acknowledgements & Agradecimentos
 

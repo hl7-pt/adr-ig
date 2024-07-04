@@ -1,0 +1,24 @@
+@startuml
+hide footbox
+skinparam DefaultTextAlignment left
+skinparam PackageTitleAlignment center
+
+
+'title Use Case: Order straight to dispense
+
+
+
+actor "Profissional 1" as REC 
+participant "Sistema 1" as Server
+
+participant "Sistema 2" as CON
+actor "Profissional" as HCP
+
+REC -> Server: Regista alergia ou RAM
+
+HCP->CON: Necessidade de saber alergias ou RAM de doente
+CON->Server: Pede informação de paciente(s) por REST
+
+
+
+@enduml

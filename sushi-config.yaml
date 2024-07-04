@@ -7,11 +7,11 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 
 
-id: my-ig
-canonical: http://example.com/fhir/example
+id: adr-ig
+canonical: https://hl7.pt/fhir/ADR
 url: http://example.com/fhir/example
 name: ExampleIG
-title: "HL7 PT FHIR Implementation Guide: Example IG Release 1 | STU1"
+title: "HL7 PT FHIR Implementation Guide: ADR IG Release 1 | STU1"
 description: Example IG exercises many of the fields in a SUSHI configuration.
 status: active
 license: CC0-1.0
@@ -173,6 +173,8 @@ pages:
     title: IG Change History
   workflows.md:
     title: Workflows
+  usage.md:
+    title: Usar este IG
 
 
 menu:
@@ -180,6 +182,7 @@ menu:
   Introdução:
     Funcional: background.html
     Workflows: workflows.html
+  Usar este IG: usage.html
   Artefactos: artifacts.html			
   Downloads: downloads.html
 # The parameters property represents IG.definition.parameter. Rather
