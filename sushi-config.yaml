@@ -7,16 +7,21 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 
 
-id: adr-ig
+id: hl7.fhir.pt.adr
 canonical: https://hl7.pt/fhir/ADR
-url: https://hl7.pt/fhir/ADR
+url: http://hl7.pt/fhir/ImplementationGuide/hl7.fhir.pt.adr
 name: ADRPTIG
-title: "HL7 PT FHIR IG: ADR IG Release 1 | STU1"
+title: HL7 Portugal FHIR Implementation Guide para alergias e reacções adversas ao medicamento
 description: Example IG exercises many of the fields in a SUSHI configuration.
 status: active
 license: CC0-1.0
 date: 2020-02-26
 version: 1.0.0
+
+dependencies:
+  hl7.fhir.uv.extensions.r5: 1.0.0
+
+
 
 # Although fhirVersions is 0..* in the ImplementationGuide resource
 # it can be a single item OR and array here (but so far SUSHI only
@@ -33,7 +38,7 @@ parameters:
 # will recognize them as well. In either case, they'll be copied
 # to the IG JSON using the formal names.
 copyrightYear: 2024+
-releaseLabel: STU1
+releaseLabel: CI Build
 
 # The publisher can be a single item or a list, each with a name and
 # optional url and/or email. The first publisher's name will be used
