@@ -1,0 +1,46 @@
+ADRPTIG : Validation Results
+=========================================
+
+err = 6, warn = 22, info = 3
+$--
+Generated $--. FHIR version $-- for hl7.fhir.pt.adr#$-- (canonical = http://hl7.pt/fhir)
+ Build Errors : 0 / 3 / 0
+ /github/workspace/fsh-generated/resources/ImplementationGuide-hl7.fhir.pt.adr : 0 / 1 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-Alergia : 3 / 6 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-ReacaoAdversa : 3 / 12 / 2
+</table>
+== n/a ==
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/ImplementationGuide-hl7.fhir.pt.adr.json ==
+INFORMATION: ImplementationGuide/hl7.fhir.pt.adr: ImplementationGuide.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: ImplementationGuide.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.pt.adr, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+== fsh-generated/resources/StructureDefinition-Alergia.json ==
+ERROR: StructureDefinition.where(url = 'https://hl7.pt/fhir/ADR/StructureDefinition/Alergia'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-Alergia.json - the canonical URL (http://hl7.pt/fhir/StructureDefinition/Alergia) does not match the URL (https://hl7.pt/fhir/ADR/StructureDefinition/Alergia)
+INFORMATION: StructureDefinition/Alergia: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: StructureDefinition/Alergia: StructureDefinition.snapshot.element[15].binding: The definition for the element 'AllergyIntolerance.code' binds to the value set 'http://hl7.org/fhir/ValueSet/allergyintolerance-code' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/Alergia: StructureDefinition.snapshot.element[24].binding: The definition for the element 'AllergyIntolerance.participant.function' binds to the value set 'http://hl7.org/fhir/ValueSet/participation-role-type' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/Alergia: StructureDefinition.snapshot.element[32].binding: The definition for the element 'AllergyIntolerance.reaction.substance' binds to the value set 'http://hl7.org/fhir/ValueSet/substance-code' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/Alergia: StructureDefinition.snapshot.element[33].binding: The definition for the element 'AllergyIntolerance.reaction.manifestation' binds to the value set 'http://hl7.org/fhir/ValueSet/clinical-findings' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/Alergia: StructureDefinition.snapshot.element[37].binding: The definition for the element 'AllergyIntolerance.reaction.exposureRoute' binds to the value set 'http://hl7.org/fhir/ValueSet/route-codes' which is experimental, but this structure is not labeled as experimental
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.adr, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'https://hl7.pt/fhir/ADR/StructureDefinition/Alergia'): The Implementation Guide contains no examples for this profile
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-Alergia: URL Mismatch http://hl7.pt/fhir/StructureDefinition/Alergia vs https://hl7.pt/fhir/ADR/StructureDefinition/Alergia
+== fsh-generated/resources/StructureDefinition-ReacaoAdversa.json ==
+ERROR: StructureDefinition.where(url = 'https://hl7.pt/fhir/ADR/StructureDefinition/ReacaoAdversa'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-ReacaoAdversa.json - the canonical URL (http://hl7.pt/fhir/StructureDefinition/ReacaoAdversa) does not match the URL (https://hl7.pt/fhir/ADR/StructureDefinition/ReacaoAdversa)
+INFORMATION: StructureDefinition/ReacaoAdversa: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: StructureDefinition/ReacaoAdversa: StructureDefinition.snapshot.element[12].binding: The definition for the element 'AdverseEvent.category' binds to the value set 'http://hl7.org/fhir/ValueSet/adverse-event-category' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/ReacaoAdversa: StructureDefinition.snapshot.element[13].binding: The definition for the element 'AdverseEvent.code' binds to the value set 'http://hl7.org/fhir/ValueSet/adverse-event-type' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/ReacaoAdversa: StructureDefinition.snapshot.element[21].binding: The definition for the element 'AdverseEvent.seriousness' binds to the value set 'http://hl7.org/fhir/ValueSet/adverse-event-seriousness' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/ReacaoAdversa: StructureDefinition.snapshot.element[22].binding: The definition for the element 'AdverseEvent.outcome' binds to the value set 'http://hl7.org/fhir/ValueSet/adverse-event-outcome' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/ReacaoAdversa: StructureDefinition.snapshot.element[28].binding: The definition for the element 'AdverseEvent.participant.function' binds to the value set 'http://hl7.org/fhir/ValueSet/adverse-event-participant-function' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/ReacaoAdversa: StructureDefinition.snapshot.element[41].binding: The definition for the element 'AdverseEvent.suspectEntity.causality.assessmentMethod' binds to the value set 'http://hl7.org/fhir/ValueSet/adverse-event-causality-method' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/ReacaoAdversa: StructureDefinition.snapshot.element[42].binding: The definition for the element 'AdverseEvent.suspectEntity.causality.entityRelatedness' binds to the value set 'http://hl7.org/fhir/ValueSet/adverse-event-causality-assess' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/ReacaoAdversa: StructureDefinition.snapshot.element[48].binding: The definition for the element 'AdverseEvent.contributingFactor.item[x]' binds to the value set 'http://hl7.org/fhir/ValueSet/adverse-event-contributing-factor' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/ReacaoAdversa: StructureDefinition.snapshot.element[53].binding: The definition for the element 'AdverseEvent.preventiveAction.item[x]' binds to the value set 'http://hl7.org/fhir/ValueSet/adverse-event-preventive-action' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/ReacaoAdversa: StructureDefinition.snapshot.element[58].binding: The definition for the element 'AdverseEvent.mitigatingAction.item[x]' binds to the value set 'http://hl7.org/fhir/ValueSet/adverse-event-mitigating-action' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/ReacaoAdversa: StructureDefinition.snapshot.element[63].binding: The definition for the element 'AdverseEvent.supportingInfo.item[x]' binds to the value set 'http://hl7.org/fhir/ValueSet/adverse-event-supporting-info' which is experimental, but this structure is not labeled as experimental
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.adr, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'https://hl7.pt/fhir/ADR/StructureDefinition/ReacaoAdversa'): The Implementation Guide contains no examples for this profile
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-ReacaoAdversa: URL Mismatch http://hl7.pt/fhir/StructureDefinition/ReacaoAdversa vs https://hl7.pt/fhir/ADR/StructureDefinition/ReacaoAdversa

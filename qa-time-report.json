@@ -1,0 +1,184 @@
+{
+  "date" : "Mon, 23 Sep, 2024 13:07:10 +0000",
+  "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
+  "files" : [
+    {
+      "name" : "/fsh-generated/resources/ImplementationGuide-hl7.fhir.pt.adr.json",
+      "size" : 3672,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 31,
+          "length" : 18
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 31,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 31,
+          "length" : 81
+        },
+        {
+          "activity" : "validate",
+          "start" : 33,
+          "length" : 291
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 33,
+          "length" : 1
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 33,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 33,
+          "length" : 47
+        },
+        {
+          "activity" : "generate2",
+          "start" : 35,
+          "length" : 48
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 44,
+          "length" : 1
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 49,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-Alergia.json",
+      "size" : 1458,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 28,
+          "length" : 22
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 31,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 31,
+          "length" : 12
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 31,
+          "length" : 69
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 31,
+          "length" : 61
+        },
+        {
+          "activity" : "validate",
+          "start" : 31,
+          "length" : 1072
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 33,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 33,
+          "length" : 152
+        },
+        {
+          "activity" : "generate2",
+          "start" : 35,
+          "length" : 2653
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 44,
+          "length" : 6
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-ReacaoAdversa.json",
+      "size" : 1245,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 28,
+          "length" : 18
+        },
+        {
+          "activity" : "scan",
+          "start" : 31,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 31,
+          "length" : 13
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 31,
+          "length" : 74
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 31,
+          "length" : 40
+        },
+        {
+          "activity" : "validate",
+          "start" : 32,
+          "length" : 507
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 33,
+          "length" : 1
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 33,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 33,
+          "length" : 199
+        },
+        {
+          "activity" : "generate2",
+          "start" : 38,
+          "length" : 855
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 44,
+          "length" : 8
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 49,
+          "length" : 1
+        }
+      ]
+    }
+  ]
+}

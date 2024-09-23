@@ -1,0 +1,23 @@
+[
+  {
+    "id" : "hl7.fhir.pt.adr",
+    "type" : "ImplementationGuide",
+    "url" : "http://hl7.pt/fhir/ImplementationGuide/hl7.fhir.pt.adr",
+    "version" : "1.0.0",
+    "name" : "ADRPTIG"
+  },
+  {
+    "id" : "Alergia",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/ADR/StructureDefinition/Alergia",
+    "version" : "1.0.0",
+    "name" : "Alergia"
+  },
+  {
+    "id" : "ReacaoAdversa",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/ADR/StructureDefinition/ReacaoAdversa",
+    "version" : "1.0.0",
+    "name" : "ReacaoAdversa"
+  }
+]

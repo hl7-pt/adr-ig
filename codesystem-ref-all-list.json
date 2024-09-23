@@ -1,0 +1,200 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.org/fhir/adverse-event-actuality",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "AdverseEventActuality",
+      "title" : "Adverse Event Actuality",
+      "description" : "Overall nature of the adverse event, e.g. real or potential.",
+      "oids" : ["2.16.840.1.113883.4.642.4.832"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-adverse-event-actuality.html" : "Adverse Event Actuality"
+    },
+    {
+      "url" : "http://hl7.org/fhir/allergy-intolerance-category",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "AllergyIntoleranceCategory",
+      "title" : "Allergy Intolerance Category",
+      "description" : "Category of an identified substance associated with allergies or intolerances.",
+      "oids" : [
+        "2.16.840.1.113883.4.642.2.53",
+        "2.16.840.1.113883.4.642.4.134",
+        "2.16.840.1.113883.4.642.1.124"
+      ],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-allergy-intolerance-category.html" : "Allergy Intolerance Category"
+    },
+    {
+      "url" : "http://hl7.org/fhir/allergy-intolerance-criticality",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "AllergyIntoleranceCriticality",
+      "title" : "Allergy Intolerance Criticality",
+      "description" : "Estimate of the potential clinical harm, or seriousness, of a reaction to an identified substance.",
+      "oids" : [
+        "2.16.840.1.113883.4.642.1.120",
+        "2.16.840.1.113883.4.642.4.130",
+        "2.16.840.1.113883.4.642.2.51"
+      ],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-allergy-intolerance-criticality.html" : "Allergy Intolerance Criticality"
+    },
+    {
+      "url" : "http://hl7.org/fhir/allergy-intolerance-type",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "AllergyIntoleranceType",
+      "title" : "Allergy Intolerance Type",
+      "description" : "Identification of the underlying physiological mechanism for a Reaction Risk.",
+      "oids" : [
+        "2.16.840.1.113883.4.642.4.132",
+        "2.16.840.1.113883.4.642.1.122",
+        "2.16.840.1.113883.4.642.2.52"
+      ],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-allergy-intolerance-type.html" : "Allergy Intolerance Type"
+    },
+    {
+      "url" : "http://hl7.org/fhir/event-status",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "EventStatus",
+      "title" : "EventStatus",
+      "description" : "Codes identifying the lifecycle stage of an event.",
+      "oids" : ["2.16.840.1.113883.4.642.4.110"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-adverse-event-status.html" : "Adverse Event Status"
+    },
+    {
+      "url" : "http://hl7.org/fhir/reaction-event-severity",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "AllergyIntoleranceSeverity",
+      "title" : "Allergy Intolerance Severity",
+      "description" : "Clinical assessment of the severity of a reaction event as a whole, potentially considering multiple different manifestations.",
+      "oids" : [
+        "2.16.840.1.113883.4.642.2.56",
+        "2.16.840.1.113883.4.642.1.126",
+        "2.16.840.1.113883.4.642.4.136"
+      ],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-reaction-event-severity.html" : "Allergy Intolerance Severity"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/adverse-event-category",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "AdverseEventCategory",
+      "title" : "AdverseEventCategory",
+      "description" : "Overall categorization of the event, e.g. product-related or situational.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1251"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-adverse-event-category.html" : "Adverse Event Category"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/adverse-event-causality-assess",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "AdverseEventCausalityAssessment",
+      "title" : "AdverseEventCausalityAssessment",
+      "description" : "Codes for the assessment of whether the entity caused the event.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1254"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-adverse-event-causality-assess.html" : "Adverse Event Causality Assessment"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/adverse-event-causality-method",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "AdverseEventCausalityMethod",
+      "title" : "AdverseEventCausalityMethod",
+      "description" : "TODO.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1255"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-adverse-event-causality-method.html" : "Adverse Event Causality Method"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/adverse-event-seriousness",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "AdverseEventSeriousness",
+      "title" : "AdverseEventSeriousness",
+      "description" : "Overall seriousness of this event for the patient.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1253"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-adverse-event-seriousness.html" : "Adverse Event Seriousness"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "AllergyIntoleranceClinicalStatusCodes",
+      "title" : "AllergyIntolerance Clinical Status Codes",
+      "description" : "Preferred value set for AllergyIntolerance Clinical Status.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1373"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-allergyintolerance-clinical.html" : "AllergyIntolerance Clinical Status Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "AllergyIntoleranceVerificationStatus",
+      "title" : "AllergyIntolerance Verification Status",
+      "description" : "The verification status to support or decline the clinical status of the allergy or intolerance.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1371"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-allergyintolerance-verification.html" : "AllergyIntolerance Verification Status"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/extra-security-role-type",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "SecurityRoleType",
+      "title" : "Security Role Type",
+      "description" : "This CodeSystem contains Additional FHIR-defined Security Role types not defined elsewhere",
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-participation-role-type.html" : "Participation Role Type"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "ParticipationType",
+      "title" : "ParticipationType",
+      "description" : "A code specifying the meaning and purpose of every Participation instance. Each of its values implies specific constraints on the Roles undertaking the participation.",
+      "oids" : ["2.16.840.1.113883.5.90"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-adverse-event-participant-function.html" : "AdverseEvent Participant Function"
+    },
+    {
+      "url" : "urn:ietf:bcp:47",
+      "version" : "2.0.1",
+      "status" : "active",
+      "name" : "Ietf3066",
+      "title" : "Tags for the Identification of Languages",
+      "description" : "Older value from OID registry.  Superceded; see recommendations in BCP-47.",
+      "oids" : ["2.16.840.1.113883.6.121"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-languages.html" : "Common Languages",
+      "http://hl7.org/fhir/R5/valueset-all-languages.html" : "All Languages"
+    }
+  ]
+}
