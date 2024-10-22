@@ -5,7 +5,7 @@ Title: "Perfil para notificação de RAM"
 Description: "Perfil para notificação de RAM"
 
 
-* identifier MS
+* identifier 1..1 MS
 * subject MS
 * recorder MS
 * suspectEntity 1..1 MS
@@ -18,7 +18,7 @@ Title: "Perfil para notificação de alergia"
 Description: "Perfil para notificação de alergia"
 
 
-* identifier MS
+* identifier 1..1 MS
 * clinicalStatus MS
 * verificationStatus MS
 * category 1..1 MS
