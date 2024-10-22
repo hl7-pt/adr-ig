@@ -5,7 +5,7 @@ Title: "Perfil para notificação de RAM"
 Description: "Perfil para notificação de RAM"
 
 
-* identifier 1..1 MS
+* identifier 1..* MS
 * subject MS
 * recorder MS
 * suspectEntity 1..1 MS
