@@ -14,6 +14,7 @@ Este FHIR Implementation Guide tem como objectivo especificar a troca de informa
 
 Sendo que a suspeita de RAMs e Alergias é transversal à prática clinica, surge muitas vezes a necessidade de as registar. Esta informação, quanto mais partilhada, mais segurança pode trazer aos doentes e mais evidencia e informação consegue promover nos prestadores de saúde. Assim, vamos detalhar possiveis workflows, formatos de informação e recursos a serem utilizados no *standard* HL7 FHIR.
 
+Os modelos lógicos foram retirados do formato atual de comunicação de suspeitas de RAMs para o INFARMED, I.P. através do link [https://extranet.infarmed.pt/esb/API/PortalRAM-WS/NotificacaoRamService/2018/01/SOAP/NotificacaoRam?wsdl](https://extranet.infarmed.pt/esb/API/PortalRAM-WS/NotificacaoRamService/2018/01/SOAP/NotificacaoRam?wsdl).
 
 ### Autores e contribuidores
 

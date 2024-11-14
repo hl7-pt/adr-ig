@@ -6,20 +6,27 @@ Description: "Perfil para notificação de RAM"
 
 
 * identifier 1..* MS
-* suspectEntity.instance[x] ^short = "Identificação da reacção"
+* identifier ^short = "Identificação da reacção"
 
 * subject MS
-* suspectEntity.instance[x] ^short = "Doente sobre o qual existiu uma potencial reacção"
+* subject ^short = "Doente sobre o qual existiu uma potencial reacção"
 
 * recorder MS
-* suspectEntity.instance[x] ^short = "Notificador"
+* recorder ^short = "Notificador"
 
 * suspectEntity 1..1 MS
 * suspectEntity.instance[x] MS
 * suspectEntity.instance[x] ^short = "Medicamento suspeito da reaação adversa"
 
+* seriousness MS
+* seriousness from GravidadeVS (required)
+* outcome MS 
+* outcome from EvolucaoVS (required)
+
 * suspectEntity.causality.entityRelatedness MS
-* suspectEntity.causality.assessmentMethod ^short = "Grau de causalidade"
+* suspectEntity.causality.entityRelatedness from causalidadeVS (required)
+
+* suspectEntity.causality.entityRelatedness ^short = "Grau de causalidade"
 
 * suspectEntity.causality.assessmentMethod MS
 * suspectEntity.causality.assessmentMethod ^short = "Método de imputação de causalidade"

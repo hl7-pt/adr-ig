@@ -21,6 +21,8 @@ Characteristics: #can-be-target
 * idadeDataRam 0..1 integer "Idade do doente à data do acontecimento da RAM"
 * idadeDataRamPrecisao 0..1 code "Precisão Idade do doente à data do acontecimento da RAM"
 * genero 0..1  code "Género do doente"
+* pesoKg 0..1 decimal "Peso em Kg"
+* alturaCm 0..1 decimal "Altura em cms"
 
 Logical: reacaoAdversaLM
 Title: "Reacção Adversa (modelo)"
@@ -34,7 +36,8 @@ Characteristics: #can-be-target
 * dataInicioReacaoPrecisao 0..1 code "Precisão da Data de inicio da reacção"
 * duracao 0..1  integer "Duração"
 * duracaoPrecisao 0..1  code "Precisão da duração"
-
+* tratamento 0..1 string  ""
+* causalidade 0..1  code "Causalidade"
 Logical: medicamentoLM
 Title: "Medicamento (modelo)"
 Description: "Modelo Lógico - Medicamento"
@@ -68,8 +71,15 @@ Characteristics: #can-be-target
 * codigoPostal 0..1  string "Código Postal"
 * qualificacao 0..1  string "Qualificação"
 * email 0..1  string "email"
-
-
+* telefone 0..1 string "telefone"
+* numeroCarteira 0..1  string "Carteira Profissional"
+* reAdvComunicadaPs 0..1 string ""
+* psComunicouInfarmed 0..1 string ""
+* autInfarmdContactarPs 0..1 string ""
+* nomePsContactar 0..1 string ""
+* telefonePsContactar 0..1 string ""
+* localTrabalhoPsContactar 0..1 string ""
+* qualificacaoPsContactar 0..1 string ""
 
 Logical: informacoesLM
 Title: "Informações Adicionais (modelo)"
