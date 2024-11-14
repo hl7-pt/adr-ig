@@ -1,14 +1,19 @@
 
 Instance: AdverseEvent-1
-InstanceOf: AdverseEvent
-Description: "Example of Patient"
+InstanceOf: ReacaoAdversa
+Description: "Exemplo de uma reacção adversa"
 
 * identifier.system = "http:/example.org"
 * identifier.value = "1"
 
+* extension[EffectCodeableConcept].valueCodeableConcept = http://example.org#1 "aftas orais"
 * status = #completed
 * actuality = #actual
-* subject.display = "patient"
+* subject.identifier.system = "https://instituição.pt/ids"
+* subject.identifier.value = "xxx"
 
+* detected = "2024-11-14"
+* recordedDate = "2024-11-14"
 
-* suspectEntity.instanceCodeableConcept = http://example.org#1 "fruto 1"
+* seriousness = http://example.org#serious
+* suspectEntity.instanceCodeableConcept = http://example.org#1 "Evrysdi / Risdiplam"
