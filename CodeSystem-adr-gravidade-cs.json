@@ -1,0 +1,74 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "adr-gravidade-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem adr-gravidade-cs</b></p><a name=\"adr-gravidade-cs\"> </a><a name=\"hcadr-gravidade-cs\"> </a><a name=\"adr-gravidade-cs-en-US\"> </a><p>This  code system <code>http://terminology.hl7.pt/CodeSystem/adr-gravidade</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">MORTE<a name=\"adr-gravidade-cs-MORTE\"> </a></td><td>Morte</td><td>Morte</td></tr><tr><td style=\"white-space:nowrap\">RISCOVIDA<a name=\"adr-gravidade-cs-RISCOVIDA\"> </a></td><td>Risco de vida</td><td>Risco de vida</td></tr><tr><td style=\"white-space:nowrap\">HOSP<a name=\"adr-gravidade-cs-HOSP\"> </a></td><td>Hospitalização</td><td>Hospitalização</td></tr><tr><td style=\"white-space:nowrap\">INCAPACIDADE<a name=\"adr-gravidade-cs-INCAPACIDADE\"> </a></td><td>Incapacidade</td><td>Incapacidade</td></tr><tr><td style=\"white-space:nowrap\">ANOMALIA<a name=\"adr-gravidade-cs-ANOMALIA\"> </a></td><td>Anomalia congénita</td><td>Anomalia congénita</td></tr><tr><td style=\"white-space:nowrap\">CI<a name=\"adr-gravidade-cs-CI\"> </a></td><td>Clinicamente importante</td><td>Clinicamente importante</td></tr></table></div>"
+  },
+  "url" : "http://terminology.hl7.pt/CodeSystem/adr-gravidade",
+  "version" : "1.0.0",
+  "name" : "GravidadeCS",
+  "title" : "Causalidade code system",
+  "status" : "active",
+  "date" : "2024-11-15T09:46:36+00:00",
+  "publisher" : "HL7 Portugal",
+  "contact" : [{
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.pt"
+    },
+    {
+      "system" : "email",
+      "value" : "info@hl7.pt"
+    }]
+  },
+  {
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "geral@hl7.pt",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Causalidade code system",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "content" : "complete",
+  "count" : 6,
+  "concept" : [{
+    "code" : "MORTE",
+    "display" : "Morte",
+    "definition" : "Morte"
+  },
+  {
+    "code" : "RISCOVIDA",
+    "display" : "Risco de vida",
+    "definition" : "Risco de vida"
+  },
+  {
+    "code" : "HOSP",
+    "display" : "Hospitalização",
+    "definition" : "Hospitalização"
+  },
+  {
+    "code" : "INCAPACIDADE",
+    "display" : "Incapacidade",
+    "definition" : "Incapacidade"
+  },
+  {
+    "code" : "ANOMALIA",
+    "display" : "Anomalia congénita",
+    "definition" : "Anomalia congénita"
+  },
+  {
+    "code" : "CI",
+    "display" : "Clinicamente importante",
+    "definition" : "Clinicamente importante"
+  }]
+}

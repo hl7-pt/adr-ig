@@ -1,0 +1,74 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "adr-causalidade-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem adr-causalidade-cs</b></p><a name=\"adr-causalidade-cs\"> </a><a name=\"hcadr-causalidade-cs\"> </a><a name=\"adr-causalidade-cs-en-US\"> </a><p>This  code system <code>http://terminology.hl7.pt/CodeSystem/adr-causalidade</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">DEF<a name=\"adr-causalidade-cs-DEF\"> </a></td><td>Definitivo</td><td>Definitivo</td></tr><tr><td style=\"white-space:nowrap\">PROV<a name=\"adr-causalidade-cs-PROV\"> </a></td><td>Provável</td><td>Provável</td></tr><tr><td style=\"white-space:nowrap\">POSS<a name=\"adr-causalidade-cs-POSS\"> </a></td><td>Possível</td><td>Possível</td></tr><tr><td style=\"white-space:nowrap\">COND<a name=\"adr-causalidade-cs-COND\"> </a></td><td>Condicional</td><td>Condicional</td></tr><tr><td style=\"white-space:nowrap\">IMPR<a name=\"adr-causalidade-cs-IMPR\"> </a></td><td>Improvável</td><td>Improvável</td></tr><tr><td style=\"white-space:nowrap\">NC<a name=\"adr-causalidade-cs-NC\"> </a></td><td>Não Classificável</td><td>Não Classificável</td></tr></table></div>"
+  },
+  "url" : "http://terminology.hl7.pt/CodeSystem/adr-causalidade",
+  "version" : "1.0.0",
+  "name" : "causalidadeCS",
+  "title" : "Causalidade code system",
+  "status" : "active",
+  "date" : "2024-11-15T09:46:36+00:00",
+  "publisher" : "HL7 Portugal",
+  "contact" : [{
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.pt"
+    },
+    {
+      "system" : "email",
+      "value" : "info@hl7.pt"
+    }]
+  },
+  {
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "geral@hl7.pt",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Causalidade code system",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "content" : "complete",
+  "count" : 6,
+  "concept" : [{
+    "code" : "DEF",
+    "display" : "Definitivo",
+    "definition" : "Definitivo"
+  },
+  {
+    "code" : "PROV",
+    "display" : "Provável",
+    "definition" : "Provável"
+  },
+  {
+    "code" : "POSS",
+    "display" : "Possível",
+    "definition" : "Possível"
+  },
+  {
+    "code" : "COND",
+    "display" : "Condicional",
+    "definition" : "Condicional"
+  },
+  {
+    "code" : "IMPR",
+    "display" : "Improvável",
+    "definition" : "Improvável"
+  },
+  {
+    "code" : "NC",
+    "display" : "Não Classificável",
+    "definition" : "Não Classificável"
+  }]
+}

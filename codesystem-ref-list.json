@@ -1,0 +1,37 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://terminology.hl7.pt/CodeSystem/adr-causalidade",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "causalidadeCS",
+      "title" : "Causalidade code system",
+      "description" : "Causalidade code system",
+      "uses" : {
+      },
+      "ValueSet-adr-causalidade-vs.html" : "Causalidade ValueSet"
+    },
+    {
+      "url" : "http://terminology.hl7.pt/CodeSystem/adr-evolucao",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "EvolucaoCS",
+      "title" : "Evolução de uma RAM code system",
+      "description" : "Evolução de uma RAM code system",
+      "uses" : {
+      },
+      "ValueSet-adr-evolucao-vs.html" : "Evolução de uma RAM ValueSet"
+    },
+    {
+      "url" : "http://terminology.hl7.pt/CodeSystem/adr-gravidade",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "GravidadeCS",
+      "title" : "Causalidade code system",
+      "description" : "Causalidade code system",
+      "uses" : {
+      },
+      "ValueSet-adr-gravidade-vs.html" : "Gravidade RAM ValueSet"
+    }
+  ]
+}

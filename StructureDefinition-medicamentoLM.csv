@@ -1,0 +1,27 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping"
+"medicamentoLM","medicamentoLM","","","",0,*,"","","","null {[]} {[]}
+","Medicamento (modelo)","Modelo Lógico - Medicamento","","","","","","","","","",,,,,"",,,,"Base",0,*,"","","n/a"
+"medicamentoLM.nomeMedicamento","medicamentoLM.nomeMedicamento","","","",1,1,"","","","string {[]} {[]}
+","Nome do medicamento","Nome do medicamento","","","","","","","","","",,,,,"",,,,"medicamentoLM.nomeMedicamento",1,1,"",""
+"medicamentoLM.lote","medicamentoLM.lote","","","",0,1,"","","","string {[]} {[]}
+","Número de ltoe","Número de ltoe","","","","","","","","","",,,,,"",,,,"medicamentoLM.lote",0,1,"",""
+"medicamentoLM.posologia","medicamentoLM.posologia","","","",0,1,"","","","string {[]} {[]}
+","Posologia","Posologia","","","","","","","","","",,,,,"",,,,"medicamentoLM.posologia",0,1,"",""
+"medicamentoLM.dataInicioTomaMedicamento","medicamentoLM.dataInicioTomaMedicamento","","","",0,1,"","","","dateTime {[]} {[]}
+","Data de inicio da toma do medicamento","Data de inicio da toma do medicamento","","","","","","","","","",,,,,"",,,,"medicamentoLM.dataInicioTomaMedicamento",0,1,"",""
+"medicamentoLM.dataInicioTomaMedicamentoPrecisao","medicamentoLM.dataInicioTomaMedicamentoPrecisao","","","",0,1,"","","","code {[]} {[]}
+","Precisão de data de inicio da toma do medicamento","Precisão de data de inicio da toma do medicamento","","","","","","","","","",,,,,"",,,,"medicamentoLM.dataInicioTomaMedicamentoPrecisao",0,1,"",""
+"medicamentoLM.dataFimTomaMedicamento","medicamentoLM.dataFimTomaMedicamento","","","",0,1,"","","","dateTime {[]} {[]}
+","Data de fim da toma do medicamento","Data de fim da toma do medicamento","","","","","","","","","",,,,,"",,,,"medicamentoLM.dataFimTomaMedicamento",0,1,"",""
+"medicamentoLM.dataFimTomaMedicamentoPrecisao","medicamentoLM.dataFimTomaMedicamentoPrecisao","","","",0,1,"","","","code {[]} {[]}
+","Precisão de data de fim da toma do medicamento","Precisão de data de fim da toma do medicamento","","","","","","","","","",,,,,"",,,,"medicamentoLM.dataFimTomaMedicamentoPrecisao",0,1,"",""
+"medicamentoLM.dosagem","medicamentoLM.dosagem","","","",0,1,"","","","string {[]} {[]}
+","Dosagem","Dosagem","","","","","","","","","",,,,,"",,,,"medicamentoLM.dosagem",0,1,"",""
+"medicamentoLM.medidaTomada","medicamentoLM.medidaTomada","","","",0,1,"","","","code {[]} {[]}
+","Qual a medida tomada","Qual a medida tomada","","","","","","","","","",,,,,"",,,,"medicamentoLM.medidaTomada",0,1,"",""
+"medicamentoLM.viaAdministracaoCode","medicamentoLM.viaAdministracaoCode","","","",0,1,"","","","string {[]} {[]}
+","Via de administração","Via de administração","","","","","","","","","",,,,,"",,,,"medicamentoLM.viaAdministracaoCode",0,1,"",""
+"medicamentoLM.tipoAutorizacaoCode","medicamentoLM.tipoAutorizacaoCode","","","",0,1,"","","","code {[]} {[]}
+","Tipo de Autorização","Tipo de Autorização","","","","","","","","","",,,,,"",,,,"medicamentoLM.tipoAutorizacaoCode",0,1,"",""
+"medicamentoLM.indicacaoTerapeutica","medicamentoLM.indicacaoTerapeutica","","","",0,1,"","","","string {[]} {[]}
+","Indicação Terapêutica do medicamento","Indicação Terapêutica do medicamento","","","","","","","","","",,,,,"",,,,"medicamentoLM.indicacaoTerapeutica",0,1,"",""

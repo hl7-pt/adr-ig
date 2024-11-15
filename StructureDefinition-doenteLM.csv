@@ -1,0 +1,19 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping"
+"doenteLM","doenteLM","","","",0,*,"","","","null {[]} {[]}
+","Doente (modelo)","Modelo Lógico - Doente","","","","","","","","","",,,,,"",,,,"Base",0,*,"","","n/a"
+"doenteLM.Iniciais","doenteLM.Iniciais","","","",1,1,"","","","string {[]} {[]}
+","Iniciais do Doente","Iniciais do Doente","","","","","","","","","",,,,,"",,,,"doenteLM.Iniciais",1,1,"",""
+"doenteLM.dataNascimento","doenteLM.dataNascimento","","","",0,1,"","","","dateTime {[]} {[]}
+","Data de nascimento","Data de nascimento","","","","","","","","","",,,,,"",,,,"doenteLM.dataNascimento",0,1,"",""
+"doenteLM.dataNascimentoPrecisao","doenteLM.dataNascimentoPrecisao","","","",0,1,"","","","code {[]} {[]}
+","Precisão da data de nascimento","Precisão da data de nascimento","","","","","","","","","",,,,,"",,,,"doenteLM.dataNascimentoPrecisao",0,1,"",""
+"doenteLM.idadeDataRam","doenteLM.idadeDataRam","","","",0,1,"","","","integer {[]} {[]}
+","Idade do doente à data do acontecimento da RAM","Idade do doente à data do acontecimento da RAM","","","","","","","","","",,,,,"",,,,"doenteLM.idadeDataRam",0,1,"",""
+"doenteLM.idadeDataRamPrecisao","doenteLM.idadeDataRamPrecisao","","","",0,1,"","","","code {[]} {[]}
+","Precisão Idade do doente à data do acontecimento da RAM","Precisão Idade do doente à data do acontecimento da RAM","","","","","","","","","",,,,,"",,,,"doenteLM.idadeDataRamPrecisao",0,1,"",""
+"doenteLM.genero","doenteLM.genero","","","",0,1,"","","","code {[]} {[]}
+","Género do doente","Género do doente","","","","","","","","","",,,,,"",,,,"doenteLM.genero",0,1,"",""
+"doenteLM.pesoKg","doenteLM.pesoKg","","","",0,1,"","","","decimal {[]} {[]}
+","Peso em Kg","Peso em Kg","","","","","","","","","",,,,,"",,,,"doenteLM.pesoKg",0,1,"",""
+"doenteLM.alturaCm","doenteLM.alturaCm","","","",0,1,"","","","decimal {[]} {[]}
+","Altura em cms","Altura em cms","","","","","","","","","",,,,,"",,,,"doenteLM.alturaCm",0,1,"",""

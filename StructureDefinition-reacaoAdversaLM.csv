@@ -1,0 +1,21 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping"
+"reacaoAdversaLM","reacaoAdversaLM","","","",0,*,"","","","null {[]} {[]}
+","Reacção Adversa (modelo)","Modelo Lógico - Reacção Adversa","","","","","","","","","",,,,,"",,,,"Base",0,*,"","","n/a"
+"reacaoAdversaLM.descricaoReacao","reacaoAdversaLM.descricaoReacao","","","",1,1,"","","","string {[]} {[]}
+","Descrição da reacção","Descrição da reacção","","","","","","","","","",,,,,"",,,,"reacaoAdversaLM.descricaoReacao",1,1,"",""
+"reacaoAdversaLM.evolucao","reacaoAdversaLM.evolucao","","","",0,1,"","","","code {[]} {[]}
+","Evolução da reacção","Evolução da reacção","","","","","","","","","",,,,,"",,,,"reacaoAdversaLM.evolucao",0,1,"",""
+"reacaoAdversaLM.criterioGravidade","reacaoAdversaLM.criterioGravidade","","","",0,1,"","","","code {[]} {[]}
+","Gravidade","Gravidade","","","","","","","","","",,,,,"",,,,"reacaoAdversaLM.criterioGravidade",0,1,"",""
+"reacaoAdversaLM.dataInicioReacao","reacaoAdversaLM.dataInicioReacao","","","",0,1,"","","","dateTime {[]} {[]}
+","Data de inicio da reacção","Data de inicio da reacção","","","","","","","","","",,,,,"",,,,"reacaoAdversaLM.dataInicioReacao",0,1,"",""
+"reacaoAdversaLM.dataInicioReacaoPrecisao","reacaoAdversaLM.dataInicioReacaoPrecisao","","","",0,1,"","","","code {[]} {[]}
+","Precisão da Data de inicio da reacção","Precisão da Data de inicio da reacção","","","","","","","","","",,,,,"",,,,"reacaoAdversaLM.dataInicioReacaoPrecisao",0,1,"",""
+"reacaoAdversaLM.duracao","reacaoAdversaLM.duracao","","","",0,1,"","","","integer {[]} {[]}
+","Duração","Duração","","","","","","","","","",,,,,"",,,,"reacaoAdversaLM.duracao",0,1,"",""
+"reacaoAdversaLM.duracaoPrecisao","reacaoAdversaLM.duracaoPrecisao","","","",0,1,"","","","code {[]} {[]}
+","Precisão da duração","Precisão da duração","","","","","","","","","",,,,,"",,,,"reacaoAdversaLM.duracaoPrecisao",0,1,"",""
+"reacaoAdversaLM.tratamento","reacaoAdversaLM.tratamento","","","",0,1,"","","","string {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"reacaoAdversaLM.tratamento",0,1,"",""
+"reacaoAdversaLM.causalidade","reacaoAdversaLM.causalidade","","","",0,1,"","","","code {[]} {[]}
+","Causalidade","Causalidade","","","","","","","","","",,,,,"",,,,"reacaoAdversaLM.causalidade",0,1,"",""

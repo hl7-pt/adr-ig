@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="reacaoAdversaLM"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: StructureDefinition reacaoAdversaLM</b></p><a name="reacaoAdversaLM"> </a><a name="hcreacaoAdversaLM"> </a><a name="reacaoAdversaLM-en-US"> </a><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="The logical name of the element">Name</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element">Flags</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the element can appear in the instance">Card.</a></th><th style="width: 100px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element">Type</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-reacaoAdversaLM-definitions.html#reacaoAdversaLM" title="Modelo Lógico - Reacção Adversa">reacaoAdversaLM</a><a name="reacaoAdversaLM"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/types.html#Base">Base</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Reacção Adversa (modelo)<br/><span style="font-weight:bold">Instances of this logical model can be the target of a Reference</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-reacaoAdversaLM-definitions.html#reacaoAdversaLM.descricaoReacao" title="Descrição da reacção">descricaoReacao</a><a name="reacaoAdversaLM.descricaoReacao"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Descrição da reacção</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-reacaoAdversaLM-definitions.html#reacaoAdversaLM.evolucao" title="Evolução da reacção">evolucao</a><a name="reacaoAdversaLM.evolucao"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Evolução da reacção</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-reacaoAdversaLM-definitions.html#reacaoAdversaLM.criterioGravidade" title="Gravidade">criterioGravidade</a><a name="reacaoAdversaLM.criterioGravidade"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Gravidade</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-reacaoAdversaLM-definitions.html#reacaoAdversaLM.dataInicioReacao" title="Data de inicio da reacção">dataInicioReacao</a><a name="reacaoAdversaLM.dataInicioReacao"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">dateTime</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Data de inicio da reacção</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-reacaoAdversaLM-definitions.html#reacaoAdversaLM.dataInicioReacaoPrecisao" title="Precisão da Data de inicio da reacção">dataInicioReacaoPrecisao</a><a name="reacaoAdversaLM.dataInicioReacaoPrecisao"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Precisão da Data de inicio da reacção</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-reacaoAdversaLM-definitions.html#reacaoAdversaLM.duracao" title="Duração">duracao</a><a name="reacaoAdversaLM.duracao"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#integer">integer</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Duração</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-reacaoAdversaLM-definitions.html#reacaoAdversaLM.duracaoPrecisao" title="Precisão da duração">duracaoPrecisao</a><a name="reacaoAdversaLM.duracaoPrecisao"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Precisão da duração</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-reacaoAdversaLM-definitions.html#reacaoAdversaLM.tratamento">tratamento</a><a name="reacaoAdversaLM.tratamento"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-reacaoAdversaLM-definitions.html#reacaoAdversaLM.causalidade" title="Causalidade">causalidade</a><a name="reacaoAdversaLM.causalidade"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Causalidade</td></tr>
+<tr><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/tools/StructureDefinition/logical-target">
+    <valueBoolean value="true"/>
+  </extension>
+  <url value="https://hl7.pt/fhir/ADR/StructureDefinition/reacaoAdversaLM"/>
+  <version value="1.0.0"/>
+  <name value="reacaoAdversaLM"/>
+  <title value="Reacção Adversa (modelo)"/>
+  <status value="active"/>
+  <date value="2024-11-15T09:46:36+00:00"/>
+  <publisher value="HL7 Portugal"/>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.pt"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.pt"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="email"/>
+      <value value="geral@hl7.pt"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Modelo Lógico - Reacção Adversa"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <fhirVersion value="5.0.0"/>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM Mapping"/>
+  </mapping>
+  <kind value="logical"/>
+  <abstract value="false"/>
+  <type value="https://hl7.pt/fhir/ADR/StructureDefinition/reacaoAdversaLM"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
+  <derivation value="specialization"/>
+  <snapshot>
+    <element id="reacaoAdversaLM">
+      <path value="reacaoAdversaLM"/>
+      <short value="Reacção Adversa (modelo)"/>
+      <definition value="Modelo Lógico - Reacção Adversa"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Base"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <isModifier value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="reacaoAdversaLM.descricaoReacao">
+      <path value="reacaoAdversaLM.descricaoReacao"/>
+      <short value="Descrição da reacção"/>
+      <definition value="Descrição da reacção"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="reacaoAdversaLM.descricaoReacao"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="reacaoAdversaLM.evolucao">
+      <path value="reacaoAdversaLM.evolucao"/>
+      <short value="Evolução da reacção"/>
+      <definition value="Evolução da reacção"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="reacaoAdversaLM.evolucao"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+    </element>
+    <element id="reacaoAdversaLM.criterioGravidade">
+      <path value="reacaoAdversaLM.criterioGravidade"/>
+      <short value="Gravidade"/>
+      <definition value="Gravidade"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="reacaoAdversaLM.criterioGravidade"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+    </element>
+    <element id="reacaoAdversaLM.dataInicioReacao">
+      <path value="reacaoAdversaLM.dataInicioReacao"/>
+      <short value="Data de inicio da reacção"/>
+      <definition value="Data de inicio da reacção"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="reacaoAdversaLM.dataInicioReacao"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="reacaoAdversaLM.dataInicioReacaoPrecisao">
+      <path value="reacaoAdversaLM.dataInicioReacaoPrecisao"/>
+      <short value="Precisão da Data de inicio da reacção"/>
+      <definition value="Precisão da Data de inicio da reacção"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="reacaoAdversaLM.dataInicioReacaoPrecisao"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+    </element>
+    <element id="reacaoAdversaLM.duracao">
+      <path value="reacaoAdversaLM.duracao"/>
+      <short value="Duração"/>
+      <definition value="Duração"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="reacaoAdversaLM.duracao"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="integer"/>
+      </type>
+    </element>
+    <element id="reacaoAdversaLM.duracaoPrecisao">
+      <path value="reacaoAdversaLM.duracaoPrecisao"/>
+      <short value="Precisão da duração"/>
+      <definition value="Precisão da duração"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="reacaoAdversaLM.duracaoPrecisao"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+    </element>
+    <element id="reacaoAdversaLM.tratamento">
+      <path value="reacaoAdversaLM.tratamento"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="reacaoAdversaLM.tratamento"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="reacaoAdversaLM.causalidade">
+      <path value="reacaoAdversaLM.causalidade"/>
+      <short value="Causalidade"/>
+      <definition value="Causalidade"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="reacaoAdversaLM.causalidade"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+    </element>
+  </snapshot>
+  <differential>
+    <element id="reacaoAdversaLM">
+      <path value="reacaoAdversaLM"/>
+      <short value="Reacção Adversa (modelo)"/>
+      <definition value="Modelo Lógico - Reacção Adversa"/>
+    </element>
+    <element id="reacaoAdversaLM.descricaoReacao">
+      <path value="reacaoAdversaLM.descricaoReacao"/>
+      <short value="Descrição da reacção"/>
+      <definition value="Descrição da reacção"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="reacaoAdversaLM.evolucao">
+      <path value="reacaoAdversaLM.evolucao"/>
+      <short value="Evolução da reacção"/>
+      <definition value="Evolução da reacção"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+    </element>
+    <element id="reacaoAdversaLM.criterioGravidade">
+      <path value="reacaoAdversaLM.criterioGravidade"/>
+      <short value="Gravidade"/>
+      <definition value="Gravidade"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+    </element>
+    <element id="reacaoAdversaLM.dataInicioReacao">
+      <path value="reacaoAdversaLM.dataInicioReacao"/>
+      <short value="Data de inicio da reacção"/>
+      <definition value="Data de inicio da reacção"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="reacaoAdversaLM.dataInicioReacaoPrecisao">
+      <path value="reacaoAdversaLM.dataInicioReacaoPrecisao"/>
+      <short value="Precisão da Data de inicio da reacção"/>
+      <definition value="Precisão da Data de inicio da reacção"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+    </element>
+    <element id="reacaoAdversaLM.duracao">
+      <path value="reacaoAdversaLM.duracao"/>
+      <short value="Duração"/>
+      <definition value="Duração"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="integer"/>
+      </type>
+    </element>
+    <element id="reacaoAdversaLM.duracaoPrecisao">
+      <path value="reacaoAdversaLM.duracaoPrecisao"/>
+      <short value="Precisão da duração"/>
+      <definition value="Precisão da duração"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+    </element>
+    <element id="reacaoAdversaLM.tratamento">
+      <path value="reacaoAdversaLM.tratamento"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="reacaoAdversaLM.causalidade">
+      <path value="reacaoAdversaLM.causalidade"/>
+      <short value="Causalidade"/>
+      <definition value="Causalidade"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

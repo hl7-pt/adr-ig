@@ -1,0 +1,282 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "b5a65cde-0117-42a7-b8ae-199369ecece2",
+  "meta" : {
+    "lastUpdated" : "2024-11-15T09:46:36.537+00:00"
+  },
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "https://hl7.pt/fhir/ADR/ValueSet/adr-causalidade-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-adr-causalidade-cs.html\">codesystem Causalidade code system v1.0.0 (CodeSystem)</a></p><p>This value set contains 6 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.pt/CodeSystem/adr-causalidade-DEF\"> </a>\u00a0\u00a0<a href=\"CodeSystem-adr-causalidade-cs.html#adr-causalidade-cs-DEF\">DEF</a></td><td>http://terminology.hl7.pt/CodeSystem/adr-causalidade</td><td>Definitivo</td><td><div><p>Definitivo</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.pt/CodeSystem/adr-causalidade-PROV\"> </a>\u00a0\u00a0<a href=\"CodeSystem-adr-causalidade-cs.html#adr-causalidade-cs-PROV\">PROV</a></td><td>http://terminology.hl7.pt/CodeSystem/adr-causalidade</td><td>Provável</td><td><div><p>Provável</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.pt/CodeSystem/adr-causalidade-POSS\"> </a>\u00a0\u00a0<a href=\"CodeSystem-adr-causalidade-cs.html#adr-causalidade-cs-POSS\">POSS</a></td><td>http://terminology.hl7.pt/CodeSystem/adr-causalidade</td><td>Possível</td><td><div><p>Possível</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.pt/CodeSystem/adr-causalidade-COND\"> </a>\u00a0\u00a0<a href=\"CodeSystem-adr-causalidade-cs.html#adr-causalidade-cs-COND\">COND</a></td><td>http://terminology.hl7.pt/CodeSystem/adr-causalidade</td><td>Condicional</td><td><div><p>Condicional</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.pt/CodeSystem/adr-causalidade-IMPR\"> </a>\u00a0\u00a0<a href=\"CodeSystem-adr-causalidade-cs.html#adr-causalidade-cs-IMPR\">IMPR</a></td><td>http://terminology.hl7.pt/CodeSystem/adr-causalidade</td><td>Improvável</td><td><div><p>Improvável</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.pt/CodeSystem/adr-causalidade-NC\"> </a>\u00a0\u00a0<a href=\"CodeSystem-adr-causalidade-cs.html#adr-causalidade-cs-NC\">NC</a></td><td>http://terminology.hl7.pt/CodeSystem/adr-causalidade</td><td>Não Classificável</td><td><div><p>Não Classificável</p>\n</div></td></tr></table></div>"
+      },
+      "url" : "https://hl7.pt/fhir/ADR/ValueSet/adr-causalidade-vs",
+      "version" : "1.0.0",
+      "name" : "causalidadeVS",
+      "title" : "Causalidade ValueSet",
+      "status" : "active",
+      "date" : "2024-11-15T09:46:36+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001",
+          "display" : "World"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:6b9645e1-790b-4133-b691-16d1157a24d1",
+        "timestamp" : "2024-11-15T09:46:52+00:00",
+        "total" : 6,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://terminology.hl7.pt/CodeSystem/adr-causalidade|1.0.0"
+        }],
+        "contains" : [{
+          "system" : "http://terminology.hl7.pt/CodeSystem/adr-causalidade",
+          "code" : "DEF",
+          "display" : "Definitivo"
+        },
+        {
+          "system" : "http://terminology.hl7.pt/CodeSystem/adr-causalidade",
+          "code" : "PROV",
+          "display" : "Provável"
+        },
+        {
+          "system" : "http://terminology.hl7.pt/CodeSystem/adr-causalidade",
+          "code" : "POSS",
+          "display" : "Possível"
+        },
+        {
+          "system" : "http://terminology.hl7.pt/CodeSystem/adr-causalidade",
+          "code" : "COND",
+          "display" : "Condicional"
+        },
+        {
+          "system" : "http://terminology.hl7.pt/CodeSystem/adr-causalidade",
+          "code" : "IMPR",
+          "display" : "Improvável"
+        },
+        {
+          "system" : "http://terminology.hl7.pt/CodeSystem/adr-causalidade",
+          "code" : "NC",
+          "display" : "Não Classificável"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://hl7.pt/fhir/ADR/ValueSet/adr-evolucao-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-adr-evolucao-cs.html\">codesystem Evolução de uma RAM code system v1.0.0 (CodeSystem)</a></p><p>This value set contains 6 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.pt/CodeSystem/adr-evolucao-CURA\"> </a>\u00a0\u00a0<a href=\"CodeSystem-adr-evolucao-cs.html#adr-evolucao-cs-CURA\">CURA</a></td><td>http://terminology.hl7.pt/CodeSystem/adr-evolucao</td><td>Cura</td><td><div><p>Cura</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.pt/CodeSystem/adr-evolucao-RECUPERACAO\"> </a>\u00a0\u00a0<a href=\"CodeSystem-adr-evolucao-cs.html#adr-evolucao-cs-RECUPERACAO\">RECUPERACAO</a></td><td>http://terminology.hl7.pt/CodeSystem/adr-evolucao</td><td>Recuperação</td><td><div><p>Recuperação</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.pt/CodeSystem/adr-evolucao-PERSISTENTE\"> </a>\u00a0\u00a0<a href=\"CodeSystem-adr-evolucao-cs.html#adr-evolucao-cs-PERSISTENTE\">PERSISTENTE</a></td><td>http://terminology.hl7.pt/CodeSystem/adr-evolucao</td><td>Persistente</td><td><div><p>Persistente</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.pt/CodeSystem/adr-evolucao-CURA_SEQUELAS\"> </a>\u00a0\u00a0<a href=\"CodeSystem-adr-evolucao-cs.html#adr-evolucao-cs-CURA_SEQUELAS\">CURA_SEQUELAS</a></td><td>http://terminology.hl7.pt/CodeSystem/adr-evolucao</td><td>Cura com sequelas</td><td><div><p>Cura com sequelas</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.pt/CodeSystem/adr-evolucao-MORTE\"> </a>\u00a0\u00a0<a href=\"CodeSystem-adr-evolucao-cs.html#adr-evolucao-cs-MORTE\">MORTE</a></td><td>http://terminology.hl7.pt/CodeSystem/adr-evolucao</td><td>Morte</td><td><div><p>Morte</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.pt/CodeSystem/adr-evolucao-DESCONHECIDO\"> </a>\u00a0\u00a0<a href=\"CodeSystem-adr-evolucao-cs.html#adr-evolucao-cs-DESCONHECIDO\">DESCONHECIDO</a></td><td>http://terminology.hl7.pt/CodeSystem/adr-evolucao</td><td>Desconhecido</td><td><div><p>Desconhecido</p>\n</div></td></tr></table></div>"
+      },
+      "url" : "https://hl7.pt/fhir/ADR/ValueSet/adr-evolucao-vs",
+      "version" : "1.0.0",
+      "name" : "EvolucaoVS",
+      "title" : "Evolução de uma RAM ValueSet",
+      "status" : "active",
+      "date" : "2024-11-15T09:46:36+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001",
+          "display" : "World"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:9f0bbb4c-af69-4111-94fb-293d4d5f237a",
+        "timestamp" : "2024-11-15T09:46:52+00:00",
+        "total" : 6,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://terminology.hl7.pt/CodeSystem/adr-evolucao|1.0.0"
+        }],
+        "contains" : [{
+          "system" : "http://terminology.hl7.pt/CodeSystem/adr-evolucao",
+          "code" : "CURA",
+          "display" : "Cura"
+        },
+        {
+          "system" : "http://terminology.hl7.pt/CodeSystem/adr-evolucao",
+          "code" : "RECUPERACAO",
+          "display" : "Recuperação"
+        },
+        {
+          "system" : "http://terminology.hl7.pt/CodeSystem/adr-evolucao",
+          "code" : "PERSISTENTE",
+          "display" : "Persistente"
+        },
+        {
+          "system" : "http://terminology.hl7.pt/CodeSystem/adr-evolucao",
+          "code" : "CURA_SEQUELAS",
+          "display" : "Cura com sequelas"
+        },
+        {
+          "system" : "http://terminology.hl7.pt/CodeSystem/adr-evolucao",
+          "code" : "MORTE",
+          "display" : "Morte"
+        },
+        {
+          "system" : "http://terminology.hl7.pt/CodeSystem/adr-evolucao",
+          "code" : "DESCONHECIDO",
+          "display" : "Desconhecido"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://hl7.pt/fhir/ADR/ValueSet/adr-gravidade-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-adr-gravidade-cs.html\">codesystem Causalidade code system v1.0.0 (CodeSystem)</a></p><p>This value set contains 6 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.pt/CodeSystem/adr-gravidade-MORTE\"> </a>\u00a0\u00a0<a href=\"CodeSystem-adr-gravidade-cs.html#adr-gravidade-cs-MORTE\">MORTE</a></td><td>http://terminology.hl7.pt/CodeSystem/adr-gravidade</td><td>Morte</td><td><div><p>Morte</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.pt/CodeSystem/adr-gravidade-RISCOVIDA\"> </a>\u00a0\u00a0<a href=\"CodeSystem-adr-gravidade-cs.html#adr-gravidade-cs-RISCOVIDA\">RISCOVIDA</a></td><td>http://terminology.hl7.pt/CodeSystem/adr-gravidade</td><td>Risco de vida</td><td><div><p>Risco de vida</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.pt/CodeSystem/adr-gravidade-HOSP\"> </a>\u00a0\u00a0<a href=\"CodeSystem-adr-gravidade-cs.html#adr-gravidade-cs-HOSP\">HOSP</a></td><td>http://terminology.hl7.pt/CodeSystem/adr-gravidade</td><td>Hospitalização</td><td><div><p>Hospitalização</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.pt/CodeSystem/adr-gravidade-INCAPACIDADE\"> </a>\u00a0\u00a0<a href=\"CodeSystem-adr-gravidade-cs.html#adr-gravidade-cs-INCAPACIDADE\">INCAPACIDADE</a></td><td>http://terminology.hl7.pt/CodeSystem/adr-gravidade</td><td>Incapacidade</td><td><div><p>Incapacidade</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.pt/CodeSystem/adr-gravidade-ANOMALIA\"> </a>\u00a0\u00a0<a href=\"CodeSystem-adr-gravidade-cs.html#adr-gravidade-cs-ANOMALIA\">ANOMALIA</a></td><td>http://terminology.hl7.pt/CodeSystem/adr-gravidade</td><td>Anomalia congénita</td><td><div><p>Anomalia congénita</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.pt/CodeSystem/adr-gravidade-CI\"> </a>\u00a0\u00a0<a href=\"CodeSystem-adr-gravidade-cs.html#adr-gravidade-cs-CI\">CI</a></td><td>http://terminology.hl7.pt/CodeSystem/adr-gravidade</td><td>Clinicamente importante</td><td><div><p>Clinicamente importante</p>\n</div></td></tr></table></div>"
+      },
+      "url" : "https://hl7.pt/fhir/ADR/ValueSet/adr-gravidade-vs",
+      "version" : "1.0.0",
+      "name" : "GravidadeVS",
+      "title" : "Gravidade RAM ValueSet",
+      "status" : "active",
+      "date" : "2024-11-15T09:46:36+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001",
+          "display" : "World"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:d9567b9a-59ac-4f3a-b4e6-4362f8d4d24a",
+        "timestamp" : "2024-11-15T09:46:52+00:00",
+        "total" : 6,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://terminology.hl7.pt/CodeSystem/adr-gravidade|1.0.0"
+        }],
+        "contains" : [{
+          "system" : "http://terminology.hl7.pt/CodeSystem/adr-gravidade",
+          "code" : "MORTE",
+          "display" : "Morte"
+        },
+        {
+          "system" : "http://terminology.hl7.pt/CodeSystem/adr-gravidade",
+          "code" : "RISCOVIDA",
+          "display" : "Risco de vida"
+        },
+        {
+          "system" : "http://terminology.hl7.pt/CodeSystem/adr-gravidade",
+          "code" : "HOSP",
+          "display" : "Hospitalização"
+        },
+        {
+          "system" : "http://terminology.hl7.pt/CodeSystem/adr-gravidade",
+          "code" : "INCAPACIDADE",
+          "display" : "Incapacidade"
+        },
+        {
+          "system" : "http://terminology.hl7.pt/CodeSystem/adr-gravidade",
+          "code" : "ANOMALIA",
+          "display" : "Anomalia congénita"
+        },
+        {
+          "system" : "http://terminology.hl7.pt/CodeSystem/adr-gravidade",
+          "code" : "CI",
+          "display" : "Clinicamente importante"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://hl7.pt/fhir/ADR/ValueSet/meddra-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: maroon 1px solid; background-color: #FFCCCC; font-weight: bold; padding: 8px\">This value set cannot be expanded because the terminology server(s) deemed it too costly to do so</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr></table></div>"
+      },
+      "url" : "https://hl7.pt/fhir/ADR/ValueSet/meddra-vs",
+      "version" : "1.0.0",
+      "name" : "meddraVS",
+      "title" : "MedDRA ValueSet",
+      "status" : "active",
+      "date" : "2024-11-15T09:46:36+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001",
+          "display" : "World"
+        }]
+      }],
+      "expansion" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/valueset-toocostly",
+          "valueBoolean" : true
+        }],
+        "identifier" : "urn:uuid:4fea982f-a592-45a9-a863-091f446e7ce4",
+        "timestamp" : "2024-11-15T09:46:53.113Z",
+        "total" : 0,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        }]
+      }
+    }
+  }]
+}

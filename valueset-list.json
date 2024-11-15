@@ -1,0 +1,40 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "https://hl7.pt/fhir/ADR/ValueSet/adr-causalidade-vs",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "causalidadeVS",
+      "title" : "Causalidade ValueSet",
+      "description" : "Causalidade ValueSet",
+      "systems" : ["http://terminology.hl7.pt/CodeSystem/adr-causalidade"]
+    },
+    {
+      "url" : "https://hl7.pt/fhir/ADR/ValueSet/adr-evolucao-vs",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "EvolucaoVS",
+      "title" : "Evolução de uma RAM ValueSet",
+      "description" : "Evolução de uma RAM ValueSet",
+      "systems" : ["http://terminology.hl7.pt/CodeSystem/adr-evolucao"]
+    },
+    {
+      "url" : "https://hl7.pt/fhir/ADR/ValueSet/adr-gravidade-vs",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "GravidadeVS",
+      "title" : "Gravidade RAM ValueSet",
+      "description" : "Gravidade RAM ValueSet",
+      "systems" : ["http://terminology.hl7.pt/CodeSystem/adr-gravidade"]
+    },
+    {
+      "url" : "https://hl7.pt/fhir/ADR/ValueSet/meddra-vs",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "meddraVS",
+      "title" : "MedDRA ValueSet",
+      "description" : "MedDRA ValueSet",
+      "systems" : ["urn:ietf:rfc:3986"]
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "meddra-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet meddra-vs</b></p><a name=\"meddra-vs\"> </a><a name=\"hcmeddra-vs\"> </a><a name=\"meddra-vs-en-US\"> </a><ul><li>Include all codes defined in <code>urn:ietf:rfc:3986</code></li></ul></div>"
+  },
+  "url" : "https://hl7.pt/fhir/ADR/ValueSet/meddra-vs",
+  "version" : "1.0.0",
+  "name" : "meddraVS",
+  "title" : "MedDRA ValueSet",
+  "status" : "active",
+  "date" : "2024-11-15T09:46:36+00:00",
+  "publisher" : "HL7 Portugal",
+  "contact" : [{
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.pt"
+    },
+    {
+      "system" : "email",
+      "value" : "info@hl7.pt"
+    }]
+  },
+  {
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "geral@hl7.pt",
+      "use" : "work"
+    }]
+  }],
+  "description" : "MedDRA ValueSet",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "urn:ietf:rfc:3986"
+    }]
+  }
+}

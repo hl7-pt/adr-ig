@@ -1,0 +1,41 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping"
+"notificadorLM","notificadorLM","","","",0,*,"","","","null {[]} {[]}
+","Notificador (modelo)","Modelo Lógico - Notificador","","","","","","","","","",,,,,"",,,,"Base",0,*,"","","n/a"
+"notificadorLM.tipoNotificador","notificadorLM.tipoNotificador","","","",1,1,"","","","code {[]} {[]}
+","Informações sobre o Doente","Informações sobre o Doente","","","","","","","","","",,,,,"",,,,"notificadorLM.tipoNotificador",1,1,"",""
+"notificadorLM.nomeProprio","notificadorLM.nomeProprio","","","",0,1,"","","","string {[]} {[]}
+","Nome Próprio","Nome Próprio","","","","","","","","","",,,,,"",,,,"notificadorLM.nomeProprio",0,1,"",""
+"notificadorLM.apelido","notificadorLM.apelido","","","",0,1,"","","","string {[]} {[]}
+","Apelido","Apelido","","","","","","","","","",,,,,"",,,,"notificadorLM.apelido",0,1,"",""
+"notificadorLM.distritoCode","notificadorLM.distritoCode","","","",0,1,"","","","string {[]} {[]}
+","Código do distrito","Código do distrito","","","","","","","","","",,,,,"",,,,"notificadorLM.distritoCode",0,1,"",""
+"notificadorLM.concelhoCode","notificadorLM.concelhoCode","","","",0,1,"","","","code {[]} {[]}
+","Concelho","Concelho","","","","","","","","","",,,,,"",,,,"notificadorLM.concelhoCode",0,1,"",""
+"notificadorLM.localTrabalho","notificadorLM.localTrabalho","","","",0,1,"","","","string {[]} {[]}
+","Local de Trabalho","Local de Trabalho","","","","","","","","","",,,,,"",,,,"notificadorLM.localTrabalho",0,1,"",""
+"notificadorLM.localidade","notificadorLM.localidade","","","",0,1,"","","","string {[]} {[]}
+","Localidade","Localidade","","","","","","","","","",,,,,"",,,,"notificadorLM.localidade",0,1,"",""
+"notificadorLM.codigoPostal","notificadorLM.codigoPostal","","","",0,1,"","","","string {[]} {[]}
+","Código Postal","Código Postal","","","","","","","","","",,,,,"",,,,"notificadorLM.codigoPostal",0,1,"",""
+"notificadorLM.qualificacao","notificadorLM.qualificacao","","","",0,1,"","","","string {[]} {[]}
+","Qualificação","Qualificação","","","","","","","","","",,,,,"",,,,"notificadorLM.qualificacao",0,1,"",""
+"notificadorLM.email","notificadorLM.email","","","",0,1,"","","","string {[]} {[]}
+","email","email","","","","","","","","","",,,,,"",,,,"notificadorLM.email",0,1,"",""
+"notificadorLM.telefone","notificadorLM.telefone","","","",0,1,"","","","string {[]} {[]}
+","telefone","telefone","","","","","","","","","",,,,,"",,,,"notificadorLM.telefone",0,1,"",""
+"notificadorLM.numeroCarteira","notificadorLM.numeroCarteira","","","",0,1,"","","","string {[]} {[]}
+","Carteira Profissional","Carteira Profissional","","","","","","","","","",,,,,"",,,,"notificadorLM.numeroCarteira",0,1,"",""
+"notificadorLM.reAdvComunicadaPs","notificadorLM.reAdvComunicadaPs","","","",0,1,"","","","string {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"notificadorLM.reAdvComunicadaPs",0,1,"",""
+"notificadorLM.psComunicouInfarmed","notificadorLM.psComunicouInfarmed","","","",0,1,"","","","string {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"notificadorLM.psComunicouInfarmed",0,1,"",""
+"notificadorLM.autInfarmdContactarPs","notificadorLM.autInfarmdContactarPs","","","",0,1,"","","","string {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"notificadorLM.autInfarmdContactarPs",0,1,"",""
+"notificadorLM.nomePsContactar","notificadorLM.nomePsContactar","","","",0,1,"","","","string {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"notificadorLM.nomePsContactar",0,1,"",""
+"notificadorLM.telefonePsContactar","notificadorLM.telefonePsContactar","","","",0,1,"","","","string {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"notificadorLM.telefonePsContactar",0,1,"",""
+"notificadorLM.localTrabalhoPsContactar","notificadorLM.localTrabalhoPsContactar","","","",0,1,"","","","string {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"notificadorLM.localTrabalhoPsContactar",0,1,"",""
+"notificadorLM.qualificacaoPsContactar","notificadorLM.qualificacaoPsContactar","","","",0,1,"","","","string {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"notificadorLM.qualificacaoPsContactar",0,1,"",""

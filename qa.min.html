@@ -1,0 +1,913 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- broken links = 0, errors = 49, warn = 39, info = 20-->
+<head>
+  <title>ADRPTIG : Validation Results</title>
+  <link href="fhir.css" rel="stylesheet"/>
+  <style>
+    span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
+    span.toggle  { background-color: #e6f2ff; color: black; border: solid 1px #0056b3; padding: 2px; font-size: 10px }
+    span.toggle  { font-size: 10px }
+  </style>
+  <script>
+    function flip(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Reasoning') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Reasoning';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Reasoning';
+      }
+    }
+    function toggle(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Validation Information') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Validation Information';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Validation Information';
+      }
+    }
+  </script>
+</head>
+<body style="margin: 20px; background-color: #ffffff">
+ <h1>Validation Results for ADRPTIG</h1>
+ <p>Generated Fri Nov 15 09:47:03 UTC 2024, FHIR version 5.0.0 for hl7.fhir.pt.adr#1.0.0 (canonical = <a href="http://hl7.pt/fhir">http://hl7.pt/fhir</a> (<a href="http://hl7.pt/fhir/history.html">history</a>)). See <a href="qa.html">Full QA Report</a></p>
+<table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
+ <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.7.2</span></td></tr>
+ <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = hl7.fhir.pt.adr, Canonical = http://hl7.pt/fhir</td></tr>
+ <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
+ <tr><td>Publication Request:</td><td><ul><li>The file package-list.json should not exist in the root folder <img src="icon-error.gif" height="16px" width="16px"/></li>
+<li><span title="Not Found">This IG has never been published</span> <img src="information.png" height="16px" width="16px"/></li>
+<li>This IG has never been published, so the version should start with '0.' or include a patch version e.g. '-ballot' <img src="icon-warning.png" height="16px" width="16px"/></li>
+<li>No publication request found <img src="information.png" height="16px" width="16px"/></li>
+</ul>
+</td></tr>
+ <tr><td>Supressed Messages:</td><td><a href="#suppressed">5 Suppressed Issues</a>
+</td></tr>
+ <tr><td>Dependency Checks:</td><td><div><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of the package">Version</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Canonical URL">Canonical</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Web Reference Base">Web Base</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Comments about this entry">Comment</span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/github/workspace/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.pt.adr</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1.0.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5">R5</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.pt/fhir</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/github/workspace/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.terminology.r5</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">6.0.2 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5">R5</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org/6.0.2</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/github/workspace/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALElEQVR4Xu3IsQ0AIAwEsez6+89AqKGGJj7JzVWS+mm3zgcAAMxwDQAAgFcaYAVAgNGLTjgAAAAASUVORK5CYII=)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.uv.extensions.r5</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1.0.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="Outdated Release">O</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5">R5</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions/1.0.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Latest Release is 5.1.0</td></tr>
+</table><para>Templates: hl7.fhir.affiliate.custom.template#0.0.1 -&gt; hl7.fhir.affiliate.template#current -&gt; fhir.base.template#current. Tools: 0.3.0</para></div></td></tr>
+ <tr><td>Dependent IGs:</td><td><a href="qa-dep.html">no references</a></td></tr>
+ <tr><td>Global Profiles:</td><td>(none declared)</td></tr>
+ <tr><td>Terminology Server(s):</td><td><a href="http://tx.fhir.org/r5">http://tx.fhir.org/r5</a> (<a href="qa-txservers.html">details</a>)</td></tr>
+ <tr><td>HTA Analysis:</td><td><a href="qa-hta.html">All OK</a></td></tr>
+ <tr><td>R5 Dependencies:</td><td><span style="color: grey">(none)</span></td></tr>
+ <tr><td>Draft Dependencies:</td><td><ul>
+  <li>
+hl7.fhir.r5.core#5.0.0:     <a href="http://hl7.org/fhir/R5/codesystem-guide-parameter-code.html">GuideParameterCode</a>
+ (15 uses),     <a href="http://hl7.org/fhir/R5/allergyintolerance.html">AllergyIntolerance</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R5/valueset-allergyintolerance-clinical.html">AllergyIntoleranceClinicalStatusCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/valueset-allergyintolerance-verification.html">AllergyIntoleranceVerificationStatus</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/valueset-allergy-intolerance-type.html">AllergyIntoleranceType</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/valueset-allergy-intolerance-category.html">AllergyIntoleranceCategory</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/valueset-allergy-intolerance-criticality.html">AllergyIntoleranceCriticality</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/valueset-allergyintolerance-code.html">SubstanceProductAndConditionAndNegationCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/encounter.html">Encounter</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R5/valueset-participation-role-type.html">ParticipationRoleType</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/practitioner.html">Practitioner</a>
+ (5 uses),     <a href="http://hl7.org/fhir/R5/practitionerrole.html">PractitionerRole</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R5/relatedperson.html">RelatedPerson</a>
+ (5 uses),     <a href="http://hl7.org/fhir/R5/device.html">Device</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R5/organization.html">Organization</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R5/careteam.html">CareTeam</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R5/valueset-substance-code.html">SubstanceCode</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/valueset-clinical-findings.html">SNOMEDCTClinicalFindings</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/valueset-reaction-event-severity.html">AllergyIntoleranceSeverity</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/valueset-route-codes.html">SNOMEDCTRouteCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/adverseevent.html">AdverseEvent</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/valueset-adverse-event-status.html">AdverseEventStatus</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/valueset-adverse-event-actuality.html">AdverseEventActuality</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/valueset-adverse-event-category.html">AdverseEventCategory</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/group.html">Group</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/researchsubject.html">ResearchSubject</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R5/condition.html">Condition</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R5/location.html">Location</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/valueset-adverse-event-participant-function.html">AdverseEventParticipantFunction</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/researchstudy.html">ResearchStudy</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R5/immunization.html">Immunization</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R5/procedure.html">Procedure</a>
+ (5 uses),     <a href="http://hl7.org/fhir/R5/substance.html">Substance</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/medication.html">Medication</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/medicationadministration.html">MedicationAdministration</a>
+ (5 uses),     <a href="http://hl7.org/fhir/R5/medicationstatement.html">MedicationStatement</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R5/biologicallyderivedproduct.html">BiologicallyDerivedProduct</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/valueset-adverse-event-causality-method.html">AdverseEventCausalityMethod</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/familymemberhistory.html">FamilyMemberHistory</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R5/deviceusage.html">DeviceUsage</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/documentreference.html">DocumentReference</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R5/valueset-adverse-event-contributing-factor.html">AdverseEventContributingFactor</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/medicationrequest.html">MedicationRequest</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R5/valueset-adverse-event-preventive-action.html">AdverseEventPreventiveAction</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/valueset-adverse-event-mitigating-action.html">AdverseEventMitigatingAction</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/questionnaireresponse.html">QuestionnaireResponse</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/valueset-adverse-event-supporting-info.html">AdverseEventSupportingInforation</a>
+ (1 uses)
+  </li>
+  <li>
+hl7.fhir.uv.tools.r5#0.3.0:     <a href="http://hl7.org/fhir/tools/0.3.0/StructureDefinition-resource-sort.html">ResourceSortExt</a>
+ (16 uses),     <a href="http://hl7.org/fhir/tools/0.3.0/StructureDefinition-logical-target.html">LogicalTarget</a>
+ (6 uses)
+  </li>
+</ul>
+</td></tr>
+ <tr><td>Modifier Extensions:</td><td><span style="color: grey">(none)</span></td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://hl7.pt/fhir (Problem #1 with package-list.json at http://hl7.pt/fhir: Not Found)</td></tr>
+ <tr><td>IPA Comparison:</td><td> n/a</td></tr>
+ <tr><td>IPS Comparison:</td><td> n/a</td></tr>
+ <tr><td>Validation Flags:</td><td> On: autoLoad; Off: hintAboutNonMustSupport, anyExtensionsAllowed, checkAggregation, showReferenceMessages, noExperimentalContent, displayWarnings</td></tr>
+ <tr><td>Summary:</td><td> errors = 49, warn = 39, info = 20, broken links = 0</td></tr>
+</table>
+ <table class="grid">
+   <tr>
+     <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>0</b></td><td><b>3</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_AdverseEvent-Notifi-1"><b>/github/workspace/fsh-generated/resources/AdverseEvent-Notifi-1</b></a></td><td><b>1</b></td><td><b>3</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_CodeSystem-adr-causalidade-cs"><b>/github/workspace/fsh-generated/resources/CodeSystem-adr-causalidade-cs</b></a></td><td><b>4</b></td><td><b>2</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_CodeSystem-adr-evolucao-cs"><b>/github/workspace/fsh-generated/resources/CodeSystem-adr-evolucao-cs</b></a></td><td><b>4</b></td><td><b>1</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_CodeSystem-adr-gravidade-cs"><b>/github/workspace/fsh-generated/resources/CodeSystem-adr-gravidade-cs</b></a></td><td><b>4</b></td><td><b>1</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_ImplementationGuide-hl7.fhir.pt.adr"><b>/github/workspace/fsh-generated/resources/ImplementationGuide-hl7.fhir.pt.adr</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-Alergia"><b>/github/workspace/fsh-generated/resources/StructureDefinition-Alergia</b></a></td><td><b>3</b></td><td><b>6</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-NotificacaoLM"><b>/github/workspace/fsh-generated/resources/StructureDefinition-NotificacaoLM</b></a></td><td><b>3</b></td><td><b>2</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-ReacaoAdversa"><b>/github/workspace/fsh-generated/resources/StructureDefinition-ReacaoAdversa</b></a></td><td><b>3</b></td><td><b>7</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-doenteLM"><b>/github/workspace/fsh-generated/resources/StructureDefinition-doenteLM</b></a></td><td><b>3</b></td><td><b>3</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-informacoesLM"><b>/github/workspace/fsh-generated/resources/StructureDefinition-informacoesLM</b></a></td><td><b>3</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-medicamentoLM"><b>/github/workspace/fsh-generated/resources/StructureDefinition-medicamentoLM</b></a></td><td><b>3</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-notificadorLM"><b>/github/workspace/fsh-generated/resources/StructureDefinition-notificadorLM</b></a></td><td><b>3</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-reacaoAdversaLM"><b>/github/workspace/fsh-generated/resources/StructureDefinition-reacaoAdversaLM</b></a></td><td><b>3</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_ValueSet-adr-causalidade-vs"><b>/github/workspace/fsh-generated/resources/ValueSet-adr-causalidade-vs</b></a></td><td><b>3</b></td><td><b>2</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_ValueSet-adr-evolucao-vs"><b>/github/workspace/fsh-generated/resources/ValueSet-adr-evolucao-vs</b></a></td><td><b>3</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_ValueSet-adr-gravidade-vs"><b>/github/workspace/fsh-generated/resources/ValueSet-adr-gravidade-vs</b></a></td><td><b>3</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_ValueSet-meddra-vs"><b>/github/workspace/fsh-generated/resources/ValueSet-meddra-vs</b></a></td><td><b>3</b></td><td><b>2</b></td><td><b>1</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="internal"> </a>
+<h2><a href="">n/a</a> <span id="sv" class="toggle" onclick="toggle('v')">Show Validation Information</span> <span class="vcount" onclick="toggle('v')"></span></h2>
+ <div style="border: 1px grey solid; display: none" id="v"></div>
+ <table class="grid">
+   <tr style="background-color: #ffebcc">
+     <td><b>1</b></td><td><b>warning</b></td><td title=""><b>The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>3</b></td><td><b>warning</b></td><td title=""><b>An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>4</b></td><td><b>warning</b></td><td title=""><b>The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_AdverseEvent-Notifi-1"> </a>
+<h2><a href="AdverseEvent-Notifi-1.html">fsh-generated/resources/AdverseEvent-Notifi-1.json</a> <span id="svi1" class="toggle" onclick="toggle('vi1')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi1')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi1"><ul style="font-size: 7px"><li>AdverseEvent: Validated against <i>this.</i><a href="StructureDefinition-ReacaoAdversa.html">Perfil para notificação de RAM</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>AdverseEvent.status (l24/c24)</b></td><td><b>information</b></td><td title="MSG_EXPERIMENTAL"><b>Reference to experimental CodeSystem http://hl7.org/fhir/event-status|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>AdverseEvent.code.coding[0] (l15/c4)</b></td><td><b>warning</b></td><td title=""><b>A definition for CodeSystem 'http://example.org' could not be found, so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>AdverseEvent&#8203;.seriousness&#8203;.coding[0] (l34&#8203;/c4)</b></td><td><b>warning</b></td><td title=""><b>A definition for CodeSystem 'http://example.org' could not be found, so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>AdverseEvent.seriousness (l34/c4)</b></td><td><b>error</b></td><td title="Terminology_TX_NoValid_1_CC"><b>None of the codings provided are in the value set 'Gravidade RAM ValueSet' (https://hl7.pt/fhir/ADR/ValueSet/adr-gravidade-vs|1.0.0), and a coding from this value set is required) (codes = http://example.org#serious)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>AdverseEvent&#8203;.suspectEntity[0]&#8203;.instance&#8203;.ofType(CodeableConcept)&#8203;.coding[0] (l44&#8203;/c8)</b></td><td><b>warning</b></td><td title=""><b>A definition for CodeSystem 'http://example.org' could not be found, so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_CodeSystem-adr-causalidade-cs"> </a>
+<h2><a href="CodeSystem-adr-causalidade-cs.html">fsh-generated/resources/CodeSystem-adr-causalidade-cs.json</a> <span id="svi2" class="toggle" onclick="toggle('vi2')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi2')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi2"><ul style="font-size: 7px"><li>CodeSystem: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/codesystem.html">CodeSystem</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CodeSystem&#8203;.where(url = 'http:&#8203;/&#8203;/terminology&#8203;.hl7&#8203;.pt&#8203;/CodeSystem&#8203;/adr-causalidade')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/CodeSystem-adr-causalidade-cs.json - the canonical URL (http://hl7.pt/fhir/CodeSystem/adr-causalidade-cs) does not match the URL (http://terminology.hl7.pt/CodeSystem/adr-causalidade)</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>CodeSystem.jurisdiction[0] (l1/c1984)</b></td><td><b>information</b></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b> (from <a href="qa-txservers.html#http://tx.fhir.org/r5">http://tx.fhir.org/r5<ta>, see <a href="qa-tx.html#l4">log</a>)</td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>CodeSystem (l1/c2424)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: cnl-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' (defined in http://hl7.org/fhir/StructureDefinition/CodeSystem)</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>CodeSystem</b></td><td><b>information</b></td><td title=""><b>CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CodeSystem (l1/c2424)</b></td><td><b>error</b></td><td title="CODESYSTEM_SHAREABLE_MISSING_HL7"><b>Code systems published by HL7 SHALL conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CodeSystem (l1/c2424)</b></td><td><b>error</b></td><td title="CODESYSTEM_SHAREABLE_MISSING_HL7"><b>Code systems published by HL7 SHALL conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>CodeSystem.jurisdiction</b></td><td><b>warning</b></td><td title="RESOURCE_JURISDICTION_MISMATCH"><b>The resource should declare its jurisdiction to match the package id (hl7.fhir.pt.adr, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT &quot;null&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>fsh-generated&#8203;/resources&#8203;/CodeSystem-adr-causalidade-cs</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://hl7.pt/fhir/CodeSystem/adr-causalidade-cs vs http://terminology.hl7.pt/CodeSystem/adr-causalidade</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_CodeSystem-adr-evolucao-cs"> </a>
+<h2><a href="CodeSystem-adr-evolucao-cs.html">fsh-generated/resources/CodeSystem-adr-evolucao-cs.json</a> <span id="svi3" class="toggle" onclick="toggle('vi3')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi3')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi3"><ul style="font-size: 7px"><li>CodeSystem: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/codesystem.html">CodeSystem</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CodeSystem&#8203;.where(url = 'http:&#8203;/&#8203;/terminology&#8203;.hl7&#8203;.pt&#8203;/CodeSystem&#8203;/adr-evolucao')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/CodeSystem-adr-evolucao-cs.json - the canonical URL (http://hl7.pt/fhir/CodeSystem/adr-evolucao-cs) does not match the URL (http://terminology.hl7.pt/CodeSystem/adr-evolucao)</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>CodeSystem.jurisdiction[0] (l1/c2020)</b></td><td><b>information</b></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b> (from <a href="qa-txservers.html#http://tx.fhir.org/r5">http://tx.fhir.org/r5<ta>, see <a href="qa-tx.html#l4">log</a>)</td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>CodeSystem</b></td><td><b>information</b></td><td title=""><b>CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CodeSystem (l1/c2487)</b></td><td><b>error</b></td><td title="CODESYSTEM_SHAREABLE_MISSING_HL7"><b>Code systems published by HL7 SHALL conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CodeSystem (l1/c2487)</b></td><td><b>error</b></td><td title="CODESYSTEM_SHAREABLE_MISSING_HL7"><b>Code systems published by HL7 SHALL conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>CodeSystem.jurisdiction</b></td><td><b>warning</b></td><td title="RESOURCE_JURISDICTION_MISMATCH"><b>The resource should declare its jurisdiction to match the package id (hl7.fhir.pt.adr, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT &quot;null&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>fsh-generated&#8203;/resources&#8203;/CodeSystem-adr-evolucao-cs</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://hl7.pt/fhir/CodeSystem/adr-evolucao-cs vs http://terminology.hl7.pt/CodeSystem/adr-evolucao</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_CodeSystem-adr-gravidade-cs"> </a>
+<h2><a href="CodeSystem-adr-gravidade-cs.html">fsh-generated/resources/CodeSystem-adr-gravidade-cs.json</a> <span id="svi4" class="toggle" onclick="toggle('vi4')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi4')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>CodeSystem: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/codesystem.html">CodeSystem</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CodeSystem&#8203;.where(url = 'http:&#8203;/&#8203;/terminology&#8203;.hl7&#8203;.pt&#8203;/CodeSystem&#8203;/adr-gravidade')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/CodeSystem-adr-gravidade-cs.json - the canonical URL (http://hl7.pt/fhir/CodeSystem/adr-gravidade-cs) does not match the URL (http://terminology.hl7.pt/CodeSystem/adr-gravidade)</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>CodeSystem.jurisdiction[0] (l1/c2036)</b></td><td><b>information</b></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b> (from <a href="qa-txservers.html#http://tx.fhir.org/r5">http://tx.fhir.org/r5<ta>, see <a href="qa-tx.html#l4">log</a>)</td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>CodeSystem</b></td><td><b>information</b></td><td title=""><b>CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CodeSystem (l1/c2537)</b></td><td><b>error</b></td><td title="CODESYSTEM_SHAREABLE_MISSING_HL7"><b>Code systems published by HL7 SHALL conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CodeSystem (l1/c2537)</b></td><td><b>error</b></td><td title="CODESYSTEM_SHAREABLE_MISSING_HL7"><b>Code systems published by HL7 SHALL conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>CodeSystem.jurisdiction</b></td><td><b>warning</b></td><td title="RESOURCE_JURISDICTION_MISMATCH"><b>The resource should declare its jurisdiction to match the package id (hl7.fhir.pt.adr, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT &quot;null&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>fsh-generated&#8203;/resources&#8203;/CodeSystem-adr-gravidade-cs</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://hl7.pt/fhir/CodeSystem/adr-gravidade-cs vs http://terminology.hl7.pt/CodeSystem/adr-gravidade</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_ImplementationGuide-hl7.fhir.pt.adr"> </a>
+<h2><a href="index.html">fsh-generated/resources/ImplementationGuide-hl7.fhir.pt.adr.json</a> <span id="svi5" class="toggle" onclick="toggle('vi5')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi5')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi5"><ul style="font-size: 7px"><li>ImplementationGuide/hl7.fhir.pt.adr: ImplementationGuide: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/implementationguide.html">ImplementationGuide</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>ImplementationGuide&#8203;.jurisdiction[0] (l1&#8203;/c1259)</b></td><td><b>information</b></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b> (from <a href="qa-txservers.html#http://tx.fhir.org/r5">http://tx.fhir.org/r5<ta>, see <a href="qa-tx.html#l4">log</a>)</td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ImplementationGuide.jurisdiction</b></td><td><b>warning</b></td><td title="RESOURCE_JURISDICTION_MISMATCH"><b>The resource should declare its jurisdiction to match the package id (hl7.fhir.pt.adr, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT &quot;null&quot;')</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-Alergia"> </a>
+<h2><a href="StructureDefinition-Alergia.html">fsh-generated/resources/StructureDefinition-Alergia.json</a> <span id="svi6" class="toggle" onclick="toggle('vi6')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi6')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi6"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/hl7&#8203;.pt&#8203;/fhir&#8203;/ADR&#8203;/StructureDefinition&#8203;/Alergia')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-Alergia.json - the canonical URL (http://hl7.pt/fhir/StructureDefinition/Alergia) does not match the URL (https://hl7.pt/fhir/ADR/StructureDefinition/Alergia)</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.jurisdiction[0] (l1&#8203;/c18014)</b></td><td><b>information</b></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b> (from <a href="qa-txservers.html#http://tx.fhir.org/r5">http://tx.fhir.org/r5<ta>, see <a href="qa-tx.html#l4">log</a>)</td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[15]&#8203;.binding</b></td><td><b>warning</b></td><td title=""><b>The definition for the element 'AllergyIntolerance.code' binds to the value set 'http://hl7.org/fhir/ValueSet/allergyintolerance-code' which is experimental, but this structure is not labeled as experimental</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[24]&#8203;.binding</b></td><td><b>warning</b></td><td title=""><b>The definition for the element 'AllergyIntolerance.participant.function' binds to the value set 'http://hl7.org/fhir/ValueSet/participation-role-type' which is experimental, but this structure is not labeled as experimental</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[32]&#8203;.binding</b></td><td><b>warning</b></td><td title=""><b>The definition for the element 'AllergyIntolerance.reaction.substance' binds to the value set 'http://hl7.org/fhir/ValueSet/substance-code' which is experimental, but this structure is not labeled as experimental</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[33]&#8203;.binding</b></td><td><b>warning</b></td><td title=""><b>The definition for the element 'AllergyIntolerance.reaction.manifestation' binds to the value set 'http://hl7.org/fhir/ValueSet/clinical-findings' which is experimental, but this structure is not labeled as experimental</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[37]&#8203;.binding</b></td><td><b>warning</b></td><td title=""><b>The definition for the element 'AllergyIntolerance.reaction.exposureRoute' binds to the value set 'http://hl7.org/fhir/ValueSet/route-codes' which is experimental, but this structure is not labeled as experimental</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.jurisdiction</b></td><td><b>error</b></td><td title="RESOURCE_JURISDICTION_MISMATCH"><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.adr, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT &quot;null&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/hl7&#8203;.pt&#8203;/fhir&#8203;/ADR&#8203;/StructureDefinition&#8203;/Alergia')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>fsh-generated&#8203;/resources&#8203;/StructureDefinition-Alergia</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://hl7.pt/fhir/StructureDefinition/Alergia vs https://hl7.pt/fhir/ADR/StructureDefinition/Alergia</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-NotificacaoLM"> </a>
+<h2><a href="StructureDefinition-NotificacaoLM.html">fsh-generated/resources/StructureDefinition-NotificacaoLM.json</a> <span id="svi7" class="toggle" onclick="toggle('vi7')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi7')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi7"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/hl7&#8203;.pt&#8203;/fhir&#8203;/ADR&#8203;/StructureDefinition&#8203;/NotificacaoLM')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-NotificacaoLM.json - the canonical URL (http://hl7.pt/fhir/StructureDefinition/NotificacaoLM) does not match the URL (https://hl7.pt/fhir/ADR/StructureDefinition/NotificacaoLM)</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.jurisdiction[0] (l1&#8203;/c14662)</b></td><td><b>information</b></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b> (from <a href="qa-txservers.html#http://tx.fhir.org/r5">http://tx.fhir.org/r5<ta>, see <a href="qa-tx.html#l4">log</a>)</td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[1] (l1&#8203;/c15509)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-20: 'The first component of the path should be UpperCamelCase.  Additional components (following a '.') should be lowerCamelCase.  If this syntax is not adhered to, code generation tools may be broken. Logical models may be less concerned about this implication.' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[1] (l1&#8203;/c17164)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-20: 'The first component of the path should be UpperCamelCase.  Additional components (following a '.') should be lowerCamelCase.  If this syntax is not adhered to, code generation tools may be broken. Logical models may be less concerned about this implication.' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.jurisdiction</b></td><td><b>error</b></td><td title="RESOURCE_JURISDICTION_MISMATCH"><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.adr, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT &quot;null&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>fsh-generated&#8203;/resources&#8203;/StructureDefinition-NotificacaoLM</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://hl7.pt/fhir/StructureDefinition/NotificacaoLM vs https://hl7.pt/fhir/ADR/StructureDefinition/NotificacaoLM</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-ReacaoAdversa"> </a>
+<h2><a href="StructureDefinition-ReacaoAdversa.html">fsh-generated/resources/StructureDefinition-ReacaoAdversa.json</a> <span id="svi8" class="toggle" onclick="toggle('vi8')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi8')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi8"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/hl7&#8203;.pt&#8203;/fhir&#8203;/ADR&#8203;/StructureDefinition&#8203;/ReacaoAdversa')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-ReacaoAdversa.json - the canonical URL (http://hl7.pt/fhir/StructureDefinition/ReacaoAdversa) does not match the URL (https://hl7.pt/fhir/ADR/StructureDefinition/ReacaoAdversa)</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.jurisdiction[0] (l1&#8203;/c35882)</b></td><td><b>information</b></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b> (from <a href="qa-txservers.html#http://tx.fhir.org/r5">http://tx.fhir.org/r5<ta>, see <a href="qa-tx.html#l4">log</a>)</td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[12]&#8203;.binding</b></td><td><b>warning</b></td><td title=""><b>The definition for the element 'AdverseEvent.category' binds to the value set 'http://hl7.org/fhir/ValueSet/adverse-event-category' which is experimental, but this structure is not labeled as experimental</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[28]&#8203;.binding</b></td><td><b>warning</b></td><td title=""><b>The definition for the element 'AdverseEvent.participant.function' binds to the value set 'http://hl7.org/fhir/ValueSet/adverse-event-participant-function' which is experimental, but this structure is not labeled as experimental</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[41]&#8203;.binding</b></td><td><b>warning</b></td><td title=""><b>The definition for the element 'AdverseEvent.suspectEntity.causality.assessmentMethod' binds to the value set 'http://hl7.org/fhir/ValueSet/adverse-event-causality-method' which is experimental, but this structure is not labeled as experimental</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[48]&#8203;.binding</b></td><td><b>warning</b></td><td title=""><b>The definition for the element 'AdverseEvent.contributingFactor.item[x]' binds to the value set 'http://hl7.org/fhir/ValueSet/adverse-event-contributing-factor' which is experimental, but this structure is not labeled as experimental</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[53]&#8203;.binding</b></td><td><b>warning</b></td><td title=""><b>The definition for the element 'AdverseEvent.preventiveAction.item[x]' binds to the value set 'http://hl7.org/fhir/ValueSet/adverse-event-preventive-action' which is experimental, but this structure is not labeled as experimental</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[58]&#8203;.binding</b></td><td><b>warning</b></td><td title=""><b>The definition for the element 'AdverseEvent.mitigatingAction.item[x]' binds to the value set 'http://hl7.org/fhir/ValueSet/adverse-event-mitigating-action' which is experimental, but this structure is not labeled as experimental</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[63]&#8203;.binding</b></td><td><b>warning</b></td><td title=""><b>The definition for the element 'AdverseEvent.supportingInfo.item[x]' binds to the value set 'http://hl7.org/fhir/ValueSet/adverse-event-supporting-info' which is experimental, but this structure is not labeled as experimental</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.jurisdiction</b></td><td><b>error</b></td><td title="RESOURCE_JURISDICTION_MISMATCH"><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.adr, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT &quot;null&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>fsh-generated&#8203;/resources&#8203;/StructureDefinition-ReacaoAdversa</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://hl7.pt/fhir/StructureDefinition/ReacaoAdversa vs https://hl7.pt/fhir/ADR/StructureDefinition/ReacaoAdversa</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-doenteLM"> </a>
+<h2><a href="StructureDefinition-doenteLM.html">fsh-generated/resources/StructureDefinition-doenteLM.json</a> <span id="svi9" class="toggle" onclick="toggle('vi9')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi9')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi9"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/hl7&#8203;.pt&#8203;/fhir&#8203;/ADR&#8203;/StructureDefinition&#8203;/doenteLM')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-doenteLM.json - the canonical URL (http://hl7.pt/fhir/StructureDefinition/doenteLM) does not match the URL (https://hl7.pt/fhir/ADR/StructureDefinition/doenteLM)</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.jurisdiction[0] (l1&#8203;/c19203)</b></td><td><b>information</b></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b> (from <a href="qa-txservers.html#http://tx.fhir.org/r5">http://tx.fhir.org/r5<ta>, see <a href="qa-tx.html#l4">log</a>)</td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[1] (l1&#8203;/c19954)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-20: 'The first component of the path should be UpperCamelCase.  Additional components (following a '.') should be lowerCamelCase.  If this syntax is not adhered to, code generation tools may be broken. Logical models may be less concerned about this implication.' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[1] (l1&#8203;/c21976)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-20: 'The first component of the path should be UpperCamelCase.  Additional components (following a '.') should be lowerCamelCase.  If this syntax is not adhered to, code generation tools may be broken. Logical models may be less concerned about this implication.' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition (l1/c23300)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: cnl-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' (defined in http://hl7.org/fhir/StructureDefinition/StructureDefinition)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.jurisdiction</b></td><td><b>error</b></td><td title="RESOURCE_JURISDICTION_MISMATCH"><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.adr, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT &quot;null&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>fsh-generated&#8203;/resources&#8203;/StructureDefinition-doenteLM</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://hl7.pt/fhir/StructureDefinition/doenteLM vs https://hl7.pt/fhir/ADR/StructureDefinition/doenteLM</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-informacoesLM"> </a>
+<h2><a href="StructureDefinition-informacoesLM.html">fsh-generated/resources/StructureDefinition-informacoesLM.json</a> <span id="svi10" class="toggle" onclick="toggle('vi10')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi10')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi10"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/hl7&#8203;.pt&#8203;/fhir&#8203;/ADR&#8203;/StructureDefinition&#8203;/informacoesLM')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-informacoesLM.json - the canonical URL (http://hl7.pt/fhir/StructureDefinition/informacoesLM) does not match the URL (https://hl7.pt/fhir/ADR/StructureDefinition/informacoesLM)</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.jurisdiction[0] (l1&#8203;/c11601)</b></td><td><b>information</b></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b> (from <a href="qa-txservers.html#http://tx.fhir.org/r5">http://tx.fhir.org/r5<ta>, see <a href="qa-tx.html#l4">log</a>)</td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition (l1/c13727)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: cnl-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' (defined in http://hl7.org/fhir/StructureDefinition/StructureDefinition)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.jurisdiction</b></td><td><b>error</b></td><td title="RESOURCE_JURISDICTION_MISMATCH"><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.adr, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT &quot;null&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>fsh-generated&#8203;/resources&#8203;/StructureDefinition-informacoesLM</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://hl7.pt/fhir/StructureDefinition/informacoesLM vs https://hl7.pt/fhir/ADR/StructureDefinition/informacoesLM</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-medicamentoLM"> </a>
+<h2><a href="StructureDefinition-medicamentoLM.html">fsh-generated/resources/StructureDefinition-medicamentoLM.json</a> <span id="svi11" class="toggle" onclick="toggle('vi11')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi11')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi11"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/hl7&#8203;.pt&#8203;/fhir&#8203;/ADR&#8203;/StructureDefinition&#8203;/medicamentoLM')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-medicamentoLM.json - the canonical URL (http://hl7.pt/fhir/StructureDefinition/medicamentoLM) does not match the URL (https://hl7.pt/fhir/ADR/StructureDefinition/medicamentoLM)</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.jurisdiction[0] (l1&#8203;/c25900)</b></td><td><b>information</b></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b> (from <a href="qa-txservers.html#http://tx.fhir.org/r5">http://tx.fhir.org/r5<ta>, see <a href="qa-tx.html#l4">log</a>)</td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition (l1/c32416)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: cnl-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' (defined in http://hl7.org/fhir/StructureDefinition/StructureDefinition)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.jurisdiction</b></td><td><b>error</b></td><td title="RESOURCE_JURISDICTION_MISMATCH"><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.adr, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT &quot;null&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>fsh-generated&#8203;/resources&#8203;/StructureDefinition-medicamentoLM</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://hl7.pt/fhir/StructureDefinition/medicamentoLM vs https://hl7.pt/fhir/ADR/StructureDefinition/medicamentoLM</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-notificadorLM"> </a>
+<h2><a href="StructureDefinition-notificadorLM.html">fsh-generated/resources/StructureDefinition-notificadorLM.json</a> <span id="svi12" class="toggle" onclick="toggle('vi12')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi12')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi12"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/hl7&#8203;.pt&#8203;/fhir&#8203;/ADR&#8203;/StructureDefinition&#8203;/notificadorLM')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-notificadorLM.json - the canonical URL (http://hl7.pt/fhir/StructureDefinition/notificadorLM) does not match the URL (https://hl7.pt/fhir/ADR/StructureDefinition/notificadorLM)</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.jurisdiction[0] (l1&#8203;/c36050)</b></td><td><b>information</b></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b> (from <a href="qa-txservers.html#http://tx.fhir.org/r5">http://tx.fhir.org/r5<ta>, see <a href="qa-tx.html#l4">log</a>)</td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition (l1/c43878)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: cnl-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' (defined in http://hl7.org/fhir/StructureDefinition/StructureDefinition)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.jurisdiction</b></td><td><b>error</b></td><td title="RESOURCE_JURISDICTION_MISMATCH"><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.adr, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT &quot;null&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>fsh-generated&#8203;/resources&#8203;/StructureDefinition-notificadorLM</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://hl7.pt/fhir/StructureDefinition/notificadorLM vs https://hl7.pt/fhir/ADR/StructureDefinition/notificadorLM</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-reacaoAdversaLM"> </a>
+<h2><a href="StructureDefinition-reacaoAdversaLM.html">fsh-generated/resources/StructureDefinition-reacaoAdversaLM.json</a> <span id="svi13" class="toggle" onclick="toggle('vi13')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi13')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi13"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/hl7&#8203;.pt&#8203;/fhir&#8203;/ADR&#8203;/StructureDefinition&#8203;/reacaoAdversaLM')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-reacaoAdversaLM.json - the canonical URL (http://hl7.pt/fhir/StructureDefinition/reacaoAdversaLM) does not match the URL (https://hl7.pt/fhir/ADR/StructureDefinition/reacaoAdversaLM)</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.jurisdiction[0] (l1&#8203;/c20918)</b></td><td><b>information</b></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b> (from <a href="qa-txservers.html#http://tx.fhir.org/r5">http://tx.fhir.org/r5<ta>, see <a href="qa-tx.html#l4">log</a>)</td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition (l1/c25500)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: cnl-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' (defined in http://hl7.org/fhir/StructureDefinition/StructureDefinition)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.jurisdiction</b></td><td><b>error</b></td><td title="RESOURCE_JURISDICTION_MISMATCH"><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.adr, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT &quot;null&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>fsh-generated&#8203;/resources&#8203;/StructureDefinition-reacaoAdversaLM</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://hl7.pt/fhir/StructureDefinition/reacaoAdversaLM vs https://hl7.pt/fhir/ADR/StructureDefinition/reacaoAdversaLM</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_ValueSet-adr-causalidade-vs"> </a>
+<h2><a href="ValueSet-adr-causalidade-vs.html">fsh-generated/resources/ValueSet-adr-causalidade-vs.json</a> <span id="svi14" class="toggle" onclick="toggle('vi14')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi14')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi14"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.where(url = 'https:&#8203;/&#8203;/hl7&#8203;.pt&#8203;/fhir&#8203;/ADR&#8203;/ValueSet&#8203;/adr-causalidade-vs')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/ValueSet-adr-causalidade-vs.json - the canonical URL (http://hl7.pt/fhir/ValueSet/adr-causalidade-vs) does not match the URL (https://hl7.pt/fhir/ADR/ValueSet/adr-causalidade-vs)</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>ValueSet.jurisdiction[0] (l1/c1097)</b></td><td><b>information</b></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b> (from <a href="qa-txservers.html#http://tx.fhir.org/r5">http://tx.fhir.org/r5<ta>, see <a href="qa-tx.html#l4">log</a>)</td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet (l1/c1189)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: cnl-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' (defined in http://hl7.org/fhir/StructureDefinition/ValueSet)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet (l1/c1189)</b></td><td><b>error</b></td><td title="VALUESET_SHAREABLE_MISSING_HL7"><b>Value sets published by HL7 SHALL conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.jurisdiction</b></td><td><b>warning</b></td><td title="RESOURCE_JURISDICTION_MISMATCH"><b>The resource should declare its jurisdiction to match the package id (hl7.fhir.pt.adr, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT &quot;null&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>fsh-generated&#8203;/resources&#8203;/ValueSet-adr-causalidade-vs</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://hl7.pt/fhir/ValueSet/adr-causalidade-vs vs https://hl7.pt/fhir/ADR/ValueSet/adr-causalidade-vs</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_ValueSet-adr-evolucao-vs"> </a>
+<h2><a href="ValueSet-adr-evolucao-vs.html">fsh-generated/resources/ValueSet-adr-evolucao-vs.json</a> <span id="svi15" class="toggle" onclick="toggle('vi15')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi15')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi15"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.where(url = 'https:&#8203;/&#8203;/hl7&#8203;.pt&#8203;/fhir&#8203;/ADR&#8203;/ValueSet&#8203;/adr-evolucao-vs')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/ValueSet-adr-evolucao-vs.json - the canonical URL (http://hl7.pt/fhir/ValueSet/adr-evolucao-vs) does not match the URL (https://hl7.pt/fhir/ADR/ValueSet/adr-evolucao-vs)</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>ValueSet.jurisdiction[0] (l1/c1086)</b></td><td><b>information</b></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b> (from <a href="qa-txservers.html#http://tx.fhir.org/r5">http://tx.fhir.org/r5<ta>, see <a href="qa-tx.html#l4">log</a>)</td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet (l1/c1175)</b></td><td><b>error</b></td><td title="VALUESET_SHAREABLE_MISSING_HL7"><b>Value sets published by HL7 SHALL conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.jurisdiction</b></td><td><b>warning</b></td><td title="RESOURCE_JURISDICTION_MISMATCH"><b>The resource should declare its jurisdiction to match the package id (hl7.fhir.pt.adr, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT &quot;null&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>fsh-generated&#8203;/resources&#8203;/ValueSet-adr-evolucao-vs</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://hl7.pt/fhir/ValueSet/adr-evolucao-vs vs https://hl7.pt/fhir/ADR/ValueSet/adr-evolucao-vs</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_ValueSet-adr-gravidade-vs"> </a>
+<h2><a href="ValueSet-adr-gravidade-vs.html">fsh-generated/resources/ValueSet-adr-gravidade-vs.json</a> <span id="svi16" class="toggle" onclick="toggle('vi16')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi16')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi16"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.where(url = 'https:&#8203;/&#8203;/hl7&#8203;.pt&#8203;/fhir&#8203;/ADR&#8203;/ValueSet&#8203;/adr-gravidade-vs')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/ValueSet-adr-gravidade-vs.json - the canonical URL (http://hl7.pt/fhir/ValueSet/adr-gravidade-vs) does not match the URL (https://hl7.pt/fhir/ADR/ValueSet/adr-gravidade-vs)</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>ValueSet.jurisdiction[0] (l1/c1083)</b></td><td><b>information</b></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b> (from <a href="qa-txservers.html#http://tx.fhir.org/r5">http://tx.fhir.org/r5<ta>, see <a href="qa-tx.html#l4">log</a>)</td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet (l1/c1173)</b></td><td><b>error</b></td><td title="VALUESET_SHAREABLE_MISSING_HL7"><b>Value sets published by HL7 SHALL conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.jurisdiction</b></td><td><b>warning</b></td><td title="RESOURCE_JURISDICTION_MISMATCH"><b>The resource should declare its jurisdiction to match the package id (hl7.fhir.pt.adr, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT &quot;null&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>fsh-generated&#8203;/resources&#8203;/ValueSet-adr-gravidade-vs</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://hl7.pt/fhir/ValueSet/adr-gravidade-vs vs https://hl7.pt/fhir/ADR/ValueSet/adr-gravidade-vs</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_ValueSet-meddra-vs"> </a>
+<h2><a href="ValueSet-meddra-vs.html">fsh-generated/resources/ValueSet-meddra-vs.json</a> <span id="svi17" class="toggle" onclick="toggle('vi17')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi17')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi17"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.where(url = 'https:&#8203;/&#8203;/hl7&#8203;.pt&#8203;/fhir&#8203;/ADR&#8203;/ValueSet&#8203;/meddra-vs')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/ValueSet-meddra-vs.json - the canonical URL (http://hl7.pt/fhir/ValueSet/meddra-vs) does not match the URL (https://hl7.pt/fhir/ADR/ValueSet/meddra-vs)</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>ValueSet.jurisdiction[0] (l1/c942)</b></td><td><b>information</b></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b> (from <a href="qa-txservers.html#http://tx.fhir.org/r5">http://tx.fhir.org/r5<ta>, see <a href="qa-tx.html#l4">log</a>)</td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet (l1/c999)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: cnl-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' (defined in http://hl7.org/fhir/StructureDefinition/ValueSet)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet (l1/c999)</b></td><td><b>error</b></td><td title="VALUESET_SHAREABLE_MISSING_HL7"><b>Value sets published by HL7 SHALL conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.jurisdiction</b></td><td><b>warning</b></td><td title="RESOURCE_JURISDICTION_MISMATCH"><b>The resource should declare its jurisdiction to match the package id (hl7.fhir.pt.adr, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT &quot;null&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>fsh-generated&#8203;/resources&#8203;/ValueSet-meddra-vs</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://hl7.pt/fhir/ValueSet/meddra-vs vs https://hl7.pt/fhir/ADR/ValueSet/meddra-vs</b></td>
+   </tr>
+</table>
+<a name="suppressed"> </a>
+<p><b>Suppressed Messages (Warnings, hints, broken links)</b></p>
+<p><b>If this was a real IG, there should be examples for these profiles too.  But it's not, and I'm lazy...</b></p><ul>
+ <li>WARNING: http://somewhere.org/fhir/uv/myig/StructureDefinition/myObservation: The Implementation Guide contains no examples for this profile <span style="color: maroon">(0 uses)<span></li>
+ <li>WARNING: http://somewhere.org/fhir/uv/myig/StructureDefinition/mypractitioner: The Implementation Guide contains no examples for this profile <span style="color: maroon">(0 uses)<span></li>
+</ul>
+<p><b>This is inherited from the base resource</b></p><ul>
+ <li>WARNING: StructureDefinition/myObservation: StructureDefinition.snapshot.element[15].mapping[3].map: value should not start or finish with whitespace <span style="color: maroon">(0 uses)<span></li>
+</ul>
+<p><b>We're expecting these to not match the slice - we're showing how you can use slicing to define the one repetition you want even when many repetitions might be present</b></p><ul>
+ <li>INFORMATION: Patient/example: Patient.name[0]: This element does not match any known slice defined in the profile http://somewhere.org/fhir/uv/myig/StructureDefinition/mypatient <span style="color: maroon">(0 uses)<span></li>
+ <li>INFORMATION: Patient/example: Patient.name[1]: This element does not match any known slice defined in the profile http://somewhere.org/fhir/uv/myig/StructureDefinition/mypatient <span style="color: maroon">(0 uses)<span></li>
+</ul>
+<a name="sorted"> </a>
+<p><b>Errors sorted by type</b></p>
+<hr/>
+<a name="CODESYSTEM_SHAREABLE_MISSING_HL7"> </a>
+<h2>CODESYSTEM_SHAREABLE_MISSING_HL7</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="CodeSystem-adr-causalidade-cs.html">fsh-generated/resources/CodeSystem-adr-causalidade-cs.json</a></td><td><b>Code systems published by HL7 SHALL conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="CodeSystem-adr-causalidade-cs.html">fsh-generated/resources/CodeSystem-adr-causalidade-cs.json</a></td><td><b>Code systems published by HL7 SHALL conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="CodeSystem-adr-evolucao-cs.html">fsh-generated/resources/CodeSystem-adr-evolucao-cs.json</a></td><td><b>Code systems published by HL7 SHALL conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="CodeSystem-adr-evolucao-cs.html">fsh-generated/resources/CodeSystem-adr-evolucao-cs.json</a></td><td><b>Code systems published by HL7 SHALL conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="CodeSystem-adr-gravidade-cs.html">fsh-generated/resources/CodeSystem-adr-gravidade-cs.json</a></td><td><b>Code systems published by HL7 SHALL conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="CodeSystem-adr-gravidade-cs.html">fsh-generated/resources/CodeSystem-adr-gravidade-cs.json</a></td><td><b>Code systems published by HL7 SHALL conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="MSG_DEPRECATED"> </a>
+<h2>MSG_DEPRECATED</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="CodeSystem-adr-causalidade-cs.html">fsh-generated/resources/CodeSystem-adr-causalidade-cs.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="CodeSystem-adr-evolucao-cs.html">fsh-generated/resources/CodeSystem-adr-evolucao-cs.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="CodeSystem-adr-gravidade-cs.html">fsh-generated/resources/CodeSystem-adr-gravidade-cs.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="index.html">fsh-generated/resources/ImplementationGuide-hl7.fhir.pt.adr.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-Alergia.html">fsh-generated/resources/StructureDefinition-Alergia.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-NotificacaoLM.html">fsh-generated/resources/StructureDefinition-NotificacaoLM.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-ReacaoAdversa.html">fsh-generated/resources/StructureDefinition-ReacaoAdversa.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-doenteLM.html">fsh-generated/resources/StructureDefinition-doenteLM.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-informacoesLM.html">fsh-generated/resources/StructureDefinition-informacoesLM.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-medicamentoLM.html">fsh-generated/resources/StructureDefinition-medicamentoLM.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-notificadorLM.html">fsh-generated/resources/StructureDefinition-notificadorLM.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-reacaoAdversaLM.html">fsh-generated/resources/StructureDefinition-reacaoAdversaLM.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="ValueSet-adr-causalidade-vs.html">fsh-generated/resources/ValueSet-adr-causalidade-vs.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="ValueSet-adr-evolucao-vs.html">fsh-generated/resources/ValueSet-adr-evolucao-vs.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="ValueSet-adr-gravidade-vs.html">fsh-generated/resources/ValueSet-adr-gravidade-vs.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="ValueSet-meddra-vs.html">fsh-generated/resources/ValueSet-meddra-vs.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="MSG_EXPERIMENTAL"> </a>
+<h2>MSG_EXPERIMENTAL</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="AdverseEvent-Notifi-1.html">fsh-generated/resources/AdverseEvent-Notifi-1.json</a></td><td><b>Reference to experimental CodeSystem http://hl7.org/fhir/event-status|5.0.0</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="RESOURCE_CANONICAL_MISMATCH"> </a>
+<h2>RESOURCE_CANONICAL_MISMATCH</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="CodeSystem-adr-causalidade-cs.html">fsh-generated/resources/CodeSystem-adr-causalidade-cs.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/CodeSystem-adr-causalidade-cs.json - the canonical URL (http://hl7.pt/fhir/CodeSystem/adr-causalidade-cs) does not match the URL (http://terminology.hl7.pt/CodeSystem/adr-causalidade)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="CodeSystem-adr-evolucao-cs.html">fsh-generated/resources/CodeSystem-adr-evolucao-cs.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/CodeSystem-adr-evolucao-cs.json - the canonical URL (http://hl7.pt/fhir/CodeSystem/adr-evolucao-cs) does not match the URL (http://terminology.hl7.pt/CodeSystem/adr-evolucao)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="CodeSystem-adr-gravidade-cs.html">fsh-generated/resources/CodeSystem-adr-gravidade-cs.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/CodeSystem-adr-gravidade-cs.json - the canonical URL (http://hl7.pt/fhir/CodeSystem/adr-gravidade-cs) does not match the URL (http://terminology.hl7.pt/CodeSystem/adr-gravidade)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-Alergia.html">fsh-generated/resources/StructureDefinition-Alergia.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-Alergia.json - the canonical URL (http://hl7.pt/fhir/StructureDefinition/Alergia) does not match the URL (https://hl7.pt/fhir/ADR/StructureDefinition/Alergia)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-NotificacaoLM.html">fsh-generated/resources/StructureDefinition-NotificacaoLM.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-NotificacaoLM.json - the canonical URL (http://hl7.pt/fhir/StructureDefinition/NotificacaoLM) does not match the URL (https://hl7.pt/fhir/ADR/StructureDefinition/NotificacaoLM)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-ReacaoAdversa.html">fsh-generated/resources/StructureDefinition-ReacaoAdversa.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-ReacaoAdversa.json - the canonical URL (http://hl7.pt/fhir/StructureDefinition/ReacaoAdversa) does not match the URL (https://hl7.pt/fhir/ADR/StructureDefinition/ReacaoAdversa)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-doenteLM.html">fsh-generated/resources/StructureDefinition-doenteLM.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-doenteLM.json - the canonical URL (http://hl7.pt/fhir/StructureDefinition/doenteLM) does not match the URL (https://hl7.pt/fhir/ADR/StructureDefinition/doenteLM)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-informacoesLM.html">fsh-generated/resources/StructureDefinition-informacoesLM.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-informacoesLM.json - the canonical URL (http://hl7.pt/fhir/StructureDefinition/informacoesLM) does not match the URL (https://hl7.pt/fhir/ADR/StructureDefinition/informacoesLM)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-medicamentoLM.html">fsh-generated/resources/StructureDefinition-medicamentoLM.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-medicamentoLM.json - the canonical URL (http://hl7.pt/fhir/StructureDefinition/medicamentoLM) does not match the URL (https://hl7.pt/fhir/ADR/StructureDefinition/medicamentoLM)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-notificadorLM.html">fsh-generated/resources/StructureDefinition-notificadorLM.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-notificadorLM.json - the canonical URL (http://hl7.pt/fhir/StructureDefinition/notificadorLM) does not match the URL (https://hl7.pt/fhir/ADR/StructureDefinition/notificadorLM)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-reacaoAdversaLM.html">fsh-generated/resources/StructureDefinition-reacaoAdversaLM.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-reacaoAdversaLM.json - the canonical URL (http://hl7.pt/fhir/StructureDefinition/reacaoAdversaLM) does not match the URL (https://hl7.pt/fhir/ADR/StructureDefinition/reacaoAdversaLM)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="ValueSet-adr-causalidade-vs.html">fsh-generated/resources/ValueSet-adr-causalidade-vs.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/ValueSet-adr-causalidade-vs.json - the canonical URL (http://hl7.pt/fhir/ValueSet/adr-causalidade-vs) does not match the URL (https://hl7.pt/fhir/ADR/ValueSet/adr-causalidade-vs)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="ValueSet-adr-evolucao-vs.html">fsh-generated/resources/ValueSet-adr-evolucao-vs.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/ValueSet-adr-evolucao-vs.json - the canonical URL (http://hl7.pt/fhir/ValueSet/adr-evolucao-vs) does not match the URL (https://hl7.pt/fhir/ADR/ValueSet/adr-evolucao-vs)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="ValueSet-adr-gravidade-vs.html">fsh-generated/resources/ValueSet-adr-gravidade-vs.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/ValueSet-adr-gravidade-vs.json - the canonical URL (http://hl7.pt/fhir/ValueSet/adr-gravidade-vs) does not match the URL (https://hl7.pt/fhir/ADR/ValueSet/adr-gravidade-vs)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="ValueSet-meddra-vs.html">fsh-generated/resources/ValueSet-meddra-vs.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/ValueSet-meddra-vs.json - the canonical URL (http://hl7.pt/fhir/ValueSet/meddra-vs) does not match the URL (https://hl7.pt/fhir/ADR/ValueSet/meddra-vs)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="RESOURCE_JURISDICTION_MISMATCH"> </a>
+<h2>RESOURCE_JURISDICTION_MISMATCH</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="CodeSystem-adr-causalidade-cs.html">fsh-generated/resources/CodeSystem-adr-causalidade-cs.json</a></td><td><b>The resource should declare its jurisdiction to match the package id (hl7.fhir.pt.adr, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT &quot;null&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="CodeSystem-adr-evolucao-cs.html">fsh-generated/resources/CodeSystem-adr-evolucao-cs.json</a></td><td><b>The resource should declare its jurisdiction to match the package id (hl7.fhir.pt.adr, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT &quot;null&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="CodeSystem-adr-gravidade-cs.html">fsh-generated/resources/CodeSystem-adr-gravidade-cs.json</a></td><td><b>The resource should declare its jurisdiction to match the package id (hl7.fhir.pt.adr, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT &quot;null&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="index.html">fsh-generated/resources/ImplementationGuide-hl7.fhir.pt.adr.json</a></td><td><b>The resource should declare its jurisdiction to match the package id (hl7.fhir.pt.adr, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT &quot;null&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-Alergia.html">fsh-generated/resources/StructureDefinition-Alergia.json</a></td><td><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.adr, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT &quot;null&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-NotificacaoLM.html">fsh-generated/resources/StructureDefinition-NotificacaoLM.json</a></td><td><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.adr, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT &quot;null&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-ReacaoAdversa.html">fsh-generated/resources/StructureDefinition-ReacaoAdversa.json</a></td><td><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.adr, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT &quot;null&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-doenteLM.html">fsh-generated/resources/StructureDefinition-doenteLM.json</a></td><td><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.adr, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT &quot;null&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-informacoesLM.html">fsh-generated/resources/StructureDefinition-informacoesLM.json</a></td><td><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.adr, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT &quot;null&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-medicamentoLM.html">fsh-generated/resources/StructureDefinition-medicamentoLM.json</a></td><td><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.adr, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT &quot;null&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-notificadorLM.html">fsh-generated/resources/StructureDefinition-notificadorLM.json</a></td><td><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.adr, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT &quot;null&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-reacaoAdversaLM.html">fsh-generated/resources/StructureDefinition-reacaoAdversaLM.json</a></td><td><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.adr, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT &quot;null&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-adr-causalidade-vs.html">fsh-generated/resources/ValueSet-adr-causalidade-vs.json</a></td><td><b>The resource should declare its jurisdiction to match the package id (hl7.fhir.pt.adr, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT &quot;null&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-adr-evolucao-vs.html">fsh-generated/resources/ValueSet-adr-evolucao-vs.json</a></td><td><b>The resource should declare its jurisdiction to match the package id (hl7.fhir.pt.adr, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT &quot;null&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-adr-gravidade-vs.html">fsh-generated/resources/ValueSet-adr-gravidade-vs.json</a></td><td><b>The resource should declare its jurisdiction to match the package id (hl7.fhir.pt.adr, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT &quot;null&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-meddra-vs.html">fsh-generated/resources/ValueSet-meddra-vs.json</a></td><td><b>The resource should declare its jurisdiction to match the package id (hl7.fhir.pt.adr, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT &quot;null&quot;')</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Terminology_TX_NoValid_1_CC"> </a>
+<h2>Terminology_TX_NoValid_1_CC</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="AdverseEvent-Notifi-1.html">fsh-generated/resources/AdverseEvent-Notifi-1.json</a></td><td><b>None of the codings provided are in the value set 'Gravidade RAM ValueSet' (https://hl7.pt/fhir/ADR/ValueSet/adr-gravidade-vs|1.0.0), and a coding from this value set is required) (codes = http://example.org#serious)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="VALUESET_SHAREABLE_MISSING_HL7"> </a>
+<h2>VALUESET_SHAREABLE_MISSING_HL7</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="ValueSet-adr-causalidade-vs.html">fsh-generated/resources/ValueSet-adr-causalidade-vs.json</a></td><td><b>Value sets published by HL7 SHALL conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="ValueSet-adr-evolucao-vs.html">fsh-generated/resources/ValueSet-adr-evolucao-vs.json</a></td><td><b>Value sets published by HL7 SHALL conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="ValueSet-adr-gravidade-vs.html">fsh-generated/resources/ValueSet-adr-gravidade-vs.json</a></td><td><b>Value sets published by HL7 SHALL conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="ValueSet-meddra-vs.html">fsh-generated/resources/ValueSet-meddra-vs.json</a></td><td><b>Value sets published by HL7 SHALL conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
+   </tr>
+</table>
+</body>
+</html>

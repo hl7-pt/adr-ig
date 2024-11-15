@@ -1,0 +1,114 @@
+[
+  {
+    "id" : "hl7.fhir.pt.adr",
+    "type" : "ImplementationGuide",
+    "url" : "http://hl7.pt/fhir/ImplementationGuide/hl7.fhir.pt.adr",
+    "version" : "1.0.0",
+    "name" : "ADRPTIG"
+  },
+  {
+    "id" : "adr-causalidade-cs",
+    "type" : "CodeSystem",
+    "url" : "http://terminology.hl7.pt/CodeSystem/adr-causalidade",
+    "version" : "1.0.0",
+    "name" : "causalidadeCS"
+  },
+  {
+    "id" : "adr-evolucao-cs",
+    "type" : "CodeSystem",
+    "url" : "http://terminology.hl7.pt/CodeSystem/adr-evolucao",
+    "version" : "1.0.0",
+    "name" : "EvolucaoCS"
+  },
+  {
+    "id" : "adr-gravidade-cs",
+    "type" : "CodeSystem",
+    "url" : "http://terminology.hl7.pt/CodeSystem/adr-gravidade",
+    "version" : "1.0.0",
+    "name" : "GravidadeCS"
+  },
+  {
+    "id" : "Alergia",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/ADR/StructureDefinition/Alergia",
+    "version" : "1.0.0",
+    "name" : "Alergia"
+  },
+  {
+    "id" : "NotificacaoLM",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/ADR/StructureDefinition/NotificacaoLM",
+    "version" : "1.0.0",
+    "name" : "NotificacaoLM"
+  },
+  {
+    "id" : "ReacaoAdversa",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/ADR/StructureDefinition/ReacaoAdversa",
+    "version" : "1.0.0",
+    "name" : "ReacaoAdversa"
+  },
+  {
+    "id" : "doenteLM",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/ADR/StructureDefinition/doenteLM",
+    "version" : "1.0.0",
+    "name" : "doenteLM"
+  },
+  {
+    "id" : "informacoesLM",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/ADR/StructureDefinition/informacoesLM",
+    "version" : "1.0.0",
+    "name" : "informacoesLM"
+  },
+  {
+    "id" : "medicamentoLM",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/ADR/StructureDefinition/medicamentoLM",
+    "version" : "1.0.0",
+    "name" : "medicamentoLM"
+  },
+  {
+    "id" : "notificadorLM",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/ADR/StructureDefinition/notificadorLM",
+    "version" : "1.0.0",
+    "name" : "notificadorLM"
+  },
+  {
+    "id" : "reacaoAdversaLM",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/ADR/StructureDefinition/reacaoAdversaLM",
+    "version" : "1.0.0",
+    "name" : "reacaoAdversaLM"
+  },
+  {
+    "id" : "adr-causalidade-vs",
+    "type" : "ValueSet",
+    "url" : "https://hl7.pt/fhir/ADR/ValueSet/adr-causalidade-vs",
+    "version" : "1.0.0",
+    "name" : "causalidadeVS"
+  },
+  {
+    "id" : "adr-evolucao-vs",
+    "type" : "ValueSet",
+    "url" : "https://hl7.pt/fhir/ADR/ValueSet/adr-evolucao-vs",
+    "version" : "1.0.0",
+    "name" : "EvolucaoVS"
+  },
+  {
+    "id" : "adr-gravidade-vs",
+    "type" : "ValueSet",
+    "url" : "https://hl7.pt/fhir/ADR/ValueSet/adr-gravidade-vs",
+    "version" : "1.0.0",
+    "name" : "GravidadeVS"
+  },
+  {
+    "id" : "meddra-vs",
+    "type" : "ValueSet",
+    "url" : "https://hl7.pt/fhir/ADR/ValueSet/meddra-vs",
+    "version" : "1.0.0",
+    "name" : "meddraVS"
+  }
+]

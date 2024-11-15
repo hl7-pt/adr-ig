@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="notificadorLM"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: StructureDefinition notificadorLM</b></p><a name="notificadorLM"> </a><a name="hcnotificadorLM"> </a><a name="notificadorLM-en-US"> </a><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="The logical name of the element">Name</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element">Flags</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the element can appear in the instance">Card.</a></th><th style="width: 100px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element">Type</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-notificadorLM-definitions.html#notificadorLM" title="Modelo Lógico - Notificador">notificadorLM</a><a name="notificadorLM"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/types.html#Base">Base</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Notificador (modelo)<br/><span style="font-weight:bold">Instances of this logical model can be the target of a Reference</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-notificadorLM-definitions.html#notificadorLM.tipoNotificador" title="Informações sobre o Doente">tipoNotificador</a><a name="notificadorLM.tipoNotificador"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Informações sobre o Doente</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-notificadorLM-definitions.html#notificadorLM.nomeProprio" title="Nome Próprio">nomeProprio</a><a name="notificadorLM.nomeProprio"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Nome Próprio</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-notificadorLM-definitions.html#notificadorLM.apelido" title="Apelido">apelido</a><a name="notificadorLM.apelido"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Apelido</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-notificadorLM-definitions.html#notificadorLM.distritoCode" title="Código do distrito">distritoCode</a><a name="notificadorLM.distritoCode"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Código do distrito</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-notificadorLM-definitions.html#notificadorLM.concelhoCode" title="Concelho">concelhoCode</a><a name="notificadorLM.concelhoCode"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Concelho</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-notificadorLM-definitions.html#notificadorLM.localTrabalho" title="Local de Trabalho">localTrabalho</a><a name="notificadorLM.localTrabalho"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Local de Trabalho</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-notificadorLM-definitions.html#notificadorLM.localidade" title="Localidade">localidade</a><a name="notificadorLM.localidade"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Localidade</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-notificadorLM-definitions.html#notificadorLM.codigoPostal" title="Código Postal">codigoPostal</a><a name="notificadorLM.codigoPostal"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Código Postal</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-notificadorLM-definitions.html#notificadorLM.qualificacao" title="Qualificação">qualificacao</a><a name="notificadorLM.qualificacao"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Qualificação</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-notificadorLM-definitions.html#notificadorLM.email" title="email">email</a><a name="notificadorLM.email"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">email</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-notificadorLM-definitions.html#notificadorLM.telefone" title="telefone">telefone</a><a name="notificadorLM.telefone"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">telefone</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-notificadorLM-definitions.html#notificadorLM.numeroCarteira" title="Carteira Profissional">numeroCarteira</a><a name="notificadorLM.numeroCarteira"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Carteira Profissional</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-notificadorLM-definitions.html#notificadorLM.reAdvComunicadaPs">reAdvComunicadaPs</a><a name="notificadorLM.reAdvComunicadaPs"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-notificadorLM-definitions.html#notificadorLM.psComunicouInfarmed">psComunicouInfarmed</a><a name="notificadorLM.psComunicouInfarmed"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-notificadorLM-definitions.html#notificadorLM.autInfarmdContactarPs">autInfarmdContactarPs</a><a name="notificadorLM.autInfarmdContactarPs"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-notificadorLM-definitions.html#notificadorLM.nomePsContactar">nomePsContactar</a><a name="notificadorLM.nomePsContactar"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-notificadorLM-definitions.html#notificadorLM.telefonePsContactar">telefonePsContactar</a><a name="notificadorLM.telefonePsContactar"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-notificadorLM-definitions.html#notificadorLM.localTrabalhoPsContactar">localTrabalhoPsContactar</a><a name="notificadorLM.localTrabalhoPsContactar"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-notificadorLM-definitions.html#notificadorLM.qualificacaoPsContactar">qualificacaoPsContactar</a><a name="notificadorLM.qualificacaoPsContactar"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/tools/StructureDefinition/logical-target">
+    <valueBoolean value="true"/>
+  </extension>
+  <url value="https://hl7.pt/fhir/ADR/StructureDefinition/notificadorLM"/>
+  <version value="1.0.0"/>
+  <name value="notificadorLM"/>
+  <title value="Notificador (modelo)"/>
+  <status value="active"/>
+  <date value="2024-11-15T09:46:36+00:00"/>
+  <publisher value="HL7 Portugal"/>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.pt"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.pt"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="email"/>
+      <value value="geral@hl7.pt"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Modelo Lógico - Notificador"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <fhirVersion value="5.0.0"/>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM Mapping"/>
+  </mapping>
+  <kind value="logical"/>
+  <abstract value="false"/>
+  <type value="https://hl7.pt/fhir/ADR/StructureDefinition/notificadorLM"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
+  <derivation value="specialization"/>
+  <snapshot>
+    <element id="notificadorLM">
+      <path value="notificadorLM"/>
+      <short value="Notificador (modelo)"/>
+      <definition value="Modelo Lógico - Notificador"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Base"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <isModifier value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="notificadorLM.tipoNotificador">
+      <path value="notificadorLM.tipoNotificador"/>
+      <short value="Informações sobre o Doente"/>
+      <definition value="Informações sobre o Doente"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="notificadorLM.tipoNotificador"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+    </element>
+    <element id="notificadorLM.nomeProprio">
+      <path value="notificadorLM.nomeProprio"/>
+      <short value="Nome Próprio"/>
+      <definition value="Nome Próprio"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="notificadorLM.nomeProprio"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="notificadorLM.apelido">
+      <path value="notificadorLM.apelido"/>
+      <short value="Apelido"/>
+      <definition value="Apelido"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="notificadorLM.apelido"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="notificadorLM.distritoCode">
+      <path value="notificadorLM.distritoCode"/>
+      <short value="Código do distrito"/>
+      <definition value="Código do distrito"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="notificadorLM.distritoCode"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="notificadorLM.concelhoCode">
+      <path value="notificadorLM.concelhoCode"/>
+      <short value="Concelho"/>
+      <definition value="Concelho"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="notificadorLM.concelhoCode"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+    </element>
+    <element id="notificadorLM.localTrabalho">
+      <path value="notificadorLM.localTrabalho"/>
+      <short value="Local de Trabalho"/>
+      <definition value="Local de Trabalho"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="notificadorLM.localTrabalho"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="notificadorLM.localidade">
+      <path value="notificadorLM.localidade"/>
+      <short value="Localidade"/>
+      <definition value="Localidade"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="notificadorLM.localidade"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="notificadorLM.codigoPostal">
+      <path value="notificadorLM.codigoPostal"/>
+      <short value="Código Postal"/>
+      <definition value="Código Postal"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="notificadorLM.codigoPostal"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="notificadorLM.qualificacao">
+      <path value="notificadorLM.qualificacao"/>
+      <short value="Qualificação"/>
+      <definition value="Qualificação"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="notificadorLM.qualificacao"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="notificadorLM.email">
+      <path value="notificadorLM.email"/>
+      <short value="email"/>
+      <definition value="email"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="notificadorLM.email"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="notificadorLM.telefone">
+      <path value="notificadorLM.telefone"/>
+      <short value="telefone"/>
+      <definition value="telefone"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="notificadorLM.telefone"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="notificadorLM.numeroCarteira">
+      <path value="notificadorLM.numeroCarteira"/>
+      <short value="Carteira Profissional"/>
+      <definition value="Carteira Profissional"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="notificadorLM.numeroCarteira"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="notificadorLM.reAdvComunicadaPs">
+      <path value="notificadorLM.reAdvComunicadaPs"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="notificadorLM.reAdvComunicadaPs"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="notificadorLM.psComunicouInfarmed">
+      <path value="notificadorLM.psComunicouInfarmed"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="notificadorLM.psComunicouInfarmed"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="notificadorLM.autInfarmdContactarPs">
+      <path value="notificadorLM.autInfarmdContactarPs"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="notificadorLM.autInfarmdContactarPs"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="notificadorLM.nomePsContactar">
+      <path value="notificadorLM.nomePsContactar"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="notificadorLM.nomePsContactar"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="notificadorLM.telefonePsContactar">
+      <path value="notificadorLM.telefonePsContactar"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="notificadorLM.telefonePsContactar"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="notificadorLM.localTrabalhoPsContactar">
+      <path value="notificadorLM.localTrabalhoPsContactar"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="notificadorLM.localTrabalhoPsContactar"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="notificadorLM.qualificacaoPsContactar">
+      <path value="notificadorLM.qualificacaoPsContactar"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="notificadorLM.qualificacaoPsContactar"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+  </snapshot>
+  <differential>
+    <element id="notificadorLM">
+      <path value="notificadorLM"/>
+      <short value="Notificador (modelo)"/>
+      <definition value="Modelo Lógico - Notificador"/>
+    </element>
+    <element id="notificadorLM.tipoNotificador">
+      <path value="notificadorLM.tipoNotificador"/>
+      <short value="Informações sobre o Doente"/>
+      <definition value="Informações sobre o Doente"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+    </element>
+    <element id="notificadorLM.nomeProprio">
+      <path value="notificadorLM.nomeProprio"/>
+      <short value="Nome Próprio"/>
+      <definition value="Nome Próprio"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="notificadorLM.apelido">
+      <path value="notificadorLM.apelido"/>
+      <short value="Apelido"/>
+      <definition value="Apelido"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="notificadorLM.distritoCode">
+      <path value="notificadorLM.distritoCode"/>
+      <short value="Código do distrito"/>
+      <definition value="Código do distrito"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="notificadorLM.concelhoCode">
+      <path value="notificadorLM.concelhoCode"/>
+      <short value="Concelho"/>
+      <definition value="Concelho"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+    </element>
+    <element id="notificadorLM.localTrabalho">
+      <path value="notificadorLM.localTrabalho"/>
+      <short value="Local de Trabalho"/>
+      <definition value="Local de Trabalho"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="notificadorLM.localidade">
+      <path value="notificadorLM.localidade"/>
+      <short value="Localidade"/>
+      <definition value="Localidade"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="notificadorLM.codigoPostal">
+      <path value="notificadorLM.codigoPostal"/>
+      <short value="Código Postal"/>
+      <definition value="Código Postal"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="notificadorLM.qualificacao">
+      <path value="notificadorLM.qualificacao"/>
+      <short value="Qualificação"/>
+      <definition value="Qualificação"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="notificadorLM.email">
+      <path value="notificadorLM.email"/>
+      <short value="email"/>
+      <definition value="email"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="notificadorLM.telefone">
+      <path value="notificadorLM.telefone"/>
+      <short value="telefone"/>
+      <definition value="telefone"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="notificadorLM.numeroCarteira">
+      <path value="notificadorLM.numeroCarteira"/>
+      <short value="Carteira Profissional"/>
+      <definition value="Carteira Profissional"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="notificadorLM.reAdvComunicadaPs">
+      <path value="notificadorLM.reAdvComunicadaPs"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="notificadorLM.psComunicouInfarmed">
+      <path value="notificadorLM.psComunicouInfarmed"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="notificadorLM.autInfarmdContactarPs">
+      <path value="notificadorLM.autInfarmdContactarPs"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="notificadorLM.nomePsContactar">
+      <path value="notificadorLM.nomePsContactar"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="notificadorLM.telefonePsContactar">
+      <path value="notificadorLM.telefonePsContactar"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="notificadorLM.localTrabalhoPsContactar">
+      <path value="notificadorLM.localTrabalhoPsContactar"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="notificadorLM.qualificacaoPsContactar">
+      <path value="notificadorLM.qualificacaoPsContactar"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

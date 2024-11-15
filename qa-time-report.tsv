@@ -1,0 +1,18 @@
+Source File	Size	loadResources	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
+/fsh-generated/resources/ImplementationGuide-hl7.fhir.pt.adr.json	6971	-	0	0	0	0	0	0	5	86	0	0	0	0	0	0	0	0	0	0	85	57	0	0	0	2	0	0
+fsh-generated/resources/AdverseEvent-Notifi-1.json	1005	21	0	0	0	1	0	0	0	317	0	0	0	0	0	0	0	0	0	0	13	9	0	0	0	0	0	0
+fsh-generated/resources/CodeSystem-adr-causalidade-cs.json	928	17	0	0	1	0	0	0	0	15	0	0	1	0	0	0	0	0	0	0	17	1646	0	0	0	0	0	0
+fsh-generated/resources/CodeSystem-adr-evolucao-cs.json	960	16	0	0	0	0	0	0	1	11	0	0	0	0	0	0	0	0	0	1	17	58	0	0	0	1	0	0
+fsh-generated/resources/CodeSystem-adr-gravidade-cs.json	979	17	0	0	0	0	0	0	0	11	0	0	0	0	0	0	0	1	0	0	16	56	0	0	0	0	0	0
+fsh-generated/resources/StructureDefinition-Alergia.json	1496	18	0	0	0	0	0	37	0	46	0	0	0	0	0	0	0	0	0	0	230	2207	0	0	0	7	0	1
+fsh-generated/resources/StructureDefinition-NotificacaoLM.json	2806	18	1	0	0	0	0	9	0	15	0	0	0	0	0	0	0	1	0	0	59	179	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-ReacaoAdversa.json	3476	19	0	0	0	0	0	49	0	35	0	0	0	0	0	0	0	1	0	0	331	883	0	0	0	8	1	1
+fsh-generated/resources/StructureDefinition-doenteLM.json	3348	17	0	0	0	0	0	77	0	16	0	0	0	0	0	0	0	0	0	0	66	154	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-informacoesLM.json	1906	16	0	0	0	0	0	7	0	13	0	0	1	0	0	0	0	0	0	0	40	88	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-medicamentoLM.json	4929	18	0	0	0	0	0	9	0	16	0	0	0	0	0	0	0	0	0	0	128	154	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-notificadorLM.json	6137	20	0	0	0	0	0	11	0	19	0	0	0	0	0	0	0	1	0	0	120	165	0	0	0	2	0	0
+fsh-generated/resources/StructureDefinition-reacaoAdversaLM.json	3708	17	0	0	0	0	0	7	0	16	0	0	0	0	0	0	0	0	0	0	84	98	0	0	0	1	0	2
+fsh-generated/resources/ValueSet-adr-causalidade-vs.json	384	15	0	0	0	0	0	0	0	93	0	0	0	0	0	0	0	0	0	0	8	2510	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-adr-evolucao-vs.json	392	15	1	0	0	0	0	0	0	10	0	0	0	0	0	0	0	0	0	0	8	42	0	0	0	1	0	0
+fsh-generated/resources/ValueSet-adr-gravidade-vs.json	380	15	0	0	0	0	0	0	0	9	0	0	0	0	0	0	0	0	0	0	8	51	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-meddra-vs.json	316	15	0	0	0	0	0	0	1	10	0	0	0	0	0	0	0	0	0	0	7	226	0	0	1	0	0	0

@@ -1,0 +1,4 @@
+URL,Version,Status,OIDs,Name,Title,Description,Used
+http://terminology.hl7.pt/CodeSystem/adr-causalidade,1.0.0,active,,causalidadeCS,Causalidade code system,"Causalidade code system",
+http://terminology.hl7.pt/CodeSystem/adr-evolucao,1.0.0,active,,EvolucaoCS,Evolução de uma RAM code system,"Evolução de uma RAM code system",
+http://terminology.hl7.pt/CodeSystem/adr-gravidade,1.0.0,active,,GravidadeCS,Causalidade code system,"Causalidade code system",

@@ -1,0 +1,446 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/adverse-event-actuality",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "AdverseEventActuality",
+      "title" : "Adverse Event Actuality",
+      "description" : "Overall nature of the adverse event, e.g. real or potential.",
+      "systems" : ["http://hl7.org/fhir/adverse-event-actuality"],
+      "oids" : ["2.16.840.1.113883.4.642.3.831"],
+      "sources" : ["2.16.840.1.113883.4.642.3.831"],
+      "uses" : {
+      },
+      "StructureDefinition-ReacaoAdversa.html" : "Perfil para notificação de RAM"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/adverse-event-category",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "AdverseEventCategory",
+      "title" : "Adverse Event Category",
+      "description" : "Overall categorization of the event, e.g. product-related or situational.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/adverse-event-category"
+      ],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.833",
+        "2.16.840.1.113883.4.642.3.806"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.833",
+        "2.16.840.1.113883.4.642.3.806"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-ReacaoAdversa.html" : "Perfil para notificação de RAM"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/adverse-event-causality-method",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "AdverseEventCausalityMethod",
+      "title" : "Adverse Event Causality Method",
+      "description" : "TODO.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/adverse-event-causality-method"
+      ],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.842",
+        "2.16.840.1.113883.4.642.3.817"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.842",
+        "2.16.840.1.113883.4.642.3.817"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-ReacaoAdversa.html" : "Perfil para notificação de RAM"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/adverse-event-contributing-factor",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "AdverseEventContributingFactor",
+      "title" : "AdverseEvent Contributing Factor",
+      "description" : "This value set includes codes that describe the contributing factors suspected to have increased the probability or severity of the adverse event.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3237"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3237"],
+      "uses" : {
+      },
+      "StructureDefinition-ReacaoAdversa.html" : "Perfil para notificação de RAM"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/adverse-event-mitigating-action",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "AdverseEventMitigatingAction",
+      "title" : "AdverseEvent Mitigating Action",
+      "description" : "This value set includes codes that describe the ameliorating actions taken after the adverse event occured in order to reduce the extent of harm.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3234"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3234"],
+      "uses" : {
+      },
+      "StructureDefinition-ReacaoAdversa.html" : "Perfil para notificação de RAM"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/adverse-event-participant-function",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "AdverseEventParticipantFunction",
+      "title" : "AdverseEvent Participant Function",
+      "description" : "This value set includes codes that describe the type of involvement of the actor in the adverse event.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ParticipationType"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3235"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3235"],
+      "uses" : {
+      },
+      "StructureDefinition-ReacaoAdversa.html" : "Perfil para notificação de RAM"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/adverse-event-preventive-action",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "AdverseEventPreventiveAction",
+      "title" : "AdverseEvent Preventive Action",
+      "description" : "This value set includes codes that describe the preventive actions that contributed to avoiding the adverse event.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3238"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3238"],
+      "uses" : {
+      },
+      "StructureDefinition-ReacaoAdversa.html" : "Perfil para notificação de RAM"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/adverse-event-status",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "AdverseEventStatus",
+      "title" : "Adverse Event Status",
+      "description" : "Codes identifying the lifecycle stage of an adverse event.",
+      "systems" : ["http://hl7.org/fhir/event-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3236"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3236"],
+      "uses" : {
+      },
+      "StructureDefinition-ReacaoAdversa.html" : "Perfil para notificação de RAM"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/adverse-event-supporting-info",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "AdverseEventSupportingInforation",
+      "title" : "AdverseEvent Supporting Information",
+      "description" : "This value set includes codes that describe the supporting information relevant to the event.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3239"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3239"],
+      "uses" : {
+      },
+      "StructureDefinition-ReacaoAdversa.html" : "Perfil para notificação de RAM"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/all-languages",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "AllLanguages",
+      "title" : "All Languages",
+      "description" : "This value set includes all possible codes from BCP-47 (see http://tools.ietf.org/html/bcp47)",
+      "systems" : ["urn:ietf:bcp:47"],
+      "oids" : ["2.16.840.1.113883.4.642.3.21"],
+      "sources" : ["2.16.840.1.113883.4.642.3.21"],
+      "uses" : {
+      },
+      "StructureDefinition-Alergia.html" : "Perfil para notificação de alergia",
+      "StructureDefinition-ReacaoAdversa.html" : "Perfil para notificação de RAM"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/allergy-intolerance-category",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "AllergyIntoleranceCategory",
+      "title" : "Allergy Intolerance Category",
+      "description" : "Category of an identified substance associated with allergies or intolerances.",
+      "systems" : ["http://hl7.org/fhir/allergy-intolerance-category"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.2.53",
+        "2.16.840.1.113883.4.642.3.133",
+        "2.16.840.1.113883.4.642.3.123"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.2.53",
+        "2.16.840.1.113883.4.642.3.133",
+        "2.16.840.1.113883.4.642.3.123"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-Alergia.html" : "Perfil para notificação de alergia"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/allergy-intolerance-criticality",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "AllergyIntoleranceCriticality",
+      "title" : "Allergy Intolerance Criticality",
+      "description" : "Estimate of the potential clinical harm, or seriousness, of a reaction to an identified substance.",
+      "systems" : ["http://hl7.org/fhir/allergy-intolerance-criticality"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.129",
+        "2.16.840.1.113883.4.642.3.119",
+        "2.16.840.1.113883.4.642.2.51"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.129",
+        "2.16.840.1.113883.4.642.3.119",
+        "2.16.840.1.113883.4.642.2.51"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-Alergia.html" : "Perfil para notificação de alergia"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/allergy-intolerance-type",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "AllergyIntoleranceType",
+      "title" : "Allergy Intolerance Type",
+      "description" : "Identification of the underlying physiological mechanism for a Reaction Risk.",
+      "systems" : ["http://hl7.org/fhir/allergy-intolerance-type"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.131",
+        "2.16.840.1.113883.4.642.3.121",
+        "2.16.840.1.113883.4.642.2.52"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.131",
+        "2.16.840.1.113883.4.642.3.121",
+        "2.16.840.1.113883.4.642.2.52"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-Alergia.html" : "Perfil para notificação de alergia"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/allergyintolerance-clinical",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "AllergyIntoleranceClinicalStatusCodes",
+      "title" : "AllergyIntolerance Clinical Status Codes",
+      "description" : "Preferred value set for AllergyIntolerance Clinical Status.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1372"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1372"],
+      "uses" : {
+      },
+      "StructureDefinition-Alergia.html" : "Perfil para notificação de alergia"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/allergyintolerance-code",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "SubstanceProductAndConditionAndNegationCodes",
+      "title" : "AllergyIntolerance Substance/Product, Condition and Negation Codes",
+      "description" : "This value set includes concept codes for specific substances/pharmaceutical products, allergy or intolerance conditions, and negation/exclusion codes to specify the absence of specific types of allergies or intolerances.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.137",
+        "2.16.840.1.113883.4.642.3.127"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.137",
+        "2.16.840.1.113883.4.642.3.127"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-Alergia.html" : "Perfil para notificação de alergia"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/allergyintolerance-verification",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "AllergyIntoleranceVerificationStatus",
+      "title" : "AllergyIntolerance Verification Status",
+      "description" : "The verification status to support or decline the clinical status of the allergy or intolerance.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1370"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1370"],
+      "uses" : {
+      },
+      "StructureDefinition-Alergia.html" : "Perfil para notificação de alergia"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/clinical-findings",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "SNOMEDCTClinicalFindings",
+      "title" : "SNOMED CT Clinical Findings",
+      "description" : "This value set includes all the \"Clinical finding\" [SNOMED CT](http://snomed.info/sct) codes - concepts where concept is-a 404684003 (Clinical finding (finding)).",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.232",
+        "2.16.840.1.113883.4.642.3.227",
+        "2.16.840.1.113883.4.642.2.115"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.232",
+        "2.16.840.1.113883.4.642.3.227",
+        "2.16.840.1.113883.4.642.2.115"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-Alergia.html" : "Perfil para notificação de alergia"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/languages",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "CommonLanguages",
+      "title" : "Common Languages",
+      "description" : "This value set includes common codes from BCP-47 (see http://tools.ietf.org/html/bcp47)",
+      "systems" : ["urn:ietf:bcp:47"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.891",
+        "2.16.840.1.113883.4.642.3.20"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.891",
+        "2.16.840.1.113883.4.642.3.20"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-Alergia.html" : "Perfil para notificação de alergia",
+      "StructureDefinition-ReacaoAdversa.html" : "Perfil para notificação de RAM"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/participation-role-type",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ParticipationRoleType",
+      "title" : "Participation Role Type",
+      "description" : "This FHIR value set is comprised of Actor participation Type codes, which can be used to value FHIR agents, actors, and other role elements. The codes are intended to express how the agent participated in some activity. Sometimes refered to the agent functional-role relative to the activity.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/extra-security-role-type",
+        "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+        "http://dicom.nema.org/resources/ontology/DCM"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.54"],
+      "sources" : ["2.16.840.1.113883.4.642.3.54"],
+      "uses" : {
+      },
+      "StructureDefinition-Alergia.html" : "Perfil para notificação de alergia"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/reaction-event-severity",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "AllergyIntoleranceSeverity",
+      "title" : "Allergy Intolerance Severity",
+      "description" : "Clinical assessment of the severity of a reaction event as a whole, potentially considering multiple different manifestations.",
+      "systems" : ["http://hl7.org/fhir/reaction-event-severity"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.135",
+        "2.16.840.1.113883.4.642.3.125",
+        "2.16.840.1.113883.4.642.2.56"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.135",
+        "2.16.840.1.113883.4.642.3.125",
+        "2.16.840.1.113883.4.642.2.56"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-Alergia.html" : "Perfil para notificação de alergia"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/route-codes",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "SNOMEDCTRouteCodes",
+      "title" : "SNOMED CT Route Codes",
+      "description" : "This value set includes all Route codes from SNOMED CT - provided as an exemplar.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.98"],
+      "sources" : ["2.16.840.1.113883.4.642.3.98"],
+      "uses" : {
+      },
+      "StructureDefinition-Alergia.html" : "Perfil para notificação de alergia"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/substance-code",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "SubstanceCode",
+      "title" : "Substance Code",
+      "description" : "This value set contains concept codes for specific substances. It includes codes from [SNOMED](http://snomed.info/sct) where concept is-a 105590001 (Substance (substance))",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.466",
+        "2.16.840.1.113883.4.642.2.57",
+        "2.16.840.1.113883.4.642.3.473"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.466",
+        "2.16.840.1.113883.4.642.2.57",
+        "2.16.840.1.113883.4.642.3.473"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-Alergia.html" : "Perfil para notificação de alergia"
+    },
+    {
+      "url" : "https://hl7.pt/fhir/ADR/ValueSet/adr-causalidade-vs",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "causalidadeVS",
+      "title" : "Causalidade ValueSet",
+      "description" : "Causalidade ValueSet",
+      "systems" : ["http://terminology.hl7.pt/CodeSystem/adr-causalidade"],
+      "uses" : {
+      },
+      "StructureDefinition-ReacaoAdversa.html" : "Perfil para notificação de RAM"
+    },
+    {
+      "url" : "https://hl7.pt/fhir/ADR/ValueSet/adr-evolucao-vs",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "EvolucaoVS",
+      "title" : "Evolução de uma RAM ValueSet",
+      "description" : "Evolução de uma RAM ValueSet",
+      "systems" : ["http://terminology.hl7.pt/CodeSystem/adr-evolucao"],
+      "uses" : {
+      },
+      "StructureDefinition-ReacaoAdversa.html" : "Perfil para notificação de RAM"
+    },
+    {
+      "url" : "https://hl7.pt/fhir/ADR/ValueSet/adr-gravidade-vs",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "GravidadeVS",
+      "title" : "Gravidade RAM ValueSet",
+      "description" : "Gravidade RAM ValueSet",
+      "systems" : ["http://terminology.hl7.pt/CodeSystem/adr-gravidade"],
+      "uses" : {
+      },
+      "StructureDefinition-ReacaoAdversa.html" : "Perfil para notificação de RAM"
+    },
+    {
+      "url" : "https://hl7.pt/fhir/ADR/ValueSet/meddra-vs",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "meddraVS",
+      "title" : "MedDRA ValueSet",
+      "description" : "MedDRA ValueSet",
+      "systems" : ["urn:ietf:rfc:3986"],
+      "uses" : {
+      },
+      "StructureDefinition-ReacaoAdversa.html" : "Perfil para notificação de RAM"
+    }
+  ]
+}
