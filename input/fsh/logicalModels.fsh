@@ -37,7 +37,7 @@ Characteristics: #can-be-target
 * dataInicioReacaoPrecisao 0..1 code "Precisão da Data de inicio da reacção"
 * duracao 0..1  integer "Duração"
 * duracaoPrecisao 0..1  code "Precisão da duração"
-* tratamento 0..1 string  ""
+* tratamento 0..1 string  "Tratamento"
 * causalidade 0..1  code "Causalidade"
 
 
@@ -77,13 +77,13 @@ Characteristics: #can-be-target
 * email 0..1  string "email"
 * telefone 0..1 string "telefone"
 * numeroCarteira 0..1  string "Carteira Profissional"
-* reAdvComunicadaPs 0..1 string ""
-* psComunicouInfarmed 0..1 string ""
-* autInfarmdContactarPs 0..1 string ""
-* nomePsContactar 0..1 string ""
-* telefonePsContactar 0..1 string ""
-* localTrabalhoPsContactar 0..1 string ""
-* qualificacaoPsContactar 0..1 string ""
+* reAdvComunicadaPs 0..1 string "reAdvComunicadaPs"
+* psComunicouInfarmed 0..1 string "psComunicouInfarmed"
+* autInfarmdContactarPs 0..1 string "autInfarmdContactarPs"
+* nomePsContactar 0..1 string "nomePsContactar"
+* telefonePsContactar 0..1 string "telefonePsContactar"
+* localTrabalhoPsContactar 0..1 string "localTrabalhoPsContactar"
+* qualificacaoPsContactar 0..1 string "qualificacaoPsContactar"
 
 
 Logical: informacoesLM

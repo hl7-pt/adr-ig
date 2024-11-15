@@ -59,3 +59,37 @@ Description: "Perfil para notificação de alergia"
 
 
 
+Profile: Doente
+Parent: Patient
+Title: "Perfil para notificação de RAM - Doente"
+Description: "Perfil para notificação de RAM - Doente"
+
+* name MS
+* birthDate MS
+* gender MS
+
+
+Profile: Notificador
+Parent: Practitioner
+Title: "Perfil para notificação de RAM - Notificador"
+Description: "Perfil para notificação de RAM - Notificador"
+
+* name MS
+* address MS 
+* qualification MS
+* telecom MS
+
+
+Profile: InformacaoMedicamento
+Parent: MedicationStatement
+Title: "Perfil para notificação de RAM - medicamento"
+Description: "Perfil para notificação de RAM - medicamento"
+
+* contained 1..1 
+* contained only Medication // The first contained resource must be a Medication
+
+* medication MS
+* subject MS
+* effective MS
+* dosage.route MS
+* dosage.doseAndRate MS
