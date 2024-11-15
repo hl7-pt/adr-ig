@@ -5,14 +5,19 @@ Title: "Perfil para notificação de RAM"
 Description: "Perfil para notificação de RAM"
 
 
-* identifier 1..* MS
+* identifier  MS
 * identifier ^short = "Identificação da reacção"
 
+
+* code 1..1 MS 
+* code from meddraVS (preferred)
+* code ^short = "Código da Reacção que aconteceu"
 * subject MS
 * subject ^short = "Doente sobre o qual existiu uma potencial reacção"
-
 * recorder MS
 * recorder ^short = "Notificador"
+* occurrence[x] MS
+* occurrence[x] ^short = "Data inicio e duração reacção"
 
 * suspectEntity 1..1 MS
 * suspectEntity.instance[x] MS
@@ -31,8 +36,13 @@ Description: "Perfil para notificação de RAM"
 * suspectEntity.causality.assessmentMethod MS
 * suspectEntity.causality.assessmentMethod ^short = "Método de imputação de causalidade"
 
-* extension contains EffectCodeableConcept named EffectCodeableConcept 1..* MS
 
+* preventiveAction MS
+* preventiveAction ^short = "Medida Tomada"
+
+* mitigatingAction ^short = "Medida Tomada"
+
+* mitigatingAction MS
 
 Profile: Alergia
 Parent: AllergyIntolerance
@@ -47,10 +57,5 @@ Description: "Perfil para notificação de alergia"
 * criticality 1..1 MS
 * onset[x] MS
 
-
-
-Extension: EffectCodeableConcept
-Description: "Reacção adversa"
-* value[x] only CodeableConcept
 
 

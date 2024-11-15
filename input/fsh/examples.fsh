@@ -1,12 +1,12 @@
 
-Instance: AdverseEvent-1
+Instance: Notifi-1
 InstanceOf: ReacaoAdversa
 Description: "Exemplo de uma reacção adversa"
 
 * identifier.system = "http:/example.org"
 * identifier.value = "1"
 
-* extension[EffectCodeableConcept].valueCodeableConcept = http://example.org#1 "aftas orais"
+* code = http://example.org#1 "aftas orais"
 * status = #completed
 * actuality = #actual
 * subject.identifier.system = "https://instituição.pt/ids"

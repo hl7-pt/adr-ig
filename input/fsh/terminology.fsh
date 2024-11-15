@@ -102,3 +102,10 @@ Description:  "Gravidade RAM ValueSet"
 
 * include codes from system adr-gravidade-cs
 
+ValueSet: meddraVS
+Id: meddra-vs
+Title:  "MedDRA ValueSet"
+Description:  "MedDRA ValueSet"
+
+* include codes from system urn:ietf:rfc:3986
+

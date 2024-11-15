@@ -24,6 +24,7 @@ Characteristics: #can-be-target
 * pesoKg 0..1 decimal "Peso em Kg"
 * alturaCm 0..1 decimal "Altura em cms"
 
+
 Logical: reacaoAdversaLM
 Title: "Reacção Adversa (modelo)"
 Description: "Modelo Lógico - Reacção Adversa"
@@ -38,6 +39,8 @@ Characteristics: #can-be-target
 * duracaoPrecisao 0..1  code "Precisão da duração"
 * tratamento 0..1 string  ""
 * causalidade 0..1  code "Causalidade"
+
+
 Logical: medicamentoLM
 Title: "Medicamento (modelo)"
 Description: "Modelo Lógico - Medicamento"
@@ -55,6 +58,7 @@ Characteristics: #can-be-target
 * viaAdministracaoCode 0..1  string "Via de administração" 
 * tipoAutorizacaoCode 0..1  code "Tipo de Autorização"
 * indicacaoTerapeutica 0..1  string "Indicação Terapêutica do medicamento"
+
 
 Logical: notificadorLM
 Title: "Notificador (modelo)"
@@ -80,6 +84,7 @@ Characteristics: #can-be-target
 * telefonePsContactar 0..1 string ""
 * localTrabalhoPsContactar 0..1 string ""
 * qualificacaoPsContactar 0..1 string ""
+
 
 Logical: informacoesLM
 Title: "Informações Adicionais (modelo)"
