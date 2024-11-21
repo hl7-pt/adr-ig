@@ -64,7 +64,6 @@ Instance: medinfo-1
 InstanceOf: InformacaoMedicamento
 Description: "Exemplo de informação sobre o medicamento"
 
-* contained = med1
 * subject = Reference(pat-1)
 * medication = Reference(med1)
 * dosage.route = http://example.org#1 "Oral"

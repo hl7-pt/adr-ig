@@ -85,8 +85,6 @@ Parent: MedicationStatement
 Title: "Perfil para notificação de RAM - medicamento"
 Description: "Perfil para notificação de RAM - medicamento"
 
-* contained 1..1 
-* contained only Medication // The first contained resource must be a Medication
 
 * medication MS
 * subject MS
