@@ -1,6 +1,6 @@
   <blockquote class="stu-note">
-    <p>The specification herewith documented is for the time being a proof of concept specification, and may not be used for any implementation purposes. 
-    No liability can be inferred from the use or misuse of this specification, or its consequences.</p>
+    <p>A especificação aqui documentada é, por enquanto, uma especificação de prova de conceito e não pode ser utilizada para fins de implementação.
+Nenhuma responsabilidade pode ser inferida pelo uso ou mau uso desta especificação, ou pelas suas consequências.</p>
   </blockquote>
 
 
