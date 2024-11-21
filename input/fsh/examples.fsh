@@ -38,7 +38,7 @@ Description: "Exemplo de uma reacção adversa - Com toda a informação inclusa
 * recordedDate = "2024-11-14"
 
 * seriousness = http://example.org#serious
-* suspectEntity.instanceReference = Reference(med1)
+* suspectEntity.instanceReference = Reference(medinfo)
 
 
 Instance: pat-1
@@ -59,3 +59,23 @@ Description: "Exemplo de um notificador"
 * telecom[=].value = "exemplo@exemplo.org"
 * telecom[=].use = #work
 
+
+Instance: medinfo-1
+InstanceOf: InformacaoMedicamento
+Description: "Exemplo de informação sobre o medicamento"
+
+* contained = med1
+* subject = Reference(pat-1)
+* medication = Reference(med1)
+* dosage.route = http://example.org#1 "Oral"
+* effectiveDateTime = "2024-11-01"
+
+
+
+Instance: med1
+InstanceOf: Medication
+Description: "Exemplo de informação sobre o medicamento"
+Usage: #inline
+
+* code = http://example.org#1 "Evrysdi / Risdiplam"
+* batch.lotNumber = "a11234"

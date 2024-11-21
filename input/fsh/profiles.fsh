@@ -93,3 +93,4 @@ Description: "Perfil para notificação de RAM - medicamento"
 * effective[x] MS
 * dosage.route MS
 * dosage.doseAndRate MS
+* status = #recorded
