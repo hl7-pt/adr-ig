@@ -31,14 +31,14 @@ Description: "Exemplo de uma reacção adversa - Com toda a informação inclusa
 * code = urn:ietf:rfc:3986#1 "aftas orais"
 * status = #completed
 * actuality = #actual
-* subject = Reference(pat1)
-* recorder = Reference(not1)
+* subject = Reference(pat-1)
+* recorder = Reference(not-1)
 
 * detected = "2024-11-14"
 * recordedDate = "2024-11-14"
 
 * seriousness = http://example.org#serious
-* suspectEntity.instanceReference = Reference(medinfo)
+* suspectEntity.instanceReference = Reference(medinfo-1)
 
 
 Instance: pat-1
