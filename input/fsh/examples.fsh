@@ -31,8 +31,8 @@ Description: "Exemplo de uma reacção adversa - Com toda a informação inclusa
 * code = http://example.org#1 "aftas orais"
 * status = #completed
 * actuality = #actual
-* subject.identifier.system = "https://instituição.pt/ids"
-* subject.identifier.value = "xxx"
+* subject = Reference(pat1)
+
 
 * detected = "2024-11-14"
 * recordedDate = "2024-11-14"

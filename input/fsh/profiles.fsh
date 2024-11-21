@@ -90,6 +90,6 @@ Description: "Perfil para notificação de RAM - medicamento"
 
 * medication MS
 * subject MS
-* effective MS
+* effective[x] MS
 * dosage.route MS
 * dosage.doseAndRate MS
