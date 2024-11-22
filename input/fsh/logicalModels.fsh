@@ -3,14 +3,14 @@ Title: "Notificação (modelo)"
 Description: "Modelo Lógico - Notificação"
 Characteristics: #can-be-target
 
-* Doente 1..1 doenteLM "Informações sobre o Doente"
-* reacaoAdversa 1..* reacaoAdversaLM "Informações sobre a reacção adversa"
-* medicamento 1..* medicamentoLM "Informações sobre os medicamentos"
-* notificador 1..1 notificadorLM "Informações sobre os notificadores"
-* informacoes 0..* informacoesLM "Informações adicionais"
+* Doente 1..1 DoenteLM "Informações sobre o Doente"
+* reacaoAdversa 1..* ReacaoAdversaLM "Informações sobre a reacção adversa"
+* medicamento 1..* MedicamentoLM "Informações sobre os medicamentos"
+* notificador 1..1 NotificadorLM "Informações sobre os notificadores"
+* informacoes 0..* InformacoesLM "Informações adicionais"
 
 
-Logical: doenteLM
+Logical: DoenteLM
 Title: "Doente (modelo)"
 Description: "Modelo Lógico - Doente"
 Characteristics: #can-be-target
@@ -25,7 +25,7 @@ Characteristics: #can-be-target
 * alturaCm 0..1 decimal "Altura em cms"
 
 
-Logical: reacaoAdversaLM
+Logical: ReacaoAdversaLM
 Title: "Reacção Adversa (modelo)"
 Description: "Modelo Lógico - Reacção Adversa"
 Characteristics: #can-be-target
@@ -41,7 +41,7 @@ Characteristics: #can-be-target
 * causalidade 0..1  code "Causalidade"
 
 
-Logical: medicamentoLM
+Logical: MedicamentoLM
 Title: "Medicamento (modelo)"
 Description: "Modelo Lógico - Medicamento"
 Characteristics: #can-be-target
@@ -60,7 +60,7 @@ Characteristics: #can-be-target
 * indicacaoTerapeutica 0..1  string "Indicação Terapêutica do medicamento"
 
 
-Logical: notificadorLM
+Logical: NotificadorLM
 Title: "Notificador (modelo)"
 Description: "Modelo Lógico - Notificador"
 Characteristics: #can-be-target
@@ -86,7 +86,7 @@ Characteristics: #can-be-target
 * qualificacaoPsContactar 0..1 string "qualificacaoPsContactar"
 
 
-Logical: informacoesLM
+Logical: InformacoesLM
 Title: "Informações Adicionais (modelo)"
 Description: "Modelo Lógico - Informações Adicionais"
 Characteristics: #can-be-target

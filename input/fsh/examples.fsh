@@ -74,7 +74,38 @@ Description: "Exemplo de informação sobre o medicamento"
 Instance: med1
 InstanceOf: Medication
 Description: "Exemplo de informação sobre o medicamento"
-Usage: #inline
 
 * code = http://example.org#1 "Evrysdi / Risdiplam"
 * batch.lotNumber = "a11234"
+
+
+
+Instance: messageheader1
+InstanceOf: MessageHeader
+Usage: #inline
+
+* eventCoding = http://example.org#ADR "Reacção Adversa"
+* source.name = "Reporter"
+
+Instance: message
+InstanceOf: Bundle
+Description: "Exemplo de informação de uma mensagem com os dados todos"
+Usage: #example
+
+* identifier.system = "urn:example-org:sender.identifiers"
+* identifier.value = "efdd254b-0e09-4164-883e-35cf3871715f"
+* type = #message
+* timestamp = "2015-07-14T11:15:33+10:00"
+* entry[0].fullUrl = "http://example.org/messageheader1"
+* entry[=].resource = messageheader1
+* entry[+].fullUrl = "http://example.org/Notifi-2"
+* entry[=].resource = Notifi-2
+* entry[+].fullUrl = "http://example.org/pat-1"
+* entry[=].resource = pat-1
+* entry[+].fullUrl = "http://example.org/not-1"
+* entry[=].resource = not-1
+* entry[+].fullUrl = "http://example.org/medinfo-1"
+* entry[=].resource = medinfo-1
+* entry[+].fullUrl = "http://example.org/med1"
+* entry[=].resource = med1
+

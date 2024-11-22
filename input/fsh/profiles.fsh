@@ -10,7 +10,7 @@ Description: "Perfil para notificação de RAM"
 
 
 * code 1..1 MS 
-* code from meddraVS (preferred)
+* code from MeddraVS (preferred)
 * code ^short = "Código da Reacção que aconteceu"
 * subject MS
 * subject ^short = "Doente sobre o qual existiu uma potencial reacção"
@@ -29,7 +29,7 @@ Description: "Perfil para notificação de RAM"
 * outcome from EvolucaoVS (required)
 
 * suspectEntity.causality.entityRelatedness MS
-* suspectEntity.causality.entityRelatedness from causalidadeVS (required)
+* suspectEntity.causality.entityRelatedness from CausalidadeVS (required)
 
 * suspectEntity.causality.entityRelatedness ^short = "Grau de causalidade"
 
@@ -92,3 +92,5 @@ Description: "Perfil para notificação de RAM - medicamento"
 * dosage.route MS
 * dosage.doseAndRate MS
 * status = #recorded
+
+

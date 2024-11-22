@@ -34,7 +34,7 @@ Description:  "Evolução de uma RAM ValueSet"
 
 * include codes from system adr-evolucao-cs
 
-CodeSystem: causalidadeCS
+CodeSystem: CausalidadeCS
 Id:         adr-causalidade-cs
 Title:     "Causalidade code system"
 Description: "Causalidade code system"
@@ -60,7 +60,7 @@ Description: "Causalidade code system"
     "Não Classificável"
 
 
-ValueSet: causalidadeVS
+ValueSet: CausalidadeVS
 Id: adr-causalidade-vs
 Title:  "Causalidade ValueSet"
 Description:  "Causalidade ValueSet"
@@ -102,7 +102,7 @@ Description:  "Gravidade RAM ValueSet"
 
 * include codes from system adr-gravidade-cs
 
-ValueSet: meddraVS
+ValueSet: MeddraVS
 Id: meddra-vs
 Title:  "MedDRA ValueSet"
 Description:  "MedDRA ValueSet"
