@@ -32,6 +32,7 @@ ValueSet: EvolucaoVS
 Id: adr-evolucao-vs
 Title:  "Evolução de uma RAM ValueSet"
 Description:  "Evolução de uma RAM ValueSet"
+* ^experimental = true
 
 * include codes from system adr-evolucao-cs
 
@@ -68,6 +69,7 @@ ValueSet: CausalidadeVS
 Id: adr-causalidade-vs
 Title:  "Causalidade ValueSet"
 Description:  "Causalidade ValueSet"
+* ^experimental = true
 
 * include codes from system adr-causalidade-cs
 
@@ -106,6 +108,7 @@ ValueSet: GravidadeVS
 Id: adr-gravidade-vs
 Title:  "Gravidade RAM ValueSet"
 Description:  "Gravidade RAM ValueSet"
+* ^experimental = true
 
 * include codes from system adr-gravidade-cs
 
@@ -113,6 +116,7 @@ ValueSet: MeddraVS
 Id: meddra-vs
 Title:  "MedDRA ValueSet"
 Description:  "MedDRA ValueSet"
+* ^experimental = true
 
 * include codes from system http://terminology.hl7.org/CodeSystem/MDRPOR
 
