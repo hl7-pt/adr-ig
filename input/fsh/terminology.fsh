@@ -3,6 +3,7 @@ CodeSystem: EvolucaoCS
 Id:         adr-evolucao-cs
 Title:     "Evolução de uma RAM code system"
 Description: "Evolução de uma RAM code system"
+* ^experimental = true
 
 //* ^url =  "http://terminologia.hl7.pt/CodeSystem/adr-evolucao"
 * #CURA
@@ -39,6 +40,8 @@ Id:         adr-causalidade-cs
 Title:     "Causalidade code system"
 Description: "Causalidade code system"
 //Definitivo - Provável- Possível- Condicional- Improvável- Não Classificável
+* ^experimental = true
+
 //* ^url =  "http://terminology.hl7.pt/CodeSystem/adr-causalidade"
 * #DEF
     "Definitivo"
@@ -74,6 +77,8 @@ Id:         adr-gravidade-cs
 Title:     "Causalidade code system"
 Description: "Causalidade code system"
 //Morte - Risco de vida - Hospitalização - Incapacidade - Anomalia congenita - Clinicamente importante
+* ^experimental = true
+
 //* ^url =  "http://terminology.hl7.pt/CodeSystem/adr-gravidade"
 * #MORTE
     "Morte"

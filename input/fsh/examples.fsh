@@ -15,7 +15,7 @@ Description: "Exemplo de uma reacção adversa - mais simples sem dados"
 * detected = "2024-11-14"
 * recordedDate = "2024-11-14"
 
-* seriousness = http://terminology.hl7.pt/CodeSystem/adr-gravidade#HOSP "Hospitalização"
+* seriousness = adr-gravidade-cs#HOSP "Hospitalização"
 * suspectEntity.instanceCodeableConcept = http://example.org#1 "Evrysdi / Risdiplam"
 
 
@@ -37,7 +37,7 @@ Description: "Exemplo de uma reacção adversa - Com toda a informação inclusa
 * detected = "2024-11-14"
 * recordedDate = "2024-11-14"
 
-* seriousness = http://terminology.hl7.pt/CodeSystem/adr-gravidade#HOSP "Hospitalização"
+* seriousness = adr-gravidade-cs#HOSP "Hospitalização"
 * suspectEntity.instanceReference = Reference(medinfo-1)
 
 
