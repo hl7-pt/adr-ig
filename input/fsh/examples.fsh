@@ -6,7 +6,7 @@ Description: "Exemplo de uma reacção adversa - mais simples sem dados"
 * identifier.system = "http:/example.org"
 * identifier.value = "1"
 
-* code = meddra-vs#10037660 "Pyrexia"
+* code = http://terminology.hl7.org/CodeSystem/MDRPOR#10037660 "Pyrexia"
 * status = #completed
 * actuality = #actual
 * subject.identifier.system = "https://instituição.pt/ids"
@@ -28,7 +28,7 @@ Description: "Exemplo de uma reacção adversa - Com toda a informação inclusa
 * identifier.system = "http:/example.org"
 * identifier.value = "2"
 
-* code = meddra-vs#10037660 "Pyrexia"
+* code = http://terminology.hl7.org/CodeSystem/MDRPOR#10037660 "Pyrexia"
 * status = #completed
 * actuality = #actual
 * subject = Reference(pat-1)
@@ -109,14 +109,7 @@ Usage: #example
 * entry[+].fullUrl = "http://example.org/Medication/med1"
 * entry[=].resource = med1
 
-* entry[+].fullUrl = "http://example.org/Observation/pregnancyNN"
-* entry[=].resource = pregnancyNN
 
-* entry[+].fullUrl = "http://example.org/Patient/newBornNN"
-* entry[=].resource = newBornNN
-
-* entry[+].fullUrl = "http://example.org/Immunization/vaccNN"
-* entry[=].resource = vaccNN
 
 
 
