@@ -6,7 +6,7 @@ Description: "Exemplo de uma reacção adversa - mais simples sem dados"
 * identifier.system = "http:/example.org"
 * identifier.value = "1"
 
-* code = http://example.org#1 "aftas orais"
+* code = urn:ietf:rfc:3986#1 "aftas orais"
 * status = #completed
 * actuality = #actual
 * subject.identifier.system = "https://instituição.pt/ids"
@@ -15,7 +15,7 @@ Description: "Exemplo de uma reacção adversa - mais simples sem dados"
 * detected = "2024-11-14"
 * recordedDate = "2024-11-14"
 
-* seriousness = http://example.org#serious
+* seriousness = http://terminology.hl7.pt/CodeSystem/adr-gravidade#HOSP "Hospitalização"
 * suspectEntity.instanceCodeableConcept = http://example.org#1 "Evrysdi / Risdiplam"
 
 
@@ -37,7 +37,7 @@ Description: "Exemplo de uma reacção adversa - Com toda a informação inclusa
 * detected = "2024-11-14"
 * recordedDate = "2024-11-14"
 
-* seriousness = http://example.org#serious
+* seriousness = http://terminology.hl7.pt/CodeSystem/adr-gravidade#HOSP "Hospitalização"
 * suspectEntity.instanceReference = Reference(medinfo-1)
 
 
@@ -96,16 +96,16 @@ Usage: #example
 * identifier.value = "efdd254b-0e09-4164-883e-35cf3871715f"
 * type = #message
 * timestamp = "2015-07-14T11:15:33+10:00"
-* entry[0].fullUrl = "http://example.org/messageheader1"
+* entry[0].fullUrl = "http://example.org/MessageHeader/messageheader1"
 * entry[=].resource = messageheader1
-* entry[+].fullUrl = "http://example.org/Notifi-2"
+* entry[+].fullUrl = "http://example.org/AdverseEvent/Notifi-2"
 * entry[=].resource = Notifi-2
-* entry[+].fullUrl = "http://example.org/pat-1"
+* entry[+].fullUrl = "http://example.org/Patient/pat-1"
 * entry[=].resource = pat-1
-* entry[+].fullUrl = "http://example.org/not-1"
+* entry[+].fullUrl = "http://example.org/Patient/not-1"
 * entry[=].resource = not-1
-* entry[+].fullUrl = "http://example.org/medinfo-1"
+* entry[+].fullUrl = "http://example.org/MedicationStatement/medinfo-1"
 * entry[=].resource = medinfo-1
-* entry[+].fullUrl = "http://example.org/med1"
+* entry[+].fullUrl = "http://example.org/Medication/med1"
 * entry[=].resource = med1
 
