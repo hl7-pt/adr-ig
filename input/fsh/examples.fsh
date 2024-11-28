@@ -6,7 +6,7 @@ Description: "Exemplo de uma reacção adversa - mais simples sem dados"
 * identifier.system = "http:/example.org"
 * identifier.value = "1"
 
-* code = urn:ietf:rfc:3986#10037660 "Pyrexia"
+* code = meddra-vs#10037660 "Pyrexia"
 * status = #completed
 * actuality = #actual
 * subject.identifier.system = "https://instituição.pt/ids"
@@ -28,7 +28,7 @@ Description: "Exemplo de uma reacção adversa - Com toda a informação inclusa
 * identifier.system = "http:/example.org"
 * identifier.value = "2"
 
-* code = urn:ietf:rfc:3986#10037660 "Pyrexia"
+* code = meddra-vs#10037660 "Pyrexia"
 * status = #completed
 * actuality = #actual
 * subject = Reference(pat-1)
