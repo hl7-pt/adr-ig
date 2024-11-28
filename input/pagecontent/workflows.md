@@ -6,7 +6,7 @@ A mais simples passará por um sistema que regista a informação e a expôe por
 <br clear="all"/>
 
 
-Outra alternativa, mais semelhante à lógica do V2, seria a de enviar uma mensagem FHIR quando um registo acontece.
+Outra alternativa, mais semelhante à lógica do V2, seria a de enviar uma mensagem HL7 FHIR quando um registo acontece.
 
 <div>{% include wf2.svg %}</div>
 <br clear="all"/>

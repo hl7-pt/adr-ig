@@ -8,15 +8,15 @@ skinparam PackageTitleAlignment center
 
 
 
-actor "Profissional 1" as REC 
+actor "Profissional 1" as HCP1 
 participant "Sistema 1" as Server
 
 participant "Sistema 2" as CON
-actor "Profissional" as HCP
+actor "Profissional 2" as HCP2
 
-REC -> Server: Regista alergia ou RAM
+HCP1 -> Server: Regista alergia ou RAM
 
-HCP->CON: Necessidade de saber alergias ou RAM de doente
+HCP2->CON: Necessidade de saber alergias ou RAM de doente
 CON->Server: Pede informação de paciente(s) por REST
 
 

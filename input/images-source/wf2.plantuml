@@ -16,7 +16,7 @@ actor "Profissional" as HCP
 
 REC -> Server: Regista alergia ou RAM
 
-Server->CON: Envio de Mensagem FHIR com informações novas
+Server->CON: Envio de Mensagem com informações novas
 CON->HCP: Apresenta as informações quando necessário 
 
 
