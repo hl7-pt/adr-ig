@@ -4,7 +4,7 @@ Id:         adr-evolucao-cs
 Title:     "Evolução de uma RAM code system"
 Description: "Evolução de uma RAM code system"
 * ^experimental = true
-
+* ^caseSensitive = false
 //* ^url =  "http://terminologia.hl7.pt/CodeSystem/adr-evolucao"
 * #CURA
     "Cura"
@@ -41,6 +41,7 @@ Title:     "Causalidade code system"
 Description: "Causalidade code system"
 //Definitivo - Provável- Possível- Condicional- Improvável- Não Classificável
 * ^experimental = true
+* ^caseSensitive = false
 
 //* ^url =  "http://terminology.hl7.pt/CodeSystem/adr-causalidade"
 * #DEF
@@ -78,6 +79,7 @@ Title:     "Causalidade code system"
 Description: "Causalidade code system"
 //Morte - Risco de vida - Hospitalização - Incapacidade - Anomalia congenita - Clinicamente importante
 * ^experimental = true
+* ^caseSensitive = false
 
 //* ^url =  "http://terminology.hl7.pt/CodeSystem/adr-gravidade"
 * #MORTE
@@ -112,5 +114,5 @@ Id: meddra-vs
 Title:  "MedDRA ValueSet"
 Description:  "MedDRA ValueSet"
 
-* include codes from system urn:ietf:rfc:3986
+* include codes from system http://terminology.hl7.org/CodeSystem/MDRPOR
 
