@@ -1,0 +1,51 @@
+{
+  "resourceType" : "AdverseEvent",
+  "id" : "Notifi-1",
+  "meta" : {
+    "profile" : ["https://hl7.pt/fhir/ADR/StructureDefinition/ReacaoAdversa"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: AdverseEvent Notifi-1</b></p><a name=\"Notifi-1\"> </a><a name=\"hcNotifi-1\"> </a><a name=\"Notifi-1-pt-PT\"> </a><p><b>identifier</b>: <code>http:/example.org</code>/1</p><p><b>status</b>: Completed</p><p><b>actuality</b>: Adverse Event</p><p><b>code</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/MDRPOR 10037660}\">Pyrexia</span></p><p><b>subject</b>: Identifier: <code>https://instituição.pt/ids</code>/xxx</p><p><b>detected</b>: 2024-11-14</p><p><b>recordedDate</b>: 2024-11-14</p><p><b>seriousness</b>: <span title=\"Codes:{https://hl7.pt/fhir/ADR/CodeSystem/adr-gravidade-cs HOSP}\">Hospitalização</span></p><p><b>recorder</b>: <a href=\"Practitioner-not-1.html\">Practitioner Sandra </a></p><h3>SuspectEntities</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Instance[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://example.org 1}\">Evrysdi / Risdiplam</span></td></tr></table></div>"
+  },
+  "identifier" : [{
+    "system" : "http:/example.org",
+    "value" : "1"
+  }],
+  "status" : "completed",
+  "actuality" : "actual",
+  "code" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/MDRPOR",
+      "code" : "10037660",
+      "display" : "Pyrexia"
+    }]
+  },
+  "subject" : {
+    "identifier" : {
+      "system" : "https://instituição.pt/ids",
+      "value" : "xxx"
+    }
+  },
+  "detected" : "2024-11-14",
+  "recordedDate" : "2024-11-14",
+  "seriousness" : {
+    "coding" : [{
+      "system" : "https://hl7.pt/fhir/ADR/CodeSystem/adr-gravidade-cs",
+      "code" : "HOSP",
+      "display" : "Hospitalização"
+    }]
+  },
+  "recorder" : {
+    "reference" : "Practitioner/not-1"
+  },
+  "suspectEntity" : [{
+    "instanceCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://example.org",
+        "code" : "1",
+        "display" : "Evrysdi / Risdiplam"
+      }]
+    }
+  }]
+}

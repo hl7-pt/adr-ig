@@ -1,0 +1,16 @@
+{
+  "resourceType" : "Patient",
+  "id" : "pat-1",
+  "meta" : {
+    "profile" : ["https://hl7.pt/fhir/ADR/StructureDefinition/Doente"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient pat-1</b></p><a name=\"pat-1\"> </a><a name=\"hcpat-1\"> </a><a name=\"pat-1-pt-PT\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Américo  Male, DoB: 1980-01-01</p><hr/></div>"
+  },
+  "name" : [{
+    "given" : ["Américo"]
+  }],
+  "gender" : "male",
+  "birthDate" : "1980-01-01"
+}

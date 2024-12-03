@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="not-1"/>
+  <meta>
+    <profile value="https://hl7.pt/fhir/ADR/StructureDefinition/ProfissionalSaude"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Practitioner not-1</b></p><a name="not-1"> </a><a name="hcnot-1"> </a><a name="not-1-pt-PT"> </a><p><b>name</b>: Sandra </p><p><b>telecom</b>: <a href="mailto:exemplo@exemplo.org">exemplo@exemplo.org</a></p><h3>Qualifications</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/v2-0360 PA}">Physician Assistant</span></td></tr></table></div>
+  </text>
+  <name>
+    <given value="Sandra"/>
+  </name>
+  <telecom>
+    <system value="email"/>
+    <value value="exemplo@exemplo.org"/>
+    <use value="work"/>
+  </telecom>
+  <qualification>
+    <code>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0360"/>
+        <code value="PA"/>
+        <display value="Physician Assistant"/>
+      </coding>
+    </code>
+  </qualification>
+</Practitioner>

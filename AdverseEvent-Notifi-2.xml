@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<AdverseEvent xmlns="http://hl7.org/fhir">
+  <id value="Notifi-2"/>
+  <meta>
+    <profile value="https://hl7.pt/fhir/ADR/StructureDefinition/ReacaoAdversa"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: AdverseEvent Notifi-2</b></p><a name="Notifi-2"> </a><a name="hcNotifi-2"> </a><a name="Notifi-2-pt-PT"> </a><p><b>identifier</b>: <code>http:/example.org</code>/2</p><p><b>status</b>: Completed</p><p><b>actuality</b>: Adverse Event</p><p><b>code</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/MDRPOR 10037660}">Pyrexia</span></p><p><b>subject</b>: <a href="Patient-pat-1.html">Américo  Male, DoB: 1980-01-01</a></p><p><b>detected</b>: 2024-11-14</p><p><b>recordedDate</b>: 2024-11-14</p><p><b>seriousness</b>: <span title="Codes:{https://hl7.pt/fhir/ADR/CodeSystem/adr-gravidade-cs HOSP}">Hospitalização</span></p><p><b>recorder</b>: <a href="Practitioner-not-1.html">Practitioner Sandra </a></p><h3>SuspectEntities</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Instance[x]</b></td></tr><tr><td style="display: none">*</td><td><a href="MedicationStatement-medinfo-1.html">MedicationStatement: status = recorded; effective[x] = 2024-11-01</a></td></tr></table></div>
+  </text>
+  <identifier>
+    <system value="http:/example.org"/>
+    <value value="2"/>
+  </identifier>
+  <status value="completed"/>
+  <actuality value="actual"/>
+  <code>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/MDRPOR"/>
+      <code value="10037660"/>
+      <display value="Pyrexia"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/pat-1"/>
+  </subject>
+  <detected value="2024-11-14"/>
+  <recordedDate value="2024-11-14"/>
+  <seriousness>
+    <coding>
+      <system value="https://hl7.pt/fhir/ADR/CodeSystem/adr-gravidade-cs"/>
+      <code value="HOSP"/>
+      <display value="Hospitalização"/>
+    </coding>
+  </seriousness>
+  <recorder>
+    <reference value="Practitioner/not-1"/>
+  </recorder>
+  <suspectEntity>
+    <instanceReference>
+      <reference value="MedicationStatement/medinfo-1"/>
+    </instanceReference>
+  </suspectEntity>
+</AdverseEvent>

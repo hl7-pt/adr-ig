@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Medication xmlns="http://hl7.org/fhir">
+  <id value="med1"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Medication med1</b></p><a name="med1"> </a><a name="hcmed1"> </a><a name="med1-pt-PT"> </a><p><b>code</b>: <span title="Codes:{http://example.org 1}">Evrysdi / Risdiplam</span></p><h3>Batches</h3><table class="grid"><tr><td style="display: none">-</td><td><b>LotNumber</b></td></tr><tr><td style="display: none">*</td><td>a11234</td></tr></table></div>
+  </text>
+  <code>
+    <coding>
+      <system value="http://example.org"/>
+      <code value="1"/>
+      <display value="Evrysdi / Risdiplam"/>
+    </coding>
+  </code>
+  <batch>
+    <lotNumber value="a11234"/>
+  </batch>
+</Medication>

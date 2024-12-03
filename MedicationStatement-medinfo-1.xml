@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicationStatement xmlns="http://hl7.org/fhir">
+  <id value="medinfo-1"/>
+  <meta>
+    <profile value="https://hl7.pt/fhir/ADR/StructureDefinition/InformacaoMedicamento"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: MedicationStatement medinfo-1</b></p><a name="medinfo-1"> </a><a name="hcmedinfo-1"> </a><a name="medinfo-1-pt-PT"> </a><p><b>status</b>: Recorded</p><h3>Medications</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Reference</b></td></tr><tr><td style="display: none">*</td><td><a href="Medication-med1.html">Medication Evrysdi / Risdiplam</a></td></tr></table><p><b>subject</b>: <a href="Patient-pat-1.html">Américo  Male, DoB: 1980-01-01</a></p><p><b>effective</b>: 2024-11-01</p><h3>Dosages</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Route</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://example.org 1}">Oral</span></td></tr></table></div>
+  </text>
+  <status value="recorded"/>
+  <medication>
+    <reference>
+      <reference value="Medication/med1"/>
+    </reference>
+  </medication>
+  <subject>
+    <reference value="Patient/pat-1"/>
+  </subject>
+  <effectiveDateTime value="2024-11-01"/>
+  <dosage>
+    <route>
+      <coding>
+        <system value="http://example.org"/>
+        <code value="1"/>
+        <display value="Oral"/>
+      </coding>
+    </route>
+  </dosage>
+</MedicationStatement>
