@@ -14,9 +14,10 @@ Description: "Exemplo de uma reacção adversa - mais simples sem dados"
 
 * detected = "2024-11-14"
 * recordedDate = "2024-11-14"
-
+* recorder = Reference(not-1)
 * seriousness = adr-gravidade-cs#HOSP "Hospitalização"
 * suspectEntity.instanceCodeableConcept = http://example.org#1 "Evrysdi / Risdiplam"
+
 
 
 
@@ -51,14 +52,14 @@ Description: "Exemplo de um doente (alvo da reação)"
 
 
 Instance: not-1
-InstanceOf: Doente
-Description: "Exemplo de um notificador"
+InstanceOf: ProfissionalSaude
+Description: "Exemplo de um notificador - Profissional de saúde"
 
 * name.given = "Sandra"
 * telecom[+].system = #email
 * telecom[=].value = "exemplo@exemplo.org"
 * telecom[=].use = #work
-
+* qualification.code = http://terminology.hl7.org/CodeSystem/v2-0360#PA "Physician Assistant"
 
 Instance: medinfo-1
 InstanceOf: InformacaoMedicamento
