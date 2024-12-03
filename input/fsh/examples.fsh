@@ -108,7 +108,7 @@ Usage: #example
 * entry[=].resource = Notifi-2
 * entry[+].fullUrl = "http://example.org/Patient/pat-1"
 * entry[=].resource = pat-1
-* entry[+].fullUrl = "http://example.org/Patient/not-1"
+* entry[+].fullUrl = "http://example.org/Practitioner/not-1"
 * entry[=].resource = not-1
 * entry[+].fullUrl = "http://example.org/MedicationStatement/medinfo-1"
 * entry[=].resource = medinfo-1
