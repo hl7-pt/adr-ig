@@ -189,8 +189,9 @@ menu:
   Introdução:
     Funcional: background.html
     Workflows: workflows.html
+  Artefactos: artifacts.html		
   Usar este IG: usage.html
-  Artefactos: artifacts.html			
+	
   Downloads: downloads.html
 # The parameters property represents IG.definition.parameter. Rather
 # than a list of code/value pairs (as in the ImplementationGuide
