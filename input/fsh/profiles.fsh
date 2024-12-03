@@ -69,10 +69,10 @@ Description: "Perfil para notificação de RAM - Doente"
 * gender MS
 
 
-Profile: Notificador
+Profile: ProfissionalSaude
 Parent: Practitioner
-Title: "Perfil para notificação de RAM - Notificador"
-Description: "Perfil para notificação de RAM - Notificador"
+Title: "Perfil para notificação de RAM - Profissional de saúde"
+Description: "Perfil para notificação de RAM - Profissional de saúde"
 
 * name MS
 * address MS 

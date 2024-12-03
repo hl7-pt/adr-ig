@@ -86,6 +86,11 @@ Usage: #inline
 
 * eventCoding = http://example.org#ADR "Reacção Adversa"
 * source.name = "Reporter"
+* focus[+] = Reference(Notifi-2)
+* focus[+] = Reference(pat-1)
+* focus[+] = Reference(not-1)
+* focus[+] = Reference(medinfo-1)
+* focus[+] = Reference(med1)
 
 Instance: message
 InstanceOf: Bundle

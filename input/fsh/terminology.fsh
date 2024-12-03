@@ -1,8 +1,8 @@
 
 CodeSystem: EvolucaoCS
 Id:         adr-evolucao-cs
-Title:     "Evolução de uma RAM code system"
-Description: "Evolução de uma RAM code system"
+Title:     "Evolução de uma RAM CodeSystem"
+Description: "Evolução de uma RAM CodeSystem"
 * ^experimental = true
 * ^caseSensitive = false
 //* ^url =  "http://terminologia.hl7.pt/CodeSystem/adr-evolucao"
@@ -38,8 +38,8 @@ Description:  "Evolução de uma RAM ValueSet"
 
 CodeSystem: CausalidadeCS
 Id:         adr-causalidade-cs
-Title:     "Causalidade code system"
-Description: "Causalidade code system"
+Title:     "Causalidade CodeSystem"
+Description: "Causalidade CodeSystem"
 //Definitivo - Provável- Possível- Condicional- Improvável- Não Classificável
 * ^experimental = true
 * ^caseSensitive = false
@@ -77,8 +77,8 @@ Description:  "Causalidade ValueSet"
 
 CodeSystem: GravidadeCS
 Id:         adr-gravidade-cs
-Title:     "Causalidade code system"
-Description: "Causalidade code system"
+Title:      "Gravidade RAM CodeSystem"
+Description: "Causalidade CodeSystem"
 //Morte - Risco de vida - Hospitalização - Incapacidade - Anomalia congenita - Clinicamente importante
 * ^experimental = true
 * ^caseSensitive = false
