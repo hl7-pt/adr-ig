@@ -15,8 +15,8 @@ title: HL7 Portugal FHIR Implementation Guide para alergias e reacções adversa
 description: Example IG exercises many of the fields in a SUSHI configuration.
 status: active
 license: CC0-1.0
-date: 2020-02-26
-version: 1.0.0
+date: 2024-12-09
+version: 1.0.0-ballot
 
 
 dependencies:

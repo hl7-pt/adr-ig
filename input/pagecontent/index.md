@@ -6,15 +6,33 @@ Nenhuma responsabilidade pode ser inferida pelo uso ou mau uso desta especifica�
 
 ### Âmbito
 
-Este FHIR Implementation Guide tem como objectivo especificar a troca de informação relativamente a alergias e a RAMs (Reacções adversas ao medicamento).
+Este guia tem como objetivo apoiar profissionais de saúde, organizações e
+desenvolvedores de software na adoção do padrão FHIR (Fast Healthcare
+Interoperability Resources) para o registo, partilha e gestão de informações
+relacionadas a alergias e reações adversas a medicamentos (RAM).
+O guia promove:
+* Segurança do paciente: Redução de riscos associados ao uso de medicamentos, assegurando que as informações sobre alergias e reações adversas sejam registadas e partilhadas de forma estruturada e interoperável.
+* Conformidade regulatória: Harmonização dos processos de submissão de notificações de reações adversas, em conformidade com as orientações fornecidas pelo Infarmed, como parte do sistema de Submissão RAM (Reações Adversas a Medicamentos).
+* Interoperabilidade: Facilitação da partilha de dados entre sistemas de saúde, de acordo com padrões globais, garantindo maior qualidade e acessibilidade às informações clínicas.
 
+Este documento é dirigido a programadores de sistemas de informação em saúde, farmacêuticos, gestores de sistemas clínicos, e outros profissionais envolvidos no registo e uso de dados clínicos.
 
 
 ### Introdução
 
-Sendo que a suspeita de RAMs e Alergias é transversal à prática clinica, surge muitas vezes a necessidade de as registar. Esta informação, quanto mais partilhada, mais segurança pode trazer aos doentes e mais evidencia e informação consegue promover nos prestadores de saúde. Assim, vamos detalhar possiveis workflows, formatos de informação e recursos a serem utilizados no *standard* HL7 FHIR.
+A identificação e o registo de suspeitas de RAMs e alergias são atividades
+transversais a toda a prática clínica. Estas informações, quando
+adequadamente documentadas e partilhadas entre diferentes prestadores de
+saúde, contribuem significativamente para:
 
-Os modelos lógicos foram retirados do formato atual de comunicação de suspeitas de RAMs para o INFARMED, I.P. através do link [https://extranet.infarmed.pt/esb/API/PortalRAM-WS/NotificacaoRamService/2018/01/SOAP/NotificacaoRam?wsdl](https://extranet.infarmed.pt/esb/API/PortalRAM-WS/NotificacaoRamService/2018/01/SOAP/NotificacaoRam?wsdl).
+* Aumento da segurança do paciente, reduzindo riscos associados à administração de medicamentos inadequados.
+* Apoio à tomada de decisão clínica, promovendo maior evidência e informação acessível aos prestadores de cuidados.
+* Fortalecimento da farmacovigilância, ao alimentar bases de dados que monitorizam a segurança medicamentosa em larga escala.
+
+Neste guia, serão apresentados possíveis workflows, formatos de informação e recursos a serem utilizados no padrão HL7 FHIR para suportar o registo e a comunicação de alergias e reações adversas.
+
+Em Portugal, o Infarmed desempenha um papel central na monitorização dos eventos adversos, proporcionando orientações claras através do portal Submissão RAM. Os modelos lógicos descritos neste guia baseiam-se no formato atual de comunicação de suspeitas de RAMs para o Infarmed, I.P., disponível no seguinte link: [https://extranet.infarmed.pt/esb/API/PortalRAM-WS/NotificacaoRamService/2018/01/SOAP/NotificacaoRam?wsdl](https://extranet.infarmed.pt/esb/API/PortalRAM-WS/NotificacaoRamService/2018/01/SOAP/NotificacaoRam?wsdl).
+
 
 ### Autores e contribuidores
 
