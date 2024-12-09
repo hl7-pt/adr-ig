@@ -1,0 +1,48 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "adr-evolucao-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet adr-evolucao-vs</b></p><a name=\"adr-evolucao-vs\"> </a><a name=\"hcadr-evolucao-vs\"> </a><a name=\"adr-evolucao-vs-pt-PT\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-adr-evolucao-cs.html\"><code>https://hl7.pt/fhir/ADR/CodeSystem/adr-evolucao-cs</code></a></li></ul></div>"
+  },
+  "url" : "https://hl7.pt/fhir/ADR/ValueSet/adr-evolucao-vs",
+  "version" : "1.0.0-ballot",
+  "name" : "EvolucaoVS",
+  "title" : "Evolução de uma RAM ValueSet",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2024-12-09T19:10:40+00:00",
+  "publisher" : "HL7 Portugal",
+  "contact" : [{
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.pt"
+    },
+    {
+      "system" : "email",
+      "value" : "info@hl7.pt"
+    }]
+  },
+  {
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "geral@hl7.pt",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Evolução de uma RAM ValueSet",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "PT",
+      "display" : "Portugal"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://hl7.pt/fhir/ADR/CodeSystem/adr-evolucao-cs"
+    }]
+  }
+}

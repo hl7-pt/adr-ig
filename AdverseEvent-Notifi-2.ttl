@@ -1,0 +1,60 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.pt/fhir/ADR/AdverseEvent/Notifi-2> a fhir:AdverseEvent ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Notifi-2"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://hl7.pt/fhir/ADR/StructureDefinition/ReacaoAdversa"^^xsd:anyURI ;
+       fhir:link <https://hl7.pt/fhir/ADR/StructureDefinition/ReacaoAdversa>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: AdverseEvent Notifi-2</b></p><a name=\"Notifi-2\"> </a><a name=\"hcNotifi-2\"> </a><a name=\"Notifi-2-pt-PT\"> </a><p><b>identifier</b>: <code>http:/example.org</code>/2</p><p><b>status</b>: Completed</p><p><b>actuality</b>: Adverse Event</p><p><b>code</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/MDRPOR 10037660}\">Pyrexia</span></p><p><b>subject</b>: <a href=\"Patient-pat-1.html\">Américo  Male, DoB: 1980-01-01</a></p><p><b>detected</b>: 2024-11-14</p><p><b>recordedDate</b>: 2024-11-14</p><p><b>seriousness</b>: <span title=\"Codes:{https://hl7.pt/fhir/ADR/CodeSystem/adr-gravidade-cs HOSP}\">Hospitalização</span></p><p><b>recorder</b>: <a href=\"Practitioner-not-1.html\">Practitioner Sandra </a></p><h3>SuspectEntities</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Instance[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"MedicationStatement-medinfo-1.html\">MedicationStatement: status = recorded; effective[x] = 2024-11-01</a></td></tr></table></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http:/example.org"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "2" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:actuality [ fhir:v "actual"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/MDRPOR"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "10037660" ] ;
+       fhir:display [ fhir:v "Pyrexia" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://hl7.pt/fhir/ADR/Patient/pat-1> ;
+     fhir:reference [ fhir:v "Patient/pat-1" ]
+  ] ; # 
+  fhir:detected [ fhir:v "2024-11-14"^^xsd:date] ; # 
+  fhir:recordedDate [ fhir:v "2024-11-14"^^xsd:date] ; # 
+  fhir:seriousness [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://hl7.pt/fhir/ADR/CodeSystem/adr-gravidade-cs"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "HOSP" ] ;
+       fhir:display [ fhir:v "Hospitalização" ]
+     ] )
+  ] ; # 
+  fhir:recorder [
+     fhir:link <https://hl7.pt/fhir/ADR/Practitioner/not-1> ;
+     fhir:reference [ fhir:v "Practitioner/not-1" ]
+  ] ; # 
+  fhir:suspectEntity ( [
+     fhir:instance [
+       a fhir:Reference ;
+       fhir:link <https://hl7.pt/fhir/ADR/MedicationStatement/medinfo-1> ;
+       fhir:reference [ fhir:v "MedicationStatement/medinfo-1" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

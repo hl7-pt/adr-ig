@@ -1,0 +1,27 @@
+Source File	Size	loadResources	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
+/fsh-generated/resources/ImplementationGuide-hl7.fhir.pt.adr.json	9585	-	0	0	0	0	0	0	4	89	0	0	0	0	0	0	0	1	0	0	97	94	0	0	0	3	0	1
+fsh-generated/resources/AdverseEvent-Notifi-1.json	1162	15	1	0	0	0	0	0	0	186	0	0	0	0	0	0	0	0	0	0	15	12	0	0	0	0	0	0
+fsh-generated/resources/AdverseEvent-Notifi-2.json	979	12	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	13	14	0	0	0	0	0	0
+fsh-generated/resources/Bundle-message.json	5063	25	0	0	0	0	0	0	1	16	0	0	0	0	0	0	0	0	0	0	38	50	0	0	0	0	0	0
+fsh-generated/resources/CodeSystem-adr-causalidade-cs.json	977	12	0	0	0	0	0	0	0	14	0	0	0	0	0	0	0	0	0	0	20	1582	0	0	0	0	0	0
+fsh-generated/resources/CodeSystem-adr-evolucao-cs.json	1009	10	0	0	0	0	0	0	0	11	0	0	0	0	0	0	0	0	0	0	20	65	0	0	0	1	0	0
+fsh-generated/resources/CodeSystem-adr-gravidade-cs.json	1030	12	0	0	0	0	0	0	0	11	0	0	0	0	0	0	0	0	0	0	18	54	0	0	0	0	0	0
+fsh-generated/resources/Medication-med1.json	252	10	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	8	6	0	0	0	0	0	0
+fsh-generated/resources/MedicationStatement-medinfo-1.json	587	11	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	12	13	0	0	0	0	0	0
+fsh-generated/resources/Patient-pat-1.json	270	12	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	8	5	0	0	0	0	0	0
+fsh-generated/resources/Practitioner-not-1.json	608	9	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	9	6	0	0	0	0	0	0
+fsh-generated/resources/StructureDefinition-Alergia.json	1496	4	0	0	0	0	0	40	0	44	0	0	0	0	0	0	0	2	0	0	280	1966	0	0	0	7	0	0
+fsh-generated/resources/StructureDefinition-Doente.json	858	4	0	0	0	0	0	43	0	26	0	0	0	0	0	0	0	0	0	0	266	688	0	0	0	7	0	1
+fsh-generated/resources/StructureDefinition-DoenteLM.json	3348	5	1	0	0	0	0	13	0	22	0	0	1	0	0	0	0	0	0	0	90	170	0	0	0	2	0	0
+fsh-generated/resources/StructureDefinition-InformacaoMedicamento.json	1476	3	0	0	0	0	0	47	0	26	0	0	0	0	0	0	0	1	0	0	329	616	0	0	0	8	0	1
+fsh-generated/resources/StructureDefinition-InformacoesLM.json	1906	3	0	0	0	0	0	12	0	13	0	0	0	0	0	0	0	0	0	0	57	87	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-MedicamentoLM.json	4929	4	0	0	0	0	0	13	0	17	0	0	0	0	0	0	0	0	0	0	112	136	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-NotificacaoLM.json	2806	2	0	0	0	0	0	11	0	13	0	0	0	0	0	0	0	1	0	0	62	91	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-NotificadorLM.json	6742	4	0	0	0	0	0	16	0	15	0	0	0	0	0	0	0	0	0	0	143	173	0	1	0	2	0	0
+fsh-generated/resources/StructureDefinition-ProfissionalSaude.json	1096	2	0	0	0	0	0	30	0	51	0	0	0	0	0	0	0	1	0	0	173	344	0	0	0	4	0	1
+fsh-generated/resources/StructureDefinition-ReacaoAdversa.json	3476	3	0	0	0	0	0	44	0	23	0	0	0	0	0	0	0	1	0	0	349	645	0	0	0	6	0	0
+fsh-generated/resources/StructureDefinition-ReacaoAdversaLM.json	3775	4	0	0	0	0	0	13	0	10	0	0	0	0	0	0	0	0	0	0	72	146	0	0	0	1	0	0
+fsh-generated/resources/ValueSet-adr-causalidade-vs.json	409	2	0	0	1	0	0	0	1	62	0	0	0	0	0	0	0	0	0	0	8	2503	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-adr-evolucao-vs.json	417	2	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	8	44	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-adr-gravidade-vs.json	405	2	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	9	62	0	0	0	1	0	0
+fsh-generated/resources/ValueSet-meddra-vs.json	367	1	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	8	265	0	0	0	0	0	0

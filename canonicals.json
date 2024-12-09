@@ -1,0 +1,135 @@
+[
+  {
+    "id" : "adr-causalidade-cs",
+    "type" : "CodeSystem",
+    "url" : "https://hl7.pt/fhir/ADR/CodeSystem/adr-causalidade-cs",
+    "version" : "1.0.0-ballot",
+    "name" : "CausalidadeCS"
+  },
+  {
+    "id" : "adr-evolucao-cs",
+    "type" : "CodeSystem",
+    "url" : "https://hl7.pt/fhir/ADR/CodeSystem/adr-evolucao-cs",
+    "version" : "1.0.0-ballot",
+    "name" : "EvolucaoCS"
+  },
+  {
+    "id" : "adr-gravidade-cs",
+    "type" : "CodeSystem",
+    "url" : "https://hl7.pt/fhir/ADR/CodeSystem/adr-gravidade-cs",
+    "version" : "1.0.0-ballot",
+    "name" : "GravidadeCS"
+  },
+  {
+    "id" : "hl7.fhir.pt.adr",
+    "type" : "ImplementationGuide",
+    "url" : "https://hl7.pt/fhir/ADR/ImplementationGuide/hl7.fhir.pt.adr",
+    "version" : "1.0.0-ballot",
+    "name" : "ADRPTIG"
+  },
+  {
+    "id" : "Alergia",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/ADR/StructureDefinition/Alergia",
+    "version" : "1.0.0-ballot",
+    "name" : "Alergia"
+  },
+  {
+    "id" : "Doente",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/ADR/StructureDefinition/Doente",
+    "version" : "1.0.0-ballot",
+    "name" : "Doente"
+  },
+  {
+    "id" : "DoenteLM",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/ADR/StructureDefinition/DoenteLM",
+    "version" : "1.0.0-ballot",
+    "name" : "DoenteLM"
+  },
+  {
+    "id" : "InformacaoMedicamento",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/ADR/StructureDefinition/InformacaoMedicamento",
+    "version" : "1.0.0-ballot",
+    "name" : "InformacaoMedicamento"
+  },
+  {
+    "id" : "InformacoesLM",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/ADR/StructureDefinition/InformacoesLM",
+    "version" : "1.0.0-ballot",
+    "name" : "InformacoesLM"
+  },
+  {
+    "id" : "MedicamentoLM",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/ADR/StructureDefinition/MedicamentoLM",
+    "version" : "1.0.0-ballot",
+    "name" : "MedicamentoLM"
+  },
+  {
+    "id" : "NotificacaoLM",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/ADR/StructureDefinition/NotificacaoLM",
+    "version" : "1.0.0-ballot",
+    "name" : "NotificacaoLM"
+  },
+  {
+    "id" : "NotificadorLM",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/ADR/StructureDefinition/NotificadorLM",
+    "version" : "1.0.0-ballot",
+    "name" : "NotificadorLM"
+  },
+  {
+    "id" : "ProfissionalSaude",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/ADR/StructureDefinition/ProfissionalSaude",
+    "version" : "1.0.0-ballot",
+    "name" : "ProfissionalSaude"
+  },
+  {
+    "id" : "ReacaoAdversa",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/ADR/StructureDefinition/ReacaoAdversa",
+    "version" : "1.0.0-ballot",
+    "name" : "ReacaoAdversa"
+  },
+  {
+    "id" : "ReacaoAdversaLM",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/ADR/StructureDefinition/ReacaoAdversaLM",
+    "version" : "1.0.0-ballot",
+    "name" : "ReacaoAdversaLM"
+  },
+  {
+    "id" : "adr-causalidade-vs",
+    "type" : "ValueSet",
+    "url" : "https://hl7.pt/fhir/ADR/ValueSet/adr-causalidade-vs",
+    "version" : "1.0.0-ballot",
+    "name" : "CausalidadeVS"
+  },
+  {
+    "id" : "adr-evolucao-vs",
+    "type" : "ValueSet",
+    "url" : "https://hl7.pt/fhir/ADR/ValueSet/adr-evolucao-vs",
+    "version" : "1.0.0-ballot",
+    "name" : "EvolucaoVS"
+  },
+  {
+    "id" : "adr-gravidade-vs",
+    "type" : "ValueSet",
+    "url" : "https://hl7.pt/fhir/ADR/ValueSet/adr-gravidade-vs",
+    "version" : "1.0.0-ballot",
+    "name" : "GravidadeVS"
+  },
+  {
+    "id" : "meddra-vs",
+    "type" : "ValueSet",
+    "url" : "https://hl7.pt/fhir/ADR/ValueSet/meddra-vs",
+    "version" : "1.0.0-ballot",
+    "name" : "MeddraVS"
+  }
+]

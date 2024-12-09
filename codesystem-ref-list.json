@@ -1,0 +1,49 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/MDRPOR",
+      "version" : "2.0.1",
+      "status" : "retired",
+      "name" : "MDRPOR",
+      "title" : "MedDRA Portuguese",
+      "description" : "Medical Dictionary for Regulatory Activities Terminology (MedDRA) Version 7.0, Portuguese Edition. International conference on Harmonization of Technical Requirements for Registration of Pharmaceuticals for Human Use (ICH). Reston, VA: MedDRA MSSO, March 1, 2004. This is the Portuguese language version as encapsulated in the UMLS..",
+      "oids" : ["2.16.840.1.113883.6.163.5"],
+      "uses" : {
+      },
+      "ValueSet-meddra-vs.html" : "MedDRA ValueSet"
+    },
+    {
+      "url" : "https://hl7.pt/fhir/ADR/CodeSystem/adr-causalidade-cs",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "CausalidadeCS",
+      "title" : "Causalidade CodeSystem",
+      "description" : "Causalidade CodeSystem",
+      "uses" : {
+      },
+      "ValueSet-adr-causalidade-vs.html" : "Causalidade ValueSet"
+    },
+    {
+      "url" : "https://hl7.pt/fhir/ADR/CodeSystem/adr-evolucao-cs",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "EvolucaoCS",
+      "title" : "Evolução de uma RAM CodeSystem",
+      "description" : "Evolução de uma RAM CodeSystem",
+      "uses" : {
+      },
+      "ValueSet-adr-evolucao-vs.html" : "Evolução de uma RAM ValueSet"
+    },
+    {
+      "url" : "https://hl7.pt/fhir/ADR/CodeSystem/adr-gravidade-cs",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "GravidadeCS",
+      "title" : "Gravidade RAM CodeSystem",
+      "description" : "Causalidade CodeSystem",
+      "uses" : {
+      },
+      "ValueSet-adr-gravidade-vs.html" : "Gravidade RAM ValueSet"
+    }
+  ]
+}

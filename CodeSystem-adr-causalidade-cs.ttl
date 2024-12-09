@@ -1,0 +1,78 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.pt/fhir/ADR/CodeSystem/adr-causalidade-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "adr-causalidade-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem adr-causalidade-cs</b></p><a name=\"adr-causalidade-cs\"> </a><a name=\"hcadr-causalidade-cs\"> </a><a name=\"adr-causalidade-cs-pt-PT\"> </a><p>This case-insensitive code system <code>https://hl7.pt/fhir/ADR/CodeSystem/adr-causalidade-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">DEF<a name=\"adr-causalidade-cs-DEF\"> </a></td><td>Definitivo</td><td>Definitivo</td></tr><tr><td style=\"white-space:nowrap\">PROV<a name=\"adr-causalidade-cs-PROV\"> </a></td><td>Provável</td><td>Provável</td></tr><tr><td style=\"white-space:nowrap\">POSS<a name=\"adr-causalidade-cs-POSS\"> </a></td><td>Possível</td><td>Possível</td></tr><tr><td style=\"white-space:nowrap\">COND<a name=\"adr-causalidade-cs-COND\"> </a></td><td>Condicional</td><td>Condicional</td></tr><tr><td style=\"white-space:nowrap\">IMPR<a name=\"adr-causalidade-cs-IMPR\"> </a></td><td>Improvável</td><td>Improvável</td></tr><tr><td style=\"white-space:nowrap\">NC<a name=\"adr-causalidade-cs-NC\"> </a></td><td>Não Classificável</td><td>Não Classificável</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://hl7.pt/fhir/ADR/CodeSystem/adr-causalidade-cs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0-ballot"] ; # 
+  fhir:name [ fhir:v "CausalidadeCS"] ; # 
+  fhir:title [ fhir:v "Causalidade CodeSystem"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-12-09T19:10:40+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Portugal"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.pt" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@hl7.pt" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "geral@hl7.pt" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Causalidade CodeSystem"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PT" ] ;
+       fhir:display [ fhir:v "Portugal" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "6"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "DEF" ] ;
+     fhir:display [ fhir:v "Definitivo" ] ;
+     fhir:definition [ fhir:v "Definitivo" ]
+  ] [
+     fhir:code [ fhir:v "PROV" ] ;
+     fhir:display [ fhir:v "Provável" ] ;
+     fhir:definition [ fhir:v "Provável" ]
+  ] [
+     fhir:code [ fhir:v "POSS" ] ;
+     fhir:display [ fhir:v "Possível" ] ;
+     fhir:definition [ fhir:v "Possível" ]
+  ] [
+     fhir:code [ fhir:v "COND" ] ;
+     fhir:display [ fhir:v "Condicional" ] ;
+     fhir:definition [ fhir:v "Condicional" ]
+  ] [
+     fhir:code [ fhir:v "IMPR" ] ;
+     fhir:display [ fhir:v "Improvável" ] ;
+     fhir:definition [ fhir:v "Improvável" ]
+  ] [
+     fhir:code [ fhir:v "NC" ] ;
+     fhir:display [ fhir:v "Não Classificável" ] ;
+     fhir:definition [ fhir:v "Não Classificável" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

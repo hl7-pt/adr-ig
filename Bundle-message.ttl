@@ -1,0 +1,219 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.pt/fhir/ADR/Bundle/message> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "message"] ; # 
+  fhir:identifier [
+     fhir:system [ fhir:v "urn:example-org:sender.identifiers"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "efdd254b-0e09-4164-883e-35cf3871715f" ]
+  ] ; # 
+  fhir:type [ fhir:v "message"] ; # 
+  fhir:timestamp [ fhir:v "2015-07-14T11:15:33+10:00"^^xsd:dateTime] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "http://example.org/MessageHeader/messageheader1"^^xsd:anyURI ] ;
+     fhir:resource ( <http://example.org/MessageHeader/messageheader1> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://example.org/AdverseEvent/Notifi-2"^^xsd:anyURI ] ;
+     fhir:resource ( <http://example.org/AdverseEvent/Notifi-2> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://example.org/Patient/pat-1"^^xsd:anyURI ] ;
+     fhir:resource ( <http://example.org/Patient/pat-1> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://example.org/Practitioner/not-1"^^xsd:anyURI ] ;
+     fhir:resource ( <http://example.org/Practitioner/not-1> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://example.org/MedicationStatement/medinfo-1"^^xsd:anyURI ] ;
+     fhir:resource ( <http://example.org/MedicationStatement/medinfo-1> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://example.org/Medication/med1"^^xsd:anyURI ] ;
+     fhir:resource ( <http://example.org/Medication/med1> )
+  ] ) . # 
+
+<http://example.org/MessageHeader/messageheader1> a fhir:MessageHeader ;
+  fhir:id [ fhir:v "messageheader1"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MessageHeader_messageheader1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MessageHeader messageheader1</b></p><a name=\"messageheader1\"> </a><a name=\"hcmessageheader1\"> </a><a name=\"messageheader1-pt-PT\"> </a><p><b>event</b>: example.org ADR: Reacção Adversa</p><h3>Sources</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td></tr><tr><td style=\"display: none\">*</td><td>Reporter</td></tr></table><p><b>focus</b>: </p><ul><li><a href=\"AdverseEvent-Notifi-2.html\">AdverseEvent Pyrexia</a></li><li><a href=\"Patient-pat-1.html\">Américo  Male, DoB: 1980-01-01</a></li><li><a href=\"Practitioner-not-1.html\">Practitioner Sandra </a></li><li><a href=\"MedicationStatement-medinfo-1.html\">MedicationStatement: status = recorded; effective[x] = 2024-11-01</a></li><li><a href=\"Medication-med1.html\">Medication Evrysdi / Risdiplam</a></li></ul></div>"
+  ] ; # 
+  fhir:event [
+     a fhir:Coding ;
+     fhir:system [ fhir:v "http://example.org"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "ADR" ] ;
+     fhir:display [ fhir:v "Reacção Adversa" ]
+  ] ; # 
+  fhir:source [
+     fhir:name [ fhir:v "Reporter" ]
+  ] ; # 
+  fhir:focus ( [
+     fhir:link <https://hl7.pt/fhir/ADR/AdverseEvent/Notifi-2> ;
+     fhir:reference [ fhir:v "AdverseEvent/Notifi-2" ]
+  ] [
+     fhir:link <https://hl7.pt/fhir/ADR/Patient/pat-1> ;
+     fhir:reference [ fhir:v "Patient/pat-1" ]
+  ] [
+     fhir:link <https://hl7.pt/fhir/ADR/Practitioner/not-1> ;
+     fhir:reference [ fhir:v "Practitioner/not-1" ]
+  ] [
+     fhir:link <https://hl7.pt/fhir/ADR/MedicationStatement/medinfo-1> ;
+     fhir:reference [ fhir:v "MedicationStatement/medinfo-1" ]
+  ] [
+     fhir:link <https://hl7.pt/fhir/ADR/Medication/med1> ;
+     fhir:reference [ fhir:v "Medication/med1" ]
+  ] ) . # 
+
+<http://example.org/AdverseEvent/Notifi-2> a fhir:AdverseEvent ;
+  fhir:id [ fhir:v "Notifi-2"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://hl7.pt/fhir/ADR/StructureDefinition/ReacaoAdversa"^^xsd:anyURI ;
+       fhir:link <https://hl7.pt/fhir/ADR/StructureDefinition/ReacaoAdversa>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"AdverseEvent_Notifi-2\"> </a><p class=\"res-header-id\"><b>Generated Narrative: AdverseEvent Notifi-2</b></p><a name=\"Notifi-2\"> </a><a name=\"hcNotifi-2\"> </a><a name=\"Notifi-2-pt-PT\"> </a><p><b>identifier</b>: <code>http:/example.org</code>/2</p><p><b>status</b>: Completed</p><p><b>actuality</b>: Adverse Event</p><p><b>code</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/MDRPOR 10037660}\">Pyrexia</span></p><p><b>subject</b>: <a href=\"Patient-pat-1.html\">Américo  Male, DoB: 1980-01-01</a></p><p><b>detected</b>: 2024-11-14</p><p><b>recordedDate</b>: 2024-11-14</p><p><b>seriousness</b>: <span title=\"Codes:{https://hl7.pt/fhir/ADR/CodeSystem/adr-gravidade-cs HOSP}\">Hospitalização</span></p><p><b>recorder</b>: <a href=\"Practitioner-not-1.html\">Practitioner Sandra </a></p><h3>SuspectEntities</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Instance[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"MedicationStatement-medinfo-1.html\">MedicationStatement: status = recorded; effective[x] = 2024-11-01</a></td></tr></table></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http:/example.org"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "2" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:actuality [ fhir:v "actual"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/MDRPOR"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "10037660" ] ;
+       fhir:display [ fhir:v "Pyrexia" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://hl7.pt/fhir/ADR/Patient/pat-1> ;
+     fhir:reference [ fhir:v "Patient/pat-1" ]
+  ] ; # 
+  fhir:detected [ fhir:v "2024-11-14"^^xsd:date] ; # 
+  fhir:recordedDate [ fhir:v "2024-11-14"^^xsd:date] ; # 
+  fhir:seriousness [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://hl7.pt/fhir/ADR/CodeSystem/adr-gravidade-cs"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "HOSP" ] ;
+       fhir:display [ fhir:v "Hospitalização" ]
+     ] )
+  ] ; # 
+  fhir:recorder [
+     fhir:link <https://hl7.pt/fhir/ADR/Practitioner/not-1> ;
+     fhir:reference [ fhir:v "Practitioner/not-1" ]
+  ] ; # 
+  fhir:suspectEntity ( [
+     fhir:instance [
+       a fhir:Reference ;
+       fhir:link <https://hl7.pt/fhir/ADR/MedicationStatement/medinfo-1> ;
+       fhir:reference [ fhir:v "MedicationStatement/medinfo-1" ]
+     ]
+  ] ) . # 
+
+<http://example.org/Patient/pat-1> a fhir:Patient ;
+  fhir:id [ fhir:v "pat-1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://hl7.pt/fhir/ADR/StructureDefinition/Doente"^^xsd:anyURI ;
+       fhir:link <https://hl7.pt/fhir/ADR/StructureDefinition/Doente>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_pat-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient pat-1</b></p><a name=\"pat-1\"> </a><a name=\"hcpat-1\"> </a><a name=\"pat-1-pt-PT\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Américo  Male, DoB: 1980-01-01</p><hr/></div>"
+  ] ; # 
+  fhir:name ( [
+     fhir:given ( [ fhir:v "Américo" ] )
+  ] ) ; # 
+  fhir:gender [ fhir:v "male"] ; # 
+  fhir:birthDate [ fhir:v "1980-01-01"^^xsd:date] . # 
+
+<http://example.org/Practitioner/not-1> a fhir:Practitioner ;
+  fhir:id [ fhir:v "not-1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://hl7.pt/fhir/ADR/StructureDefinition/ProfissionalSaude"^^xsd:anyURI ;
+       fhir:link <https://hl7.pt/fhir/ADR/StructureDefinition/ProfissionalSaude>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Practitioner_not-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Practitioner not-1</b></p><a name=\"not-1\"> </a><a name=\"hcnot-1\"> </a><a name=\"not-1-pt-PT\"> </a><p><b>name</b>: Sandra </p><p><b>telecom</b>: <a href=\"mailto:exemplo@exemplo.org\">exemplo@exemplo.org</a></p><h3>Qualifications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0360 PA}\">Physician Assistant</span></td></tr></table></div>"
+  ] ; # 
+  fhir:name ( [
+     fhir:given ( [ fhir:v "Sandra" ] )
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "email" ] ;
+     fhir:value [ fhir:v "exemplo@exemplo.org" ] ;
+     fhir:use [ fhir:v "work" ]
+  ] ) ; # 
+  fhir:qualification ( [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0360"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "PA" ] ;
+         fhir:display [ fhir:v "Physician Assistant" ]
+       ] )
+     ]
+  ] ) . # 
+
+<http://example.org/MedicationStatement/medinfo-1> a fhir:MedicationStatement ;
+  fhir:id [ fhir:v "medinfo-1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://hl7.pt/fhir/ADR/StructureDefinition/InformacaoMedicamento"^^xsd:anyURI ;
+       fhir:link <https://hl7.pt/fhir/ADR/StructureDefinition/InformacaoMedicamento>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationStatement_medinfo-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicationStatement medinfo-1</b></p><a name=\"medinfo-1\"> </a><a name=\"hcmedinfo-1\"> </a><a name=\"medinfo-1-pt-PT\"> </a><p><b>status</b>: Recorded</p><h3>Medications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Medication-med1.html\">Medication Evrysdi / Risdiplam</a></td></tr></table><p><b>subject</b>: <a href=\"Patient-pat-1.html\">Américo  Male, DoB: 1980-01-01</a></p><p><b>effective</b>: 2024-11-01</p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Route</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://example.org 1}\">Oral</span></td></tr></table></div>"
+  ] ; # 
+  fhir:status [ fhir:v "recorded"] ; # 
+  fhir:medication [
+     fhir:reference [
+       fhir:link <https://hl7.pt/fhir/ADR/Medication/med1> ;
+       fhir:reference [ fhir:v "Medication/med1" ]
+     ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://hl7.pt/fhir/ADR/Patient/pat-1> ;
+     fhir:reference [ fhir:v "Patient/pat-1" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2024-11-01"^^xsd:date] ; # 
+  fhir:dosage ( [
+     fhir:route [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://example.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "1" ] ;
+         fhir:display [ fhir:v "Oral" ]
+       ] )
+     ]
+  ] ) . # 
+
+<http://example.org/Medication/med1> a fhir:Medication ;
+  fhir:id [ fhir:v "med1"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Medication_med1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Medication med1</b></p><a name=\"med1\"> </a><a name=\"hcmed1\"> </a><a name=\"med1-pt-PT\"> </a><p><b>code</b>: <span title=\"Codes:{http://example.org 1}\">Evrysdi / Risdiplam</span></p><h3>Batches</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>LotNumber</b></td></tr><tr><td style=\"display: none\">*</td><td>a11234</td></tr></table></div>"
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://example.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "1" ] ;
+       fhir:display [ fhir:v "Evrysdi / Risdiplam" ]
+     ] )
+  ] ; # 
+  fhir:batch [
+     fhir:lotNumber [ fhir:v "a11234" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

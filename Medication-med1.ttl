@@ -1,0 +1,27 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.pt/fhir/ADR/Medication/med1> a fhir:Medication ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "med1"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Medication med1</b></p><a name=\"med1\"> </a><a name=\"hcmed1\"> </a><a name=\"med1-pt-PT\"> </a><p><b>code</b>: <span title=\"Codes:{http://example.org 1}\">Evrysdi / Risdiplam</span></p><h3>Batches</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>LotNumber</b></td></tr><tr><td style=\"display: none\">*</td><td>a11234</td></tr></table></div>"
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://example.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "1" ] ;
+       fhir:display [ fhir:v "Evrysdi / Risdiplam" ]
+     ] )
+  ] ; # 
+  fhir:batch [
+     fhir:lotNumber [ fhir:v "a11234" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

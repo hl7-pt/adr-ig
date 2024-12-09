@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="adr-gravidade-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem adr-gravidade-cs</b></p><a name="adr-gravidade-cs"> </a><a name="hcadr-gravidade-cs"> </a><a name="adr-gravidade-cs-pt-PT"> </a><p>This case-insensitive code system <code>https://hl7.pt/fhir/ADR/CodeSystem/adr-gravidade-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">MORTE<a name="adr-gravidade-cs-MORTE"> </a></td><td>Morte</td><td>Morte</td></tr><tr><td style="white-space:nowrap">RISCOVIDA<a name="adr-gravidade-cs-RISCOVIDA"> </a></td><td>Risco de vida</td><td>Risco de vida</td></tr><tr><td style="white-space:nowrap">HOSP<a name="adr-gravidade-cs-HOSP"> </a></td><td>Hospitalização</td><td>Hospitalização</td></tr><tr><td style="white-space:nowrap">INCAPACIDADE<a name="adr-gravidade-cs-INCAPACIDADE"> </a></td><td>Incapacidade</td><td>Incapacidade</td></tr><tr><td style="white-space:nowrap">ANOMALIA<a name="adr-gravidade-cs-ANOMALIA"> </a></td><td>Anomalia congénita</td><td>Anomalia congénita</td></tr><tr><td style="white-space:nowrap">CI<a name="adr-gravidade-cs-CI"> </a></td><td>Clinicamente importante</td><td>Clinicamente importante</td></tr></table></div>
+  </text>
+  <url value="https://hl7.pt/fhir/ADR/CodeSystem/adr-gravidade-cs"/>
+  <version value="1.0.0-ballot"/>
+  <name value="GravidadeCS"/>
+  <title value="Gravidade RAM CodeSystem"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2024-12-09T19:10:40+00:00"/>
+  <publisher value="HL7 Portugal"/>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.pt"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.pt"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="email"/>
+      <value value="geral@hl7.pt"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Causalidade CodeSystem"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PT"/>
+      <display value="Portugal"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="6"/>
+  <concept>
+    <code value="MORTE"/>
+    <display value="Morte"/>
+    <definition value="Morte"/>
+  </concept>
+  <concept>
+    <code value="RISCOVIDA"/>
+    <display value="Risco de vida"/>
+    <definition value="Risco de vida"/>
+  </concept>
+  <concept>
+    <code value="HOSP"/>
+    <display value="Hospitalização"/>
+    <definition value="Hospitalização"/>
+  </concept>
+  <concept>
+    <code value="INCAPACIDADE"/>
+    <display value="Incapacidade"/>
+    <definition value="Incapacidade"/>
+  </concept>
+  <concept>
+    <code value="ANOMALIA"/>
+    <display value="Anomalia congénita"/>
+    <definition value="Anomalia congénita"/>
+  </concept>
+  <concept>
+    <code value="CI"/>
+    <display value="Clinicamente importante"/>
+    <definition value="Clinicamente importante"/>
+  </concept>
+</CodeSystem>

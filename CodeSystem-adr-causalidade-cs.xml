@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="adr-causalidade-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem adr-causalidade-cs</b></p><a name="adr-causalidade-cs"> </a><a name="hcadr-causalidade-cs"> </a><a name="adr-causalidade-cs-pt-PT"> </a><p>This case-insensitive code system <code>https://hl7.pt/fhir/ADR/CodeSystem/adr-causalidade-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">DEF<a name="adr-causalidade-cs-DEF"> </a></td><td>Definitivo</td><td>Definitivo</td></tr><tr><td style="white-space:nowrap">PROV<a name="adr-causalidade-cs-PROV"> </a></td><td>Provável</td><td>Provável</td></tr><tr><td style="white-space:nowrap">POSS<a name="adr-causalidade-cs-POSS"> </a></td><td>Possível</td><td>Possível</td></tr><tr><td style="white-space:nowrap">COND<a name="adr-causalidade-cs-COND"> </a></td><td>Condicional</td><td>Condicional</td></tr><tr><td style="white-space:nowrap">IMPR<a name="adr-causalidade-cs-IMPR"> </a></td><td>Improvável</td><td>Improvável</td></tr><tr><td style="white-space:nowrap">NC<a name="adr-causalidade-cs-NC"> </a></td><td>Não Classificável</td><td>Não Classificável</td></tr></table></div>
+  </text>
+  <url value="https://hl7.pt/fhir/ADR/CodeSystem/adr-causalidade-cs"/>
+  <version value="1.0.0-ballot"/>
+  <name value="CausalidadeCS"/>
+  <title value="Causalidade CodeSystem"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2024-12-09T19:10:40+00:00"/>
+  <publisher value="HL7 Portugal"/>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.pt"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.pt"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="email"/>
+      <value value="geral@hl7.pt"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Causalidade CodeSystem"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PT"/>
+      <display value="Portugal"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="6"/>
+  <concept>
+    <code value="DEF"/>
+    <display value="Definitivo"/>
+    <definition value="Definitivo"/>
+  </concept>
+  <concept>
+    <code value="PROV"/>
+    <display value="Provável"/>
+    <definition value="Provável"/>
+  </concept>
+  <concept>
+    <code value="POSS"/>
+    <display value="Possível"/>
+    <definition value="Possível"/>
+  </concept>
+  <concept>
+    <code value="COND"/>
+    <display value="Condicional"/>
+    <definition value="Condicional"/>
+  </concept>
+  <concept>
+    <code value="IMPR"/>
+    <display value="Improvável"/>
+    <definition value="Improvável"/>
+  </concept>
+  <concept>
+    <code value="NC"/>
+    <display value="Não Classificável"/>
+    <definition value="Não Classificável"/>
+  </concept>
+</CodeSystem>

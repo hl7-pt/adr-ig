@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="17ea39ea-a7d8-48d6-bbae-96e1e1d3cf14"/>
+  <meta>
+    <lastUpdated value="2024-12-09T19:10:40.462+00:00"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="https://hl7.pt/fhir/ADR/ValueSet/adr-causalidade-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-adr-causalidade-cs.html">codesystem Causalidade CodeSystem v1.0.0-ballot (CodeSystem)</a>
+            </p>
+            <p>This value set contains 6 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://hl7.pt/fhir/ADR/CodeSystem/adr-causalidade-cs-DEF"> </a>  
+                  <a href="CodeSystem-adr-causalidade-cs.html#adr-causalidade-cs-DEF">DEF</a>
+                </td>
+                <td>https://hl7.pt/fhir/ADR/CodeSystem/adr-causalidade-cs</td>
+                <td>Definitivo</td>
+                <td>
+                  <div>
+                    <p>Definitivo</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://hl7.pt/fhir/ADR/CodeSystem/adr-causalidade-cs-PROV"> </a>  
+                  <a href="CodeSystem-adr-causalidade-cs.html#adr-causalidade-cs-PROV">PROV</a>
+                </td>
+                <td>https://hl7.pt/fhir/ADR/CodeSystem/adr-causalidade-cs</td>
+                <td>Provável</td>
+                <td>
+                  <div>
+                    <p>Provável</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://hl7.pt/fhir/ADR/CodeSystem/adr-causalidade-cs-POSS"> </a>  
+                  <a href="CodeSystem-adr-causalidade-cs.html#adr-causalidade-cs-POSS">POSS</a>
+                </td>
+                <td>https://hl7.pt/fhir/ADR/CodeSystem/adr-causalidade-cs</td>
+                <td>Possível</td>
+                <td>
+                  <div>
+                    <p>Possível</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://hl7.pt/fhir/ADR/CodeSystem/adr-causalidade-cs-COND"> </a>  
+                  <a href="CodeSystem-adr-causalidade-cs.html#adr-causalidade-cs-COND">COND</a>
+                </td>
+                <td>https://hl7.pt/fhir/ADR/CodeSystem/adr-causalidade-cs</td>
+                <td>Condicional</td>
+                <td>
+                  <div>
+                    <p>Condicional</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://hl7.pt/fhir/ADR/CodeSystem/adr-causalidade-cs-IMPR"> </a>  
+                  <a href="CodeSystem-adr-causalidade-cs.html#adr-causalidade-cs-IMPR">IMPR</a>
+                </td>
+                <td>https://hl7.pt/fhir/ADR/CodeSystem/adr-causalidade-cs</td>
+                <td>Improvável</td>
+                <td>
+                  <div>
+                    <p>Improvável</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://hl7.pt/fhir/ADR/CodeSystem/adr-causalidade-cs-NC"> </a>  
+                  <a href="CodeSystem-adr-causalidade-cs.html#adr-causalidade-cs-NC">NC</a>
+                </td>
+                <td>https://hl7.pt/fhir/ADR/CodeSystem/adr-causalidade-cs</td>
+                <td>Não Classificável</td>
+                <td>
+                  <div>
+                    <p>Não Classificável</p>
+
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://hl7.pt/fhir/ADR/ValueSet/adr-causalidade-vs"/>
+        <version value="1.0.0-ballot"/>
+        <name value="CausalidadeVS"/>
+        <title value="Causalidade ValueSet"/>
+        <status value="active"/>
+        <experimental value="true"/>
+        <date value="2024-12-09T19:10:40+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="PT"/>
+            <display value="Portugal"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:34edfd53-72d4-4668-b27c-6c3b8b78663a"/>
+          <timestamp value="2024-12-09T19:11:01+00:00"/>
+          <total value="6"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://hl7.pt/fhir/ADR/CodeSystem/adr-causalidade-cs|1.0.0-ballot"/>
+          </parameter>
+          <contains>
+            <system value="https://hl7.pt/fhir/ADR/CodeSystem/adr-causalidade-cs"/>
+            <code value="DEF"/>
+            <display value="Definitivo"/>
+          </contains>
+          <contains>
+            <system value="https://hl7.pt/fhir/ADR/CodeSystem/adr-causalidade-cs"/>
+            <code value="PROV"/>
+            <display value="Provável"/>
+          </contains>
+          <contains>
+            <system value="https://hl7.pt/fhir/ADR/CodeSystem/adr-causalidade-cs"/>
+            <code value="POSS"/>
+            <display value="Possível"/>
+          </contains>
+          <contains>
+            <system value="https://hl7.pt/fhir/ADR/CodeSystem/adr-causalidade-cs"/>
+            <code value="COND"/>
+            <display value="Condicional"/>
+          </contains>
+          <contains>
+            <system value="https://hl7.pt/fhir/ADR/CodeSystem/adr-causalidade-cs"/>
+            <code value="IMPR"/>
+            <display value="Improvável"/>
+          </contains>
+          <contains>
+            <system value="https://hl7.pt/fhir/ADR/CodeSystem/adr-causalidade-cs"/>
+            <code value="NC"/>
+            <display value="Não Classificável"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://hl7.pt/fhir/ADR/ValueSet/adr-evolucao-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-adr-evolucao-cs.html">codesystem Evolução de uma RAM CodeSystem v1.0.0-ballot (CodeSystem)</a>
+            </p>
+            <p>This value set contains 6 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://hl7.pt/fhir/ADR/CodeSystem/adr-evolucao-cs-CURA"> </a>  
+                  <a href="CodeSystem-adr-evolucao-cs.html#adr-evolucao-cs-CURA">CURA</a>
+                </td>
+                <td>https://hl7.pt/fhir/ADR/CodeSystem/adr-evolucao-cs</td>
+                <td>Cura</td>
+                <td>
+                  <div>
+                    <p>Cura</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://hl7.pt/fhir/ADR/CodeSystem/adr-evolucao-cs-RECUPERACAO"> </a>  
+                  <a href="CodeSystem-adr-evolucao-cs.html#adr-evolucao-cs-RECUPERACAO">RECUPERACAO</a>
+                </td>
+                <td>https://hl7.pt/fhir/ADR/CodeSystem/adr-evolucao-cs</td>
+                <td>Recuperação</td>
+                <td>
+                  <div>
+                    <p>Recuperação</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://hl7.pt/fhir/ADR/CodeSystem/adr-evolucao-cs-PERSISTENTE"> </a>  
+                  <a href="CodeSystem-adr-evolucao-cs.html#adr-evolucao-cs-PERSISTENTE">PERSISTENTE</a>
+                </td>
+                <td>https://hl7.pt/fhir/ADR/CodeSystem/adr-evolucao-cs</td>
+                <td>Persistente</td>
+                <td>
+                  <div>
+                    <p>Persistente</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://hl7.pt/fhir/ADR/CodeSystem/adr-evolucao-cs-CURA_SEQUELAS"> </a>  
+                  <a href="CodeSystem-adr-evolucao-cs.html#adr-evolucao-cs-CURA_SEQUELAS">CURA_SEQUELAS</a>
+                </td>
+                <td>https://hl7.pt/fhir/ADR/CodeSystem/adr-evolucao-cs</td>
+                <td>Cura com sequelas</td>
+                <td>
+                  <div>
+                    <p>Cura com sequelas</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://hl7.pt/fhir/ADR/CodeSystem/adr-evolucao-cs-MORTE"> </a>  
+                  <a href="CodeSystem-adr-evolucao-cs.html#adr-evolucao-cs-MORTE">MORTE</a>
+                </td>
+                <td>https://hl7.pt/fhir/ADR/CodeSystem/adr-evolucao-cs</td>
+                <td>Morte</td>
+                <td>
+                  <div>
+                    <p>Morte</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://hl7.pt/fhir/ADR/CodeSystem/adr-evolucao-cs-DESCONHECIDO"> </a>  
+                  <a href="CodeSystem-adr-evolucao-cs.html#adr-evolucao-cs-DESCONHECIDO">DESCONHECIDO</a>
+                </td>
+                <td>https://hl7.pt/fhir/ADR/CodeSystem/adr-evolucao-cs</td>
+                <td>Desconhecido</td>
+                <td>
+                  <div>
+                    <p>Desconhecido</p>
+
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://hl7.pt/fhir/ADR/ValueSet/adr-evolucao-vs"/>
+        <version value="1.0.0-ballot"/>
+        <name value="EvolucaoVS"/>
+        <title value="Evolução de uma RAM ValueSet"/>
+        <status value="active"/>
+        <experimental value="true"/>
+        <date value="2024-12-09T19:10:40+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="PT"/>
+            <display value="Portugal"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:07b2f04e-ff9d-4a75-8fcd-7e15d05253c9"/>
+          <timestamp value="2024-12-09T19:11:01+00:00"/>
+          <total value="6"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://hl7.pt/fhir/ADR/CodeSystem/adr-evolucao-cs|1.0.0-ballot"/>
+          </parameter>
+          <contains>
+            <system value="https://hl7.pt/fhir/ADR/CodeSystem/adr-evolucao-cs"/>
+            <code value="CURA"/>
+            <display value="Cura"/>
+          </contains>
+          <contains>
+            <system value="https://hl7.pt/fhir/ADR/CodeSystem/adr-evolucao-cs"/>
+            <code value="RECUPERACAO"/>
+            <display value="Recuperação"/>
+          </contains>
+          <contains>
+            <system value="https://hl7.pt/fhir/ADR/CodeSystem/adr-evolucao-cs"/>
+            <code value="PERSISTENTE"/>
+            <display value="Persistente"/>
+          </contains>
+          <contains>
+            <system value="https://hl7.pt/fhir/ADR/CodeSystem/adr-evolucao-cs"/>
+            <code value="CURA_SEQUELAS"/>
+            <display value="Cura com sequelas"/>
+          </contains>
+          <contains>
+            <system value="https://hl7.pt/fhir/ADR/CodeSystem/adr-evolucao-cs"/>
+            <code value="MORTE"/>
+            <display value="Morte"/>
+          </contains>
+          <contains>
+            <system value="https://hl7.pt/fhir/ADR/CodeSystem/adr-evolucao-cs"/>
+            <code value="DESCONHECIDO"/>
+            <display value="Desconhecido"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://hl7.pt/fhir/ADR/ValueSet/adr-gravidade-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-adr-gravidade-cs.html">codesystem Gravidade RAM CodeSystem v1.0.0-ballot (CodeSystem)</a>
+            </p>
+            <p>This value set contains 6 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://hl7.pt/fhir/ADR/CodeSystem/adr-gravidade-cs-MORTE"> </a>  
+                  <a href="CodeSystem-adr-gravidade-cs.html#adr-gravidade-cs-MORTE">MORTE</a>
+                </td>
+                <td>https://hl7.pt/fhir/ADR/CodeSystem/adr-gravidade-cs</td>
+                <td>Morte</td>
+                <td>
+                  <div>
+                    <p>Morte</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://hl7.pt/fhir/ADR/CodeSystem/adr-gravidade-cs-RISCOVIDA"> </a>  
+                  <a href="CodeSystem-adr-gravidade-cs.html#adr-gravidade-cs-RISCOVIDA">RISCOVIDA</a>
+                </td>
+                <td>https://hl7.pt/fhir/ADR/CodeSystem/adr-gravidade-cs</td>
+                <td>Risco de vida</td>
+                <td>
+                  <div>
+                    <p>Risco de vida</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://hl7.pt/fhir/ADR/CodeSystem/adr-gravidade-cs-HOSP"> </a>  
+                  <a href="CodeSystem-adr-gravidade-cs.html#adr-gravidade-cs-HOSP">HOSP</a>
+                </td>
+                <td>https://hl7.pt/fhir/ADR/CodeSystem/adr-gravidade-cs</td>
+                <td>Hospitalização</td>
+                <td>
+                  <div>
+                    <p>Hospitalização</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://hl7.pt/fhir/ADR/CodeSystem/adr-gravidade-cs-INCAPACIDADE"> </a>  
+                  <a href="CodeSystem-adr-gravidade-cs.html#adr-gravidade-cs-INCAPACIDADE">INCAPACIDADE</a>
+                </td>
+                <td>https://hl7.pt/fhir/ADR/CodeSystem/adr-gravidade-cs</td>
+                <td>Incapacidade</td>
+                <td>
+                  <div>
+                    <p>Incapacidade</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://hl7.pt/fhir/ADR/CodeSystem/adr-gravidade-cs-ANOMALIA"> </a>  
+                  <a href="CodeSystem-adr-gravidade-cs.html#adr-gravidade-cs-ANOMALIA">ANOMALIA</a>
+                </td>
+                <td>https://hl7.pt/fhir/ADR/CodeSystem/adr-gravidade-cs</td>
+                <td>Anomalia congénita</td>
+                <td>
+                  <div>
+                    <p>Anomalia congénita</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://hl7.pt/fhir/ADR/CodeSystem/adr-gravidade-cs-CI"> </a>  
+                  <a href="CodeSystem-adr-gravidade-cs.html#adr-gravidade-cs-CI">CI</a>
+                </td>
+                <td>https://hl7.pt/fhir/ADR/CodeSystem/adr-gravidade-cs</td>
+                <td>Clinicamente importante</td>
+                <td>
+                  <div>
+                    <p>Clinicamente importante</p>
+
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://hl7.pt/fhir/ADR/ValueSet/adr-gravidade-vs"/>
+        <version value="1.0.0-ballot"/>
+        <name value="GravidadeVS"/>
+        <title value="Gravidade RAM ValueSet"/>
+        <status value="active"/>
+        <experimental value="true"/>
+        <date value="2024-12-09T19:10:40+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="PT"/>
+            <display value="Portugal"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:18bd7591-deb7-4cc0-a056-ccf14c362933"/>
+          <timestamp value="2024-12-09T19:11:01+00:00"/>
+          <total value="6"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://hl7.pt/fhir/ADR/CodeSystem/adr-gravidade-cs|1.0.0-ballot"/>
+          </parameter>
+          <contains>
+            <system value="https://hl7.pt/fhir/ADR/CodeSystem/adr-gravidade-cs"/>
+            <code value="MORTE"/>
+            <display value="Morte"/>
+          </contains>
+          <contains>
+            <system value="https://hl7.pt/fhir/ADR/CodeSystem/adr-gravidade-cs"/>
+            <code value="RISCOVIDA"/>
+            <display value="Risco de vida"/>
+          </contains>
+          <contains>
+            <system value="https://hl7.pt/fhir/ADR/CodeSystem/adr-gravidade-cs"/>
+            <code value="HOSP"/>
+            <display value="Hospitalização"/>
+          </contains>
+          <contains>
+            <system value="https://hl7.pt/fhir/ADR/CodeSystem/adr-gravidade-cs"/>
+            <code value="INCAPACIDADE"/>
+            <display value="Incapacidade"/>
+          </contains>
+          <contains>
+            <system value="https://hl7.pt/fhir/ADR/CodeSystem/adr-gravidade-cs"/>
+            <code value="ANOMALIA"/>
+            <display value="Anomalia congénita"/>
+          </contains>
+          <contains>
+            <system value="https://hl7.pt/fhir/ADR/CodeSystem/adr-gravidade-cs"/>
+            <code value="CI"/>
+            <display value="Clinicamente importante"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+</Bundle>

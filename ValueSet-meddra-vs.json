@@ -1,0 +1,48 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "meddra-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet meddra-vs</b></p><a name=\"meddra-vs\"> </a><a name=\"hcmeddra-vs\"> </a><a name=\"meddra-vs-pt-PT\"> </a><ul><li>Include all codes defined in <a href=\"http://terminology.hl7.org/6.1.0/CodeSystem-MDRPOR.html\"><code>http://terminology.hl7.org/CodeSystem/MDRPOR</code></a></li></ul></div>"
+  },
+  "url" : "https://hl7.pt/fhir/ADR/ValueSet/meddra-vs",
+  "version" : "1.0.0-ballot",
+  "name" : "MeddraVS",
+  "title" : "MedDRA ValueSet",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2024-12-09T19:10:40+00:00",
+  "publisher" : "HL7 Portugal",
+  "contact" : [{
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.pt"
+    },
+    {
+      "system" : "email",
+      "value" : "info@hl7.pt"
+    }]
+  },
+  {
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "geral@hl7.pt",
+      "use" : "work"
+    }]
+  }],
+  "description" : "MedDRA ValueSet",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "PT",
+      "display" : "Portugal"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/MDRPOR"
+    }]
+  }
+}

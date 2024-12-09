@@ -1,0 +1,345 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.org/fhir/CodeSystem/medication-statement-adherence",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "MedicationStatementAdherenceCodes",
+      "title" : "MedicationStatement Adherence Codes",
+      "description" : "MedicationStatement Adherence Codes",
+      "oids" : ["2.16.840.1.113883.4.642.4.1981"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-medication-statement-adherence.html" : "MedicationStatement Adherence Codes"
+    },
+    {
+      "url" : "http://hl7.org/fhir/CodeSystem/medication-statement-status",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "MedicationStatementStatusCodes",
+      "title" : "MedicationStatement Status Codes",
+      "description" : "MedicationStatement Status Codes",
+      "oids" : ["2.16.840.1.113883.4.642.4.1980"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-medication-statement-status.html" : "MedicationStatement Status Codes"
+    },
+    {
+      "url" : "http://hl7.org/fhir/administrative-gender",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "AdministrativeGender",
+      "title" : "AdministrativeGender",
+      "description" : "The gender of a person used for administrative purposes.",
+      "oids" : ["2.16.840.1.113883.4.642.4.2"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-administrative-gender.html" : "AdministrativeGender"
+    },
+    {
+      "url" : "http://hl7.org/fhir/adverse-event-actuality",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "AdverseEventActuality",
+      "title" : "Adverse Event Actuality",
+      "description" : "Overall nature of the adverse event, e.g. real or potential.",
+      "oids" : ["2.16.840.1.113883.4.642.4.832"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-adverse-event-actuality.html" : "Adverse Event Actuality"
+    },
+    {
+      "url" : "http://hl7.org/fhir/allergy-intolerance-category",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "AllergyIntoleranceCategory",
+      "title" : "Allergy Intolerance Category",
+      "description" : "Category of an identified substance associated with allergies or intolerances.",
+      "oids" : [
+        "2.16.840.1.113883.4.642.2.53",
+        "2.16.840.1.113883.4.642.4.134",
+        "2.16.840.1.113883.4.642.1.124"
+      ],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-allergy-intolerance-category.html" : "Allergy Intolerance Category"
+    },
+    {
+      "url" : "http://hl7.org/fhir/allergy-intolerance-criticality",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "AllergyIntoleranceCriticality",
+      "title" : "Allergy Intolerance Criticality",
+      "description" : "Estimate of the potential clinical harm, or seriousness, of a reaction to an identified substance.",
+      "oids" : [
+        "2.16.840.1.113883.4.642.1.120",
+        "2.16.840.1.113883.4.642.4.130",
+        "2.16.840.1.113883.4.642.2.51"
+      ],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-allergy-intolerance-criticality.html" : "Allergy Intolerance Criticality"
+    },
+    {
+      "url" : "http://hl7.org/fhir/allergy-intolerance-type",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "AllergyIntoleranceType",
+      "title" : "Allergy Intolerance Type",
+      "description" : "Identification of the underlying physiological mechanism for a Reaction Risk.",
+      "oids" : [
+        "2.16.840.1.113883.4.642.4.132",
+        "2.16.840.1.113883.4.642.1.122",
+        "2.16.840.1.113883.4.642.2.52"
+      ],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-allergy-intolerance-type.html" : "Allergy Intolerance Type"
+    },
+    {
+      "url" : "http://hl7.org/fhir/event-status",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "EventStatus",
+      "title" : "EventStatus",
+      "description" : "Codes identifying the lifecycle stage of an event.",
+      "oids" : ["2.16.840.1.113883.4.642.4.110"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-adverse-event-status.html" : "Adverse Event Status"
+    },
+    {
+      "url" : "http://hl7.org/fhir/link-type",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "LinkType",
+      "title" : "Link Type",
+      "description" : "The type of link between this Patient resource and other Patient/RelatedPerson resource(s).",
+      "oids" : [
+        "2.16.840.1.113883.4.642.1.413",
+        "2.16.840.1.113883.4.642.2.234",
+        "2.16.840.1.113883.4.642.4.424"
+      ],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-link-type.html" : "Link Type"
+    },
+    {
+      "url" : "http://hl7.org/fhir/reaction-event-severity",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "AllergyIntoleranceSeverity",
+      "title" : "Allergy Intolerance Severity",
+      "description" : "Clinical assessment of the severity of a reaction event as a whole, potentially considering multiple different manifestations.",
+      "oids" : [
+        "2.16.840.1.113883.4.642.2.56",
+        "2.16.840.1.113883.4.642.1.126",
+        "2.16.840.1.113883.4.642.4.136"
+      ],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-reaction-event-severity.html" : "Allergy Intolerance Severity"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/MDRPOR",
+      "version" : "2.0.1",
+      "status" : "retired",
+      "name" : "MDRPOR",
+      "title" : "MedDRA Portuguese",
+      "description" : "Medical Dictionary for Regulatory Activities Terminology (MedDRA) Version 7.0, Portuguese Edition. International conference on Harmonization of Technical Requirements for Registration of Pharmaceuticals for Human Use (ICH). Reston, VA: MedDRA MSSO, March 1, 2004. This is the Portuguese language version as encapsulated in the UMLS..",
+      "oids" : ["2.16.840.1.113883.6.163.5"],
+      "uses" : {
+      },
+      "ValueSet-meddra-vs.html" : "MedDRA ValueSet"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/adverse-event-category",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "AdverseEventCategory",
+      "title" : "AdverseEventCategory",
+      "description" : "Overall categorization of the event, e.g. product-related or situational.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1251"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-adverse-event-category.html" : "Adverse Event Category"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/adverse-event-causality-method",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "AdverseEventCausalityMethod",
+      "title" : "AdverseEventCausalityMethod",
+      "description" : "TODO.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1255"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-adverse-event-causality-method.html" : "Adverse Event Causality Method"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "AllergyIntoleranceClinicalStatusCodes",
+      "title" : "AllergyIntolerance Clinical Status Codes",
+      "description" : "Preferred value set for AllergyIntolerance Clinical Status.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1373"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-allergyintolerance-clinical.html" : "AllergyIntolerance Clinical Status Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "AllergyIntoleranceVerificationStatus",
+      "title" : "AllergyIntolerance Verification Status",
+      "description" : "The verification status to support or decline the clinical status of the allergy or intolerance.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1371"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-allergyintolerance-verification.html" : "AllergyIntolerance Verification Status"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/dose-rate-type",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "DoseAndRateType",
+      "title" : "DoseAndRateType",
+      "description" : "The kind of dose or rate specified.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1069"],
+      "uses" : {
+      },
+      "http://terminology.hl7.org/6.1.0/ValueSet-dose-rate-type.html" : "DoseAndRateType"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/extra-security-role-type",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "SecurityRoleType",
+      "title" : "Security Role Type",
+      "description" : "This CodeSystem contains Additional FHIR-defined Security Role types not defined elsewhere",
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-participation-role-type.html" : "Participation Role Type"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/medicationrequest-admin-location",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "MedicationRequest_Administration_Location_Codes",
+      "title" : "Medication request  administration  location  codes",
+      "description" : "MedicationRequest Administration Location Codes",
+      "oids" : ["2.16.840.1.113883.4.642.1.0"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-medicationrequest-admin-location.html" : "medicationRequest Administration Location Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v2-0131",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "ContactRole2",
+      "title" : "contactRole2",
+      "description" : "Code system of concepts which specify a relationship role that the next of kin/associated parties plays with regard to the patient. Also used in referrals, for example, it may be necessary to identify the contact representative at the clinic that sent a referral. Used in HL7 Version 2 messaging in the NK1 and CTD segments after 2.5, when it replace 2.16.840.1.113883.18.57.",
+      "oids" : ["2.16.840.1.113883.18.58"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-patient-contactrelationship.html" : "Patient Contact Relationship "
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v2-0360",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "DegreeLicenseCertificate",
+      "title" : "degreeLicenseCertificate",
+      "description" : "Code system of concepts specifying an educational degree (e.g., MD).  Used in the CNN datatype (names and identifiers of clinicians) in Version 2 messaging.  Used in HL7 Version 2.x messaging in the CNN segment; note that in releases of HL7 prior to 2.3.1, was also used in person names (XPN), but this use was deprecated, then withdrawn in 2.7.",
+      "oids" : ["2.16.840.1.113883.18.220"],
+      "uses" : {
+      },
+      "http://terminology.hl7.org/6.1.0/ValueSet-v2-0360.html" : "hl7VS-degreeLicenseCertificate"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "MaritalStatus",
+      "title" : "MaritalStatus",
+      "description" : "\\* \\* \\* No description supplied \\* \\* \\*\r\n\r\n*Open Issue:* The specific meanings of these codes can vary somewhat by jurisdiction and implementation so caution should be used when determining equivalency.\r\n\r\n*Open Issue:* fixing and completion of the hierarchy and proper good definitions of all the concepts is badly needed.",
+      "oids" : ["2.16.840.1.113883.5.2"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-marital-status.html" : "Marital Status Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "NullFlavor",
+      "title" : "NullFlavor",
+      "description" : "A collection of codes specifying why a valid value is not present.",
+      "oids" : ["2.16.840.1.113883.5.1008"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-marital-status.html" : "Marital Status Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "ParticipationType",
+      "title" : "ParticipationType",
+      "description" : "A code specifying the meaning and purpose of every Participation instance. Each of its values implies specific constraints on the Roles undertaking the participation.",
+      "oids" : ["2.16.840.1.113883.5.90"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-adverse-event-participant-function.html" : "AdverseEvent Participant Function"
+    },
+    {
+      "url" : "https://hl7.pt/fhir/ADR/CodeSystem/adr-causalidade-cs",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "CausalidadeCS",
+      "title" : "Causalidade CodeSystem",
+      "description" : "Causalidade CodeSystem",
+      "uses" : {
+      },
+      "ValueSet-adr-causalidade-vs.html" : "Causalidade ValueSet"
+    },
+    {
+      "url" : "https://hl7.pt/fhir/ADR/CodeSystem/adr-evolucao-cs",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "EvolucaoCS",
+      "title" : "Evolução de uma RAM CodeSystem",
+      "description" : "Evolução de uma RAM CodeSystem",
+      "uses" : {
+      },
+      "ValueSet-adr-evolucao-vs.html" : "Evolução de uma RAM ValueSet"
+    },
+    {
+      "url" : "https://hl7.pt/fhir/ADR/CodeSystem/adr-gravidade-cs",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "GravidadeCS",
+      "title" : "Gravidade RAM CodeSystem",
+      "description" : "Causalidade CodeSystem",
+      "uses" : {
+      },
+      "ValueSet-adr-gravidade-vs.html" : "Gravidade RAM ValueSet"
+    },
+    {
+      "url" : "urn:ietf:bcp:47",
+      "version" : "2.0.1",
+      "status" : "active",
+      "name" : "Ietf3066",
+      "title" : "Tags for the Identification of Languages",
+      "description" : "Older value from OID registry.  Superceded; see recommendations in BCP-47.",
+      "oids" : ["2.16.840.1.113883.6.121"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-all-languages.html" : "All Languages",
+      "http://hl7.org/fhir/R5/valueset-languages.html" : "Common Languages"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "adr-evolucao-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem adr-evolucao-cs</b></p><a name=\"adr-evolucao-cs\"> </a><a name=\"hcadr-evolucao-cs\"> </a><a name=\"adr-evolucao-cs-pt-PT\"> </a><p>This case-insensitive code system <code>https://hl7.pt/fhir/ADR/CodeSystem/adr-evolucao-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">CURA<a name=\"adr-evolucao-cs-CURA\"> </a></td><td>Cura</td><td>Cura</td></tr><tr><td style=\"white-space:nowrap\">RECUPERACAO<a name=\"adr-evolucao-cs-RECUPERACAO\"> </a></td><td>Recuperação</td><td>Recuperação</td></tr><tr><td style=\"white-space:nowrap\">PERSISTENTE<a name=\"adr-evolucao-cs-PERSISTENTE\"> </a></td><td>Persistente</td><td>Persistente</td></tr><tr><td style=\"white-space:nowrap\">CURA_SEQUELAS<a name=\"adr-evolucao-cs-CURA_SEQUELAS\"> </a></td><td>Cura com sequelas</td><td>Cura com sequelas</td></tr><tr><td style=\"white-space:nowrap\">MORTE<a name=\"adr-evolucao-cs-MORTE\"> </a></td><td>Morte</td><td>Morte</td></tr><tr><td style=\"white-space:nowrap\">DESCONHECIDO<a name=\"adr-evolucao-cs-DESCONHECIDO\"> </a></td><td>Desconhecido</td><td>Desconhecido</td></tr></table></div>"
+  },
+  "url" : "https://hl7.pt/fhir/ADR/CodeSystem/adr-evolucao-cs",
+  "version" : "1.0.0-ballot",
+  "name" : "EvolucaoCS",
+  "title" : "Evolução de uma RAM CodeSystem",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2024-12-09T19:10:40+00:00",
+  "publisher" : "HL7 Portugal",
+  "contact" : [{
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.pt"
+    },
+    {
+      "system" : "email",
+      "value" : "info@hl7.pt"
+    }]
+  },
+  {
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "geral@hl7.pt",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Evolução de uma RAM CodeSystem",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "PT",
+      "display" : "Portugal"
+    }]
+  }],
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 6,
+  "concept" : [{
+    "code" : "CURA",
+    "display" : "Cura",
+    "definition" : "Cura"
+  },
+  {
+    "code" : "RECUPERACAO",
+    "display" : "Recuperação",
+    "definition" : "Recuperação"
+  },
+  {
+    "code" : "PERSISTENTE",
+    "display" : "Persistente",
+    "definition" : "Persistente"
+  },
+  {
+    "code" : "CURA_SEQUELAS",
+    "display" : "Cura com sequelas",
+    "definition" : "Cura com sequelas"
+  },
+  {
+    "code" : "MORTE",
+    "display" : "Morte",
+    "definition" : "Morte"
+  },
+  {
+    "code" : "DESCONHECIDO",
+    "display" : "Desconhecido",
+    "definition" : "Desconhecido"
+  }]
+}

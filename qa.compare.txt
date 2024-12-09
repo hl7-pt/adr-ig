@@ -1,0 +1,137 @@
+ADRPTIG : Validation Results
+=========================================
+
+err = 0, warn = 53, info = 23
+$--
+Generated $--. FHIR version $-- for hl7.fhir.pt.adr#$-- (canonical = https://hl7.pt/fhir/ADR)
+ Build Errors : 0 / 3 / 0
+ /github/workspace/fsh-generated/resources/AdverseEvent-Notifi-1 : 0 / 4 / 2
+ /github/workspace/fsh-generated/resources/AdverseEvent-Notifi-2 : 0 / 3 / 2
+ /github/workspace/fsh-generated/resources/Bundle-message : 0 / 5 / 13
+ /github/workspace/fsh-generated/resources/CodeSystem-adr-causalidade-cs : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/CodeSystem-adr-evolucao-cs : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/CodeSystem-adr-gravidade-cs : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/ImplementationGuide-hl7.fhir.pt.adr : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/Medication-med1 : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/MedicationStatement-medinfo-1 : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/Patient-pat-1 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Practitioner-not-1 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-Alergia : 0 / 6 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-Doente : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-DoenteLM : 0 / 2 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-InformacaoMedicamento : 0 / 10 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-InformacoesLM : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-MedicamentoLM : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-NotificacaoLM : 0 / 2 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-NotificadorLM : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-ProfissionalSaude : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-ReacaoAdversa : 0 / 15 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-ReacaoAdversaLM : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/ValueSet-adr-causalidade-vs : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/ValueSet-adr-evolucao-vs : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/ValueSet-adr-gravidade-vs : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/ValueSet-meddra-vs : 0 / 1 / 2
+</table>
+== n/a ==
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/AdverseEvent-Notifi-1.json ==
+INFORMATION: AdverseEvent/Notifi-1: AdverseEvent.status: Reference to experimental CodeSystem http://hl7.org/fhir/event-status|5.0.0
+WARNING: AdverseEvent/Notifi-1: AdverseEvent.code.coding[0].system: A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/MDRPOR' could not be found, so the code cannot be validated
+WARNING: AdverseEvent/Notifi-1: AdverseEvent.code: Unable to check whether the code is in the value set 'https://hl7.pt/fhir/ADR/ValueSet/meddra-vs|1.0.0-ballot' because the code system http://terminology.hl7.org/CodeSystem/MDRPOR was not found
+WARNING: AdverseEvent/Notifi-1: AdverseEvent.code: A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/MDRPOR' could not be found, so the code cannot be validated; Unable to check whether the code is in the value set 'https://hl7.pt/fhir/ADR/ValueSet/meddra-vs|1.0.0-ballot' because the code system http://terminology.hl7.org/CodeSystem/MDRPOR was not found
+WARNING: AdverseEvent/Notifi-1: AdverseEvent.suspectEntity[0].instance.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://example.org' could not be found, so the code cannot be validated
+== fsh-generated/resources/AdverseEvent-Notifi-2.json ==
+INFORMATION: AdverseEvent/Notifi-2: AdverseEvent.status: Reference to experimental CodeSystem http://hl7.org/fhir/event-status|5.0.0
+WARNING: AdverseEvent/Notifi-2: AdverseEvent.code.coding[0].system: A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/MDRPOR' could not be found, so the code cannot be validated
+WARNING: AdverseEvent/Notifi-2: AdverseEvent.code: Unable to check whether the code is in the value set 'https://hl7.pt/fhir/ADR/ValueSet/meddra-vs|1.0.0-ballot' because the code system http://terminology.hl7.org/CodeSystem/MDRPOR was not found
+WARNING: AdverseEvent/Notifi-2: AdverseEvent.code: A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/MDRPOR' could not be found, so the code cannot be validated; Unable to check whether the code is in the value set 'https://hl7.pt/fhir/ADR/ValueSet/meddra-vs|1.0.0-ballot' because the code system http://terminology.hl7.org/CodeSystem/MDRPOR was not found
+== fsh-generated/resources/Bundle-message.json ==
+INFORMATION: Bundle/message: Bundle.entry[1].resource/*AdverseEvent/Notifi-2*/.status: Reference to experimental CodeSystem http://hl7.org/fhir/event-status|5.0.0
+WARNING: Bundle/message: Bundle.entry[1].resource/*AdverseEvent/Notifi-2*/.code.coding[0].system: A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/MDRPOR' could not be found, so the code cannot be validated
+INFORMATION: Bundle/message: Bundle.entry[1].resource/*AdverseEvent/Notifi-2*/.seriousness: Reference to experimental CodeSystem https://hl7.pt/fhir/ADR/CodeSystem/adr-gravidade-cs|1.0.0-ballot
+WARNING: Bundle/message: Bundle.entry[1].resource/*AdverseEvent/Notifi-2*/.code: Unable to check whether the code is in the value set 'https://hl7.pt/fhir/ADR/ValueSet/meddra-vs|1.0.0-ballot' because the code system http://terminology.hl7.org/CodeSystem/MDRPOR was not found
+WARNING: Bundle/message: Bundle.entry[1].resource/*AdverseEvent/Notifi-2*/.code: A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/MDRPOR' could not be found, so the code cannot be validated; Unable to check whether the code is in the value set 'https://hl7.pt/fhir/ADR/ValueSet/meddra-vs|1.0.0-ballot' because the code system http://terminology.hl7.org/CodeSystem/MDRPOR was not found
+WARNING: Bundle/message: Bundle.entry[4].resource/*MedicationStatement/medinfo-1*/.dosage[0].route.coding[0]: A definition for CodeSystem 'http://example.org' could not be found, so the code cannot be validated
+WARNING: Bundle/message: Bundle.entry[5].resource/*Medication/med1*/.code.coding[0].system: A definition for CodeSystem 'http://example.org' could not be found, so the code cannot be validated
+== fsh-generated/resources/CodeSystem-adr-causalidade-cs.json ==
+INFORMATION: CodeSystem/adr-causalidade-cs: CodeSystem.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/CodeSystem-adr-evolucao-cs.json ==
+INFORMATION: CodeSystem/adr-evolucao-cs: CodeSystem.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/CodeSystem-adr-gravidade-cs.json ==
+INFORMATION: CodeSystem/adr-gravidade-cs: CodeSystem.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/ImplementationGuide-hl7.fhir.pt.adr.json ==
+INFORMATION: ImplementationGuide/hl7.fhir.pt.adr: ImplementationGuide.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/Medication-med1.json ==
+WARNING: Medication/med1: Medication.code.coding[0].system: A definition for CodeSystem 'http://example.org' could not be found, so the code cannot be validated
+== fsh-generated/resources/MedicationStatement-medinfo-1.json ==
+WARNING: MedicationStatement/medinfo-1: MedicationStatement.dosage[0].route.coding[0]: A definition for CodeSystem 'http://example.org' could not be found, so the code cannot be validated
+== fsh-generated/resources/Patient-pat-1.json ==
+== fsh-generated/resources/Practitioner-not-1.json ==
+== fsh-generated/resources/StructureDefinition-Alergia.json ==
+INFORMATION: StructureDefinition/Alergia: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: StructureDefinition/Alergia: StructureDefinition.snapshot.element[15].binding: The definition for the element 'AllergyIntolerance.code' binds to the value set 'http://hl7.org/fhir/ValueSet/allergyintolerance-code' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/Alergia: StructureDefinition.snapshot.element[24].binding: The definition for the element 'AllergyIntolerance.participant.function' binds to the value set 'http://hl7.org/fhir/ValueSet/participation-role-type' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/Alergia: StructureDefinition.snapshot.element[32].binding: The definition for the element 'AllergyIntolerance.reaction.substance' binds to the value set 'http://hl7.org/fhir/ValueSet/substance-code' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/Alergia: StructureDefinition.snapshot.element[33].binding: The definition for the element 'AllergyIntolerance.reaction.manifestation' binds to the value set 'http://hl7.org/fhir/ValueSet/clinical-findings' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/Alergia: StructureDefinition.snapshot.element[37].binding: The definition for the element 'AllergyIntolerance.reaction.exposureRoute' binds to the value set 'http://hl7.org/fhir/ValueSet/route-codes' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition.where(url = 'https://hl7.pt/fhir/ADR/StructureDefinition/Alergia'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-Doente.json ==
+INFORMATION: StructureDefinition/Doente: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/StructureDefinition-DoenteLM.json ==
+INFORMATION: StructureDefinition/DoenteLM: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: StructureDefinition/DoenteLM: StructureDefinition.snapshot.element[1]: Constraint failed: eld-20: 'The first component of the path should be UpperCamelCase.  Additional components (following a '.') should be lowerCamelCase.  If this syntax is not adhered to, code generation tools may be broken. Logical models may be less concerned about this implication.' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition)
+WARNING: StructureDefinition/DoenteLM: StructureDefinition.differential.element[1]: Constraint failed: eld-20: 'The first component of the path should be UpperCamelCase.  Additional components (following a '.') should be lowerCamelCase.  If this syntax is not adhered to, code generation tools may be broken. Logical models may be less concerned about this implication.' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition)
+== fsh-generated/resources/StructureDefinition-InformacaoMedicamento.json ==
+INFORMATION: StructureDefinition/InformacaoMedicamento: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: StructureDefinition/InformacaoMedicamento: StructureDefinition.snapshot.element[12].binding: The definition for the element 'MedicationStatement.category' binds to the value set 'http://hl7.org/fhir/ValueSet/medicationrequest-admin-location' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/InformacaoMedicamento: StructureDefinition.snapshot.element[13].binding: The definition for the element 'MedicationStatement.medication' binds to the value set 'http://hl7.org/fhir/ValueSet/medication-codes' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/InformacaoMedicamento: StructureDefinition.snapshot.element[20].binding: The definition for the element 'MedicationStatement.reason' binds to the value set 'http://hl7.org/fhir/ValueSet/condition-code' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/InformacaoMedicamento: StructureDefinition.snapshot.element[30].binding: The definition for the element 'MedicationStatement.dosage.additionalInstruction' binds to the value set 'http://hl7.org/fhir/ValueSet/additional-instruction-codes' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/InformacaoMedicamento: StructureDefinition.snapshot.element[34].binding: The definition for the element 'MedicationStatement.dosage.asNeededFor' binds to the value set 'http://hl7.org/fhir/ValueSet/medication-as-needed-reason' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/InformacaoMedicamento: StructureDefinition.snapshot.element[35].binding: The definition for the element 'MedicationStatement.dosage.site' binds to the value set 'http://hl7.org/fhir/ValueSet/approach-site-codes' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/InformacaoMedicamento: StructureDefinition.snapshot.element[36].binding: The definition for the element 'MedicationStatement.dosage.route' binds to the value set 'http://hl7.org/fhir/ValueSet/route-codes' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/InformacaoMedicamento: StructureDefinition.snapshot.element[37].binding: The definition for the element 'MedicationStatement.dosage.method' binds to the value set 'http://hl7.org/fhir/ValueSet/administration-method-codes' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/InformacaoMedicamento: StructureDefinition.snapshot.element[51].binding: The definition for the element 'MedicationStatement.adherence.code' binds to the value set 'http://hl7.org/fhir/ValueSet/medication-statement-adherence' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/InformacaoMedicamento: StructureDefinition.snapshot.element[52].binding: The definition for the element 'MedicationStatement.adherence.reason' binds to the value set 'http://hl7.org/fhir/ValueSet/reason-medication-status-codes' which is experimental, but this structure is not labeled as experimental
+== fsh-generated/resources/StructureDefinition-InformacoesLM.json ==
+INFORMATION: StructureDefinition/InformacoesLM: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/StructureDefinition-MedicamentoLM.json ==
+INFORMATION: StructureDefinition/MedicamentoLM: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/StructureDefinition-NotificacaoLM.json ==
+INFORMATION: StructureDefinition/NotificacaoLM: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: StructureDefinition/NotificacaoLM: StructureDefinition.snapshot.element[1]: Constraint failed: eld-20: 'The first component of the path should be UpperCamelCase.  Additional components (following a '.') should be lowerCamelCase.  If this syntax is not adhered to, code generation tools may be broken. Logical models may be less concerned about this implication.' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition)
+WARNING: StructureDefinition/NotificacaoLM: StructureDefinition.differential.element[1]: Constraint failed: eld-20: 'The first component of the path should be UpperCamelCase.  Additional components (following a '.') should be lowerCamelCase.  If this syntax is not adhered to, code generation tools may be broken. Logical models may be less concerned about this implication.' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition)
+== fsh-generated/resources/StructureDefinition-NotificadorLM.json ==
+INFORMATION: StructureDefinition/NotificadorLM: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/StructureDefinition-ProfissionalSaude.json ==
+INFORMATION: StructureDefinition/ProfissionalSaude: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/StructureDefinition-ReacaoAdversa.json ==
+INFORMATION: StructureDefinition/ReacaoAdversa: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: StructureDefinition/ReacaoAdversa: StructureDefinition.differential.element[2].binding: The definition for the element 'AdverseEvent.code' binds to the value set 'https://hl7.pt/fhir/ADR/ValueSet/meddra-vs' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/ReacaoAdversa: StructureDefinition.differential.element[5].binding: The definition for the element 'AdverseEvent.seriousness' binds to the value set 'https://hl7.pt/fhir/ADR/ValueSet/adr-gravidade-vs' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/ReacaoAdversa: StructureDefinition.differential.element[6].binding: The definition for the element 'AdverseEvent.outcome' binds to the value set 'https://hl7.pt/fhir/ADR/ValueSet/adr-evolucao-vs' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/ReacaoAdversa: StructureDefinition.differential.element[11].binding: The definition for the element 'AdverseEvent.suspectEntity.causality.entityRelatedness' binds to the value set 'https://hl7.pt/fhir/ADR/ValueSet/adr-causalidade-vs' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/ReacaoAdversa: StructureDefinition.snapshot.element[12].binding: The definition for the element 'AdverseEvent.category' binds to the value set 'http://hl7.org/fhir/ValueSet/adverse-event-category' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/ReacaoAdversa: StructureDefinition.snapshot.element[13].binding: The definition for the element 'AdverseEvent.code' binds to the value set 'https://hl7.pt/fhir/ADR/ValueSet/meddra-vs' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/ReacaoAdversa: StructureDefinition.snapshot.element[21].binding: The definition for the element 'AdverseEvent.seriousness' binds to the value set 'https://hl7.pt/fhir/ADR/ValueSet/adr-gravidade-vs' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/ReacaoAdversa: StructureDefinition.snapshot.element[22].binding: The definition for the element 'AdverseEvent.outcome' binds to the value set 'https://hl7.pt/fhir/ADR/ValueSet/adr-evolucao-vs' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/ReacaoAdversa: StructureDefinition.snapshot.element[28].binding: The definition for the element 'AdverseEvent.participant.function' binds to the value set 'http://hl7.org/fhir/ValueSet/adverse-event-participant-function' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/ReacaoAdversa: StructureDefinition.snapshot.element[41].binding: The definition for the element 'AdverseEvent.suspectEntity.causality.assessmentMethod' binds to the value set 'http://hl7.org/fhir/ValueSet/adverse-event-causality-method' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/ReacaoAdversa: StructureDefinition.snapshot.element[42].binding: The definition for the element 'AdverseEvent.suspectEntity.causality.entityRelatedness' binds to the value set 'https://hl7.pt/fhir/ADR/ValueSet/adr-causalidade-vs' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/ReacaoAdversa: StructureDefinition.snapshot.element[48].binding: The definition for the element 'AdverseEvent.contributingFactor.item[x]' binds to the value set 'http://hl7.org/fhir/ValueSet/adverse-event-contributing-factor' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/ReacaoAdversa: StructureDefinition.snapshot.element[53].binding: The definition for the element 'AdverseEvent.preventiveAction.item[x]' binds to the value set 'http://hl7.org/fhir/ValueSet/adverse-event-preventive-action' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/ReacaoAdversa: StructureDefinition.snapshot.element[58].binding: The definition for the element 'AdverseEvent.mitigatingAction.item[x]' binds to the value set 'http://hl7.org/fhir/ValueSet/adverse-event-mitigating-action' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/ReacaoAdversa: StructureDefinition.snapshot.element[63].binding: The definition for the element 'AdverseEvent.supportingInfo.item[x]' binds to the value set 'http://hl7.org/fhir/ValueSet/adverse-event-supporting-info' which is experimental, but this structure is not labeled as experimental
+== fsh-generated/resources/StructureDefinition-ReacaoAdversaLM.json ==
+INFORMATION: StructureDefinition/ReacaoAdversaLM: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/ValueSet-adr-causalidade-vs.json ==
+INFORMATION: ValueSet/adr-causalidade-vs: ValueSet.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/ValueSet-adr-evolucao-vs.json ==
+INFORMATION: ValueSet/adr-evolucao-vs: ValueSet.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/ValueSet-adr-gravidade-vs.json ==
+INFORMATION: ValueSet/adr-gravidade-vs: ValueSet.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/ValueSet-meddra-vs.json ==
+INFORMATION: ValueSet/meddra-vs: ValueSet.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: ValueSet.where(id = 'meddra-vs'): Error from http://tx.fhir.org/r5: Unable to provide support for code system http://terminology.hl7.org/CodeSystem/MDRPOR

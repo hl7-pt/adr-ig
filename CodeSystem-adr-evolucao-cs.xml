@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="adr-evolucao-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem adr-evolucao-cs</b></p><a name="adr-evolucao-cs"> </a><a name="hcadr-evolucao-cs"> </a><a name="adr-evolucao-cs-pt-PT"> </a><p>This case-insensitive code system <code>https://hl7.pt/fhir/ADR/CodeSystem/adr-evolucao-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">CURA<a name="adr-evolucao-cs-CURA"> </a></td><td>Cura</td><td>Cura</td></tr><tr><td style="white-space:nowrap">RECUPERACAO<a name="adr-evolucao-cs-RECUPERACAO"> </a></td><td>Recuperação</td><td>Recuperação</td></tr><tr><td style="white-space:nowrap">PERSISTENTE<a name="adr-evolucao-cs-PERSISTENTE"> </a></td><td>Persistente</td><td>Persistente</td></tr><tr><td style="white-space:nowrap">CURA_SEQUELAS<a name="adr-evolucao-cs-CURA_SEQUELAS"> </a></td><td>Cura com sequelas</td><td>Cura com sequelas</td></tr><tr><td style="white-space:nowrap">MORTE<a name="adr-evolucao-cs-MORTE"> </a></td><td>Morte</td><td>Morte</td></tr><tr><td style="white-space:nowrap">DESCONHECIDO<a name="adr-evolucao-cs-DESCONHECIDO"> </a></td><td>Desconhecido</td><td>Desconhecido</td></tr></table></div>
+  </text>
+  <url value="https://hl7.pt/fhir/ADR/CodeSystem/adr-evolucao-cs"/>
+  <version value="1.0.0-ballot"/>
+  <name value="EvolucaoCS"/>
+  <title value="Evolução de uma RAM CodeSystem"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2024-12-09T19:10:40+00:00"/>
+  <publisher value="HL7 Portugal"/>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.pt"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.pt"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="email"/>
+      <value value="geral@hl7.pt"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Evolução de uma RAM CodeSystem"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PT"/>
+      <display value="Portugal"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="6"/>
+  <concept>
+    <code value="CURA"/>
+    <display value="Cura"/>
+    <definition value="Cura"/>
+  </concept>
+  <concept>
+    <code value="RECUPERACAO"/>
+    <display value="Recuperação"/>
+    <definition value="Recuperação"/>
+  </concept>
+  <concept>
+    <code value="PERSISTENTE"/>
+    <display value="Persistente"/>
+    <definition value="Persistente"/>
+  </concept>
+  <concept>
+    <code value="CURA_SEQUELAS"/>
+    <display value="Cura com sequelas"/>
+    <definition value="Cura com sequelas"/>
+  </concept>
+  <concept>
+    <code value="MORTE"/>
+    <display value="Morte"/>
+    <definition value="Morte"/>
+  </concept>
+  <concept>
+    <code value="DESCONHECIDO"/>
+    <display value="Desconhecido"/>
+    <definition value="Desconhecido"/>
+  </concept>
+</CodeSystem>

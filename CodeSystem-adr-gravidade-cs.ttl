@@ -1,0 +1,78 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.pt/fhir/ADR/CodeSystem/adr-gravidade-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "adr-gravidade-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem adr-gravidade-cs</b></p><a name=\"adr-gravidade-cs\"> </a><a name=\"hcadr-gravidade-cs\"> </a><a name=\"adr-gravidade-cs-pt-PT\"> </a><p>This case-insensitive code system <code>https://hl7.pt/fhir/ADR/CodeSystem/adr-gravidade-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">MORTE<a name=\"adr-gravidade-cs-MORTE\"> </a></td><td>Morte</td><td>Morte</td></tr><tr><td style=\"white-space:nowrap\">RISCOVIDA<a name=\"adr-gravidade-cs-RISCOVIDA\"> </a></td><td>Risco de vida</td><td>Risco de vida</td></tr><tr><td style=\"white-space:nowrap\">HOSP<a name=\"adr-gravidade-cs-HOSP\"> </a></td><td>Hospitalização</td><td>Hospitalização</td></tr><tr><td style=\"white-space:nowrap\">INCAPACIDADE<a name=\"adr-gravidade-cs-INCAPACIDADE\"> </a></td><td>Incapacidade</td><td>Incapacidade</td></tr><tr><td style=\"white-space:nowrap\">ANOMALIA<a name=\"adr-gravidade-cs-ANOMALIA\"> </a></td><td>Anomalia congénita</td><td>Anomalia congénita</td></tr><tr><td style=\"white-space:nowrap\">CI<a name=\"adr-gravidade-cs-CI\"> </a></td><td>Clinicamente importante</td><td>Clinicamente importante</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://hl7.pt/fhir/ADR/CodeSystem/adr-gravidade-cs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0-ballot"] ; # 
+  fhir:name [ fhir:v "GravidadeCS"] ; # 
+  fhir:title [ fhir:v "Gravidade RAM CodeSystem"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-12-09T19:10:40+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Portugal"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.pt" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@hl7.pt" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "geral@hl7.pt" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Causalidade CodeSystem"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PT" ] ;
+       fhir:display [ fhir:v "Portugal" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "6"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "MORTE" ] ;
+     fhir:display [ fhir:v "Morte" ] ;
+     fhir:definition [ fhir:v "Morte" ]
+  ] [
+     fhir:code [ fhir:v "RISCOVIDA" ] ;
+     fhir:display [ fhir:v "Risco de vida" ] ;
+     fhir:definition [ fhir:v "Risco de vida" ]
+  ] [
+     fhir:code [ fhir:v "HOSP" ] ;
+     fhir:display [ fhir:v "Hospitalização" ] ;
+     fhir:definition [ fhir:v "Hospitalização" ]
+  ] [
+     fhir:code [ fhir:v "INCAPACIDADE" ] ;
+     fhir:display [ fhir:v "Incapacidade" ] ;
+     fhir:definition [ fhir:v "Incapacidade" ]
+  ] [
+     fhir:code [ fhir:v "ANOMALIA" ] ;
+     fhir:display [ fhir:v "Anomalia congénita" ] ;
+     fhir:definition [ fhir:v "Anomalia congénita" ]
+  ] [
+     fhir:code [ fhir:v "CI" ] ;
+     fhir:display [ fhir:v "Clinicamente importante" ] ;
+     fhir:definition [ fhir:v "Clinicamente importante" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

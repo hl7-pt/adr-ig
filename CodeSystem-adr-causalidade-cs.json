@@ -1,0 +1,76 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "adr-causalidade-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem adr-causalidade-cs</b></p><a name=\"adr-causalidade-cs\"> </a><a name=\"hcadr-causalidade-cs\"> </a><a name=\"adr-causalidade-cs-pt-PT\"> </a><p>This case-insensitive code system <code>https://hl7.pt/fhir/ADR/CodeSystem/adr-causalidade-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">DEF<a name=\"adr-causalidade-cs-DEF\"> </a></td><td>Definitivo</td><td>Definitivo</td></tr><tr><td style=\"white-space:nowrap\">PROV<a name=\"adr-causalidade-cs-PROV\"> </a></td><td>Provável</td><td>Provável</td></tr><tr><td style=\"white-space:nowrap\">POSS<a name=\"adr-causalidade-cs-POSS\"> </a></td><td>Possível</td><td>Possível</td></tr><tr><td style=\"white-space:nowrap\">COND<a name=\"adr-causalidade-cs-COND\"> </a></td><td>Condicional</td><td>Condicional</td></tr><tr><td style=\"white-space:nowrap\">IMPR<a name=\"adr-causalidade-cs-IMPR\"> </a></td><td>Improvável</td><td>Improvável</td></tr><tr><td style=\"white-space:nowrap\">NC<a name=\"adr-causalidade-cs-NC\"> </a></td><td>Não Classificável</td><td>Não Classificável</td></tr></table></div>"
+  },
+  "url" : "https://hl7.pt/fhir/ADR/CodeSystem/adr-causalidade-cs",
+  "version" : "1.0.0-ballot",
+  "name" : "CausalidadeCS",
+  "title" : "Causalidade CodeSystem",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2024-12-09T19:10:40+00:00",
+  "publisher" : "HL7 Portugal",
+  "contact" : [{
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.pt"
+    },
+    {
+      "system" : "email",
+      "value" : "info@hl7.pt"
+    }]
+  },
+  {
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "geral@hl7.pt",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Causalidade CodeSystem",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "PT",
+      "display" : "Portugal"
+    }]
+  }],
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 6,
+  "concept" : [{
+    "code" : "DEF",
+    "display" : "Definitivo",
+    "definition" : "Definitivo"
+  },
+  {
+    "code" : "PROV",
+    "display" : "Provável",
+    "definition" : "Provável"
+  },
+  {
+    "code" : "POSS",
+    "display" : "Possível",
+    "definition" : "Possível"
+  },
+  {
+    "code" : "COND",
+    "display" : "Condicional",
+    "definition" : "Condicional"
+  },
+  {
+    "code" : "IMPR",
+    "display" : "Improvável",
+    "definition" : "Improvável"
+  },
+  {
+    "code" : "NC",
+    "display" : "Não Classificável",
+    "definition" : "Não Classificável"
+  }]
+}

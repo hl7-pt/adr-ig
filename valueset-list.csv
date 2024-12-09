@@ -1,0 +1,5 @@
+URL,Version,Status,OIDs,Name,Title,Descriptino,Uses,Used,Sources
+https://hl7.pt/fhir/ADR/ValueSet/adr-causalidade-vs,1.0.0-ballot,active,,CausalidadeVS,Causalidade ValueSet,"Causalidade ValueSet",,"Internal"
+https://hl7.pt/fhir/ADR/ValueSet/adr-evolucao-vs,1.0.0-ballot,active,,EvolucaoVS,Evolução de uma RAM ValueSet,"Evolução de uma RAM ValueSet",,"Internal"
+https://hl7.pt/fhir/ADR/ValueSet/adr-gravidade-vs,1.0.0-ballot,active,,GravidadeVS,Gravidade RAM ValueSet,"Gravidade RAM ValueSet",,"Internal"
+https://hl7.pt/fhir/ADR/ValueSet/meddra-vs,1.0.0-ballot,active,,MeddraVS,MedDRA ValueSet,"MedDRA ValueSet",,"THO"

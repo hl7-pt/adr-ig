@@ -1,0 +1,52 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "https://hl7.pt/fhir/ADR/ValueSet/adr-causalidade-vs",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "CausalidadeVS",
+      "title" : "Causalidade ValueSet",
+      "description" : "Causalidade ValueSet",
+      "systems" : ["https://hl7.pt/fhir/ADR/CodeSystem/adr-causalidade-cs"],
+      "uses" : {
+      },
+      "StructureDefinition-ReacaoAdversa.html" : "Perfil para notificação de RAM"
+    },
+    {
+      "url" : "https://hl7.pt/fhir/ADR/ValueSet/adr-evolucao-vs",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "EvolucaoVS",
+      "title" : "Evolução de uma RAM ValueSet",
+      "description" : "Evolução de uma RAM ValueSet",
+      "systems" : ["https://hl7.pt/fhir/ADR/CodeSystem/adr-evolucao-cs"],
+      "uses" : {
+      },
+      "StructureDefinition-ReacaoAdversa.html" : "Perfil para notificação de RAM"
+    },
+    {
+      "url" : "https://hl7.pt/fhir/ADR/ValueSet/adr-gravidade-vs",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "GravidadeVS",
+      "title" : "Gravidade RAM ValueSet",
+      "description" : "Gravidade RAM ValueSet",
+      "systems" : ["https://hl7.pt/fhir/ADR/CodeSystem/adr-gravidade-cs"],
+      "uses" : {
+      },
+      "StructureDefinition-ReacaoAdversa.html" : "Perfil para notificação de RAM"
+    },
+    {
+      "url" : "https://hl7.pt/fhir/ADR/ValueSet/meddra-vs",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "MeddraVS",
+      "title" : "MedDRA ValueSet",
+      "description" : "MedDRA ValueSet",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/MDRPOR"],
+      "uses" : {
+      },
+      "StructureDefinition-ReacaoAdversa.html" : "Perfil para notificação de RAM"
+    }
+  ]
+}

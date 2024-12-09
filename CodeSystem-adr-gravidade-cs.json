@@ -1,0 +1,76 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "adr-gravidade-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem adr-gravidade-cs</b></p><a name=\"adr-gravidade-cs\"> </a><a name=\"hcadr-gravidade-cs\"> </a><a name=\"adr-gravidade-cs-pt-PT\"> </a><p>This case-insensitive code system <code>https://hl7.pt/fhir/ADR/CodeSystem/adr-gravidade-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">MORTE<a name=\"adr-gravidade-cs-MORTE\"> </a></td><td>Morte</td><td>Morte</td></tr><tr><td style=\"white-space:nowrap\">RISCOVIDA<a name=\"adr-gravidade-cs-RISCOVIDA\"> </a></td><td>Risco de vida</td><td>Risco de vida</td></tr><tr><td style=\"white-space:nowrap\">HOSP<a name=\"adr-gravidade-cs-HOSP\"> </a></td><td>Hospitalização</td><td>Hospitalização</td></tr><tr><td style=\"white-space:nowrap\">INCAPACIDADE<a name=\"adr-gravidade-cs-INCAPACIDADE\"> </a></td><td>Incapacidade</td><td>Incapacidade</td></tr><tr><td style=\"white-space:nowrap\">ANOMALIA<a name=\"adr-gravidade-cs-ANOMALIA\"> </a></td><td>Anomalia congénita</td><td>Anomalia congénita</td></tr><tr><td style=\"white-space:nowrap\">CI<a name=\"adr-gravidade-cs-CI\"> </a></td><td>Clinicamente importante</td><td>Clinicamente importante</td></tr></table></div>"
+  },
+  "url" : "https://hl7.pt/fhir/ADR/CodeSystem/adr-gravidade-cs",
+  "version" : "1.0.0-ballot",
+  "name" : "GravidadeCS",
+  "title" : "Gravidade RAM CodeSystem",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2024-12-09T19:10:40+00:00",
+  "publisher" : "HL7 Portugal",
+  "contact" : [{
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.pt"
+    },
+    {
+      "system" : "email",
+      "value" : "info@hl7.pt"
+    }]
+  },
+  {
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "geral@hl7.pt",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Causalidade CodeSystem",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "PT",
+      "display" : "Portugal"
+    }]
+  }],
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 6,
+  "concept" : [{
+    "code" : "MORTE",
+    "display" : "Morte",
+    "definition" : "Morte"
+  },
+  {
+    "code" : "RISCOVIDA",
+    "display" : "Risco de vida",
+    "definition" : "Risco de vida"
+  },
+  {
+    "code" : "HOSP",
+    "display" : "Hospitalização",
+    "definition" : "Hospitalização"
+  },
+  {
+    "code" : "INCAPACIDADE",
+    "display" : "Incapacidade",
+    "definition" : "Incapacidade"
+  },
+  {
+    "code" : "ANOMALIA",
+    "display" : "Anomalia congénita",
+    "definition" : "Anomalia congénita"
+  },
+  {
+    "code" : "CI",
+    "display" : "Clinicamente importante",
+    "definition" : "Clinicamente importante"
+  }]
+}

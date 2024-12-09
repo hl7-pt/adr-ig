@@ -1,0 +1,5 @@
+URL,Version,Status,OIDs,Name,Title,Description,Used
+http://terminology.hl7.org/CodeSystem/MDRPOR,2.0.1,retired,"2.16.840.1.113883.6.163.5",MDRPOR,MedDRA Portuguese,"Medical Dictionary for Regulatory Activities Terminology (MedDRA) Version 7.0, Portuguese Edition. International conference on Harmonization of Technical Requirements for Registration of Pharmaceuticals for Human Use (ICH). Reston, VA: MedDRA MSSO, March 1, 2004. This is the Portuguese language version as encapsulated in the UMLS..","ValueSet/meddra-vs"
+https://hl7.pt/fhir/ADR/CodeSystem/adr-causalidade-cs,1.0.0-ballot,active,,CausalidadeCS,Causalidade CodeSystem,"Causalidade CodeSystem","ValueSet/adr-causalidade-vs"
+https://hl7.pt/fhir/ADR/CodeSystem/adr-evolucao-cs,1.0.0-ballot,active,,EvolucaoCS,Evolução de uma RAM CodeSystem,"Evolução de uma RAM CodeSystem","ValueSet/adr-evolucao-vs"
+https://hl7.pt/fhir/ADR/CodeSystem/adr-gravidade-cs,1.0.0-ballot,active,,GravidadeCS,Gravidade RAM CodeSystem,"Causalidade CodeSystem","ValueSet/adr-gravidade-vs"

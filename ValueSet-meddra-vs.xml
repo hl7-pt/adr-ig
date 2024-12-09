@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="meddra-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet meddra-vs</b></p><a name="meddra-vs"> </a><a name="hcmeddra-vs"> </a><a name="meddra-vs-pt-PT"> </a><ul><li>Include all codes defined in <a href="http://terminology.hl7.org/6.1.0/CodeSystem-MDRPOR.html"><code>http://terminology.hl7.org/CodeSystem/MDRPOR</code></a></li></ul></div>
+  </text>
+  <url value="https://hl7.pt/fhir/ADR/ValueSet/meddra-vs"/>
+  <version value="1.0.0-ballot"/>
+  <name value="MeddraVS"/>
+  <title value="MedDRA ValueSet"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2024-12-09T19:10:40+00:00"/>
+  <publisher value="HL7 Portugal"/>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.pt"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.pt"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="email"/>
+      <value value="geral@hl7.pt"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="MedDRA ValueSet"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PT"/>
+      <display value="Portugal"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/MDRPOR"/>
+    </include>
+  </compose>
+</ValueSet>

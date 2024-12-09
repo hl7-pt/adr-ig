@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<AdverseEvent xmlns="http://hl7.org/fhir">
+  <id value="Notifi-1"/>
+  <meta>
+    <profile value="https://hl7.pt/fhir/ADR/StructureDefinition/ReacaoAdversa"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: AdverseEvent Notifi-1</b></p><a name="Notifi-1"> </a><a name="hcNotifi-1"> </a><a name="Notifi-1-pt-PT"> </a><p><b>identifier</b>: <code>http:/example.org</code>/1</p><p><b>status</b>: Completed</p><p><b>actuality</b>: Adverse Event</p><p><b>code</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/MDRPOR 10037660}">Pyrexia</span></p><p><b>subject</b>: Identifier: <code>https://instituição.pt/ids</code>/xxx</p><p><b>detected</b>: 2024-11-14</p><p><b>recordedDate</b>: 2024-11-14</p><p><b>seriousness</b>: <span title="Codes:{https://hl7.pt/fhir/ADR/CodeSystem/adr-gravidade-cs HOSP}">Hospitalização</span></p><p><b>recorder</b>: <a href="Practitioner-not-1.html">Practitioner Sandra </a></p><h3>SuspectEntities</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Instance[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://example.org 1}">Evrysdi / Risdiplam</span></td></tr></table></div>
+  </text>
+  <identifier>
+    <system value="http:/example.org"/>
+    <value value="1"/>
+  </identifier>
+  <status value="completed"/>
+  <actuality value="actual"/>
+  <code>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/MDRPOR"/>
+      <code value="10037660"/>
+      <display value="Pyrexia"/>
+    </coding>
+  </code>
+  <subject>
+    <identifier>
+      <system value="https://instituição.pt/ids"/>
+      <value value="xxx"/>
+    </identifier>
+  </subject>
+  <detected value="2024-11-14"/>
+  <recordedDate value="2024-11-14"/>
+  <seriousness>
+    <coding>
+      <system value="https://hl7.pt/fhir/ADR/CodeSystem/adr-gravidade-cs"/>
+      <code value="HOSP"/>
+      <display value="Hospitalização"/>
+    </coding>
+  </seriousness>
+  <recorder>
+    <reference value="Practitioner/not-1"/>
+  </recorder>
+  <suspectEntity>
+    <instanceCodeableConcept>
+      <coding>
+        <system value="http://example.org"/>
+        <code value="1"/>
+        <display value="Evrysdi / Risdiplam"/>
+      </coding>
+    </instanceCodeableConcept>
+  </suspectEntity>
+</AdverseEvent>

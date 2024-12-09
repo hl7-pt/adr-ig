@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="pat-1"/>
+  <meta>
+    <profile value="https://hl7.pt/fhir/ADR/StructureDefinition/Doente"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Patient pat-1</b></p><a name="pat-1"> </a><a name="hcpat-1"> </a><a name="pat-1-pt-PT"> </a><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Américo  Male, DoB: 1980-01-01</p><hr/></div>
+  </text>
+  <name>
+    <given value="Américo"/>
+  </name>
+  <gender value="male"/>
+  <birthDate value="1980-01-01"/>
+</Patient>
