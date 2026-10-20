@@ -1,0 +1,230 @@
+ADRPTIG : Validation Results
+=========================================
+
+err = 0, warn = 44, info = 69, broken links = 0
+$--
+Generated $--. FHIR version $-- for hl7.fhir.pt.adr#$-- (canonical = https://hl7.pt/fhir/ADR)
+ Build Errors : 0 / 11 / 0
+ /work/fsh-generated/resources/AdverseEvent-Notifi-1 : 0 / 3 / 2
+ /work/fsh-generated/resources/AdverseEvent-Notifi-2 : 0 / 1 / 2
+ /work/fsh-generated/resources/Bundle-message : 0 / 4 / 13
+ /work/fsh-generated/resources/CodeSystem-adr-causalidade-cs : 0 / 1 / 3
+ /work/fsh-generated/resources/CodeSystem-adr-evolucao-cs : 0 / 1 / 3
+ /work/fsh-generated/resources/CodeSystem-adr-gravidade-cs : 0 / 1 / 3
+ /work/fsh-generated/resources/ImplementationGuide-hl7.fhir.pt.adr : 0 / 1 / 19
+ /work/fsh-generated/resources/Medication-med1 : 0 / 1 / 1
+ /work/fsh-generated/resources/MedicationStatement-medinfo-1 : 0 / 1 / 1
+ /work/fsh-generated/resources/Patient-pat-1 : 0 / 0 / 1
+ /work/fsh-generated/resources/Practitioner-not-1 : 0 / 0 / 1
+ /work/fsh-generated/resources/StructureDefinition-Alergia : 0 / 2 / 4
+ /work/fsh-generated/resources/StructureDefinition-Doente : 0 / 0 / 4
+ /work/fsh-generated/resources/StructureDefinition-DoenteLM : 0 / 2 / 4
+ /work/fsh-generated/resources/StructureDefinition-InformacaoMedicamento : 0 / 0 / 4
+ /work/fsh-generated/resources/StructureDefinition-InformacoesLM : 0 / 0 / 4
+ /work/fsh-generated/resources/StructureDefinition-MedicamentoLM : 0 / 0 / 4
+ /work/fsh-generated/resources/StructureDefinition-NotificacaoLM : 0 / 2 / 4
+ /work/fsh-generated/resources/StructureDefinition-NotificadorLM : 0 / 0 / 4
+ /work/fsh-generated/resources/StructureDefinition-ProfissionalSaude : 0 / 0 / 4
+ /work/fsh-generated/resources/StructureDefinition-ReacaoAdversa : 0 / 8 / 4
+ /work/fsh-generated/resources/StructureDefinition-ReacaoAdversaLM : 0 / 0 / 4
+ /work/fsh-generated/resources/ValueSet-adr-causalidade-vs : 0 / 1 / 3
+ /work/fsh-generated/resources/ValueSet-adr-evolucao-vs : 0 / 1 / 3
+ /work/fsh-generated/resources/ValueSet-adr-gravidade-vs : 0 / 1 / 3
+ /work/fsh-generated/resources/ValueSet-meddra-vs : 0 / 2 / 3
+</table>
+
+== n/a ==
+WARNING: /work/output/searchform.html: The html source is not well formed: Found "</a>" expecting "</img>" at line 34 column 177
+WARNING: /work/output/searchform.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 79 column 10
+WARNING: /work/output/searchform.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 80 column 9
+WARNING: /work/output/searchform.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 109 column 8
+WARNING: /work/output/searchform.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 111 column 12
+WARNING: /work/output/searchform.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 112 column 20
+WARNING: /work/output/searchform.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 113 column 16
+WARNING: /work/output/searchform.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 115 column 12
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+
+
+== fsh-generated/resources/AdverseEvent-Notifi-1.json ==
+INFORMATION: AdverseEvent/Notifi-1: AdverseEvent.status: Referência ao experimental CodeSystem http://hl7.org/fhir/event-status|5.0.0
+WARNING: AdverseEvent/Notifi-1: AdverseEvent.code.coding[0].system: A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/MDRPOR' could not be found, so the code cannot be validated
+WARNING: AdverseEvent/Notifi-1: AdverseEvent.subject.identifier.system: Não foi possível encontrar uma definição para o valor URL 'https://instituição.pt/ids'
+WARNING: AdverseEvent/Notifi-1: AdverseEvent.suspectEntity[0].instance.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://example.org' could not be found, so the code cannot be validated
+
+
+== fsh-generated/resources/AdverseEvent-Notifi-2.json ==
+INFORMATION: AdverseEvent/Notifi-2: AdverseEvent.status: Referência ao experimental CodeSystem http://hl7.org/fhir/event-status|5.0.0
+WARNING: AdverseEvent/Notifi-2: AdverseEvent.code.coding[0].system: A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/MDRPOR' could not be found, so the code cannot be validated
+
+
+== fsh-generated/resources/Bundle-message.json ==
+WARNING: Bundle/message: Bundle.identifier.system: Não foi possível encontrar uma definição para o valor URL 'urn:example-org:sender.identifiers'
+INFORMATION: Bundle/message: Bundle.entry[1].resource/*AdverseEvent/Notifi-2*/.status: Referência ao experimental CodeSystem http://hl7.org/fhir/event-status|5.0.0
+WARNING: Bundle/message: Bundle.entry[1].resource/*AdverseEvent/Notifi-2*/.code.coding[0].system: A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/MDRPOR' could not be found, so the code cannot be validated
+INFORMATION: Bundle/message: Bundle.entry[1].resource/*AdverseEvent/Notifi-2*/.seriousness: Referência ao experimental CodeSystem https://hl7.pt/fhir/ADR/CodeSystem/adr-gravidade-cs|1.0.0-ballot
+WARNING: Bundle/message: Bundle.entry[4].resource/*MedicationStatement/medinfo-1*/.dosage[0].route.coding[0].system: Não foi possível encontrar uma definição para o CodeSystem 'http://example.org', pelo que o código não pode ser validado
+WARNING: Bundle/message: Bundle.entry[5].resource/*Medication/med1*/.code.coding[0].system: A definition for CodeSystem 'http://example.org' could not be found, so the code cannot be validated
+
+
+== fsh-generated/resources/CodeSystem-adr-causalidade-cs.json ==
+INFORMATION: CodeSystem/adr-causalidade-cs: CodeSystem.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: CodeSystem/adr-causalidade-cs: CodeSystem.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#PT for language(s) 'pt-PT'. The display is 'Portugal' which is a valid display for the default language
+WARNING: Resource: The resource CodeSystem/adr-causalidade-cs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/CodeSystem-adr-evolucao-cs.json ==
+INFORMATION: CodeSystem/adr-evolucao-cs: CodeSystem.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: CodeSystem/adr-evolucao-cs: CodeSystem.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#PT for language(s) 'pt-PT'. The display is 'Portugal' which is a valid display for the default language
+WARNING: Resource: The resource CodeSystem/adr-evolucao-cs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/CodeSystem-adr-gravidade-cs.json ==
+INFORMATION: CodeSystem/adr-gravidade-cs: CodeSystem.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: CodeSystem/adr-gravidade-cs: CodeSystem.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#PT for language(s) 'pt-PT'. The display is 'Portugal' which is a valid display for the default language
+WARNING: Resource: The resource CodeSystem/adr-gravidade-cs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/ImplementationGuide-hl7.fhir.pt.adr.json ==
+INFORMATION: ImplementationGuide/hl7.fhir.pt.adr: ImplementationGuide.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: ImplementationGuide/hl7.fhir.pt.adr: ImplementationGuide.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#PT for language(s) 'pt-PT'. The display is 'Portugal' which is a valid display for the default language
+INFORMATION: ImplementationGuide/hl7.fhir.pt.adr: ImplementationGuide.definition.parameter[4].code: Referência ao experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/hl7.fhir.pt.adr: ImplementationGuide.definition.parameter[5].code: Referência ao experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/hl7.fhir.pt.adr: ImplementationGuide.definition.parameter[6].code: Referência ao experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/hl7.fhir.pt.adr: ImplementationGuide.definition.parameter[7].code: Referência ao experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/hl7.fhir.pt.adr: ImplementationGuide.definition.parameter[8].code: Referência ao experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/hl7.fhir.pt.adr: ImplementationGuide.definition.parameter[9].code: Referência ao experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/hl7.fhir.pt.adr: ImplementationGuide.definition.parameter[10].code: Referência ao experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/hl7.fhir.pt.adr: ImplementationGuide.definition.parameter[11].code: Referência ao experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/hl7.fhir.pt.adr: ImplementationGuide.definition.parameter[12].code: Referência ao experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/hl7.fhir.pt.adr: ImplementationGuide.definition.parameter[13].code: Referência ao experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/hl7.fhir.pt.adr: ImplementationGuide.definition.parameter[14].code: Referência ao experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/hl7.fhir.pt.adr: ImplementationGuide.definition.parameter[15].code: Referência ao experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/hl7.fhir.pt.adr: ImplementationGuide.definition.parameter[16].code: Referência ao experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/hl7.fhir.pt.adr: ImplementationGuide.definition.parameter[17].code: Referência ao experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/hl7.fhir.pt.adr: ImplementationGuide.definition.parameter[23].code: Referência ao experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+WARNING: ImplementationGuide/hl7.fhir.pt.adr: ImplementationGuide.dependsOn[1]: O Guia de Implementação utiliza o pacote hl7.fhir.uv.extensions.r5#1.0.0 lançado em 2023-03-26, mas a versão apropriada mais recente é 5.3.0. Esta referência está a ficar velha e a versão mais recente deve ser considerada
+INFORMATION: Resource: The resource ImplementationGuide/hl7.fhir.pt.adr could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/Medication-med1.json ==
+WARNING: Medication/med1: Medication.code.coding[0].system: A definition for CodeSystem 'http://example.org' could not be found, so the code cannot be validated
+
+
+== fsh-generated/resources/MedicationStatement-medinfo-1.json ==
+WARNING: MedicationStatement/medinfo-1: MedicationStatement.dosage[0].route.coding[0].system: Não foi possível encontrar uma definição para o CodeSystem 'http://example.org', pelo que o código não pode ser validado
+
+
+== fsh-generated/resources/Patient-pat-1.json ==
+
+
+== fsh-generated/resources/Practitioner-not-1.json ==
+
+
+== fsh-generated/resources/StructureDefinition-Alergia.json ==
+INFORMATION: StructureDefinition/Alergia: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: StructureDefinition/Alergia: StructureDefinition.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#PT for language(s) 'pt-PT'. The display is 'Portugal' which is a valid display for the default language
+WARNING: StructureDefinition/Alergia: StructureDefinition.snapshot.element[24].binding: A definição do elemento "AllergyIntolerance.participant.function" está ligada ao conjunto de valores "http://hl7.org/fhir/ValueSet/participation-role-type|5.0.0", que é experimental, mas esta estrutura não está identificada como experimental
+INFORMATION: Resource: The resource StructureDefinition/Alergia could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+WARNING: StructureDefinition.where(url = 'https://hl7.pt/fhir/ADR/StructureDefinition/Alergia'): The Implementation Guide contains no examples for this profile
+
+
+== fsh-generated/resources/StructureDefinition-Doente.json ==
+INFORMATION: StructureDefinition/Doente: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: StructureDefinition/Doente: StructureDefinition.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#PT for language(s) 'pt-PT'. The display is 'Portugal' which is a valid display for the default language
+INFORMATION: Resource: The resource StructureDefinition/Doente could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/StructureDefinition-DoenteLM.json ==
+INFORMATION: StructureDefinition/DoenteLM: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: StructureDefinition/DoenteLM: StructureDefinition.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#PT for language(s) 'pt-PT'. The display is 'Portugal' which is a valid display for the default language
+WARNING: StructureDefinition/DoenteLM: StructureDefinition.snapshot.element[1]: Constraint failed: eld-20: 'The first component of the path should be UpperCamelCase.  Additional components (following a '.') should be lowerCamelCase.  If this syntax is not adhered to, code generation tools may be broken. Logical models may be less concerned about this implication. (path.matches('^[A-Za-z][A-Za-z0-9]{0,63}(\\.[a-z][A-Za-z0-9]{0,63}(\\[x])?)*$'))' at DoenteLM.Iniciais (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition)
+WARNING: StructureDefinition/DoenteLM: StructureDefinition.differential.element[1]: Constraint failed: eld-20: 'The first component of the path should be UpperCamelCase.  Additional components (following a '.') should be lowerCamelCase.  If this syntax is not adhered to, code generation tools may be broken. Logical models may be less concerned about this implication. (path.matches('^[A-Za-z][A-Za-z0-9]{0,63}(\\.[a-z][A-Za-z0-9]{0,63}(\\[x])?)*$'))' at DoenteLM.Iniciais (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition)
+INFORMATION: Resource: The resource StructureDefinition/DoenteLM could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/StructureDefinition-InformacaoMedicamento.json ==
+INFORMATION: StructureDefinition/InformacaoMedicamento: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: StructureDefinition/InformacaoMedicamento: StructureDefinition.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#PT for language(s) 'pt-PT'. The display is 'Portugal' which is a valid display for the default language
+INFORMATION: Resource: The resource StructureDefinition/InformacaoMedicamento could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/StructureDefinition-InformacoesLM.json ==
+INFORMATION: StructureDefinition/InformacoesLM: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: StructureDefinition/InformacoesLM: StructureDefinition.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#PT for language(s) 'pt-PT'. The display is 'Portugal' which is a valid display for the default language
+INFORMATION: Resource: The resource StructureDefinition/InformacoesLM could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/StructureDefinition-MedicamentoLM.json ==
+INFORMATION: StructureDefinition/MedicamentoLM: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: StructureDefinition/MedicamentoLM: StructureDefinition.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#PT for language(s) 'pt-PT'. The display is 'Portugal' which is a valid display for the default language
+INFORMATION: Resource: The resource StructureDefinition/MedicamentoLM could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/StructureDefinition-NotificacaoLM.json ==
+INFORMATION: StructureDefinition/NotificacaoLM: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: StructureDefinition/NotificacaoLM: StructureDefinition.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#PT for language(s) 'pt-PT'. The display is 'Portugal' which is a valid display for the default language
+WARNING: StructureDefinition/NotificacaoLM: StructureDefinition.snapshot.element[1]: Constraint failed: eld-20: 'The first component of the path should be UpperCamelCase.  Additional components (following a '.') should be lowerCamelCase.  If this syntax is not adhered to, code generation tools may be broken. Logical models may be less concerned about this implication. (path.matches('^[A-Za-z][A-Za-z0-9]{0,63}(\\.[a-z][A-Za-z0-9]{0,63}(\\[x])?)*$'))' at NotificacaoLM.Doente (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition)
+WARNING: StructureDefinition/NotificacaoLM: StructureDefinition.differential.element[1]: Constraint failed: eld-20: 'The first component of the path should be UpperCamelCase.  Additional components (following a '.') should be lowerCamelCase.  If this syntax is not adhered to, code generation tools may be broken. Logical models may be less concerned about this implication. (path.matches('^[A-Za-z][A-Za-z0-9]{0,63}(\\.[a-z][A-Za-z0-9]{0,63}(\\[x])?)*$'))' at NotificacaoLM.Doente (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition)
+INFORMATION: Resource: The resource StructureDefinition/NotificacaoLM could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/StructureDefinition-NotificadorLM.json ==
+INFORMATION: StructureDefinition/NotificadorLM: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: StructureDefinition/NotificadorLM: StructureDefinition.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#PT for language(s) 'pt-PT'. The display is 'Portugal' which is a valid display for the default language
+INFORMATION: Resource: The resource StructureDefinition/NotificadorLM could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/StructureDefinition-ProfissionalSaude.json ==
+INFORMATION: StructureDefinition/ProfissionalSaude: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: StructureDefinition/ProfissionalSaude: StructureDefinition.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#PT for language(s) 'pt-PT'. The display is 'Portugal' which is a valid display for the default language
+INFORMATION: Resource: The resource StructureDefinition/ProfissionalSaude could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/StructureDefinition-ReacaoAdversa.json ==
+INFORMATION: StructureDefinition/ReacaoAdversa: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: StructureDefinition/ReacaoAdversa: StructureDefinition.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#PT for language(s) 'pt-PT'. The display is 'Portugal' which is a valid display for the default language
+WARNING: StructureDefinition/ReacaoAdversa: StructureDefinition.differential.element[2].binding: A definição do elemento "AdverseEvent.code" está ligada ao conjunto de valores "https://hl7.pt/fhir/ADR/ValueSet/meddra-vs", que é experimental, mas esta estrutura não está identificada como experimental
+WARNING: StructureDefinition/ReacaoAdversa: StructureDefinition.differential.element[5].binding: A definição do elemento "AdverseEvent.seriousness" está ligada ao conjunto de valores "https://hl7.pt/fhir/ADR/ValueSet/adr-gravidade-vs", que é experimental, mas esta estrutura não está identificada como experimental
+WARNING: StructureDefinition/ReacaoAdversa: StructureDefinition.differential.element[6].binding: A definição do elemento "AdverseEvent.outcome" está ligada ao conjunto de valores "https://hl7.pt/fhir/ADR/ValueSet/adr-evolucao-vs", que é experimental, mas esta estrutura não está identificada como experimental
+WARNING: StructureDefinition/ReacaoAdversa: StructureDefinition.differential.element[11].binding: A definição do elemento "AdverseEvent.suspectEntity.causality.entityRelatedness" está ligada ao conjunto de valores "https://hl7.pt/fhir/ADR/ValueSet/adr-causalidade-vs", que é experimental, mas esta estrutura não está identificada como experimental
+WARNING: StructureDefinition/ReacaoAdversa: StructureDefinition.snapshot.element[13].binding: A definição do elemento "AdverseEvent.code" está ligada ao conjunto de valores "https://hl7.pt/fhir/ADR/ValueSet/meddra-vs", que é experimental, mas esta estrutura não está identificada como experimental
+WARNING: StructureDefinition/ReacaoAdversa: StructureDefinition.snapshot.element[21].binding: A definição do elemento "AdverseEvent.seriousness" está ligada ao conjunto de valores "https://hl7.pt/fhir/ADR/ValueSet/adr-gravidade-vs", que é experimental, mas esta estrutura não está identificada como experimental
+WARNING: StructureDefinition/ReacaoAdversa: StructureDefinition.snapshot.element[22].binding: A definição do elemento "AdverseEvent.outcome" está ligada ao conjunto de valores "https://hl7.pt/fhir/ADR/ValueSet/adr-evolucao-vs", que é experimental, mas esta estrutura não está identificada como experimental
+WARNING: StructureDefinition/ReacaoAdversa: StructureDefinition.snapshot.element[42].binding: A definição do elemento "AdverseEvent.suspectEntity.causality.entityRelatedness" está ligada ao conjunto de valores "https://hl7.pt/fhir/ADR/ValueSet/adr-causalidade-vs", que é experimental, mas esta estrutura não está identificada como experimental
+INFORMATION: Resource: The resource StructureDefinition/ReacaoAdversa could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/StructureDefinition-ReacaoAdversaLM.json ==
+INFORMATION: StructureDefinition/ReacaoAdversaLM: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: StructureDefinition/ReacaoAdversaLM: StructureDefinition.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#PT for language(s) 'pt-PT'. The display is 'Portugal' which is a valid display for the default language
+INFORMATION: Resource: The resource StructureDefinition/ReacaoAdversaLM could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/ValueSet-adr-causalidade-vs.json ==
+INFORMATION: ValueSet/adr-causalidade-vs: ValueSet.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: ValueSet/adr-causalidade-vs: ValueSet.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#PT for language(s) 'pt-PT'. The display is 'Portugal' which is a valid display for the default language
+WARNING: Resource: The resource ValueSet/adr-causalidade-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/ValueSet-adr-evolucao-vs.json ==
+INFORMATION: ValueSet/adr-evolucao-vs: ValueSet.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: ValueSet/adr-evolucao-vs: ValueSet.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#PT for language(s) 'pt-PT'. The display is 'Portugal' which is a valid display for the default language
+WARNING: Resource: The resource ValueSet/adr-evolucao-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/ValueSet-adr-gravidade-vs.json ==
+INFORMATION: ValueSet/adr-gravidade-vs: ValueSet.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: ValueSet/adr-gravidade-vs: ValueSet.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#PT for language(s) 'pt-PT'. The display is 'Portugal' which is a valid display for the default language
+WARNING: Resource: The resource ValueSet/adr-gravidade-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/ValueSet-meddra-vs.json ==
+INFORMATION: ValueSet/meddra-vs: ValueSet.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: ValueSet/meddra-vs: ValueSet.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#PT for language(s) 'pt-PT'. The display is 'Portugal' which is a valid display for the default language
+WARNING: Resource: The resource ValueSet/meddra-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+WARNING: ValueSet.where(id = 'meddra-vs'): Error from https://tx.fhir.org/r5: Error: A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/MDRPOR' could not be found, so the value set cannot be expanded
+
+
+

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="adr-causalidade-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: ValueSet adr-causalidade-vs</b></p><a name="adr-causalidade-vs"> </a><a name="hcadr-causalidade-vs"> </a><ul><li>Include todos os códigos definidos em <a href="CodeSystem-adr-causalidade-cs.html"><code>https://hl7.pt/fhir/ADR/CodeSystem/adr-causalidade-cs</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> versão &#x1F4E6;1.0.0-ballot</span></li></ul></div>
+  </text>
+  <url value="https://hl7.pt/fhir/ADR/ValueSet/adr-causalidade-vs"/>
+  <version value="1.0.0-ballot"/>
+  <name value="CausalidadeVS"/>
+  <title value="Causalidade ValueSet"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2026-10-20T11:00:35+00:00"/>
+  <publisher value="HL7 Portugal"/>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.pt"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.pt"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="email"/>
+      <value value="geral@hl7.pt"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Causalidade ValueSet"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PT"/>
+      <display value="Portugal"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://hl7.pt/fhir/ADR/CodeSystem/adr-causalidade-cs"/>
+    </include>
+  </compose>
+</ValueSet>

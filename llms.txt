@@ -1,0 +1,57 @@
+# hl7.fhir.pt.adr#1.0.0-ballot: HL7 Portugal FHIR Implementation Guide para alergias e reacções adversas ao medicamento
+
+## Pages
+
+* [Home Page](index.md)
+* [IG Change History](changes.md)
+* [Workflows](workflows.md)
+* [Artifacts Summary](artifacts.md)
+* [Usar este IG](usage.md)
+* [Downloads](downloads.md)
+* [Funcional](background.md)
+
+## Resources
+
+### CodeSystems
+
+* [Causalidade CodeSystem](CodeSystem-adr-causalidade-cs.md)
+* [Evolução de uma RAM CodeSystem](CodeSystem-adr-evolucao-cs.md)
+* [Gravidade RAM CodeSystem](CodeSystem-adr-gravidade-cs.md)
+
+### ValueSets
+
+* [Causalidade ValueSet](ValueSet-adr-causalidade-vs.md)
+* [Evolução de uma RAM ValueSet](ValueSet-adr-evolucao-vs.md)
+* [Gravidade RAM ValueSet](ValueSet-adr-gravidade-vs.md)
+* [MedDRA ValueSet](ValueSet-meddra-vs.md)
+
+### Logicals
+
+* [Doente (modelo)](StructureDefinition-DoenteLM.md)
+* [Informações Adicionais (modelo)](StructureDefinition-InformacoesLM.md)
+* [Medicamento (modelo)](StructureDefinition-MedicamentoLM.md)
+* [Notificação (modelo)](StructureDefinition-NotificacaoLM.md)
+* [Notificador (modelo)](StructureDefinition-NotificadorLM.md)
+* [Reacção Adversa (modelo)](StructureDefinition-ReacaoAdversaLM.md)
+
+### Resource Profiles
+
+* [Perfil para notificação de alergia](StructureDefinition-Alergia.md)
+* [Perfil para notificação de RAM - Doente](StructureDefinition-Doente.md)
+* [Perfil para notificação de RAM - medicamento](StructureDefinition-InformacaoMedicamento.md)
+* [Perfil para notificação de RAM - Profissional de saúde](StructureDefinition-ProfissionalSaude.md)
+* [Perfil para notificação de RAM](StructureDefinition-ReacaoAdversa.md)
+
+### ImplementationGuides
+
+* [HL7 Portugal FHIR Implementation Guide para alergias e reacções adversas ao medicamento](index.md)
+
+### Examples
+
+* [Notifi-1 (AdverseEvent)](AdverseEvent-Notifi-1.md)
+* [Notifi-2 (AdverseEvent)](AdverseEvent-Notifi-2.md)
+* [message (Bundle)](Bundle-message.md)
+* [med1 (Medication)](Medication-med1.md)
+* [medinfo-1 (MedicationStatement)](MedicationStatement-medinfo-1.md)
+* [pat-1 (Patient)](Patient-pat-1.md)
+* [not-1 (Practitioner)](Practitioner-not-1.md)

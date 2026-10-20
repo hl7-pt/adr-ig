@@ -1,0 +1,4 @@
+URL,Version,Status,OIDs,Name,Title,Description,Used
+https://hl7.pt/fhir/ADR/CodeSystem/adr-causalidade-cs,1.0.0-ballot,active,,CausalidadeCS,Causalidade CodeSystem,"Causalidade CodeSystem",
+https://hl7.pt/fhir/ADR/CodeSystem/adr-evolucao-cs,1.0.0-ballot,active,,EvolucaoCS,Evolução de uma RAM CodeSystem,"Evolução de uma RAM CodeSystem",
+https://hl7.pt/fhir/ADR/CodeSystem/adr-gravidade-cs,1.0.0-ballot,active,,GravidadeCS,Gravidade RAM CodeSystem,"Causalidade CodeSystem",

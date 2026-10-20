@@ -1,0 +1,230 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "523858c7-8530-4f9e-8688-67fbe6f36c2d",
+  "meta" : {
+    "lastUpdated" : "2026-10-20T11:00:35.135+00:00"
+  },
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "https://hl7.pt/fhir/ADR/ValueSet/adr-causalidade-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansão efectuada internamente com base em <a href=\"CodeSystem-adr-causalidade-cs.html\">codesystem Causalidade CodeSystem v1.0.0-ballot (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"https://hl7.pt/fhir/ADR/CodeSystem/adr-causalidade-cs|1.0.0-ballot\" title=\"Clique para copiar o URL\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></p><p>Este conjunto de valores contém 6 conceitos</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>Sistema</b></td><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã (pt)</b></td><td><b>Definição</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-https://hl7.pt/fhir/ADR/CodeSystem/adr-causalidade-cs-DEF\"> </a><code>https://hl7.pt/fhir/ADR/CodeSystem/adr-causalidade-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-adr-causalidade-cs.html#adr-causalidade-cs-DEF\">DEF</a></td><td/><td>Definitivo</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://hl7.pt/fhir/ADR/CodeSystem/adr-causalidade-cs&quot;, &quot;version&quot;: &quot;1.0.0-ballot&quot;, &quot;code&quot;: &quot;DEF&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://hl7.pt/fhir/ADR/CodeSystem/adr-causalidade-cs&quot;/&gt;&lt;version value=&quot;1.0.0-ballot&quot;/&gt;&lt;code value=&quot;DEF&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-https://hl7.pt/fhir/ADR/CodeSystem/adr-causalidade-cs-PROV\"> </a><code>https://hl7.pt/fhir/ADR/CodeSystem/adr-causalidade-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-adr-causalidade-cs.html#adr-causalidade-cs-PROV\">PROV</a></td><td/><td>Provável</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://hl7.pt/fhir/ADR/CodeSystem/adr-causalidade-cs&quot;, &quot;version&quot;: &quot;1.0.0-ballot&quot;, &quot;code&quot;: &quot;PROV&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://hl7.pt/fhir/ADR/CodeSystem/adr-causalidade-cs&quot;/&gt;&lt;version value=&quot;1.0.0-ballot&quot;/&gt;&lt;code value=&quot;PROV&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-https://hl7.pt/fhir/ADR/CodeSystem/adr-causalidade-cs-POSS\"> </a><code>https://hl7.pt/fhir/ADR/CodeSystem/adr-causalidade-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-adr-causalidade-cs.html#adr-causalidade-cs-POSS\">POSS</a></td><td/><td>Possível</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://hl7.pt/fhir/ADR/CodeSystem/adr-causalidade-cs&quot;, &quot;version&quot;: &quot;1.0.0-ballot&quot;, &quot;code&quot;: &quot;POSS&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://hl7.pt/fhir/ADR/CodeSystem/adr-causalidade-cs&quot;/&gt;&lt;version value=&quot;1.0.0-ballot&quot;/&gt;&lt;code value=&quot;POSS&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-https://hl7.pt/fhir/ADR/CodeSystem/adr-causalidade-cs-COND\"> </a><code>https://hl7.pt/fhir/ADR/CodeSystem/adr-causalidade-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-adr-causalidade-cs.html#adr-causalidade-cs-COND\">COND</a></td><td/><td>Condicional</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://hl7.pt/fhir/ADR/CodeSystem/adr-causalidade-cs&quot;, &quot;version&quot;: &quot;1.0.0-ballot&quot;, &quot;code&quot;: &quot;COND&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://hl7.pt/fhir/ADR/CodeSystem/adr-causalidade-cs&quot;/&gt;&lt;version value=&quot;1.0.0-ballot&quot;/&gt;&lt;code value=&quot;COND&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-https://hl7.pt/fhir/ADR/CodeSystem/adr-causalidade-cs-IMPR\"> </a><code>https://hl7.pt/fhir/ADR/CodeSystem/adr-causalidade-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-adr-causalidade-cs.html#adr-causalidade-cs-IMPR\">IMPR</a></td><td/><td>Improvável</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://hl7.pt/fhir/ADR/CodeSystem/adr-causalidade-cs&quot;, &quot;version&quot;: &quot;1.0.0-ballot&quot;, &quot;code&quot;: &quot;IMPR&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://hl7.pt/fhir/ADR/CodeSystem/adr-causalidade-cs&quot;/&gt;&lt;version value=&quot;1.0.0-ballot&quot;/&gt;&lt;code value=&quot;IMPR&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-https://hl7.pt/fhir/ADR/CodeSystem/adr-causalidade-cs-NC\"> </a><code>https://hl7.pt/fhir/ADR/CodeSystem/adr-causalidade-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-adr-causalidade-cs.html#adr-causalidade-cs-NC\">NC</a></td><td/><td>Não Classificável</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://hl7.pt/fhir/ADR/CodeSystem/adr-causalidade-cs&quot;, &quot;version&quot;: &quot;1.0.0-ballot&quot;, &quot;code&quot;: &quot;NC&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://hl7.pt/fhir/ADR/CodeSystem/adr-causalidade-cs&quot;/&gt;&lt;version value=&quot;1.0.0-ballot&quot;/&gt;&lt;code value=&quot;NC&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "https://hl7.pt/fhir/ADR/ValueSet/adr-causalidade-vs",
+      "version" : "1.0.0-ballot",
+      "name" : "CausalidadeVS",
+      "title" : "Causalidade ValueSet",
+      "status" : "active",
+      "experimental" : true,
+      "date" : "2026-10-20T11:00:35+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "PT",
+          "display" : "Portugal"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:c4851acf-7b41-48e1-a274-386aa5700ae4",
+        "timestamp" : "2026-10-20T11:02:09+00:00",
+        "total" : 6,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "pt"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://hl7.pt/fhir/ADR/CodeSystem/adr-causalidade-cs|1.0.0-ballot"
+        }],
+        "contains" : [{
+          "system" : "https://hl7.pt/fhir/ADR/CodeSystem/adr-causalidade-cs",
+          "code" : "DEF"
+        },
+        {
+          "system" : "https://hl7.pt/fhir/ADR/CodeSystem/adr-causalidade-cs",
+          "code" : "PROV"
+        },
+        {
+          "system" : "https://hl7.pt/fhir/ADR/CodeSystem/adr-causalidade-cs",
+          "code" : "POSS"
+        },
+        {
+          "system" : "https://hl7.pt/fhir/ADR/CodeSystem/adr-causalidade-cs",
+          "code" : "COND"
+        },
+        {
+          "system" : "https://hl7.pt/fhir/ADR/CodeSystem/adr-causalidade-cs",
+          "code" : "IMPR"
+        },
+        {
+          "system" : "https://hl7.pt/fhir/ADR/CodeSystem/adr-causalidade-cs",
+          "code" : "NC"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://hl7.pt/fhir/ADR/ValueSet/adr-evolucao-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansão efectuada internamente com base em <a href=\"CodeSystem-adr-evolucao-cs.html\">codesystem Evolução de uma RAM CodeSystem v1.0.0-ballot (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"https://hl7.pt/fhir/ADR/CodeSystem/adr-evolucao-cs|1.0.0-ballot\" title=\"Clique para copiar o URL\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></p><p>Este conjunto de valores contém 6 conceitos</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>Sistema</b></td><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã (pt)</b></td><td><b>Definição</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-https://hl7.pt/fhir/ADR/CodeSystem/adr-evolucao-cs-CURA\"> </a><code>https://hl7.pt/fhir/ADR/CodeSystem/adr-evolucao-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-adr-evolucao-cs.html#adr-evolucao-cs-CURA\">CURA</a></td><td/><td>Cura</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://hl7.pt/fhir/ADR/CodeSystem/adr-evolucao-cs&quot;, &quot;version&quot;: &quot;1.0.0-ballot&quot;, &quot;code&quot;: &quot;CURA&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://hl7.pt/fhir/ADR/CodeSystem/adr-evolucao-cs&quot;/&gt;&lt;version value=&quot;1.0.0-ballot&quot;/&gt;&lt;code value=&quot;CURA&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-https://hl7.pt/fhir/ADR/CodeSystem/adr-evolucao-cs-RECUPERACAO\"> </a><code>https://hl7.pt/fhir/ADR/CodeSystem/adr-evolucao-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-adr-evolucao-cs.html#adr-evolucao-cs-RECUPERACAO\">RECUPERACAO</a></td><td/><td>Recuperação</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://hl7.pt/fhir/ADR/CodeSystem/adr-evolucao-cs&quot;, &quot;version&quot;: &quot;1.0.0-ballot&quot;, &quot;code&quot;: &quot;RECUPERACAO&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://hl7.pt/fhir/ADR/CodeSystem/adr-evolucao-cs&quot;/&gt;&lt;version value=&quot;1.0.0-ballot&quot;/&gt;&lt;code value=&quot;RECUPERACAO&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-https://hl7.pt/fhir/ADR/CodeSystem/adr-evolucao-cs-PERSISTENTE\"> </a><code>https://hl7.pt/fhir/ADR/CodeSystem/adr-evolucao-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-adr-evolucao-cs.html#adr-evolucao-cs-PERSISTENTE\">PERSISTENTE</a></td><td/><td>Persistente</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://hl7.pt/fhir/ADR/CodeSystem/adr-evolucao-cs&quot;, &quot;version&quot;: &quot;1.0.0-ballot&quot;, &quot;code&quot;: &quot;PERSISTENTE&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://hl7.pt/fhir/ADR/CodeSystem/adr-evolucao-cs&quot;/&gt;&lt;version value=&quot;1.0.0-ballot&quot;/&gt;&lt;code value=&quot;PERSISTENTE&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-https://hl7.pt/fhir/ADR/CodeSystem/adr-evolucao-cs-CURA_SEQUELAS\"> </a><code>https://hl7.pt/fhir/ADR/CodeSystem/adr-evolucao-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-adr-evolucao-cs.html#adr-evolucao-cs-CURA_SEQUELAS\">CURA_SEQUELAS</a></td><td/><td>Cura com sequelas</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://hl7.pt/fhir/ADR/CodeSystem/adr-evolucao-cs&quot;, &quot;version&quot;: &quot;1.0.0-ballot&quot;, &quot;code&quot;: &quot;CURA_SEQUELAS&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://hl7.pt/fhir/ADR/CodeSystem/adr-evolucao-cs&quot;/&gt;&lt;version value=&quot;1.0.0-ballot&quot;/&gt;&lt;code value=&quot;CURA_SEQUELAS&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-https://hl7.pt/fhir/ADR/CodeSystem/adr-evolucao-cs-MORTE\"> </a><code>https://hl7.pt/fhir/ADR/CodeSystem/adr-evolucao-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-adr-evolucao-cs.html#adr-evolucao-cs-MORTE\">MORTE</a></td><td/><td>Morte</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://hl7.pt/fhir/ADR/CodeSystem/adr-evolucao-cs&quot;, &quot;version&quot;: &quot;1.0.0-ballot&quot;, &quot;code&quot;: &quot;MORTE&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://hl7.pt/fhir/ADR/CodeSystem/adr-evolucao-cs&quot;/&gt;&lt;version value=&quot;1.0.0-ballot&quot;/&gt;&lt;code value=&quot;MORTE&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-https://hl7.pt/fhir/ADR/CodeSystem/adr-evolucao-cs-DESCONHECIDO\"> </a><code>https://hl7.pt/fhir/ADR/CodeSystem/adr-evolucao-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-adr-evolucao-cs.html#adr-evolucao-cs-DESCONHECIDO\">DESCONHECIDO</a></td><td/><td>Desconhecido</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://hl7.pt/fhir/ADR/CodeSystem/adr-evolucao-cs&quot;, &quot;version&quot;: &quot;1.0.0-ballot&quot;, &quot;code&quot;: &quot;DESCONHECIDO&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://hl7.pt/fhir/ADR/CodeSystem/adr-evolucao-cs&quot;/&gt;&lt;version value=&quot;1.0.0-ballot&quot;/&gt;&lt;code value=&quot;DESCONHECIDO&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "https://hl7.pt/fhir/ADR/ValueSet/adr-evolucao-vs",
+      "version" : "1.0.0-ballot",
+      "name" : "EvolucaoVS",
+      "title" : "Evolução de uma RAM ValueSet",
+      "status" : "active",
+      "experimental" : true,
+      "date" : "2026-10-20T11:00:35+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "PT",
+          "display" : "Portugal"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:2cfd3aae-0da1-406d-8834-bb535dadcc38",
+        "timestamp" : "2026-10-20T11:02:09+00:00",
+        "total" : 6,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "pt"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://hl7.pt/fhir/ADR/CodeSystem/adr-evolucao-cs|1.0.0-ballot"
+        }],
+        "contains" : [{
+          "system" : "https://hl7.pt/fhir/ADR/CodeSystem/adr-evolucao-cs",
+          "code" : "CURA"
+        },
+        {
+          "system" : "https://hl7.pt/fhir/ADR/CodeSystem/adr-evolucao-cs",
+          "code" : "RECUPERACAO"
+        },
+        {
+          "system" : "https://hl7.pt/fhir/ADR/CodeSystem/adr-evolucao-cs",
+          "code" : "PERSISTENTE"
+        },
+        {
+          "system" : "https://hl7.pt/fhir/ADR/CodeSystem/adr-evolucao-cs",
+          "code" : "CURA_SEQUELAS"
+        },
+        {
+          "system" : "https://hl7.pt/fhir/ADR/CodeSystem/adr-evolucao-cs",
+          "code" : "MORTE"
+        },
+        {
+          "system" : "https://hl7.pt/fhir/ADR/CodeSystem/adr-evolucao-cs",
+          "code" : "DESCONHECIDO"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://hl7.pt/fhir/ADR/ValueSet/adr-gravidade-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansão efectuada internamente com base em <a href=\"CodeSystem-adr-gravidade-cs.html\">codesystem Gravidade RAM CodeSystem v1.0.0-ballot (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"https://hl7.pt/fhir/ADR/CodeSystem/adr-gravidade-cs|1.0.0-ballot\" title=\"Clique para copiar o URL\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></p><p>Este conjunto de valores contém 6 conceitos</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>Sistema</b></td><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã (pt)</b></td><td><b>Definição</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-https://hl7.pt/fhir/ADR/CodeSystem/adr-gravidade-cs-MORTE\"> </a><code>https://hl7.pt/fhir/ADR/CodeSystem/adr-gravidade-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-adr-gravidade-cs.html#adr-gravidade-cs-MORTE\">MORTE</a></td><td/><td>Morte</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://hl7.pt/fhir/ADR/CodeSystem/adr-gravidade-cs&quot;, &quot;version&quot;: &quot;1.0.0-ballot&quot;, &quot;code&quot;: &quot;MORTE&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://hl7.pt/fhir/ADR/CodeSystem/adr-gravidade-cs&quot;/&gt;&lt;version value=&quot;1.0.0-ballot&quot;/&gt;&lt;code value=&quot;MORTE&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-https://hl7.pt/fhir/ADR/CodeSystem/adr-gravidade-cs-RISCOVIDA\"> </a><code>https://hl7.pt/fhir/ADR/CodeSystem/adr-gravidade-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-adr-gravidade-cs.html#adr-gravidade-cs-RISCOVIDA\">RISCOVIDA</a></td><td/><td>Risco de vida</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://hl7.pt/fhir/ADR/CodeSystem/adr-gravidade-cs&quot;, &quot;version&quot;: &quot;1.0.0-ballot&quot;, &quot;code&quot;: &quot;RISCOVIDA&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://hl7.pt/fhir/ADR/CodeSystem/adr-gravidade-cs&quot;/&gt;&lt;version value=&quot;1.0.0-ballot&quot;/&gt;&lt;code value=&quot;RISCOVIDA&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-https://hl7.pt/fhir/ADR/CodeSystem/adr-gravidade-cs-HOSP\"> </a><code>https://hl7.pt/fhir/ADR/CodeSystem/adr-gravidade-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-adr-gravidade-cs.html#adr-gravidade-cs-HOSP\">HOSP</a></td><td/><td>Hospitalização</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://hl7.pt/fhir/ADR/CodeSystem/adr-gravidade-cs&quot;, &quot;version&quot;: &quot;1.0.0-ballot&quot;, &quot;code&quot;: &quot;HOSP&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://hl7.pt/fhir/ADR/CodeSystem/adr-gravidade-cs&quot;/&gt;&lt;version value=&quot;1.0.0-ballot&quot;/&gt;&lt;code value=&quot;HOSP&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-https://hl7.pt/fhir/ADR/CodeSystem/adr-gravidade-cs-INCAPACIDADE\"> </a><code>https://hl7.pt/fhir/ADR/CodeSystem/adr-gravidade-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-adr-gravidade-cs.html#adr-gravidade-cs-INCAPACIDADE\">INCAPACIDADE</a></td><td/><td>Incapacidade</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://hl7.pt/fhir/ADR/CodeSystem/adr-gravidade-cs&quot;, &quot;version&quot;: &quot;1.0.0-ballot&quot;, &quot;code&quot;: &quot;INCAPACIDADE&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://hl7.pt/fhir/ADR/CodeSystem/adr-gravidade-cs&quot;/&gt;&lt;version value=&quot;1.0.0-ballot&quot;/&gt;&lt;code value=&quot;INCAPACIDADE&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-https://hl7.pt/fhir/ADR/CodeSystem/adr-gravidade-cs-ANOMALIA\"> </a><code>https://hl7.pt/fhir/ADR/CodeSystem/adr-gravidade-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-adr-gravidade-cs.html#adr-gravidade-cs-ANOMALIA\">ANOMALIA</a></td><td/><td>Anomalia congénita</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://hl7.pt/fhir/ADR/CodeSystem/adr-gravidade-cs&quot;, &quot;version&quot;: &quot;1.0.0-ballot&quot;, &quot;code&quot;: &quot;ANOMALIA&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://hl7.pt/fhir/ADR/CodeSystem/adr-gravidade-cs&quot;/&gt;&lt;version value=&quot;1.0.0-ballot&quot;/&gt;&lt;code value=&quot;ANOMALIA&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-https://hl7.pt/fhir/ADR/CodeSystem/adr-gravidade-cs-CI\"> </a><code>https://hl7.pt/fhir/ADR/CodeSystem/adr-gravidade-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-adr-gravidade-cs.html#adr-gravidade-cs-CI\">CI</a></td><td/><td>Clinicamente importante</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://hl7.pt/fhir/ADR/CodeSystem/adr-gravidade-cs&quot;, &quot;version&quot;: &quot;1.0.0-ballot&quot;, &quot;code&quot;: &quot;CI&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://hl7.pt/fhir/ADR/CodeSystem/adr-gravidade-cs&quot;/&gt;&lt;version value=&quot;1.0.0-ballot&quot;/&gt;&lt;code value=&quot;CI&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "https://hl7.pt/fhir/ADR/ValueSet/adr-gravidade-vs",
+      "version" : "1.0.0-ballot",
+      "name" : "GravidadeVS",
+      "title" : "Gravidade RAM ValueSet",
+      "status" : "active",
+      "experimental" : true,
+      "date" : "2026-10-20T11:00:35+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "PT",
+          "display" : "Portugal"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:1d326f78-a8d4-451f-b25d-8cb138e7243a",
+        "timestamp" : "2026-10-20T11:02:09+00:00",
+        "total" : 6,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "pt"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://hl7.pt/fhir/ADR/CodeSystem/adr-gravidade-cs|1.0.0-ballot"
+        }],
+        "contains" : [{
+          "system" : "https://hl7.pt/fhir/ADR/CodeSystem/adr-gravidade-cs",
+          "code" : "MORTE"
+        },
+        {
+          "system" : "https://hl7.pt/fhir/ADR/CodeSystem/adr-gravidade-cs",
+          "code" : "RISCOVIDA"
+        },
+        {
+          "system" : "https://hl7.pt/fhir/ADR/CodeSystem/adr-gravidade-cs",
+          "code" : "HOSP"
+        },
+        {
+          "system" : "https://hl7.pt/fhir/ADR/CodeSystem/adr-gravidade-cs",
+          "code" : "INCAPACIDADE"
+        },
+        {
+          "system" : "https://hl7.pt/fhir/ADR/CodeSystem/adr-gravidade-cs",
+          "code" : "ANOMALIA"
+        },
+        {
+          "system" : "https://hl7.pt/fhir/ADR/CodeSystem/adr-gravidade-cs",
+          "code" : "CI"
+        }]
+      }
+    }
+  }]
+}

@@ -1,0 +1,21 @@
+{
+  "url" : "https://hl7.pt/fhir/ADR/ImplementationGuide/hl7.fhir.pt.adr",
+  "name" : "ADRPTIG",
+  "title" : "HL7 Portugal FHIR Implementation Guide para alergias e reacções adversas ao medicamento",
+  "description" : "Example IG exercises many of the fields in a SUSHI configuration.",
+  "ig-date" : "2024-12-09",
+  "status" : "active",
+  "package-id" : "hl7.fhir.pt.adr",
+  "ig-ver" : "1.0.0-ballot",
+  "date" : "Tue, 20 Oct, 2026 11:00:35 +0000",
+  "dateISO8601" : "2026-10-20T11:00:35+00:00",
+  "errs" : 0,
+  "warnings" : 44,
+  "hints" : 69,
+  "broken-links" : 0,
+  "suppressed-hints" : 0,
+  "suppressed-warnings" : 0,
+  "version" : "5.0.0",
+  "tool" : "6.0.0-snapshot1 (3)",
+  "maxMemory" : 646494416
+}

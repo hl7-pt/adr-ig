@@ -1,0 +1,13 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping"
+"NotificacaoLM","NotificacaoLM","","","",0,*,"","","","null {[]} {[]}
+","Notificação (modelo)","Modelo Lógico - Notificação","","","","","","","","","",,,,,"",,,,"Base",0,*,"","","n/a"
+"NotificacaoLM.Doente","NotificacaoLM.Doente","","","",1,1,"","","","https://hl7.pt/fhir/ADR/StructureDefinition/DoenteLM {[]} {[]}
+","Informações sobre o Doente","Informações sobre o Doente","","","","","","","","","",,,,,"",,,,"NotificacaoLM.Doente",1,1,"",""
+"NotificacaoLM.reacaoAdversa","NotificacaoLM.reacaoAdversa","","","",1,*,"","","","https://hl7.pt/fhir/ADR/StructureDefinition/ReacaoAdversaLM {[]} {[]}
+","Informações sobre a reacção adversa","Informações sobre a reacção adversa","","","","","","","","","",,,,,"",,,,"NotificacaoLM.reacaoAdversa",1,*,"",""
+"NotificacaoLM.medicamento","NotificacaoLM.medicamento","","","",1,*,"","","","https://hl7.pt/fhir/ADR/StructureDefinition/MedicamentoLM {[]} {[]}
+","Informações sobre os medicamentos","Informações sobre os medicamentos","","","","","","","","","",,,,,"",,,,"NotificacaoLM.medicamento",1,*,"",""
+"NotificacaoLM.notificador","NotificacaoLM.notificador","","","",1,1,"","","","https://hl7.pt/fhir/ADR/StructureDefinition/NotificadorLM {[]} {[]}
+","Informações sobre os notificadores","Informações sobre os notificadores","","","","","","","","","",,,,,"",,,,"NotificacaoLM.notificador",1,1,"",""
+"NotificacaoLM.informacoes","NotificacaoLM.informacoes","","","",0,*,"","","","https://hl7.pt/fhir/ADR/StructureDefinition/InformacoesLM {[]} {[]}
+","Informações adicionais","Informações adicionais","","","","","","","","","",,,,,"",,,,"NotificacaoLM.informacoes",0,*,"",""

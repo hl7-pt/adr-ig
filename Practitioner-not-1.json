@@ -1,0 +1,28 @@
+{
+  "resourceType" : "Practitioner",
+  "id" : "not-1",
+  "meta" : {
+    "profile" : ["https://hl7.pt/fhir/ADR/StructureDefinition/ProfissionalSaude"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: Practitioner not-1</b></p><a name=\"not-1\"> </a><a name=\"hcnot-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Perfil: <a href=\"StructureDefinition-ProfissionalSaude.html\">Perfil para notificação de RAM - Profissional de saúde</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Sandra</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Practitioner\">Detalhes do contacto</td><td colspan=\"3\"><a href=\"mailto:exemplo@exemplo.org\">exemplo@exemplo.org</a></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Certification, licensure, or training pertaining to the provision of care\">Qualification:</td><td colspan=\"3\"><span title=\"Códigos:{http://terminology.hl7.org/CodeSystem/v2-0360 PA}\">Physician Assistant</span></td></tr></table></div>"
+  },
+  "name" : [{
+    "given" : ["Sandra"]
+  }],
+  "telecom" : [{
+    "system" : "email",
+    "value" : "exemplo@exemplo.org",
+    "use" : "work"
+  }],
+  "qualification" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v2-0360",
+        "code" : "PA",
+        "display" : "Physician Assistant"
+      }]
+    }
+  }]
+}

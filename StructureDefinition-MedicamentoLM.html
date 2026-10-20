@@ -1,0 +1,1037 @@
+<!-- get modelType -->
+
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Medicamento (modelo) - HL7 Portugal FHIR Implementation Guide para alergias e reacções adversas ao medicamento v1.0.0-ballot</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/affiliate.css" rel="stylesheet"/>
+<!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/colors.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"7.3"}
+    h3,h4,h5,h6{--heading-prefix:"7.3"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+<div id="project-nav">
+  <a id="affiliate-logo" no-external="true" href="http://hl7.eu">
+    <img height="71" alt="Visit the HL7 affiliate website" src="assets/images/affiliate.png"/>
+  </a>
+</div>
+<div id="family-nav">
+  <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="30" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+</div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">HL7 Portugal FHIR Implementation Guide para alergias e reacções adversas ao medicamento</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0-ballot - CI Build
+
+
+
+  <img alt="Portugal flag" src="assets/images/prt.svg" height="16" title="Portugal"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R5/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Índice</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Introdução
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="background.html">Funcional</a>
+      </li>
+      <li>
+        <a href="workflows.html">Workflows</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artefactos</a>
+  </li>
+  <li>
+    <a href="usage.html">Usar este IG</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Medicamento (modelo)</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">HL7 Portugal FHIR Implementation Guide para alergias e reacções adversas ao medicamento, publicado por HL7 Portugal. Este guia não é uma publicação autorizada; é a compilação contínua para a versão 1.0.0-ballot construída pela FHIR (HL7&reg; FHIR&reg; Standard) CI Build. Esta versão é baseada no conteúdo atual de <a href='https://github.com/hl7-pt/adr-ig/tree/master'>https://github.com/hl7-pt/adr-ig/tree/master</a> e muda regularmente. Veja o <a href='https://hl7.pt/fhir/ADR/history.html'>Diretório de versões publicadas</a><br/><span data-smart-ci-extra="1" style="font-size:.85em;">Built from commit <a href="https://github.com/hl7-pt/adr-ig/commit/2004612c43822aa43f67097f7da43635d057cd92"><code>2004612c</code></a>.</span></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Content</a>
+  </li>
+
+
+
+  <li>
+    <a href="StructureDefinition-MedicamentoLM-definitions.html">Detailed Descriptions</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="StructureDefinition-MedicamentoLM-mappings.html">Mappings</a>
+    </li>
+  
+
+
+
+
+
+
+
+  
+    <li>
+      <a href="StructureDefinition-MedicamentoLM.profile.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="StructureDefinition-MedicamentoLM.profile.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="StructureDefinition-MedicamentoLM.profile.ttl.html">TTL</a>
+    </li>
+  
+
+
+</ul>
+
+
+  <a name="root"> </a>
+  <h2 id="root">Logical Model:
+
+    Medicamento (modelo)
+
+
+
+
+
+  </h2>
+
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://hl7.pt/fhir/ADR/StructureDefinition/MedicamentoLM<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://hl7.pt/fhir/ADR/StructureDefinition/MedicamentoLM"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">1.0.0-ballot<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://hl7.pt/fhir/ADR/StructureDefinition/MedicamentoLM|1.0.0-ballot"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2026-10-20
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">MedicamentoLM</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+<p>
+<p>Modelo Lógico - Medicamento</p>
+
+</p>
+
+
+
+<!-- insert intro if present -->
+
+
+
+
+<p><b>Usos:</b></p>
+<ul>
+ <li>Usa este Modelo lógico: <a href="StructureDefinition-NotificacaoLM.html">Notificação (modelo)</a></li>
+</ul>
+<p>You can also check for <a href="https://packages2.fhir.org/xig/resource/hl7.fhir.pt.adr|current/StructureDefinition/StructureDefinition-MedicamentoLM.json">usages in the FHIR IG Statistics</a></p>
+
+  <!-- no uri -->
+  <a name="profile"> </a>
+  <h3 id="profile">Formal Views of Profile Content</h3>
+  <p>
+    <a href="http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#structure-definitions">Description of Profiles, Differentials, Snapshots and how the different presentations work</a>.
+  </p>
+  <div id="tabs">
+    <ul>
+      <li>
+        <a href="#tabs-key">Key Elements Table</a>
+      </li>
+      <li>
+        <a href="#tabs-diff">Differential Table</a>
+      </li>
+      <li>
+        <a href="#tabs-snap">Snapshot Table</a>
+      </li>
+
+<!--      <li>
+        <a href="#tabs-xml">Pseudo-XML</a>
+      </li>-->
+
+
+<!--      <li>
+        <a href="#tabs-json">Pseudo-JSON</a>
+      </li>-->
+
+
+      <!--<li>
+        <a href="#tabs-ttl">Pseudo-TTL</a>
+      </li>-->
+
+      <li>
+        <a href="#tabs-summ">Statistics/References</a>
+      </li>
+      <li>
+        <a href="#tabs-all">All</a>
+      </li>
+    </ul>
+    <a name="tabs-key"> </a>
+    <div id="tabs-key">
+      <div id="tbl-key">
+        <div id="tbl-key-inner">
+          <table border="0" fhir="generated-heirarchy" cellpadding="0" cellspacing="0" id="MedicamentoLMK" class="xhtTableBorder0" data-fhir="generated-heirarchy"><tr fhir="generated-heirarchy" class="xhtRowBorder1" data-fhir="generated-heirarchy"><th scope="col" style="" class="hierarchy xhtCellBorder0"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="O nome lógico do elemento" data-no-external="true">Nome</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Informações sobre a utilização do elemento" data-no-external="true">Bandeiras</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Número mínimo e máximo de vezes que o elemento pode aparecer na instância" data-no-external="true">Card.</a></th><th scope="col" style="; width: 100px" class="hierarchy xhtCellBorder0"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Referência ao tipo do elemento" data-no-external="true">Tipo</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Informações adicionais sobre o elemento" data-no-external="true">Descrição e condicionalismos</a>&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Filter: <input size="10" name="filter" style="border: 1px #F0F0F0 solid; background-color: rgb(254, 254, 231);" onInput="filterTree(document.getElementById('MedicamentoLMK'), event.target.value)" type="text" aria-label="Filter"/> <button onClick="showPanel(this, document.getElementById('MedicamentoLMK'), document.getElementById('ppMedicamentoLMK'))" aria-controls="ppMedicamentoLMK" style="background: none; border: 0; padding: 0; margin: 0; cursor: pointer" type="button" title="Filters" aria-label="Filters"><img src="tree-filter.png" alt=""/></button><div style="display: none; position: fixed; opacity : 1.0; background-color: rgb(254, 254, 231); border: 1px solid #ccc; padding: 10px; boxShadow: 0 2px 5px rgba(0,0,0,0.2); zIndex: 1000; borderRadius: 4px" id="ppMedicamentoLMK"><label>Condicionantes <input onClick="filterDesc(document.getElementById('MedicamentoLMK'), 'constraint',event.target.checked, document.getElementById('ppMedicamentoLMK'))" size="1" name="constraint" checked="true" id="cbMedicamentoLMK-constraint" type="checkbox" aria-label="constraint"/></label><br/><label>Obrigações <input onClick="filterDesc(document.getElementById('MedicamentoLMK'), 'obligation',event.target.checked, document.getElementById('ppMedicamentoLMK'))" size="1" name="obligation" checked="true" id="cbMedicamentoLMK-obligation" type="checkbox" aria-label="obligation"/></label><br/><label>Vínculos <input onClick="filterDesc(document.getElementById('MedicamentoLMK'), 'binding',event.target.checked, document.getElementById('ppMedicamentoLMK'))" size="1" name="binding" checked="true" id="cbMedicamentoLMK-binding" type="checkbox" aria-label="binding"/></label><br/></div></span><span style="float: right"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format" data-no-external="true"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" onLoad="fhirTableInit(this)" style="background-color: inherit"/></a></span></th></tr>
+<tr fhir="generated-heirarchy" id="k-a" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: white; background-color: inherit" title="Elemento" class="hierarchy"/> <a no-external="true" href="StructureDefinition-MedicamentoLM-definitions.html#MedicamentoLM" title="Modelo Lógico - Medicamento" data-no-external="true">MedicamentoLM</a><a name="k-MedicamentoLM"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0">0..*</td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/types.html#Base">Base</a></td>
+<td style="" class="hierarchy xhtCellBorder0">Medicamento (modelo)<br/><span class="xhtPieceBold">As instâncias deste modelo lógico podem ser objeto de uma referência</span><br/></td></tr>
+<tr fhir="generated-heirarchy" id="k-aa" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Tipo de dados primitivos" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">MedicamentoLM.</span><a no-external="true" href="StructureDefinition-MedicamentoLM-definitions.html#MedicamentoLM.nomeMedicamento" title="Nome do medicamento" data-no-external="true">nomeMedicamento</a><a name="k-MedicamentoLM.nomeMedicamento"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0">1..1</td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td>
+<td style="" class="hierarchy xhtCellBorder0">Nome do medicamento</td></tr>
+<tr fhir="generated-heirarchy" id="k-ab" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Tipo de dados primitivos" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">MedicamentoLM.</span><a no-external="true" href="StructureDefinition-MedicamentoLM-definitions.html#MedicamentoLM.lote" title="Número de ltoe" data-no-external="true">lote</a><a name="k-MedicamentoLM.lote"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0">0..1</td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td>
+<td style="" class="hierarchy xhtCellBorder0">Número de ltoe</td></tr>
+<tr fhir="generated-heirarchy" id="k-ac" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Tipo de dados primitivos" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">MedicamentoLM.</span><a no-external="true" href="StructureDefinition-MedicamentoLM-definitions.html#MedicamentoLM.posologia" title="Posologia" data-no-external="true">posologia</a><a name="k-MedicamentoLM.posologia"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0">0..1</td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td>
+<td style="" class="hierarchy xhtCellBorder0">Posologia</td></tr>
+<tr fhir="generated-heirarchy" id="k-ad" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Tipo de dados primitivos" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">MedicamentoLM.</span><a no-external="true" href="StructureDefinition-MedicamentoLM-definitions.html#MedicamentoLM.dataInicioTomaMedicamento" title="Data de inicio da toma do medicamento" data-no-external="true">dataInicioTomaMedicamento</a><a name="k-MedicamentoLM.dataInicioTomaMedicamento"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0">0..1</td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">dateTime</a></td>
+<td style="" class="hierarchy xhtCellBorder0">Data de inicio da toma do medicamento</td></tr>
+<tr fhir="generated-heirarchy" id="k-ae" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Tipo de dados primitivos" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">MedicamentoLM.</span><a no-external="true" href="StructureDefinition-MedicamentoLM-definitions.html#MedicamentoLM.dataInicioTomaMedicamentoPrecisao" title="Precisão de data de inicio da toma do medicamento" data-no-external="true">dataInicioTomaMedicamentoPrecisao</a><a name="k-MedicamentoLM.dataInicioTomaMedicamentoPrecisao"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0">0..1</td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#code">code</a></td>
+<td style="" class="hierarchy xhtCellBorder0">Precisão de data de inicio da toma do medicamento</td></tr>
+<tr fhir="generated-heirarchy" id="k-af" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Tipo de dados primitivos" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">MedicamentoLM.</span><a no-external="true" href="StructureDefinition-MedicamentoLM-definitions.html#MedicamentoLM.dataFimTomaMedicamento" title="Data de fim da toma do medicamento" data-no-external="true">dataFimTomaMedicamento</a><a name="k-MedicamentoLM.dataFimTomaMedicamento"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0">0..1</td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">dateTime</a></td>
+<td style="" class="hierarchy xhtCellBorder0">Data de fim da toma do medicamento</td></tr>
+<tr fhir="generated-heirarchy" id="k-ag" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Tipo de dados primitivos" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">MedicamentoLM.</span><a no-external="true" href="StructureDefinition-MedicamentoLM-definitions.html#MedicamentoLM.dataFimTomaMedicamentoPrecisao" title="Precisão de data de fim da toma do medicamento" data-no-external="true">dataFimTomaMedicamentoPrecisao</a><a name="k-MedicamentoLM.dataFimTomaMedicamentoPrecisao"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0">0..1</td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#code">code</a></td>
+<td style="" class="hierarchy xhtCellBorder0">Precisão de data de fim da toma do medicamento</td></tr>
+<tr fhir="generated-heirarchy" id="k-ah" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Tipo de dados primitivos" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">MedicamentoLM.</span><a no-external="true" href="StructureDefinition-MedicamentoLM-definitions.html#MedicamentoLM.dosagem" title="Dosagem" data-no-external="true">dosagem</a><a name="k-MedicamentoLM.dosagem"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0">0..1</td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td>
+<td style="" class="hierarchy xhtCellBorder0">Dosagem</td></tr>
+<tr fhir="generated-heirarchy" id="k-ai" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Tipo de dados primitivos" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">MedicamentoLM.</span><a no-external="true" href="StructureDefinition-MedicamentoLM-definitions.html#MedicamentoLM.medidaTomada" title="Qual a medida tomada" data-no-external="true">medidaTomada</a><a name="k-MedicamentoLM.medidaTomada"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0">0..1</td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#code">code</a></td>
+<td style="" class="hierarchy xhtCellBorder0">Qual a medida tomada</td></tr>
+<tr fhir="generated-heirarchy" id="k-aj" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Tipo de dados primitivos" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">MedicamentoLM.</span><a no-external="true" href="StructureDefinition-MedicamentoLM-definitions.html#MedicamentoLM.viaAdministracaoCode" title="Via de administração" data-no-external="true">viaAdministracaoCode</a><a name="k-MedicamentoLM.viaAdministracaoCode"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0">0..1</td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td>
+<td style="" class="hierarchy xhtCellBorder0">Via de administração</td></tr>
+<tr fhir="generated-heirarchy" id="k-ak" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Tipo de dados primitivos" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">MedicamentoLM.</span><a no-external="true" href="StructureDefinition-MedicamentoLM-definitions.html#MedicamentoLM.tipoAutorizacaoCode" title="Tipo de Autorização" data-no-external="true">tipoAutorizacaoCode</a><a name="k-MedicamentoLM.tipoAutorizacaoCode"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0">0..1</td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#code">code</a></td>
+<td style="" class="hierarchy xhtCellBorder0">Tipo de Autorização</td></tr>
+<tr fhir="generated-heirarchy" id="k-al" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck00.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Tipo de dados primitivos" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">MedicamentoLM.</span><a no-external="true" href="StructureDefinition-MedicamentoLM-definitions.html#MedicamentoLM.indicacaoTerapeutica" title="Indicação Terapêutica do medicamento" data-no-external="true">indicacaoTerapeutica</a><a name="k-MedicamentoLM.indicacaoTerapeutica"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0">0..1</td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td>
+<td style="" class="hierarchy xhtCellBorder0">Indicação Terapêutica do medicamento</td></tr>
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legenda para este formato"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentação para este formato</a></td></tr><script type="text/javascript">  // 3a406940-f9bc-41f3-9376-79fd215c9dd2
+document.getElementById('cbMedicamentoLMK-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
+filterDesc(document.getElementById('MedicamentoLMK'), 'constraint', document.getElementById('cbMedicamentoLMK-constraint').checked, document.getElementById('ppMedicamentoLMK'));
+document.getElementById('cbMedicamentoLMK-obligation').checked = 'false' != localStorage.getItem('ht-table-states-obligation');
+filterDesc(document.getElementById('MedicamentoLMK'), 'obligation', document.getElementById('cbMedicamentoLMK-obligation').checked, document.getElementById('ppMedicamentoLMK'));
+document.getElementById('cbMedicamentoLMK-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
+filterDesc(document.getElementById('MedicamentoLMK'), 'binding', document.getElementById('cbMedicamentoLMK-binding').checked, document.getElementById('ppMedicamentoLMK'));
+</script></table>
+          <!--Terminology Bindings heading in the fragment -->
+          
+        
+          
+          <!-- 218 is size of empty table -->
+          
+        </div>
+      </div>
+    </div>
+    <a name="tabs-diff"> </a>
+    <div id="tabs-diff">
+      <div id="tbl-diff">
+        <p>This structure is derived from <a href="http://hl7.org/fhir/R5/types.html#Base">Base</a>
+        </p>
+        <div id="tbl-diff-inner">
+          <table border="0" fhir="generated-heirarchy" cellpadding="0" cellspacing="0" id="MedicamentoLMD" class="xhtTableBorder0" data-fhir="generated-heirarchy"><tr fhir="generated-heirarchy" class="xhtRowBorder1" data-fhir="generated-heirarchy"><th scope="col" style="" class="hierarchy xhtCellBorder0"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="O nome lógico do elemento" data-no-external="true">Nome</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Informações sobre a utilização do elemento" data-no-external="true">Bandeiras</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Número mínimo e máximo de vezes que o elemento pode aparecer na instância" data-no-external="true">Card.</a></th><th scope="col" style="; width: 100px" class="hierarchy xhtCellBorder0"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Referência ao tipo do elemento" data-no-external="true">Tipo</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Informações adicionais sobre o elemento" data-no-external="true">Descrição e condicionalismos</a>&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Filter: <input size="10" name="filter" style="border: 1px #F0F0F0 solid; background-color: rgb(254, 254, 231);" onInput="filterTree(document.getElementById('MedicamentoLMD'), event.target.value)" type="text" aria-label="Filter"/> <button onClick="showPanel(this, document.getElementById('MedicamentoLMD'), document.getElementById('ppMedicamentoLMD'))" aria-controls="ppMedicamentoLMD" style="background: none; border: 0; padding: 0; margin: 0; cursor: pointer" type="button" title="Filters" aria-label="Filters"><img src="tree-filter.png" alt=""/></button><div style="display: none; position: fixed; opacity : 1.0; background-color: rgb(254, 254, 231); border: 1px solid #ccc; padding: 10px; boxShadow: 0 2px 5px rgba(0,0,0,0.2); zIndex: 1000; borderRadius: 4px" id="ppMedicamentoLMD"><label>Condicionantes <input onClick="filterDesc(document.getElementById('MedicamentoLMD'), 'constraint',event.target.checked, document.getElementById('ppMedicamentoLMD'))" size="1" name="constraint" checked="true" id="cbMedicamentoLMD-constraint" type="checkbox" aria-label="constraint"/></label><br/><label>Obrigações <input onClick="filterDesc(document.getElementById('MedicamentoLMD'), 'obligation',event.target.checked, document.getElementById('ppMedicamentoLMD'))" size="1" name="obligation" checked="true" id="cbMedicamentoLMD-obligation" type="checkbox" aria-label="obligation"/></label><br/><label>Vínculos <input onClick="filterDesc(document.getElementById('MedicamentoLMD'), 'binding',event.target.checked, document.getElementById('ppMedicamentoLMD'))" size="1" name="binding" checked="true" id="cbMedicamentoLMD-binding" type="checkbox" aria-label="binding"/></label><br/></div></span><span style="float: right"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format" data-no-external="true"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" onLoad="fhirTableInit(this)" style="background-color: inherit"/></a></span></th></tr>
+<tr fhir="generated-heirarchy" id="a" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: white; background-color: inherit" title="Elemento" class="hierarchy"/> <a no-external="true" href="StructureDefinition-MedicamentoLM-definitions.html#MedicamentoLM" title="Modelo Lógico - Medicamento" data-no-external="true">MedicamentoLM</a><a name="MedicamentoLM"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">0</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">*</span></td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/types.html#Base">Base</a></td>
+<td style="" class="hierarchy xhtCellBorder0">Medicamento (modelo)<br/><span class="xhtPieceBold">As instâncias deste modelo lógico podem ser objeto de uma referência</span></td></tr>
+<tr fhir="generated-heirarchy" id="aa" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Tipo de dados primitivos" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">MedicamentoLM.</span><a no-external="true" href="StructureDefinition-MedicamentoLM-definitions.html#MedicamentoLM.nomeMedicamento" title="Nome do medicamento" data-no-external="true">nomeMedicamento</a><a name="MedicamentoLM.nomeMedicamento"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0">1..1</td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td>
+<td style="" class="hierarchy xhtCellBorder0">Nome do medicamento</td></tr>
+<tr fhir="generated-heirarchy" id="ab" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Tipo de dados primitivos" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">MedicamentoLM.</span><a no-external="true" href="StructureDefinition-MedicamentoLM-definitions.html#MedicamentoLM.lote" title="Número de ltoe" data-no-external="true">lote</a><a name="MedicamentoLM.lote"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0">0..1</td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td>
+<td style="" class="hierarchy xhtCellBorder0">Número de ltoe</td></tr>
+<tr fhir="generated-heirarchy" id="ac" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Tipo de dados primitivos" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">MedicamentoLM.</span><a no-external="true" href="StructureDefinition-MedicamentoLM-definitions.html#MedicamentoLM.posologia" title="Posologia" data-no-external="true">posologia</a><a name="MedicamentoLM.posologia"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0">0..1</td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td>
+<td style="" class="hierarchy xhtCellBorder0">Posologia</td></tr>
+<tr fhir="generated-heirarchy" id="ad" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Tipo de dados primitivos" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">MedicamentoLM.</span><a no-external="true" href="StructureDefinition-MedicamentoLM-definitions.html#MedicamentoLM.dataInicioTomaMedicamento" title="Data de inicio da toma do medicamento" data-no-external="true">dataInicioTomaMedicamento</a><a name="MedicamentoLM.dataInicioTomaMedicamento"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0">0..1</td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">dateTime</a></td>
+<td style="" class="hierarchy xhtCellBorder0">Data de inicio da toma do medicamento</td></tr>
+<tr fhir="generated-heirarchy" id="ae" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Tipo de dados primitivos" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">MedicamentoLM.</span><a no-external="true" href="StructureDefinition-MedicamentoLM-definitions.html#MedicamentoLM.dataInicioTomaMedicamentoPrecisao" title="Precisão de data de inicio da toma do medicamento" data-no-external="true">dataInicioTomaMedicamentoPrecisao</a><a name="MedicamentoLM.dataInicioTomaMedicamentoPrecisao"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0">0..1</td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#code">code</a></td>
+<td style="" class="hierarchy xhtCellBorder0">Precisão de data de inicio da toma do medicamento</td></tr>
+<tr fhir="generated-heirarchy" id="af" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Tipo de dados primitivos" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">MedicamentoLM.</span><a no-external="true" href="StructureDefinition-MedicamentoLM-definitions.html#MedicamentoLM.dataFimTomaMedicamento" title="Data de fim da toma do medicamento" data-no-external="true">dataFimTomaMedicamento</a><a name="MedicamentoLM.dataFimTomaMedicamento"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0">0..1</td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">dateTime</a></td>
+<td style="" class="hierarchy xhtCellBorder0">Data de fim da toma do medicamento</td></tr>
+<tr fhir="generated-heirarchy" id="ag" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Tipo de dados primitivos" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">MedicamentoLM.</span><a no-external="true" href="StructureDefinition-MedicamentoLM-definitions.html#MedicamentoLM.dataFimTomaMedicamentoPrecisao" title="Precisão de data de fim da toma do medicamento" data-no-external="true">dataFimTomaMedicamentoPrecisao</a><a name="MedicamentoLM.dataFimTomaMedicamentoPrecisao"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0">0..1</td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#code">code</a></td>
+<td style="" class="hierarchy xhtCellBorder0">Precisão de data de fim da toma do medicamento</td></tr>
+<tr fhir="generated-heirarchy" id="ah" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Tipo de dados primitivos" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">MedicamentoLM.</span><a no-external="true" href="StructureDefinition-MedicamentoLM-definitions.html#MedicamentoLM.dosagem" title="Dosagem" data-no-external="true">dosagem</a><a name="MedicamentoLM.dosagem"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0">0..1</td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td>
+<td style="" class="hierarchy xhtCellBorder0">Dosagem</td></tr>
+<tr fhir="generated-heirarchy" id="ai" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Tipo de dados primitivos" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">MedicamentoLM.</span><a no-external="true" href="StructureDefinition-MedicamentoLM-definitions.html#MedicamentoLM.medidaTomada" title="Qual a medida tomada" data-no-external="true">medidaTomada</a><a name="MedicamentoLM.medidaTomada"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0">0..1</td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#code">code</a></td>
+<td style="" class="hierarchy xhtCellBorder0">Qual a medida tomada</td></tr>
+<tr fhir="generated-heirarchy" id="aj" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Tipo de dados primitivos" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">MedicamentoLM.</span><a no-external="true" href="StructureDefinition-MedicamentoLM-definitions.html#MedicamentoLM.viaAdministracaoCode" title="Via de administração" data-no-external="true">viaAdministracaoCode</a><a name="MedicamentoLM.viaAdministracaoCode"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0">0..1</td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td>
+<td style="" class="hierarchy xhtCellBorder0">Via de administração</td></tr>
+<tr fhir="generated-heirarchy" id="ak" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Tipo de dados primitivos" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">MedicamentoLM.</span><a no-external="true" href="StructureDefinition-MedicamentoLM-definitions.html#MedicamentoLM.tipoAutorizacaoCode" title="Tipo de Autorização" data-no-external="true">tipoAutorizacaoCode</a><a name="MedicamentoLM.tipoAutorizacaoCode"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0">0..1</td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#code">code</a></td>
+<td style="" class="hierarchy xhtCellBorder0">Tipo de Autorização</td></tr>
+<tr fhir="generated-heirarchy" id="al" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck00.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Tipo de dados primitivos" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">MedicamentoLM.</span><a no-external="true" href="StructureDefinition-MedicamentoLM-definitions.html#MedicamentoLM.indicacaoTerapeutica" title="Indicação Terapêutica do medicamento" data-no-external="true">indicacaoTerapeutica</a><a name="MedicamentoLM.indicacaoTerapeutica"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0">0..1</td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td>
+<td style="" class="hierarchy xhtCellBorder0">Indicação Terapêutica do medicamento</td></tr>
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legenda para este formato"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentação para este formato</a></td></tr><script type="text/javascript">  // 3a406940-f9bc-41f3-9376-79fd215c9dd2
+document.getElementById('cbMedicamentoLMD-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
+filterDesc(document.getElementById('MedicamentoLMD'), 'constraint', document.getElementById('cbMedicamentoLMD-constraint').checked, document.getElementById('ppMedicamentoLMD'));
+document.getElementById('cbMedicamentoLMD-obligation').checked = 'false' != localStorage.getItem('ht-table-states-obligation');
+filterDesc(document.getElementById('MedicamentoLMD'), 'obligation', document.getElementById('cbMedicamentoLMD-obligation').checked, document.getElementById('ppMedicamentoLMD'));
+document.getElementById('cbMedicamentoLMD-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
+filterDesc(document.getElementById('MedicamentoLMD'), 'binding', document.getElementById('cbMedicamentoLMD-binding').checked, document.getElementById('ppMedicamentoLMD'));
+</script></table>
+          <a name="tx"> </a>
+          <!--Terminology Bindings heading in the fragment -->
+          
+        
+          
+          <!-- 218 is size of empty table -->
+          
+        </div>
+      </div>
+    </div>
+    <a name="tabs-snap"> </a>
+    <div id="tabs-snap">
+      <div id="tbl-snap">
+        <div id="tbl-snap-inner">
+          <table border="0" fhir="generated-heirarchy" cellpadding="0" cellspacing="0" id="MedicamentoLMS" class="xhtTableBorder0" data-fhir="generated-heirarchy"><tr fhir="generated-heirarchy" class="xhtRowBorder1" data-fhir="generated-heirarchy"><th scope="col" style="" class="hierarchy xhtCellBorder0"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="O nome lógico do elemento" data-no-external="true">Nome</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Informações sobre a utilização do elemento" data-no-external="true">Bandeiras</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Número mínimo e máximo de vezes que o elemento pode aparecer na instância" data-no-external="true">Card.</a></th><th scope="col" style="; width: 100px" class="hierarchy xhtCellBorder0"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Referência ao tipo do elemento" data-no-external="true">Tipo</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Informações adicionais sobre o elemento" data-no-external="true">Descrição e condicionalismos</a>&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Filter: <input size="10" name="filter" style="border: 1px #F0F0F0 solid; background-color: rgb(254, 254, 231);" onInput="filterTree(document.getElementById('MedicamentoLMS'), event.target.value)" type="text" aria-label="Filter"/> <button onClick="showPanel(this, document.getElementById('MedicamentoLMS'), document.getElementById('ppMedicamentoLMS'))" aria-controls="ppMedicamentoLMS" style="background: none; border: 0; padding: 0; margin: 0; cursor: pointer" type="button" title="Filters" aria-label="Filters"><img src="tree-filter.png" alt=""/></button><div style="display: none; position: fixed; opacity : 1.0; background-color: rgb(254, 254, 231); border: 1px solid #ccc; padding: 10px; boxShadow: 0 2px 5px rgba(0,0,0,0.2); zIndex: 1000; borderRadius: 4px" id="ppMedicamentoLMS"><label>Condicionantes <input onClick="filterDesc(document.getElementById('MedicamentoLMS'), 'constraint',event.target.checked, document.getElementById('ppMedicamentoLMS'))" size="1" name="constraint" checked="true" id="cbMedicamentoLMS-constraint" type="checkbox" aria-label="constraint"/></label><br/><label>Obrigações <input onClick="filterDesc(document.getElementById('MedicamentoLMS'), 'obligation',event.target.checked, document.getElementById('ppMedicamentoLMS'))" size="1" name="obligation" checked="true" id="cbMedicamentoLMS-obligation" type="checkbox" aria-label="obligation"/></label><br/><label>Vínculos <input onClick="filterDesc(document.getElementById('MedicamentoLMS'), 'binding',event.target.checked, document.getElementById('ppMedicamentoLMS'))" size="1" name="binding" checked="true" id="cbMedicamentoLMS-binding" type="checkbox" aria-label="binding"/></label><br/></div></span><span style="float: right"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format" data-no-external="true"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" onLoad="fhirTableInit(this)" style="background-color: inherit"/></a></span></th></tr>
+<tr fhir="generated-heirarchy" id="s-a" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: white; background-color: inherit" title="Elemento" class="hierarchy"/> <a no-external="true" href="StructureDefinition-MedicamentoLM-definitions.html#MedicamentoLM" title="Modelo Lógico - Medicamento" data-no-external="true">MedicamentoLM</a><a name="s-MedicamentoLM"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0">0..*</td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/types.html#Base">Base</a></td>
+<td style="" class="hierarchy xhtCellBorder0">Medicamento (modelo)<br/><span class="xhtPieceBold">As instâncias deste modelo lógico podem ser objeto de uma referência</span><br/></td></tr>
+<tr fhir="generated-heirarchy" id="s-aa" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Tipo de dados primitivos" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">MedicamentoLM.</span><a no-external="true" href="StructureDefinition-MedicamentoLM-definitions.html#MedicamentoLM.nomeMedicamento" title="Nome do medicamento" data-no-external="true">nomeMedicamento</a><a name="s-MedicamentoLM.nomeMedicamento"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0">1..1</td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td>
+<td style="" class="hierarchy xhtCellBorder0">Nome do medicamento</td></tr>
+<tr fhir="generated-heirarchy" id="s-ab" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Tipo de dados primitivos" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">MedicamentoLM.</span><a no-external="true" href="StructureDefinition-MedicamentoLM-definitions.html#MedicamentoLM.lote" title="Número de ltoe" data-no-external="true">lote</a><a name="s-MedicamentoLM.lote"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0">0..1</td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td>
+<td style="" class="hierarchy xhtCellBorder0">Número de ltoe</td></tr>
+<tr fhir="generated-heirarchy" id="s-ac" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Tipo de dados primitivos" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">MedicamentoLM.</span><a no-external="true" href="StructureDefinition-MedicamentoLM-definitions.html#MedicamentoLM.posologia" title="Posologia" data-no-external="true">posologia</a><a name="s-MedicamentoLM.posologia"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0">0..1</td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td>
+<td style="" class="hierarchy xhtCellBorder0">Posologia</td></tr>
+<tr fhir="generated-heirarchy" id="s-ad" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Tipo de dados primitivos" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">MedicamentoLM.</span><a no-external="true" href="StructureDefinition-MedicamentoLM-definitions.html#MedicamentoLM.dataInicioTomaMedicamento" title="Data de inicio da toma do medicamento" data-no-external="true">dataInicioTomaMedicamento</a><a name="s-MedicamentoLM.dataInicioTomaMedicamento"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0">0..1</td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">dateTime</a></td>
+<td style="" class="hierarchy xhtCellBorder0">Data de inicio da toma do medicamento</td></tr>
+<tr fhir="generated-heirarchy" id="s-ae" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Tipo de dados primitivos" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">MedicamentoLM.</span><a no-external="true" href="StructureDefinition-MedicamentoLM-definitions.html#MedicamentoLM.dataInicioTomaMedicamentoPrecisao" title="Precisão de data de inicio da toma do medicamento" data-no-external="true">dataInicioTomaMedicamentoPrecisao</a><a name="s-MedicamentoLM.dataInicioTomaMedicamentoPrecisao"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0">0..1</td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#code">code</a></td>
+<td style="" class="hierarchy xhtCellBorder0">Precisão de data de inicio da toma do medicamento</td></tr>
+<tr fhir="generated-heirarchy" id="s-af" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Tipo de dados primitivos" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">MedicamentoLM.</span><a no-external="true" href="StructureDefinition-MedicamentoLM-definitions.html#MedicamentoLM.dataFimTomaMedicamento" title="Data de fim da toma do medicamento" data-no-external="true">dataFimTomaMedicamento</a><a name="s-MedicamentoLM.dataFimTomaMedicamento"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0">0..1</td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">dateTime</a></td>
+<td style="" class="hierarchy xhtCellBorder0">Data de fim da toma do medicamento</td></tr>
+<tr fhir="generated-heirarchy" id="s-ag" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Tipo de dados primitivos" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">MedicamentoLM.</span><a no-external="true" href="StructureDefinition-MedicamentoLM-definitions.html#MedicamentoLM.dataFimTomaMedicamentoPrecisao" title="Precisão de data de fim da toma do medicamento" data-no-external="true">dataFimTomaMedicamentoPrecisao</a><a name="s-MedicamentoLM.dataFimTomaMedicamentoPrecisao"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0">0..1</td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#code">code</a></td>
+<td style="" class="hierarchy xhtCellBorder0">Precisão de data de fim da toma do medicamento</td></tr>
+<tr fhir="generated-heirarchy" id="s-ah" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Tipo de dados primitivos" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">MedicamentoLM.</span><a no-external="true" href="StructureDefinition-MedicamentoLM-definitions.html#MedicamentoLM.dosagem" title="Dosagem" data-no-external="true">dosagem</a><a name="s-MedicamentoLM.dosagem"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0">0..1</td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td>
+<td style="" class="hierarchy xhtCellBorder0">Dosagem</td></tr>
+<tr fhir="generated-heirarchy" id="s-ai" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Tipo de dados primitivos" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">MedicamentoLM.</span><a no-external="true" href="StructureDefinition-MedicamentoLM-definitions.html#MedicamentoLM.medidaTomada" title="Qual a medida tomada" data-no-external="true">medidaTomada</a><a name="s-MedicamentoLM.medidaTomada"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0">0..1</td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#code">code</a></td>
+<td style="" class="hierarchy xhtCellBorder0">Qual a medida tomada</td></tr>
+<tr fhir="generated-heirarchy" id="s-aj" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Tipo de dados primitivos" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">MedicamentoLM.</span><a no-external="true" href="StructureDefinition-MedicamentoLM-definitions.html#MedicamentoLM.viaAdministracaoCode" title="Via de administração" data-no-external="true">viaAdministracaoCode</a><a name="s-MedicamentoLM.viaAdministracaoCode"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0">0..1</td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td>
+<td style="" class="hierarchy xhtCellBorder0">Via de administração</td></tr>
+<tr fhir="generated-heirarchy" id="s-ak" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Tipo de dados primitivos" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">MedicamentoLM.</span><a no-external="true" href="StructureDefinition-MedicamentoLM-definitions.html#MedicamentoLM.tipoAutorizacaoCode" title="Tipo de Autorização" data-no-external="true">tipoAutorizacaoCode</a><a name="s-MedicamentoLM.tipoAutorizacaoCode"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0">0..1</td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#code">code</a></td>
+<td style="" class="hierarchy xhtCellBorder0">Tipo de Autorização</td></tr>
+<tr fhir="generated-heirarchy" id="s-al" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck00.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Tipo de dados primitivos" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">MedicamentoLM.</span><a no-external="true" href="StructureDefinition-MedicamentoLM-definitions.html#MedicamentoLM.indicacaoTerapeutica" title="Indicação Terapêutica do medicamento" data-no-external="true">indicacaoTerapeutica</a><a name="s-MedicamentoLM.indicacaoTerapeutica"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0">0..1</td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td>
+<td style="" class="hierarchy xhtCellBorder0">Indicação Terapêutica do medicamento</td></tr>
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legenda para este formato"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentação para este formato</a></td></tr><script type="text/javascript">  // 3a406940-f9bc-41f3-9376-79fd215c9dd2
+document.getElementById('cbMedicamentoLMS-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
+filterDesc(document.getElementById('MedicamentoLMS'), 'constraint', document.getElementById('cbMedicamentoLMS-constraint').checked, document.getElementById('ppMedicamentoLMS'));
+document.getElementById('cbMedicamentoLMS-obligation').checked = 'false' != localStorage.getItem('ht-table-states-obligation');
+filterDesc(document.getElementById('MedicamentoLMS'), 'obligation', document.getElementById('cbMedicamentoLMS-obligation').checked, document.getElementById('ppMedicamentoLMS'));
+document.getElementById('cbMedicamentoLMS-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
+filterDesc(document.getElementById('MedicamentoLMS'), 'binding', document.getElementById('cbMedicamentoLMS-binding').checked, document.getElementById('ppMedicamentoLMS'));
+</script></table>
+          <!--Terminology Bindings heading in the fragment -->
+          
+        
+          
+          <!-- 218 is size of empty table -->
+          
+        </div>
+      </div>
+    </div>
+
+<!--    <a name="tabs-xml"> </a>
+    <div id="tabs-xml">
+      <div id="xml">
+        <div id="xml-inner">
+          <p><span style="color: maroon; font-weight: bold">yet to be done: Xml template</span></p>
+
+        </div>
+      </div>
+    </div>-->
+
+
+<!--    <a name="tabs-json"> </a>
+    <div id="tabs-json">
+      <div id="json">
+        <div id="json-inner">
+           // <span style="color: navy; opacity: 0.8">Medicamento (modelo)</span>
+ {
+// from Element: <a href="http://hl7.org/fhir/R5/extensibility.html">extension</a>
+    "<a href="StructureDefinition-MedicamentoLM.html#MedicamentoLM.nomeMedicamento" title="Nome do medicamento" class="dict"><span style="text-decoration: underline">nomeMedicamento</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title="Este elemento é obrigatório"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Nome do medicamento</span>
+    "<a href="StructureDefinition-MedicamentoLM.html#MedicamentoLM.lote" title="Número de ltoe" class="dict"><span style="text-decoration: underline">lote</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Número de ltoe</span>
+    "<a href="StructureDefinition-MedicamentoLM.html#MedicamentoLM.posologia" title="Posologia" class="dict"><span style="text-decoration: underline">posologia</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Posologia</span>
+    "<a href="StructureDefinition-MedicamentoLM.html#MedicamentoLM.dataInicioTomaMedicamento" title="Data de inicio da toma do medicamento" class="dict"><span style="text-decoration: underline">dataInicioTomaMedicamento</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">dateTime</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Data de inicio da toma do medicamento</span>
+    "<a href="StructureDefinition-MedicamentoLM.html#MedicamentoLM.dataInicioTomaMedicamentoPrecisao" title="Precisão de data de inicio da toma do medicamento" class="dict"><span style="text-decoration: underline">dataInicioTomaMedicamentoPrecisao</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/datatypes.html#code">code</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Precisão de data de inicio da toma do medicamento</span>
+    "<a href="StructureDefinition-MedicamentoLM.html#MedicamentoLM.dataFimTomaMedicamento" title="Data de fim da toma do medicamento" class="dict"><span style="text-decoration: underline">dataFimTomaMedicamento</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">dateTime</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Data de fim da toma do medicamento</span>
+    "<a href="StructureDefinition-MedicamentoLM.html#MedicamentoLM.dataFimTomaMedicamentoPrecisao" title="Precisão de data de fim da toma do medicamento" class="dict"><span style="text-decoration: underline">dataFimTomaMedicamentoPrecisao</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/datatypes.html#code">code</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Precisão de data de fim da toma do medicamento</span>
+    "<a href="StructureDefinition-MedicamentoLM.html#MedicamentoLM.dosagem" title="Dosagem" class="dict"><span style="text-decoration: underline">dosagem</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Dosagem</span>
+    "<a href="StructureDefinition-MedicamentoLM.html#MedicamentoLM.medidaTomada" title="Qual a medida tomada" class="dict"><span style="text-decoration: underline">medidaTomada</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/datatypes.html#code">code</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Qual a medida tomada</span>
+    "<a href="StructureDefinition-MedicamentoLM.html#MedicamentoLM.viaAdministracaoCode" title="Via de administração" class="dict"><span style="text-decoration: underline">viaAdministracaoCode</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Via de administração</span>
+    "<a href="StructureDefinition-MedicamentoLM.html#MedicamentoLM.tipoAutorizacaoCode" title="Tipo de Autorização" class="dict"><span style="text-decoration: underline">tipoAutorizacaoCode</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/datatypes.html#code">code</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Tipo de Autorização</span>
+    "<a href="StructureDefinition-MedicamentoLM.html#MedicamentoLM.indicacaoTerapeutica" title="Indicação Terapêutica do medicamento" class="dict"><span style="text-decoration: underline">indicacaoTerapeutica</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></span>&gt;" <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Indicação Terapêutica do medicamento</span>
+  }
+
+        </div>
+      </div>
+    </div>-->
+
+
+    <!--<a name="tabs-ttl"> </a>
+    <div id="tabs-ttl">
+      <div id="ttl">
+        <div id="ttl-inner">
+          <p><span style="color: maroon; font-weight: bold">yet to be done: Turtle template</span></p>
+
+        </div>
+      </div>
+    </div>-->
+
+    <a name="tabs-summ"> </a>
+    <div id="tabs-summ">
+      <div id="tbl-summ">
+        <p>This structure is derived from <a href="http://hl7.org/fhir/R5/types.html#Base">Base</a>
+        </p>
+        <div id="tbl-summ-inner">
+          <a name="summary"> </a>
+          <div data-fhir="generated"><a name="s-summary"> </a>
+<p><b>
+Resumo
+</b></p>
+<p>Obrigatório: 0 elemento(1 aninhado obrigatoriamente elemento)</p></div>
+        </div>
+      </div>
+    </div>
+    <a name="tabs-all"> </a>
+    <div id="tabs-all">
+      <div id="all-tbl-key">
+        <p>
+          <b>Key Elements View</b>
+        </p>
+        <div id="all-tbl-key-inner">
+          <table border="0" fhir="generated-heirarchy" cellpadding="0" cellspacing="0" id="MedicamentoLMKA" class="xhtTableBorder0" data-fhir="generated-heirarchy"><tr fhir="generated-heirarchy" class="xhtRowBorder1" data-fhir="generated-heirarchy"><th scope="col" style="" class="hierarchy xhtCellBorder0"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="O nome lógico do elemento" data-no-external="true">Nome</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Informações sobre a utilização do elemento" data-no-external="true">Bandeiras</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Número mínimo e máximo de vezes que o elemento pode aparecer na instância" data-no-external="true">Card.</a></th><th scope="col" style="; width: 100px" class="hierarchy xhtCellBorder0"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Referência ao tipo do elemento" data-no-external="true">Tipo</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Informações adicionais sobre o elemento" data-no-external="true">Descrição e condicionalismos</a>&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Filter: <input size="10" name="filter" style="border: 1px #F0F0F0 solid; background-color: rgb(254, 254, 231);" onInput="filterTree(document.getElementById('MedicamentoLMKA'), event.target.value)" type="text" aria-label="Filter"/> <button onClick="showPanel(this, document.getElementById('MedicamentoLMKA'), document.getElementById('ppMedicamentoLMKA'))" aria-controls="ppMedicamentoLMKA" style="background: none; border: 0; padding: 0; margin: 0; cursor: pointer" type="button" title="Filters" aria-label="Filters"><img src="tree-filter.png" alt=""/></button><div style="display: none; position: fixed; opacity : 1.0; background-color: rgb(254, 254, 231); border: 1px solid #ccc; padding: 10px; boxShadow: 0 2px 5px rgba(0,0,0,0.2); zIndex: 1000; borderRadius: 4px" id="ppMedicamentoLMKA"><label>Condicionantes <input onClick="filterDesc(document.getElementById('MedicamentoLMKA'), 'constraint',event.target.checked, document.getElementById('ppMedicamentoLMKA'))" size="1" name="constraint" checked="true" id="cbMedicamentoLMKA-constraint" type="checkbox" aria-label="constraint"/></label><br/><label>Obrigações <input onClick="filterDesc(document.getElementById('MedicamentoLMKA'), 'obligation',event.target.checked, document.getElementById('ppMedicamentoLMKA'))" size="1" name="obligation" checked="true" id="cbMedicamentoLMKA-obligation" type="checkbox" aria-label="obligation"/></label><br/><label>Vínculos <input onClick="filterDesc(document.getElementById('MedicamentoLMKA'), 'binding',event.target.checked, document.getElementById('ppMedicamentoLMKA'))" size="1" name="binding" checked="true" id="cbMedicamentoLMKA-binding" type="checkbox" aria-label="binding"/></label><br/></div></span><span style="float: right"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format" data-no-external="true"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" onLoad="fhirTableInit(this)" style="background-color: inherit"/></a></span></th></tr>
+<tr fhir="generated-heirarchy" id="ka-a" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: white; background-color: inherit" title="Elemento" class="hierarchy"/> <a no-external="true" href="StructureDefinition-MedicamentoLM-definitions.html#MedicamentoLM" title="Modelo Lógico - Medicamento" data-no-external="true">MedicamentoLM</a><a name="ka-MedicamentoLM"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0">0..*</td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/types.html#Base">Base</a></td>
+<td style="" class="hierarchy xhtCellBorder0">Medicamento (modelo)<br/><span class="xhtPieceBold">As instâncias deste modelo lógico podem ser objeto de uma referência</span><br/></td></tr>
+<tr fhir="generated-heirarchy" id="ka-aa" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Tipo de dados primitivos" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">MedicamentoLM.</span><a no-external="true" href="StructureDefinition-MedicamentoLM-definitions.html#MedicamentoLM.nomeMedicamento" title="Nome do medicamento" data-no-external="true">nomeMedicamento</a><a name="ka-MedicamentoLM.nomeMedicamento"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0">1..1</td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td>
+<td style="" class="hierarchy xhtCellBorder0">Nome do medicamento</td></tr>
+<tr fhir="generated-heirarchy" id="ka-ab" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Tipo de dados primitivos" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">MedicamentoLM.</span><a no-external="true" href="StructureDefinition-MedicamentoLM-definitions.html#MedicamentoLM.lote" title="Número de ltoe" data-no-external="true">lote</a><a name="ka-MedicamentoLM.lote"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0">0..1</td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td>
+<td style="" class="hierarchy xhtCellBorder0">Número de ltoe</td></tr>
+<tr fhir="generated-heirarchy" id="ka-ac" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Tipo de dados primitivos" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">MedicamentoLM.</span><a no-external="true" href="StructureDefinition-MedicamentoLM-definitions.html#MedicamentoLM.posologia" title="Posologia" data-no-external="true">posologia</a><a name="ka-MedicamentoLM.posologia"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0">0..1</td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td>
+<td style="" class="hierarchy xhtCellBorder0">Posologia</td></tr>
+<tr fhir="generated-heirarchy" id="ka-ad" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Tipo de dados primitivos" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">MedicamentoLM.</span><a no-external="true" href="StructureDefinition-MedicamentoLM-definitions.html#MedicamentoLM.dataInicioTomaMedicamento" title="Data de inicio da toma do medicamento" data-no-external="true">dataInicioTomaMedicamento</a><a name="ka-MedicamentoLM.dataInicioTomaMedicamento"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0">0..1</td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">dateTime</a></td>
+<td style="" class="hierarchy xhtCellBorder0">Data de inicio da toma do medicamento</td></tr>
+<tr fhir="generated-heirarchy" id="ka-ae" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Tipo de dados primitivos" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">MedicamentoLM.</span><a no-external="true" href="StructureDefinition-MedicamentoLM-definitions.html#MedicamentoLM.dataInicioTomaMedicamentoPrecisao" title="Precisão de data de inicio da toma do medicamento" data-no-external="true">dataInicioTomaMedicamentoPrecisao</a><a name="ka-MedicamentoLM.dataInicioTomaMedicamentoPrecisao"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0">0..1</td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#code">code</a></td>
+<td style="" class="hierarchy xhtCellBorder0">Precisão de data de inicio da toma do medicamento</td></tr>
+<tr fhir="generated-heirarchy" id="ka-af" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Tipo de dados primitivos" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">MedicamentoLM.</span><a no-external="true" href="StructureDefinition-MedicamentoLM-definitions.html#MedicamentoLM.dataFimTomaMedicamento" title="Data de fim da toma do medicamento" data-no-external="true">dataFimTomaMedicamento</a><a name="ka-MedicamentoLM.dataFimTomaMedicamento"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0">0..1</td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">dateTime</a></td>
+<td style="" class="hierarchy xhtCellBorder0">Data de fim da toma do medicamento</td></tr>
+<tr fhir="generated-heirarchy" id="ka-ag" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Tipo de dados primitivos" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">MedicamentoLM.</span><a no-external="true" href="StructureDefinition-MedicamentoLM-definitions.html#MedicamentoLM.dataFimTomaMedicamentoPrecisao" title="Precisão de data de fim da toma do medicamento" data-no-external="true">dataFimTomaMedicamentoPrecisao</a><a name="ka-MedicamentoLM.dataFimTomaMedicamentoPrecisao"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0">0..1</td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#code">code</a></td>
+<td style="" class="hierarchy xhtCellBorder0">Precisão de data de fim da toma do medicamento</td></tr>
+<tr fhir="generated-heirarchy" id="ka-ah" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Tipo de dados primitivos" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">MedicamentoLM.</span><a no-external="true" href="StructureDefinition-MedicamentoLM-definitions.html#MedicamentoLM.dosagem" title="Dosagem" data-no-external="true">dosagem</a><a name="ka-MedicamentoLM.dosagem"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0">0..1</td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td>
+<td style="" class="hierarchy xhtCellBorder0">Dosagem</td></tr>
+<tr fhir="generated-heirarchy" id="ka-ai" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Tipo de dados primitivos" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">MedicamentoLM.</span><a no-external="true" href="StructureDefinition-MedicamentoLM-definitions.html#MedicamentoLM.medidaTomada" title="Qual a medida tomada" data-no-external="true">medidaTomada</a><a name="ka-MedicamentoLM.medidaTomada"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0">0..1</td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#code">code</a></td>
+<td style="" class="hierarchy xhtCellBorder0">Qual a medida tomada</td></tr>
+<tr fhir="generated-heirarchy" id="ka-aj" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Tipo de dados primitivos" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">MedicamentoLM.</span><a no-external="true" href="StructureDefinition-MedicamentoLM-definitions.html#MedicamentoLM.viaAdministracaoCode" title="Via de administração" data-no-external="true">viaAdministracaoCode</a><a name="ka-MedicamentoLM.viaAdministracaoCode"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0">0..1</td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td>
+<td style="" class="hierarchy xhtCellBorder0">Via de administração</td></tr>
+<tr fhir="generated-heirarchy" id="ka-ak" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Tipo de dados primitivos" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">MedicamentoLM.</span><a no-external="true" href="StructureDefinition-MedicamentoLM-definitions.html#MedicamentoLM.tipoAutorizacaoCode" title="Tipo de Autorização" data-no-external="true">tipoAutorizacaoCode</a><a name="ka-MedicamentoLM.tipoAutorizacaoCode"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0">0..1</td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#code">code</a></td>
+<td style="" class="hierarchy xhtCellBorder0">Tipo de Autorização</td></tr>
+<tr fhir="generated-heirarchy" id="ka-al" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck00.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Tipo de dados primitivos" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">MedicamentoLM.</span><a no-external="true" href="StructureDefinition-MedicamentoLM-definitions.html#MedicamentoLM.indicacaoTerapeutica" title="Indicação Terapêutica do medicamento" data-no-external="true">indicacaoTerapeutica</a><a name="ka-MedicamentoLM.indicacaoTerapeutica"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0">0..1</td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td>
+<td style="" class="hierarchy xhtCellBorder0">Indicação Terapêutica do medicamento</td></tr>
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legenda para este formato"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentação para este formato</a></td></tr><script type="text/javascript">  // 3a406940-f9bc-41f3-9376-79fd215c9dd2
+document.getElementById('cbMedicamentoLMKA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
+filterDesc(document.getElementById('MedicamentoLMKA'), 'constraint', document.getElementById('cbMedicamentoLMKA-constraint').checked, document.getElementById('ppMedicamentoLMKA'));
+document.getElementById('cbMedicamentoLMKA-obligation').checked = 'false' != localStorage.getItem('ht-table-states-obligation');
+filterDesc(document.getElementById('MedicamentoLMKA'), 'obligation', document.getElementById('cbMedicamentoLMKA-obligation').checked, document.getElementById('ppMedicamentoLMKA'));
+document.getElementById('cbMedicamentoLMKA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
+filterDesc(document.getElementById('MedicamentoLMKA'), 'binding', document.getElementById('cbMedicamentoLMKA-binding').checked, document.getElementById('ppMedicamentoLMKA'));
+</script></table>
+          <!--Terminology Bindings heading in the fragment -->
+          
+        
+          
+          <!-- 218 is size of empty table -->
+          
+        </div>
+      </div>
+      <div id="all-tbl-diff">
+        <p>
+          <b>Differential View</b>
+        </p>
+        <p>This structure is derived from <a href="http://hl7.org/fhir/R5/types.html#Base">Base</a>
+        </p>
+        <div id="all-tbl-diff-inner">
+          <table border="0" fhir="generated-heirarchy" cellpadding="0" cellspacing="0" id="MedicamentoLMDA" class="xhtTableBorder0" data-fhir="generated-heirarchy"><tr fhir="generated-heirarchy" class="xhtRowBorder1" data-fhir="generated-heirarchy"><th scope="col" style="" class="hierarchy xhtCellBorder0"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="O nome lógico do elemento" data-no-external="true">Nome</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Informações sobre a utilização do elemento" data-no-external="true">Bandeiras</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Número mínimo e máximo de vezes que o elemento pode aparecer na instância" data-no-external="true">Card.</a></th><th scope="col" style="; width: 100px" class="hierarchy xhtCellBorder0"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Referência ao tipo do elemento" data-no-external="true">Tipo</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Informações adicionais sobre o elemento" data-no-external="true">Descrição e condicionalismos</a>&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Filter: <input size="10" name="filter" style="border: 1px #F0F0F0 solid; background-color: rgb(254, 254, 231);" onInput="filterTree(document.getElementById('MedicamentoLMDA'), event.target.value)" type="text" aria-label="Filter"/> <button onClick="showPanel(this, document.getElementById('MedicamentoLMDA'), document.getElementById('ppMedicamentoLMDA'))" aria-controls="ppMedicamentoLMDA" style="background: none; border: 0; padding: 0; margin: 0; cursor: pointer" type="button" title="Filters" aria-label="Filters"><img src="tree-filter.png" alt=""/></button><div style="display: none; position: fixed; opacity : 1.0; background-color: rgb(254, 254, 231); border: 1px solid #ccc; padding: 10px; boxShadow: 0 2px 5px rgba(0,0,0,0.2); zIndex: 1000; borderRadius: 4px" id="ppMedicamentoLMDA"><label>Condicionantes <input onClick="filterDesc(document.getElementById('MedicamentoLMDA'), 'constraint',event.target.checked, document.getElementById('ppMedicamentoLMDA'))" size="1" name="constraint" checked="true" id="cbMedicamentoLMDA-constraint" type="checkbox" aria-label="constraint"/></label><br/><label>Obrigações <input onClick="filterDesc(document.getElementById('MedicamentoLMDA'), 'obligation',event.target.checked, document.getElementById('ppMedicamentoLMDA'))" size="1" name="obligation" checked="true" id="cbMedicamentoLMDA-obligation" type="checkbox" aria-label="obligation"/></label><br/><label>Vínculos <input onClick="filterDesc(document.getElementById('MedicamentoLMDA'), 'binding',event.target.checked, document.getElementById('ppMedicamentoLMDA'))" size="1" name="binding" checked="true" id="cbMedicamentoLMDA-binding" type="checkbox" aria-label="binding"/></label><br/></div></span><span style="float: right"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format" data-no-external="true"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" onLoad="fhirTableInit(this)" style="background-color: inherit"/></a></span></th></tr>
+<tr fhir="generated-heirarchy" id="a-a" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: white; background-color: inherit" title="Elemento" class="hierarchy"/> <a no-external="true" href="StructureDefinition-MedicamentoLM-definitions.html#MedicamentoLM" title="Modelo Lógico - Medicamento" data-no-external="true">MedicamentoLM</a><a name="a-MedicamentoLM"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">0</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">*</span></td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/types.html#Base">Base</a></td>
+<td style="" class="hierarchy xhtCellBorder0">Medicamento (modelo)<br/><span class="xhtPieceBold">As instâncias deste modelo lógico podem ser objeto de uma referência</span></td></tr>
+<tr fhir="generated-heirarchy" id="a-aa" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Tipo de dados primitivos" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">MedicamentoLM.</span><a no-external="true" href="StructureDefinition-MedicamentoLM-definitions.html#MedicamentoLM.nomeMedicamento" title="Nome do medicamento" data-no-external="true">nomeMedicamento</a><a name="a-MedicamentoLM.nomeMedicamento"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0">1..1</td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td>
+<td style="" class="hierarchy xhtCellBorder0">Nome do medicamento</td></tr>
+<tr fhir="generated-heirarchy" id="a-ab" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Tipo de dados primitivos" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">MedicamentoLM.</span><a no-external="true" href="StructureDefinition-MedicamentoLM-definitions.html#MedicamentoLM.lote" title="Número de ltoe" data-no-external="true">lote</a><a name="a-MedicamentoLM.lote"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0">0..1</td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td>
+<td style="" class="hierarchy xhtCellBorder0">Número de ltoe</td></tr>
+<tr fhir="generated-heirarchy" id="a-ac" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Tipo de dados primitivos" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">MedicamentoLM.</span><a no-external="true" href="StructureDefinition-MedicamentoLM-definitions.html#MedicamentoLM.posologia" title="Posologia" data-no-external="true">posologia</a><a name="a-MedicamentoLM.posologia"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0">0..1</td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td>
+<td style="" class="hierarchy xhtCellBorder0">Posologia</td></tr>
+<tr fhir="generated-heirarchy" id="a-ad" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Tipo de dados primitivos" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">MedicamentoLM.</span><a no-external="true" href="StructureDefinition-MedicamentoLM-definitions.html#MedicamentoLM.dataInicioTomaMedicamento" title="Data de inicio da toma do medicamento" data-no-external="true">dataInicioTomaMedicamento</a><a name="a-MedicamentoLM.dataInicioTomaMedicamento"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0">0..1</td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">dateTime</a></td>
+<td style="" class="hierarchy xhtCellBorder0">Data de inicio da toma do medicamento</td></tr>
+<tr fhir="generated-heirarchy" id="a-ae" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Tipo de dados primitivos" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">MedicamentoLM.</span><a no-external="true" href="StructureDefinition-MedicamentoLM-definitions.html#MedicamentoLM.dataInicioTomaMedicamentoPrecisao" title="Precisão de data de inicio da toma do medicamento" data-no-external="true">dataInicioTomaMedicamentoPrecisao</a><a name="a-MedicamentoLM.dataInicioTomaMedicamentoPrecisao"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0">0..1</td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#code">code</a></td>
+<td style="" class="hierarchy xhtCellBorder0">Precisão de data de inicio da toma do medicamento</td></tr>
+<tr fhir="generated-heirarchy" id="a-af" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Tipo de dados primitivos" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">MedicamentoLM.</span><a no-external="true" href="StructureDefinition-MedicamentoLM-definitions.html#MedicamentoLM.dataFimTomaMedicamento" title="Data de fim da toma do medicamento" data-no-external="true">dataFimTomaMedicamento</a><a name="a-MedicamentoLM.dataFimTomaMedicamento"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0">0..1</td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">dateTime</a></td>
+<td style="" class="hierarchy xhtCellBorder0">Data de fim da toma do medicamento</td></tr>
+<tr fhir="generated-heirarchy" id="a-ag" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Tipo de dados primitivos" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">MedicamentoLM.</span><a no-external="true" href="StructureDefinition-MedicamentoLM-definitions.html#MedicamentoLM.dataFimTomaMedicamentoPrecisao" title="Precisão de data de fim da toma do medicamento" data-no-external="true">dataFimTomaMedicamentoPrecisao</a><a name="a-MedicamentoLM.dataFimTomaMedicamentoPrecisao"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0">0..1</td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#code">code</a></td>
+<td style="" class="hierarchy xhtCellBorder0">Precisão de data de fim da toma do medicamento</td></tr>
+<tr fhir="generated-heirarchy" id="a-ah" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Tipo de dados primitivos" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">MedicamentoLM.</span><a no-external="true" href="StructureDefinition-MedicamentoLM-definitions.html#MedicamentoLM.dosagem" title="Dosagem" data-no-external="true">dosagem</a><a name="a-MedicamentoLM.dosagem"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0">0..1</td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td>
+<td style="" class="hierarchy xhtCellBorder0">Dosagem</td></tr>
+<tr fhir="generated-heirarchy" id="a-ai" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Tipo de dados primitivos" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">MedicamentoLM.</span><a no-external="true" href="StructureDefinition-MedicamentoLM-definitions.html#MedicamentoLM.medidaTomada" title="Qual a medida tomada" data-no-external="true">medidaTomada</a><a name="a-MedicamentoLM.medidaTomada"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0">0..1</td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#code">code</a></td>
+<td style="" class="hierarchy xhtCellBorder0">Qual a medida tomada</td></tr>
+<tr fhir="generated-heirarchy" id="a-aj" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Tipo de dados primitivos" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">MedicamentoLM.</span><a no-external="true" href="StructureDefinition-MedicamentoLM-definitions.html#MedicamentoLM.viaAdministracaoCode" title="Via de administração" data-no-external="true">viaAdministracaoCode</a><a name="a-MedicamentoLM.viaAdministracaoCode"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0">0..1</td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td>
+<td style="" class="hierarchy xhtCellBorder0">Via de administração</td></tr>
+<tr fhir="generated-heirarchy" id="a-ak" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Tipo de dados primitivos" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">MedicamentoLM.</span><a no-external="true" href="StructureDefinition-MedicamentoLM-definitions.html#MedicamentoLM.tipoAutorizacaoCode" title="Tipo de Autorização" data-no-external="true">tipoAutorizacaoCode</a><a name="a-MedicamentoLM.tipoAutorizacaoCode"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0">0..1</td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#code">code</a></td>
+<td style="" class="hierarchy xhtCellBorder0">Tipo de Autorização</td></tr>
+<tr fhir="generated-heirarchy" id="a-al" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck00.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Tipo de dados primitivos" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">MedicamentoLM.</span><a no-external="true" href="StructureDefinition-MedicamentoLM-definitions.html#MedicamentoLM.indicacaoTerapeutica" title="Indicação Terapêutica do medicamento" data-no-external="true">indicacaoTerapeutica</a><a name="a-MedicamentoLM.indicacaoTerapeutica"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0">0..1</td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td>
+<td style="" class="hierarchy xhtCellBorder0">Indicação Terapêutica do medicamento</td></tr>
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legenda para este formato"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentação para este formato</a></td></tr><script type="text/javascript">  // 3a406940-f9bc-41f3-9376-79fd215c9dd2
+document.getElementById('cbMedicamentoLMDA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
+filterDesc(document.getElementById('MedicamentoLMDA'), 'constraint', document.getElementById('cbMedicamentoLMDA-constraint').checked, document.getElementById('ppMedicamentoLMDA'));
+document.getElementById('cbMedicamentoLMDA-obligation').checked = 'false' != localStorage.getItem('ht-table-states-obligation');
+filterDesc(document.getElementById('MedicamentoLMDA'), 'obligation', document.getElementById('cbMedicamentoLMDA-obligation').checked, document.getElementById('ppMedicamentoLMDA'));
+document.getElementById('cbMedicamentoLMDA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
+filterDesc(document.getElementById('MedicamentoLMDA'), 'binding', document.getElementById('cbMedicamentoLMDA-binding').checked, document.getElementById('ppMedicamentoLMDA'));
+</script></table>
+          <!--Terminology Bindings heading in the fragment -->
+          
+        
+          
+          <!-- 218 is size of empty table -->
+          
+        </div>
+      </div>
+      <div id="all-tbl-snap">
+        <p>
+          <b>Snapshot View</b>
+        </p>
+        <div id="all-tbl-snap-inner">
+          <table border="0" fhir="generated-heirarchy" cellpadding="0" cellspacing="0" id="MedicamentoLMSA" class="xhtTableBorder0" data-fhir="generated-heirarchy"><tr fhir="generated-heirarchy" class="xhtRowBorder1" data-fhir="generated-heirarchy"><th scope="col" style="" class="hierarchy xhtCellBorder0"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="O nome lógico do elemento" data-no-external="true">Nome</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Informações sobre a utilização do elemento" data-no-external="true">Bandeiras</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Número mínimo e máximo de vezes que o elemento pode aparecer na instância" data-no-external="true">Card.</a></th><th scope="col" style="; width: 100px" class="hierarchy xhtCellBorder0"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Referência ao tipo do elemento" data-no-external="true">Tipo</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Informações adicionais sobre o elemento" data-no-external="true">Descrição e condicionalismos</a>&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Filter: <input size="10" name="filter" style="border: 1px #F0F0F0 solid; background-color: rgb(254, 254, 231);" onInput="filterTree(document.getElementById('MedicamentoLMSA'), event.target.value)" type="text" aria-label="Filter"/> <button onClick="showPanel(this, document.getElementById('MedicamentoLMSA'), document.getElementById('ppMedicamentoLMSA'))" aria-controls="ppMedicamentoLMSA" style="background: none; border: 0; padding: 0; margin: 0; cursor: pointer" type="button" title="Filters" aria-label="Filters"><img src="tree-filter.png" alt=""/></button><div style="display: none; position: fixed; opacity : 1.0; background-color: rgb(254, 254, 231); border: 1px solid #ccc; padding: 10px; boxShadow: 0 2px 5px rgba(0,0,0,0.2); zIndex: 1000; borderRadius: 4px" id="ppMedicamentoLMSA"><label>Condicionantes <input onClick="filterDesc(document.getElementById('MedicamentoLMSA'), 'constraint',event.target.checked, document.getElementById('ppMedicamentoLMSA'))" size="1" name="constraint" checked="true" id="cbMedicamentoLMSA-constraint" type="checkbox" aria-label="constraint"/></label><br/><label>Obrigações <input onClick="filterDesc(document.getElementById('MedicamentoLMSA'), 'obligation',event.target.checked, document.getElementById('ppMedicamentoLMSA'))" size="1" name="obligation" checked="true" id="cbMedicamentoLMSA-obligation" type="checkbox" aria-label="obligation"/></label><br/><label>Vínculos <input onClick="filterDesc(document.getElementById('MedicamentoLMSA'), 'binding',event.target.checked, document.getElementById('ppMedicamentoLMSA'))" size="1" name="binding" checked="true" id="cbMedicamentoLMSA-binding" type="checkbox" aria-label="binding"/></label><br/></div></span><span style="float: right"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format" data-no-external="true"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" onLoad="fhirTableInit(this)" style="background-color: inherit"/></a></span></th></tr>
+<tr fhir="generated-heirarchy" id="sa-a" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: white; background-color: inherit" title="Elemento" class="hierarchy"/> <a no-external="true" href="StructureDefinition-MedicamentoLM-definitions.html#MedicamentoLM" title="Modelo Lógico - Medicamento" data-no-external="true">MedicamentoLM</a><a name="sa-MedicamentoLM"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0">0..*</td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/types.html#Base">Base</a></td>
+<td style="" class="hierarchy xhtCellBorder0">Medicamento (modelo)<br/><span class="xhtPieceBold">As instâncias deste modelo lógico podem ser objeto de uma referência</span><br/></td></tr>
+<tr fhir="generated-heirarchy" id="sa-aa" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Tipo de dados primitivos" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">MedicamentoLM.</span><a no-external="true" href="StructureDefinition-MedicamentoLM-definitions.html#MedicamentoLM.nomeMedicamento" title="Nome do medicamento" data-no-external="true">nomeMedicamento</a><a name="sa-MedicamentoLM.nomeMedicamento"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0">1..1</td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td>
+<td style="" class="hierarchy xhtCellBorder0">Nome do medicamento</td></tr>
+<tr fhir="generated-heirarchy" id="sa-ab" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Tipo de dados primitivos" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">MedicamentoLM.</span><a no-external="true" href="StructureDefinition-MedicamentoLM-definitions.html#MedicamentoLM.lote" title="Número de ltoe" data-no-external="true">lote</a><a name="sa-MedicamentoLM.lote"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0">0..1</td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td>
+<td style="" class="hierarchy xhtCellBorder0">Número de ltoe</td></tr>
+<tr fhir="generated-heirarchy" id="sa-ac" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Tipo de dados primitivos" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">MedicamentoLM.</span><a no-external="true" href="StructureDefinition-MedicamentoLM-definitions.html#MedicamentoLM.posologia" title="Posologia" data-no-external="true">posologia</a><a name="sa-MedicamentoLM.posologia"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0">0..1</td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td>
+<td style="" class="hierarchy xhtCellBorder0">Posologia</td></tr>
+<tr fhir="generated-heirarchy" id="sa-ad" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Tipo de dados primitivos" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">MedicamentoLM.</span><a no-external="true" href="StructureDefinition-MedicamentoLM-definitions.html#MedicamentoLM.dataInicioTomaMedicamento" title="Data de inicio da toma do medicamento" data-no-external="true">dataInicioTomaMedicamento</a><a name="sa-MedicamentoLM.dataInicioTomaMedicamento"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0">0..1</td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">dateTime</a></td>
+<td style="" class="hierarchy xhtCellBorder0">Data de inicio da toma do medicamento</td></tr>
+<tr fhir="generated-heirarchy" id="sa-ae" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Tipo de dados primitivos" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">MedicamentoLM.</span><a no-external="true" href="StructureDefinition-MedicamentoLM-definitions.html#MedicamentoLM.dataInicioTomaMedicamentoPrecisao" title="Precisão de data de inicio da toma do medicamento" data-no-external="true">dataInicioTomaMedicamentoPrecisao</a><a name="sa-MedicamentoLM.dataInicioTomaMedicamentoPrecisao"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0">0..1</td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#code">code</a></td>
+<td style="" class="hierarchy xhtCellBorder0">Precisão de data de inicio da toma do medicamento</td></tr>
+<tr fhir="generated-heirarchy" id="sa-af" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Tipo de dados primitivos" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">MedicamentoLM.</span><a no-external="true" href="StructureDefinition-MedicamentoLM-definitions.html#MedicamentoLM.dataFimTomaMedicamento" title="Data de fim da toma do medicamento" data-no-external="true">dataFimTomaMedicamento</a><a name="sa-MedicamentoLM.dataFimTomaMedicamento"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0">0..1</td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">dateTime</a></td>
+<td style="" class="hierarchy xhtCellBorder0">Data de fim da toma do medicamento</td></tr>
+<tr fhir="generated-heirarchy" id="sa-ag" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Tipo de dados primitivos" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">MedicamentoLM.</span><a no-external="true" href="StructureDefinition-MedicamentoLM-definitions.html#MedicamentoLM.dataFimTomaMedicamentoPrecisao" title="Precisão de data de fim da toma do medicamento" data-no-external="true">dataFimTomaMedicamentoPrecisao</a><a name="sa-MedicamentoLM.dataFimTomaMedicamentoPrecisao"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0">0..1</td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#code">code</a></td>
+<td style="" class="hierarchy xhtCellBorder0">Precisão de data de fim da toma do medicamento</td></tr>
+<tr fhir="generated-heirarchy" id="sa-ah" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Tipo de dados primitivos" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">MedicamentoLM.</span><a no-external="true" href="StructureDefinition-MedicamentoLM-definitions.html#MedicamentoLM.dosagem" title="Dosagem" data-no-external="true">dosagem</a><a name="sa-MedicamentoLM.dosagem"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0">0..1</td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td>
+<td style="" class="hierarchy xhtCellBorder0">Dosagem</td></tr>
+<tr fhir="generated-heirarchy" id="sa-ai" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Tipo de dados primitivos" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">MedicamentoLM.</span><a no-external="true" href="StructureDefinition-MedicamentoLM-definitions.html#MedicamentoLM.medidaTomada" title="Qual a medida tomada" data-no-external="true">medidaTomada</a><a name="sa-MedicamentoLM.medidaTomada"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0">0..1</td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#code">code</a></td>
+<td style="" class="hierarchy xhtCellBorder0">Qual a medida tomada</td></tr>
+<tr fhir="generated-heirarchy" id="sa-aj" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Tipo de dados primitivos" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">MedicamentoLM.</span><a no-external="true" href="StructureDefinition-MedicamentoLM-definitions.html#MedicamentoLM.viaAdministracaoCode" title="Via de administração" data-no-external="true">viaAdministracaoCode</a><a name="sa-MedicamentoLM.viaAdministracaoCode"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0">0..1</td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td>
+<td style="" class="hierarchy xhtCellBorder0">Via de administração</td></tr>
+<tr fhir="generated-heirarchy" id="sa-ak" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Tipo de dados primitivos" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">MedicamentoLM.</span><a no-external="true" href="StructureDefinition-MedicamentoLM-definitions.html#MedicamentoLM.tipoAutorizacaoCode" title="Tipo de Autorização" data-no-external="true">tipoAutorizacaoCode</a><a name="sa-MedicamentoLM.tipoAutorizacaoCode"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0">0..1</td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#code">code</a></td>
+<td style="" class="hierarchy xhtCellBorder0">Tipo de Autorização</td></tr>
+<tr fhir="generated-heirarchy" id="sa-al" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck00.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Tipo de dados primitivos" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">MedicamentoLM.</span><a no-external="true" href="StructureDefinition-MedicamentoLM-definitions.html#MedicamentoLM.indicacaoTerapeutica" title="Indicação Terapêutica do medicamento" data-no-external="true">indicacaoTerapeutica</a><a name="sa-MedicamentoLM.indicacaoTerapeutica"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0">0..1</td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td>
+<td style="" class="hierarchy xhtCellBorder0">Indicação Terapêutica do medicamento</td></tr>
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legenda para este formato"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentação para este formato</a></td></tr><script type="text/javascript">  // 3a406940-f9bc-41f3-9376-79fd215c9dd2
+document.getElementById('cbMedicamentoLMSA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
+filterDesc(document.getElementById('MedicamentoLMSA'), 'constraint', document.getElementById('cbMedicamentoLMSA-constraint').checked, document.getElementById('ppMedicamentoLMSA'));
+document.getElementById('cbMedicamentoLMSA-obligation').checked = 'false' != localStorage.getItem('ht-table-states-obligation');
+filterDesc(document.getElementById('MedicamentoLMSA'), 'obligation', document.getElementById('cbMedicamentoLMSA-obligation').checked, document.getElementById('ppMedicamentoLMSA'));
+document.getElementById('cbMedicamentoLMSA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
+filterDesc(document.getElementById('MedicamentoLMSA'), 'binding', document.getElementById('cbMedicamentoLMSA-binding').checked, document.getElementById('ppMedicamentoLMSA'));
+</script></table>
+          <!--Terminology Bindings heading in the fragment -->
+          
+        
+          
+          <!-- 218 is size of empty table -->
+          
+        </div>
+      </div>
+
+      <!--<div id="all-xml">
+        <p>
+          <b>XML Template</b>
+        </p>
+        <div id="all-xml-inner">
+          <p><span style="color: maroon; font-weight: bold">yet to be done: Xml template</span></p>
+
+        </div>
+      </div>-->
+
+
+      <!--<div id="all-json">
+        <p>
+          <b>JSON Template</b>
+        </p>
+        <div id="all-json-inner">
+           // <span style="color: navy; opacity: 0.8">Medicamento (modelo)</span>
+ {
+// from Element: <a href="http://hl7.org/fhir/R5/extensibility.html">extension</a>
+    "<a href="StructureDefinition-MedicamentoLM.html#MedicamentoLM.nomeMedicamento" title="Nome do medicamento" class="dict"><span style="text-decoration: underline">nomeMedicamento</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title="Este elemento é obrigatório"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Nome do medicamento</span>
+    "<a href="StructureDefinition-MedicamentoLM.html#MedicamentoLM.lote" title="Número de ltoe" class="dict"><span style="text-decoration: underline">lote</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Número de ltoe</span>
+    "<a href="StructureDefinition-MedicamentoLM.html#MedicamentoLM.posologia" title="Posologia" class="dict"><span style="text-decoration: underline">posologia</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Posologia</span>
+    "<a href="StructureDefinition-MedicamentoLM.html#MedicamentoLM.dataInicioTomaMedicamento" title="Data de inicio da toma do medicamento" class="dict"><span style="text-decoration: underline">dataInicioTomaMedicamento</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">dateTime</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Data de inicio da toma do medicamento</span>
+    "<a href="StructureDefinition-MedicamentoLM.html#MedicamentoLM.dataInicioTomaMedicamentoPrecisao" title="Precisão de data de inicio da toma do medicamento" class="dict"><span style="text-decoration: underline">dataInicioTomaMedicamentoPrecisao</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/datatypes.html#code">code</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Precisão de data de inicio da toma do medicamento</span>
+    "<a href="StructureDefinition-MedicamentoLM.html#MedicamentoLM.dataFimTomaMedicamento" title="Data de fim da toma do medicamento" class="dict"><span style="text-decoration: underline">dataFimTomaMedicamento</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">dateTime</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Data de fim da toma do medicamento</span>
+    "<a href="StructureDefinition-MedicamentoLM.html#MedicamentoLM.dataFimTomaMedicamentoPrecisao" title="Precisão de data de fim da toma do medicamento" class="dict"><span style="text-decoration: underline">dataFimTomaMedicamentoPrecisao</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/datatypes.html#code">code</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Precisão de data de fim da toma do medicamento</span>
+    "<a href="StructureDefinition-MedicamentoLM.html#MedicamentoLM.dosagem" title="Dosagem" class="dict"><span style="text-decoration: underline">dosagem</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Dosagem</span>
+    "<a href="StructureDefinition-MedicamentoLM.html#MedicamentoLM.medidaTomada" title="Qual a medida tomada" class="dict"><span style="text-decoration: underline">medidaTomada</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/datatypes.html#code">code</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Qual a medida tomada</span>
+    "<a href="StructureDefinition-MedicamentoLM.html#MedicamentoLM.viaAdministracaoCode" title="Via de administração" class="dict"><span style="text-decoration: underline">viaAdministracaoCode</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Via de administração</span>
+    "<a href="StructureDefinition-MedicamentoLM.html#MedicamentoLM.tipoAutorizacaoCode" title="Tipo de Autorização" class="dict"><span style="text-decoration: underline">tipoAutorizacaoCode</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/datatypes.html#code">code</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Tipo de Autorização</span>
+    "<a href="StructureDefinition-MedicamentoLM.html#MedicamentoLM.indicacaoTerapeutica" title="Indicação Terapêutica do medicamento" class="dict"><span style="text-decoration: underline">indicacaoTerapeutica</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></span>&gt;" <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Indicação Terapêutica do medicamento</span>
+  }
+
+        </div>
+      </div>-->
+
+
+      <!--<div id="all-ttl">
+        <p>
+          <b>TTL Template</b>
+        </p>
+        <div id="all-ttl-inner">
+          <p><span style="color: maroon; font-weight: bold">yet to be done: Turtle template</span></p>
+
+        </div>
+      </div>-->
+
+      <div id="all-summ">
+        <p>This structure is derived from <a href="http://hl7.org/fhir/R5/types.html#Base">Base</a>
+        </p>
+        <div id="all-summ-inner">
+          <div data-fhir="generated"><a name="a-summary"> </a>
+<p><b>
+Resumo
+</b></p>
+<p>Obrigatório: 0 elemento(1 aninhado obrigatoriamente elemento)</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p>&#160;</p>
+  <p>Other representations of profile: <a href="StructureDefinition-MedicamentoLM.csv">CSV</a>, <a href="StructureDefinition-MedicamentoLM.xlsx">Excel</a> 
+  </p>
+
+  
+
+<!-- insert notes if present -->
+
+
+
+
+</div>
+
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/tabs.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7.pt">HL7 Portugal</a>.  Package hl7.fhir.pt.adr#1.0.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Oct 20, 2026 11:00+0000">2026-10-20</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

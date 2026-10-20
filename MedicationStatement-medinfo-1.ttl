@@ -1,0 +1,48 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.pt/fhir/ADR/MedicationStatement/medinfo-1> a fhir:MedicationStatement ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "medinfo-1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://hl7.pt/fhir/ADR/StructureDefinition/InformacaoMedicamento"^^xsd:anyURI ;
+       fhir:link <https://hl7.pt/fhir/ADR/StructureDefinition/InformacaoMedicamento>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: MedicationStatement medinfo-1</b></p><a name=\"medinfo-1\"> </a><a name=\"hcmedinfo-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Perfil: <a href=\"StructureDefinition-InformacaoMedicamento.html\">Perfil para notificação de RAM - medicamento</a></p></div><p><b>status</b>: Recorded</p><h3>Medications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Medication-med1.html\">Medication Evrysdi / Risdiplam</a></td></tr></table><p><b>subject</b>: <a href=\"Patient-pat-1.html\">Américo  Male, DoB: 1980-01-01</a></p><p><b>effective</b>: 2024-11-01</p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Route</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Códigos:{http://example.org 1}\">Oral</span></td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:status [ fhir:v "recorded"] ; # 
+  fhir:medication [
+     fhir:reference [
+       fhir:link <https://hl7.pt/fhir/ADR/Medication/med1> ;
+       fhir:reference [ fhir:v "Medication/med1" ]
+     ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://hl7.pt/fhir/ADR/Patient/pat-1> ;
+     fhir:reference [ fhir:v "Patient/pat-1" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:dateTime ;
+     fhir:v "2024-11-01"^^xsd:date
+  ] ; # 
+  fhir:dosage ( [
+     fhir:route [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://example.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "1" ] ;
+         fhir:display [ fhir:v "Oral" ]
+       ] )
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
